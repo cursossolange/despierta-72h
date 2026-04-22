@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 // const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const AIGeneratedEmotionalImage = () => {
-  const [imageUrl, setImageUrl] = useState<string | null>(null);
+  const [imageUrl, setImageUrl] = useState<string | null>(FALLBACK_IMAGE);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
