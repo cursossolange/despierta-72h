@@ -11,7 +11,7 @@ const AIGeneratedEmotionalImage = () => {
   const [error, setError] = useState(false);
 
   // Fallback high-quality image that matches the "introspective/mirror" aesthetic
-  const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1516589174184-c68d8e5f1bd4?auto=format&fit=crop&q=80&w=1920";
+const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80";
 
   const generateImage = async (forceReset = false) => {
     try {
