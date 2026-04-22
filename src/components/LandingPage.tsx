@@ -26,7 +26,7 @@ const AIGeneratedEmotionalImage = () => {
         return;
       }
 
-      const response = await ai.models.generateContent({
+      //const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash-image',
         contents: {
           parts: [
