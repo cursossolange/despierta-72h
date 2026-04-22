@@ -96,12 +96,12 @@ const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1494790108377-be9c29b2
   }
 
   return (
-    <img 
-      src={imageUrl || FALLBACK_IMAGE} 
-      alt="Retrato introspectivo generado por IA" 
-      className="w-full h-full object-cover"
-      referrerPolicy="no-referrer"
-    />
+ 
+<img
+  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80"
+  alt="Retrato introspectivo"
+  className="w-full h-full object-cover"
+/>
   );
 };
 
