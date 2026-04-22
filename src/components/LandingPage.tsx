@@ -1,9 +1,9 @@
 import { motion } from "motion/react";
 import { Check, ArrowRight, Play, Volume2, Brain, Zap, Clock, ShieldCheck, RefreshCw, Sparkles, Trophy, Heart } from "lucide-react";
-import { GoogleGenAI } from "@google/genai";
+// import { GoogleGenAI } from "@google/genai";
 import { useState, useEffect } from "react";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+// const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const AIGeneratedEmotionalImage = () => {
   const [imageUrl, setImageUrl] = useState<string | null>(null);
