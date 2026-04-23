@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Check, ArrowRight, Play, Volume2, Brain, Zap, Clock, ShieldCheck, RefreshCw, Sparkles, Trophy, Heart } from "lucide-react";
 // import { GoogleGenAI } from "@google/genai";
 import { useState, useEffect } from "react";
@@ -6,6 +6,40 @@ import { useState, useEffect } from "react";
 // const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const AIGeneratedEmotionalImage = () => {
+  const FALLBACK_IMAGE =
+    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80";
+
+  const [imageUrl, setImageUrl] = useState<string>(FALLBACK_IMAGE);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    try {
+      const cached = localStorage.getItem("last_generated_emotional_image_v3");
+
+      if (cached) {
+        setImageUrl(cached);
+      } else {
+        setImageUrl(FALLBACK_IMAGE);
+        localStorage.setItem(
+          "last_generated_emotional_image_v3",
+          FALLBACK_IMAGE
+        );
+      }
+    } catch {
+      setImageUrl(FALLBACK_IMAGE);
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  return (
+    <img
+      src={imageUrl}
+      alt="Momento de pausa e introspección"
+      className="w-full h-full object-cover"
+    />
+  );
+};
   const [imageUrl, setImageUrl] = useState<string | null>(FALLBACK_IMAGE);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -84,30 +118,9 @@ const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1494790108377-be9c29b2
     generateImage();
   }, []);
 
-  if (loading) {
-    return (
-      <div className="w-full h-full bg-slate-50 flex items-center justify-center">
-        <div className="flex flex-col items-center gap-4">
-          <RefreshCw className="w-8 h-8 text-violet-200 animate-spin" />
-          <span className="text-xs text-slate-400 font-medium tracking-widest uppercase italic">Conectando con tu calma...</span>
-        </div>
-      </div>
-   return (
-  <img
-    src="https://picsum.photos/1600/900"
-    alt="Momento de pausa e introspección"
-    className="w-full h-full object-cover"
-  />
-);
 
-};
 
-const Isotype = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 100 100" className={`${className} -rotate-[20deg]`} fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round">
-    {/* Circle with a more visible intentional gap, rotated for asymmetry */}
-    <path d="M 67.5 19.7 A 35 35 0 1 1 32.5 19.7" />
-  </svg>
-);
+
 
 const Logo = ({ className }: { className?: string }) => (
   <div className={`flex flex-col items-center text-center ${className}`}>
