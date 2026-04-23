@@ -96,12 +96,13 @@ const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1494790108377-be9c29b2
   }
 
   return (
- 
-<img
-  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80"
-  alt="Retrato introspectivo"
+ <img
+  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&h=900&fit=crop"
+  alt="Momento de pausa e introspección"
   className="w-full h-full object-cover"
 />
+
+
   );
 };
 
