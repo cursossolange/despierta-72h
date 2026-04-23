@@ -95,12 +95,13 @@ const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1494790108377-be9c29b2
     );
   }
 
-  return (
- <img
+return (
+<img
 src="https://picsum.photos/1600/900"
-  alt="Momento de pausa e introspección"
-  className="w-full h-full object-cover"
+alt="Momento de pausa e introspección"
+className="w-full h-full object-cover"
 />
+);
 
 
   );
