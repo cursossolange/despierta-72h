@@ -92,19 +92,14 @@ const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1494790108377-be9c29b2
           <span className="text-xs text-slate-400 font-medium tracking-widest uppercase italic">Conectando con tu calma...</span>
         </div>
       </div>
-    );
-  }
-
-return (
-<img
-src="https://picsum.photos/1600/900"
-alt="Momento de pausa e introspección"
-className="w-full h-full object-cover"
-/>
+   return (
+  <img
+    src="https://picsum.photos/1600/900"
+    alt="Momento de pausa e introspección"
+    className="w-full h-full object-cover"
+  />
 );
 
-
-  );
 };
 
 const Isotype = ({ className }: { className?: string }) => (
