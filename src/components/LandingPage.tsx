@@ -40,9 +40,7 @@ const AIGeneratedEmotionalImage = () => {
     />
   );
 };
-  const [imageUrl, setImageUrl] = useState<string | null>(FALLBACK_IMAGE);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
+  
 
   // Fallback high-quality image that matches the "introspective/mirror" aesthetic
 const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80";
