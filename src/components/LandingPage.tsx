@@ -214,6 +214,165 @@ export default function LandingPage() {
 
   </div>
 </section> 
+      <section style={{ padding: "70px 24px", background: "#0f172a", color: "white", textAlign: "center" }}>
+  <div style={{ maxWidth: "700px", margin: "0 auto" }}>
+
+    <h2 style={{ fontSize: "36px", fontWeight: 900, marginBottom: "14px" }}>
+      No necesitas tener todo claro.
+    </h2>
+
+    <p style={{ fontSize: "20px", color: "#cbd5e1", lineHeight: "1.6", marginBottom: "24px" }}>
+      Solo necesitas salir del automático lo suficiente como para volver a sentirte.
+    </p>
+
+    <p style={{ fontSize: "14px", letterSpacing: "2px", color: "#a78bfa", fontWeight: 800, marginBottom: "26px" }}>
+      EXPERIENCIA GUIADA · 72 HORAS · A TU RITMO
+    </p>
+
+    <div style={{ fontSize: "42px", fontWeight: 900, marginBottom: "26px" }}>
+      $29.990 CLP
+    </div>
+
+    <button
+     onClick={() => window.location.href = "https://tupagodeejemplo.com"}
+      style={{
+        background: "#7c3aed",
+        color: "white",
+        border: "none",
+        padding: "20px 40px",
+        borderRadius: "16px",
+        fontWeight: 900,
+        fontSize: "16px",
+        letterSpacing: "2px",
+        textTransform: "uppercase",
+        cursor: "pointer",
+        boxShadow: "0 20px 40px rgba(124,58,237,0.4)"
+      }}
+    >
+      Salir del modo automático →
+    </button>
+
+    <p style={{ marginTop: "18px", fontSize: "13px", color: "#94a3b8" }}>
+      Acceso inmediato · Sin sesiones en vivo · Garantía 7 días
+    </p>
+
+  </div>
+</section>
+      <section style={{ padding: "50px 24px", background: "#F5F3FF" }}>
+  <div style={{ maxWidth: "760px", margin: "0 auto", background: "white", borderRadius: "28px", padding: "36px", textAlign: "center", border: "1px solid #ede9fe" }}>
+    <p style={{ fontSize: "12px", letterSpacing: "4px", fontWeight: 900, marginBottom: "20px" }}>
+      SOBRE ESTA EXPERIENCIA
+    </p>
+
+    <h2 style={{ fontSize: "28px", fontWeight: 900, marginBottom: "18px" }}>
+      Soy Solange Henríquez.
+    </h2>
+
+    <p style={{ fontSize: "20px", lineHeight: "1.5", fontWeight: 700 }}>
+      Más de <span style={{ color: "#7c3aed" }}>20 años</span> acompañando procesos de transformación organizacional y personal, desde la toma de decisiones, el comportamiento humano y el neurocoaching.
+    </p>
+
+    <p style={{ marginTop: "18px", fontStyle: "italic", color: "#64748b" }}>
+      Este proceso también lo he vivido yo. Despierta 72H nace de lo real.
+    </p>
+  </div>
+</section>
+
+<section style={{ padding: "60px 24px", background: "white" }}>
+  <div style={{ maxWidth: "760px", margin: "0 auto", textAlign: "center" }}>
+    <h2 style={{ fontSize: "32px", fontWeight: 900, marginBottom: "10px" }}>
+      ¿CÓMO FUNCIONA ESTA EXPERIENCIA?
+    </h2>
+
+    <p style={{ fontSize: "20px", fontWeight: 700, marginBottom: "34px" }}>
+      Un proceso simple, guiado y a tu ritmo.
+    </p>
+
+    <div style={{ textAlign: "left", fontSize: "18px", fontWeight: 700, lineHeight: "1.8" }}>
+      <p>✓ Audios breves (8–10 min) que puedes escuchar cuando quieras</p>
+      <p>✓ Ejercicios simples para ordenar lo que sientes, sin exigencia</p>
+      <p>✓ Una guía que te acompaña de forma cercana</p>
+      <p>✓ Un cierre que te deja con más claridad, no más dudas</p>
+    </div>
+
+    <p style={{ marginTop: "34px", fontSize: "20px", fontWeight: 900 }}>
+      Puedes hacerlo en menos de 30 minutos al día, a tu ritmo.
+    </p>
+  </div>
+</section>
+
+<section style={{ padding: "50px 24px", background: "#F5F3FF" }}>
+  <div style={{ maxWidth: "760px", margin: "0 auto", background: "white", borderRadius: "28px", padding: "36px", textAlign: "center", border: "1px solid #ede9fe" }}>
+    <h2 style={{ fontSize: "28px", fontWeight: 900, marginBottom: "20px" }}>
+      No necesitas hacerlo perfecto
+    </h2>
+
+    <p style={{ fontSize: "20px", marginBottom: "8px" }}>
+      Puedes hacerlo a tu ritmo.
+    </p>
+
+    <p style={{ fontSize: "16px", fontWeight: 700, color: "#475569" }}>
+      Sin horarios, sin presión.
+    </p>
+
+    <div style={{ height: "1px", background: "#e2e8f0", margin: "28px 0" }} />
+
+    <p style={{ fontSize: "18px", fontWeight: 900, color: "#7c3aed" }}>
+      Si en 7 días no es para ti, devolución completa.
+    </p>
+  </div>
+</section>
+
+<section style={{ padding: "50px 24px", background: "white" }}>
+  <div style={{ maxWidth: "900px", margin: "0 auto", background: "#0f172a", color: "white", borderRadius: "24px", padding: "36px", textAlign: "center" }}>
+    <p style={{ display: "inline-block", background: "#7c3aed", padding: "6px 22px", borderRadius: "999px", fontSize: "12px", letterSpacing: "4px", fontWeight: 900, marginBottom: "22px" }}>
+      BONUS
+    </p>
+
+    <h2 style={{ fontSize: "28px", fontWeight: 900, marginBottom: "14px" }}>
+      7 señales de que estás en automático y cómo salir de ahí
+    </h2>
+
+    <p style={{ fontSize: "18px", lineHeight: "1.6", color: "#cbd5e1", fontStyle: "italic" }}>
+      Una guía breve para reconocer cuándo estás en automático y tener un punto claro para volver a ti cuando lo necesites.
+    </p>
+  </div>
+</section>
+
+<section style={{ padding: "50px 24px", background: "white", textAlign: "center" }}>
+  <p style={{ fontSize: "18px", marginBottom: "24px" }}>
+    Esta puede ser tu primera victoria.
+  </p>
+
+  <button
+    onClick={() => window.location.href = "https://tupagodeejemplo.com"}
+    style={{
+      background: "#7c3aed",
+      color: "white",
+      border: "none",
+      padding: "20px 44px",
+      borderRadius: "16px",
+      fontWeight: 900,
+      fontSize: "16px",
+      letterSpacing: "2px",
+      textTransform: "uppercase",
+      cursor: "pointer",
+      boxShadow: "0 20px 40px rgba(124,58,237,0.35)"
+    }}
+  >
+    Acceder ahora →
+  </button>
+
+  <p style={{ marginTop: "18px", fontSize: "13px", color: "#64748b", fontWeight: 700 }}>
+    Pago seguro · Garantía total
+  </p>
+</section>
+
+<footer style={{ padding: "40px 24px", textAlign: "center", background: "white", borderTop: "1px solid #f1f5f9" }}>
+  <p style={{ fontSize: "12px", letterSpacing: "3px", color: "#64748b", fontWeight: 800 }}>
+    © 2026 DESPIERTA 72H
+  </p>
+</footer>
     </div>
   );
 }
