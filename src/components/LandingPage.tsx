@@ -51,7 +51,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               "Te cuesta parar, incluso cuando estás cansada",
               "Sientes que estás, pero no del todo presente",
             ].map((text) => (
-              <div key={text} className="rounded-2xl bg-[#F7F2EC] p-6">
+              <div key={text} className="rounded-2xl bg-[#F7F2EC] p-6 text-[#251F1C]">
                 {text}
               </div>
             ))}
@@ -61,9 +61,11 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       <section className="px-6 py-20 text-center">
         <h2 className="text-3xl font-semibold">En solo 72 horas…</h2>
+
         <p className="mx-auto mt-4 max-w-2xl text-lg text-[#5D514B]">
           Empiezas a salir del automático y a volver a sentirte presente.
         </p>
+
         <p className="mt-3 text-[#5D514B]">A tu ritmo. Sin exigencias.</p>
 
         <h3 className="mt-12 text-4xl font-semibold">
@@ -75,7 +77,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       <section className="bg-[#251F1C] px-6 py-20 text-white">
         <div className="mx-auto max-w-5xl">
-          <h2 className="text-3xl font-semibold">Lo que empieza a moverse en ti</h2>
+          <h2 className="text-3xl font-semibold">
+            Lo que empieza a moverse en ti
+          </h2>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {[
@@ -136,14 +140,17 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       <section className="px-6 py-20">
         <div className="mx-auto max-w-3xl rounded-3xl bg-white p-10">
           <h2 className="text-3xl font-semibold">Sobre esta experiencia</h2>
+
           <p className="mt-6 text-lg leading-relaxed text-[#5D514B]">
             Soy Solange Henríquez.
           </p>
+
           <p className="mt-4 leading-relaxed text-[#5D514B]">
             Más de 20 años acompañando procesos de transformación organizacional
             y personal, desde la toma de decisiones, el comportamiento humano y
             el neurocoaching.
           </p>
+
           <p className="mt-4 leading-relaxed text-[#5D514B]">
             Este proceso también lo he vivido yo. Despierta 72H nace de lo real.
           </p>
@@ -155,6 +162,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <h2 className="text-3xl font-semibold">
             ¿Cómo funciona esta experiencia?
           </h2>
+
           <p className="mt-4 text-[#5D514B]">
             Un proceso simple, guiado y a tu ritmo.
           </p>
@@ -166,7 +174,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               "Una guía que te acompaña de forma cercana",
               "Un cierre que te deja con más claridad, no más dudas",
             ].map((text) => (
-              <div key={text} className="rounded-2xl bg-[#F7F2EC] p-6">
+              <div key={text} className="rounded-2xl bg-[#F7F2EC] p-6 text-[#251F1C]">
                 {text}
               </div>
             ))}
@@ -182,7 +190,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         <h2 className="text-3xl font-semibold">No necesitas hacerlo perfecto</h2>
         <p className="mt-4 text-[#5D514B]">Puedes hacerlo a tu ritmo.</p>
         <p className="mt-2 text-[#5D514B]">Sin horarios, sin presión.</p>
-        <p className="mt-6 font-medium">
+
+        <p className="mt-6 font-medium text-[#251F1C]">
           Si en 7 días no es para ti, devolución completa.
         </p>
       </section>
@@ -192,9 +201,11 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <p className="text-sm uppercase tracking-[0.25em] text-[#8A5A44]">
             Bonus
           </p>
+
           <h2 className="mt-4 text-3xl font-semibold">
             7 señales de que estás en automático y cómo salir de ahí
           </h2>
+
           <p className="mt-5 leading-relaxed text-[#5D514B]">
             Una guía breve para reconocer cuándo estás en automático y tener un
             punto claro para volver a ti cuando lo necesites.
