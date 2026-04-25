@@ -1,13 +1,10 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Check, ArrowRight, Play, Volume2, Brain, Zap, Clock, ShieldCheck, RefreshCw, Sparkles, Trophy, Heart } from "lucide-react";
 
 
 
 
-
-
-  );
-};
+ 
 
 const Isotype = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 100 100" className={`${className} -rotate-[20deg]`} fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round">
