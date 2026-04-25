@@ -2,436 +2,226 @@ type LandingPageProps = {
   onPurchase: () => void;
 };
 
-const CheckIcon = ({ className = "" }: { className?: string }) => (
-  <span className={className}>✓</span>
-);
-
-const ArrowIcon = ({ className = "" }: { className?: string }) => (
-  <span className={className}>→</span>
-);
-
-const Isotype = ({ className = "" }: { className?: string }) => (
-  <svg
-    viewBox="0 0 100 100"
-    className={`${className} -rotate-[20deg]`}
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="5"
-    strokeLinecap="round"
-  >
-    <path d="M 67.5 19.7 A 35 35 0 1 1 32.5 19.7" />
-  </svg>
-);
-
-const Logo = ({ className = "" }: { className?: string }) => (
-  <div className={`flex flex-col items-center text-center ${className}`}>
-    <div className="bg-gradient-to-b from-[#1E202E] to-[#3B344D] p-7 rounded-2xl flex flex-col items-center border border-white/5 shadow-xl">
-      <div className="relative w-[72px] h-[72px] mb-4">
-        <svg
-          viewBox="0 0 100 100"
-          className="w-full h-full -rotate-[20deg]"
-          fill="none"
-          stroke="#C4B5FD"
-          strokeWidth="6"
-          strokeLinecap="round"
-        >
-          <path d="M 67.5 19.7 A 35 35 0 1 1 32.5 19.7" />
-        </svg>
-      </div>
-      <span className="text-xs font-medium tracking-[0.4em] uppercase text-white">
-        Despierta 72H
-      </span>
-    </div>
-  </div>
-);
-
 export default function LandingPage({ onPurchase }: LandingPageProps) {
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-violet-100 selection:text-violet-900 leading-normal">
-      <header className="relative overflow-hidden pt-8 pb-6 md:pt-10 md:pb-8 bg-white">
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="flex flex-col items-center mb-6 md:mb-8">
-              <div className="bg-gradient-to-b from-[#1E202E] to-[#3B344D] p-2.5 md:p-3 rounded-xl flex flex-col items-center border border-white/5 shadow-lg">
-                <div className="relative w-7 h-7 md:w-8 md:h-8 mb-1">
-                  <svg
-                    viewBox="0 0 100 100"
-                    className="w-full h-full -rotate-[20deg]"
-                    fill="none"
-                    stroke="#C4B5FD"
-                    strokeWidth="6"
-                    strokeLinecap="round"
-                  >
-                    <path d="M 67.5 19.7 A 35 35 0 1 1 32.5 19.7" />
-                  </svg>
-                </div>
-                <span className="text-[8px] md:text-[9px] font-bold text-white tracking-[0.4em] uppercase">
-                  Despierta 72H
-                </span>
+    <main className="min-h-screen bg-[#F7F2EC] text-[#251F1C]">
+      <section className="px-6 py-20 text-center">
+        <p className="mb-6 text-sm uppercase tracking-[0.3em] text-[#8A5A44]">
+          Despierta 72H
+        </p>
+
+        <h1 className="mx-auto max-w-4xl text-4xl font-semibold leading-tight md:text-6xl">
+          ESTÁS FUNCIONANDO… <br />
+          PERO HACE RATO QUE ALGO NO SE SIENTE IGUAL
+        </h1>
+
+        <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-[#5D514B]">
+          Una experiencia guiada de 72 horas para bajar el ruido, interrumpir el
+          automático y volver a sentirte presente.
+        </p>
+
+        <p className="mt-4 text-[#5D514B]">
+          Solo un espacio breve para reconectar contigo.
+        </p>
+
+        <div className="mx-auto mt-10 flex h-72 max-w-3xl items-center justify-center rounded-3xl bg-[#E7D8CC] text-[#8A5A44]">
+          Retrato introspectivo generado por IA
+        </div>
+
+        <button
+          onClick={onPurchase}
+          className="mt-10 rounded-full bg-[#251F1C] px-8 py-4 text-white transition hover:opacity-90"
+        >
+          Acceder ahora
+        </button>
+
+        <p className="mt-4 text-sm text-[#6B5E57]">
+          $29.990 CLP · Garantía de 7 días
+        </p>
+      </section>
+
+      <section className="bg-white px-6 py-20">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-3xl font-semibold">¿Te ha pasado esto?</h2>
+
+          <div className="mt-10 grid gap-4 md:grid-cols-2">
+            {[
+              "Te levantas y empiezas el día sin mucho ánimo",
+              "Cumples con todo, pero algo no se siente igual",
+              "Te cuesta parar, incluso cuando estás cansada",
+              "Sientes que estás, pero no del todo presente",
+            ].map((text) => (
+              <div key={text} className="rounded-2xl bg-[#F7F2EC] p-6">
+                {text}
               </div>
-            </div>
-
-            <h1 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-tight max-w-2xl mx-auto uppercase">
-              <span className="md:hidden">
-                ESTÁS FUNCIONANDO…
-                <br />
-                PERO HACE RATO
-                <br />
-                QUE ALGO NO SE
-                <br />
-                SIENTE IGUAL
-              </span>
-              <span className="hidden md:inline">
-                ESTÁS FUNCIONANDO…
-                <br />
-                PERO HACE RATO QUE ALGO NO SE SIENTE IGUAL
-              </span>
-            </h1>
-
-            <p className="text-base md:text-lg text-slate-700 font-medium max-w-xl mx-auto mb-4 md:mb-5 leading-relaxed px-4 md:px-0">
-              Una experiencia guiada de 72 horas para bajar el ruido,
-              interrumpir el automático y volver a sentirte presente.
-            </p>
-
-            <div className="max-w-xl mx-auto mb-6 md:mb-8">
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed font-semibold italic">
-                Solo un espacio breve para reconectar contigo.
-              </p>
-            </div>
-
-            <div className="max-w-md mx-auto overflow-hidden rounded-xl shadow-lg border border-slate-50 mb-8 opacity-90">
-              <div className="relative aspect-[16/9]">
-                <img
-                  src="https://images.unsplash.com/photo-1516589174184-c68d8e5f1bd4?auto=format&fit=crop&q=80&w=1920"
-                  alt="Mujer en un momento de pausa y reconexión"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/5 via-transparent to-transparent" />
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center">
-              <button
-                onClick={onPurchase}
-                className="bg-violet-600 text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-violet-700 shadow-lg hover:-translate-y-0.5 transition-all flex items-center gap-3 group"
-              >
-                <span className="uppercase tracking-widest text-xs md:text-sm">
-                  Acceder ahora
-                </span>
-                <ArrowIcon className="text-xl group-hover:translate-x-1.5 transition-transform" />
-              </button>
-              <p className="mt-3 text-[9px] md:text-[10px] text-slate-500 font-semibold tracking-wide">
-                $29.990 CLP · Garantía de 7 días
-              </p>
-            </div>
+            ))}
           </div>
         </div>
-      </header>
+      </section>
 
-      <section className="py-8 bg-violet-50/50">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-base md:text-lg font-black text-slate-900 mb-3 uppercase tracking-[0.1em]">
-            ¿Te ha pasado esto?
+      <section className="px-6 py-20 text-center">
+        <h2 className="text-3xl font-semibold">En solo 72 horas…</h2>
+        <p className="mx-auto mt-4 max-w-2xl text-lg text-[#5D514B]">
+          Empiezas a salir del automático y a volver a sentirte presente.
+        </p>
+        <p className="mt-3 text-[#5D514B]">A tu ritmo. Sin exigencias.</p>
+
+        <h3 className="mt-12 text-4xl font-semibold">
+          No necesitas más esfuerzo.
+          <br />
+          Necesitas parar.
+        </h3>
+      </section>
+
+      <section className="bg-[#251F1C] px-6 py-20 text-white">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-3xl font-semibold">Lo que empieza a moverse en ti</h2>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {[
+              {
+                day: "Día 1",
+                title: "Bajas el ruido",
+                text: "Tu mente se desacelera y aparece espacio para observar lo que te pasa.",
+              },
+              {
+                day: "Día 2",
+                title: "Interrumpes patrones",
+                text: "Te das cuenta de tus reacciones automáticas antes de que ocurran.",
+              },
+              {
+                day: "Día 3",
+                title: "Vuelves a estar presente",
+                text: "Momentos de conexión real contigo, sin exigencia de tener todo claro.",
+              },
+            ].map((item) => (
+              <div key={item.day} className="rounded-3xl bg-white/10 p-6">
+                <p className="text-sm text-[#D8BFAF]">{item.day}</p>
+                <h3 className="mt-3 text-xl font-semibold">{item.title}</h3>
+                <p className="mt-4 text-white/75">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-6 py-20">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-center text-3xl font-semibold">
+            Esto es lo que empieza a cambiar
           </h2>
-          <div className="max-w-2xl mx-auto space-y-1.5 text-slate-700 font-semibold italic">
-            <p className="text-sm md:text-base">
-              Te levantas y empiezas el día sin mucho ánimo
-            </p>
-            <p className="text-sm md:text-base">
-              Cumples con todo, pero algo no se siente igual
-            </p>
-            <p className="text-sm md:text-base">
-              Te cuesta parar, incluso cuando estás cansada
-            </p>
-            <p className="text-sm md:text-base">
-              Sientes que estás, pero no del todo presente
-            </p>
-          </div>
-        </div>
-      </section>
 
-      <section className="py-8 bg-white overflow-hidden">
-        <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto rounded-2xl bg-slate-800/95 p-6 md:p-8 shadow-lg relative overflow-hidden">
-            <div className="absolute top-[-20%] right-[-10%] w-[40%] h-[40%] bg-violet-600/10 rounded-full blur-[60px] pointer-events-none" />
-            <div className="relative z-10">
-              <h2 className="text-xl md:text-2xl font-black text-white mb-3 leading-tight tracking-tight">
-                En solo 72 horas…
-              </h2>
-              <div className="text-sm md:text-lg text-slate-300 space-y-2 leading-snug">
-                <p>
-                  Empiezas a salir del automático y a volver a sentirte
-                  presente.
-                </p>
-                <p className="italic text-violet-300 font-light text-xs md:text-sm">
-                  A tu ritmo. Sin exigencias.
-                </p>
-              </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <div className="rounded-3xl bg-[#F7F2EC] p-8">
+              <h3 className="text-xl font-semibold">Antes</h3>
+              <ul className="mt-5 space-y-3 text-[#5D514B]">
+                <li>Sigues en automático</li>
+                <li>Te cuesta parar</li>
+                <li>Estás, pero no presente</li>
+              </ul>
+            </div>
+
+            <div className="rounded-3xl bg-[#251F1C] p-8 text-white">
+              <h3 className="text-xl font-semibold">Después</h3>
+              <ul className="mt-5 space-y-3 text-white/75">
+                <li>Sientes menos ruido y más claridad</li>
+                <li>Consciencia antes de reaccionar</li>
+                <li>Más presente, sin exigencia</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-8 bg-violet-50/50">
-        <div className="container mx-auto px-6">
-          <div className="bg-white rounded-[2rem] border border-violet-100 p-6 md:p-8 shadow-sm text-center">
-            <div className="max-w-2xl mx-auto mb-6 text-center">
-              <h2 className="text-lg md:text-2xl font-black text-slate-900 leading-tight">
-                No necesitas más esfuerzo.
-                <br />
-                Necesitas parar.
-              </h2>
-            </div>
-
-            <h3 className="text-[11px] md:text-[13px] font-black text-violet-700 uppercase tracking-[0.2em] mb-6 inline-block border-b-2 border-violet-100 pb-1">
-              Lo que empieza a moverse en ti
-            </h3>
-
-            <div className="grid lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-              {[
-                {
-                  day: "Día 1",
-                  title: "Bajas el ruido",
-                  sub: "Tu mente se desacelera y aparece espacio para observar lo que te pasa.",
-                  icon: "✦",
-                },
-                {
-                  day: "Día 2",
-                  title: "Interrumpes patrones",
-                  sub: "Te das cuenta de tus reacciones automáticas antes de que ocurran.",
-                  icon: "↻",
-                },
-                {
-                  day: "Día 3",
-                  title: "Vuelves a estar presente",
-                  sub: "Momentos de conexión real contigo, sin exigencia de tener todo claro.",
-                  icon: "♡",
-                },
-              ].map((card, i) => (
-                <div
-                  key={i}
-                  className="bg-violet-50/10 p-4 md:p-5 rounded-2xl border border-violet-100 shadow-[0_1px_4px_rgba(139,92,246,0.05)] text-left flex flex-col h-full hover:shadow-md transition-shadow"
-                >
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="p-1 bg-white rounded-md shadow-sm border border-violet-50 text-violet-600 text-lg leading-none w-7 h-7 flex items-center justify-center">
-                      {card.icon}
-                    </div>
-                    <span className="text-[16px] font-black text-violet-500 uppercase tracking-widest leading-none">
-                      {card.day}
-                    </span>
-                  </div>
-                  <h4 className="text-lg md:text-xl font-black text-slate-900 mb-3 leading-tight font-sans">
-                    {card.title}
-                  </h4>
-                  <p className="text-slate-700 text-[13px] leading-relaxed font-medium">
-                    {card.sub}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-8 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="bg-slate-50/80 rounded-[2rem] border border-slate-100 py-8 md:py-10 px-6 md:px-12 max-w-3xl mx-auto shadow-sm">
-            <p className="text-xs md:text-sm font-black text-slate-900 text-center uppercase tracking-[0.2em] mb-6">
-              Esto es lo que empieza a cambiar
-            </p>
-
-            <div className="max-w-lg mx-auto space-y-6">
-              <div className="space-y-4">
-                <h3 className="text-xs font-black text-violet-700 uppercase tracking-[0.3em] flex items-center gap-2">
-                  <div className="w-4 h-0.5 bg-violet-700/20" />
-                  Antes
-                </h3>
-                <ul className="space-y-1.5">
-                  {[
-                    "Sigues en automático",
-                    "Te cuesta parar",
-                    "Estás, pero no presente",
-                  ].map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex gap-2.5 text-slate-700 font-semibold text-sm"
-                    >
-                      <div className="w-1.5 h-0.5 bg-slate-300 mt-2 shrink-0" />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="relative py-1">
-                <div className="h-px w-full bg-slate-200" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-50 px-2 rounded-full border border-slate-200 text-slate-400">
-                  ↻
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-xs font-black text-violet-700 uppercase tracking-[0.3em] flex items-center gap-2">
-                  <div className="w-4 h-0.5 bg-violet-700" />
-                  Después
-                </h3>
-                <ul className="space-y-2">
-                  {[
-                    "Sientes menos ruido y más claridad",
-                    "Consciencia antes de reaccionar",
-                    "Más presente, sin exigencia",
-                  ].map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex gap-2.5 text-slate-900 font-semibold text-sm"
-                    >
-                      <div className="w-4 h-4 rounded bg-violet-600 flex items-center justify-center shrink-0 text-white text-[10px]">
-                        ✓
-                      </div>
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-8 bg-violet-50/50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto rounded-[2rem] bg-white border border-violet-100 p-6 md:p-8 shadow-sm flex flex-col items-center text-center">
-            <h3 className="text-[9px] font-black text-slate-600 uppercase tracking-[0.4em] mb-4">
-              Sobre esta experiencia
-            </h3>
-            <div className="space-y-3 max-w-lg">
-              <p className="text-base md:text-lg font-black text-slate-900">
-                Soy Solange Henríquez.
-              </p>
-              <div className="text-sm md:text-base text-slate-800 leading-snug font-semibold">
-                <p>
-                  Más de{" "}
-                  <span className="text-violet-700 font-black">20 años</span>{" "}
-                  acompañando procesos de transformación organizacional y
-                  personal, desde la toma de decisiones, el comportamiento
-                  humano y el neurocoaching.
-                </p>
-                <p className="italic text-slate-500 font-medium text-xs mt-2">
-                  Este proceso también lo he vivido yo. Despierta 72H nace de lo
-                  real.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-10 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-xl mx-auto text-center">
-            <h2 className="text-lg md:text-xl font-black text-slate-900 mb-1 uppercase tracking-wider">
-              ¿Cómo funciona esta experiencia?
-            </h2>
-            <p className="text-sm md:text-base text-slate-700 font-semibold mb-8">
-              Un proceso simple, guiado y a tu ritmo.
-            </p>
-
-            <div className="text-left space-y-4 mb-8">
-              {[
-                "Audios breves (8–10 min) que puedes escuchar cuando quieras",
-                "Ejercicios simples para ordenar lo que sientes, sin exigencia",
-                "Una guía que te acompaña de forma cercana (no te deja sola pensando)",
-                "Un cierre que te deja con más claridad, no más dudas",
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="flex gap-3 text-sm md:text-base text-slate-800 font-semibold border-b border-slate-50 pb-2 last:border-0"
-                >
-                  <CheckIcon className="text-violet-500 mt-0.5 shrink-0" />
-                  <span>{item}</span>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-sm md:text-base text-slate-900 font-black">
-              Puedes hacerlo en menos de 30 minutos al día, a tu ritmo.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-10 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto text-center space-y-8">
-            <div className="p-6 md:p-10 rounded-[2rem] bg-violet-50/50 border border-violet-100 relative overflow-hidden">
-              <div className="absolute top-3 right-3 text-4xl text-violet-700 opacity-5">
-                ✓
-              </div>
-              <h2 className="text-base md:text-lg font-black text-slate-900 mb-4">
-                No necesitas hacerlo perfecto
-              </h2>
-              <div className="space-y-4 text-sm md:text-base text-slate-800 font-medium">
-                <div className="space-y-0.5">
-                  <p>Puedes hacerlo a tu ritmo.</p>
-                  <p className="text-slate-600 font-semibold text-xs">
-                    Sin horarios, sin presión.
-                  </p>
-                </div>
-                <div className="pt-4 border-t border-violet-100 mt-4">
-                  <p className="text-xs md:text-sm text-violet-700 font-bold">
-                    Si en 7 días no es para ti, devolución completa.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-5 md:p-6 rounded-2xl bg-slate-900 text-white relative shadow-lg">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-violet-600 text-white px-4 py-1 rounded-full font-black text-[10px] uppercase tracking-[0.4em] shadow-md">
-                Bonus
-              </div>
-              <h3 className="text-base md:text-lg font-black mb-2">
-                7 señales de que estás en automático{" "}
-                <span className="text-violet-400 block md:inline">
-                  y cómo salir de ahí
-                </span>
-              </h3>
-              <p className="text-xs md:text-sm text-slate-300 italic leading-relaxed">
-                Una guía breve para reconocer cuándo estás en automático y tener
-                un punto claro para volver a ti cuando lo necesites.
-              </p>
-            </div>
-
-            <div className="pt-2 flex flex-col items-center">
-              <p className="mb-3 text-xs md:text-sm text-slate-900 font-medium text-center">
-                Esta puede ser tu primera victoria.
-              </p>
-              <button
-                onClick={onPurchase}
-                className="bg-violet-600 text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 shadow-xl hover:-translate-y-0.5 transition-all flex items-center gap-3 group"
-              >
-                <span className="uppercase tracking-widest text-xs md:text-sm">
-                  Acceder ahora
-                </span>
-                <ArrowIcon className="text-xl group-hover:translate-x-1.5 transition-transform" />
-              </button>
-              <p className="mt-4 text-[9px] md:text-[10px] text-slate-600 font-semibold tracking-wide">
-                Pago seguro · Garantía total
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer className="py-6 border-t border-slate-100 text-center bg-white">
-        <div className="container mx-auto px-6">
-          <Logo className="opacity-20 grayscale scale-40 mb-2" />
-          <p className="text-slate-600 text-[8px] font-bold tracking-widest uppercase">
-            © 2026 Despierta 72H
+      <section className="px-6 py-20">
+        <div className="mx-auto max-w-3xl rounded-3xl bg-white p-10">
+          <h2 className="text-3xl font-semibold">Sobre esta experiencia</h2>
+          <p className="mt-6 text-lg leading-relaxed text-[#5D514B]">
+            Soy Solange Henríquez.
+          </p>
+          <p className="mt-4 leading-relaxed text-[#5D514B]">
+            Más de 20 años acompañando procesos de transformación organizacional
+            y personal, desde la toma de decisiones, el comportamiento humano y
+            el neurocoaching.
+          </p>
+          <p className="mt-4 leading-relaxed text-[#5D514B]">
+            Este proceso también lo he vivido yo. Despierta 72H nace de lo real.
           </p>
         </div>
+      </section>
+
+      <section className="bg-white px-6 py-20">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-3xl font-semibold">
+            ¿Cómo funciona esta experiencia?
+          </h2>
+          <p className="mt-4 text-[#5D514B]">
+            Un proceso simple, guiado y a tu ritmo.
+          </p>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {[
+              "Audios breves (8–10 min) que puedes escuchar cuando quieras",
+              "Ejercicios simples para ordenar lo que sientes, sin exigencia",
+              "Una guía que te acompaña de forma cercana",
+              "Un cierre que te deja con más claridad, no más dudas",
+            ].map((text) => (
+              <div key={text} className="rounded-2xl bg-[#F7F2EC] p-6">
+                {text}
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-8 text-[#5D514B]">
+            Puedes hacerlo en menos de 30 minutos al día, a tu ritmo.
+          </p>
+        </div>
+      </section>
+
+      <section className="px-6 py-20 text-center">
+        <h2 className="text-3xl font-semibold">No necesitas hacerlo perfecto</h2>
+        <p className="mt-4 text-[#5D514B]">Puedes hacerlo a tu ritmo.</p>
+        <p className="mt-2 text-[#5D514B]">Sin horarios, sin presión.</p>
+        <p className="mt-6 font-medium">
+          Si en 7 días no es para ti, devolución completa.
+        </p>
+      </section>
+
+      <section className="bg-[#E7D8CC] px-6 py-20">
+        <div className="mx-auto max-w-3xl rounded-3xl bg-white p-10 text-center">
+          <p className="text-sm uppercase tracking-[0.25em] text-[#8A5A44]">
+            Bonus
+          </p>
+          <h2 className="mt-4 text-3xl font-semibold">
+            7 señales de que estás en automático y cómo salir de ahí
+          </h2>
+          <p className="mt-5 leading-relaxed text-[#5D514B]">
+            Una guía breve para reconocer cuándo estás en automático y tener un
+            punto claro para volver a ti cuando lo necesites.
+          </p>
+        </div>
+      </section>
+
+      <section className="px-6 py-20 text-center">
+        <h2 className="text-4xl font-semibold">
+          Esta puede ser tu primera victoria.
+        </h2>
+
+        <button
+          onClick={onPurchase}
+          className="mt-10 rounded-full bg-[#251F1C] px-8 py-4 text-white transition hover:opacity-90"
+        >
+          Acceder ahora
+        </button>
+
+        <p className="mt-4 text-sm text-[#6B5E57]">
+          Pago seguro · Garantía total
+        </p>
+      </section>
+
+      <footer className="px-6 py-10 text-center text-sm text-[#6B5E57]">
+        Despierta 72H
       </footer>
-    </div>
+    </main>
   );
 }
-
-Luego asegúrate de que src/App.tsx esté así:
