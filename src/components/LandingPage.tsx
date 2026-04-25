@@ -163,6 +163,57 @@ export default function LandingPage() {
     </div>
   </div>
 </section>
+   <section style={{ padding: "60px 24px", background: "white" }}>
+  <div style={{ 
+    maxWidth: "800px", 
+    margin: "0 auto", 
+    background: "#f8fafc", 
+    borderRadius: "28px", 
+    padding: "40px", 
+    border: "1px solid #e2e8f0" 
+  }}>
+
+    <p style={{ 
+      textAlign: "center", 
+      fontWeight: 900, 
+      letterSpacing: "2px", 
+      fontSize: "14px", 
+      marginBottom: "30px" 
+    }}>
+      ESTO ES LO QUE EMPIEZA A CAMBIAR
+    </p>
+
+    {/* ANTES */}
+    <div style={{ marginBottom: "30px" }}>
+      <p style={{ fontWeight: 900, color: "#7c3aed", marginBottom: "10px" }}>
+        Antes
+      </p>
+
+      <ul style={{ lineHeight: "1.9", color: "#334155", fontWeight: 600 }}>
+        <li>Sigues en automático</li>
+        <li>Te cuesta parar</li>
+        <li>Estás, pero no presente</li>
+      </ul>
+    </div>
+
+    {/* LÍNEA */}
+    <div style={{ height: "1px", background: "#e2e8f0", margin: "30px 0" }} />
+
+    {/* DESPUÉS */}
+    <div>
+      <p style={{ fontWeight: 900, color: "#7c3aed", marginBottom: "10px" }}>
+        Después
+      </p>
+
+      <ul style={{ lineHeight: "1.9", color: "#0f172a", fontWeight: 700 }}>
+        <li>Sientes menos ruido y más claridad</li>
+        <li>Consciencia antes de reaccionar</li>
+        <li>Más presente, sin exigencia</li>
+      </ul>
+    </div>
+
+  </div>
+</section> 
     </div>
   );
 }
