@@ -1,7 +1,7 @@
-import { motion } from "motion/react";
-import { Check, ArrowRight, Play, Volume2, Brain, Zap, Clock, ShieldCheck, RefreshCw, Sparkles, Trophy, Heart } from "lucide-react";
-import { GoogleGenAI } from "@google/genai";
-import { useState, useEffect } from "react";
+<main className="min-h-screen bg-white text-slate-900">
+<section className="px-6 py-20 text-center bg-white">
+<p className="mb-6 text-sm uppercase tracking-[0.3em] text-slate-500">
+className="mt-10 rounded-full bg-[#251F1C] px-8 py-4 text-white"
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
