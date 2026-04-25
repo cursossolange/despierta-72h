@@ -53,13 +53,18 @@ export default function LandingPage() {
             maxWidth: "520px", 
             margin: "0 auto 34px", 
             borderRadius: "18px", 
-            overflow: "hidden",
+           overflow: "visible"
             boxShadow: "0 20px 45px rgba(15,23,42,0.18)"
           }}>
             <img
-              src="https://images.unsplash.com/photo-1516589174184-c68d8e5f1bd4?auto=format&fit=crop&q=80&w=1920"
+          src="https://images.unsplash.com/photo-1516589171484-c68d8e5f1bd4?auto=format&fit=crop&q=80&w=1920"
               alt="Mujer en pausa introspectiva"
-              style={{ width: "100%", display: "block", aspectRatio: "16/9", objectFit: "cover" }}
+            style={{
+  width: "100%",
+  height: "400px",
+  display: "block",
+  objectFit: "cover"
+}}
             />
           </div>
 
