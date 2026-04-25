@@ -59,7 +59,7 @@ export default function LandingPage() {
 <div style={{ width: "100%", height: "400px", background: "#e5e5e5" }} />
 
 </div>
-          </div>
+         
 
           <button
      onClick={() => window.location.href = "https://pay.hotmart.com/O105550362E"}
