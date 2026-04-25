@@ -234,7 +234,7 @@ export default function LandingPage() {
     </div>
 
     <button
-     onClick={() => window.location.href = "https://tupagodeejemplo.com"}
+    onClick={() => window.location.href = "https://pay.hotmart.com/O105550362E"}
       style={{
         background: "#7c3aed",
         color: "white",
@@ -345,7 +345,7 @@ export default function LandingPage() {
   </p>
 
   <button
-    onClick={() => window.location.href = "https://tupagodeejemplo.com"}
+  onClick={() => window.location.href = "https://pay.hotmart.com/O105550362E"}
     style={{
       background: "#7c3aed",
       color: "white",
