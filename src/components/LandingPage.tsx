@@ -125,7 +125,44 @@ export default function LandingPage() {
           </p>
         </div>
       </section>
+<section style={{ padding: "42px 24px", background: "#F5F3FF" }}>
+  <div style={{ maxWidth: "1000px", margin: "0 auto", background: "white", borderRadius: "32px", padding: "36px", border: "1px solid #ede9fe" }}>
+    <div style={{ textAlign: "center", marginBottom: "30px" }}>
+      <h2 style={{ fontSize: "32px", fontWeight: 900, marginBottom: "10px" }}>
+        No necesitas más esfuerzo.<br />Necesitas parar.
+      </h2>
+      <p style={{ color: "#6d28d9", fontWeight: 900, letterSpacing: "2px", fontSize: "13px", textTransform: "uppercase" }}>
+        Lo que empieza a moverse en ti
+      </p>
+    </div>
 
+    <div style={{ display: "grid", gap: "18px", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+      <div style={{ background: "#faf5ff", padding: "24px", borderRadius: "24px", border: "1px solid #ede9fe" }}>
+        <p style={{ color: "#8b5cf6", fontWeight: 900, fontSize: "13px", letterSpacing: "2px" }}>DÍA 1</p>
+        <h3 style={{ fontSize: "24px", fontWeight: 900 }}>Bajas el ruido</h3>
+        <p style={{ lineHeight: "1.6", color: "#334155" }}>
+          Tu mente se desacelera y aparece espacio para observar lo que te pasa.
+        </p>
+      </div>
+
+      <div style={{ background: "#faf5ff", padding: "24px", borderRadius: "24px", border: "1px solid #ede9fe" }}>
+        <p style={{ color: "#8b5cf6", fontWeight: 900, fontSize: "13px", letterSpacing: "2px" }}>DÍA 2</p>
+        <h3 style={{ fontSize: "24px", fontWeight: 900 }}>Interrumpes patrones</h3>
+        <p style={{ lineHeight: "1.6", color: "#334155" }}>
+          Te das cuenta de tus reacciones automáticas antes de que ocurran.
+        </p>
+      </div>
+
+      <div style={{ background: "#faf5ff", padding: "24px", borderRadius: "24px", border: "1px solid #ede9fe" }}>
+        <p style={{ color: "#8b5cf6", fontWeight: 900, fontSize: "13px", letterSpacing: "2px" }}>DÍA 3</p>
+        <h3 style={{ fontSize: "24px", fontWeight: 900 }}>Vuelves a estar presente</h3>
+        <p style={{ lineHeight: "1.6", color: "#334155" }}>
+          Momentos de conexión real contigo, sin exigencia de tener todo claro.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
