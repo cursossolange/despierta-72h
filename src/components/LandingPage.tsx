@@ -52,7 +52,7 @@ export default function LandingPage() {
 
          <div style={{ textAlign: "center", margin: "40px 0" }}>
   <img
-    src="https://images.unsplash.com/photo-1516589174184-c68d8e5f1bd4?auto=format&fit=crop&q=80&w=1200"
+src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=1200"
     alt="Pausa con café"
     style={{
       width: "100%",
