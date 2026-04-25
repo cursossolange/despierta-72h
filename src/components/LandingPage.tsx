@@ -1,107 +1,11 @@
 import { motion } from "motion/react";
 import { Check, ArrowRight, Play, Volume2, Brain, Zap, Clock, ShieldCheck, RefreshCw, Sparkles, Trophy, Heart } from "lucide-react";
-import { GoogleGenAI } from "@google/genai";
-import { useState, useEffect } from "react";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
-const AIGeneratedEmotionalImage = () => {
-  const [imageUrl, setImageUrl] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
 
-  // Fallback high-quality image that matches the "introspective/mirror" aesthetic
-  const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1516589174184-c68d8e5f1bd4?auto=format&fit=crop&q=80&w=1920";
 
-  const generateImage = async (forceReset = false) => {
-    try {
-      setLoading(true);
-      setError(false);
 
-      // 1. Check if we have a cached image
-      const cachedImage = localStorage.getItem('last_generated_emotional_image_v3');
-      if (cachedImage && !forceReset) {
-        setImageUrl(cachedImage);
-        setLoading(false);
-        return;
-      }
 
-      const response = await ai.models.generateContent({
-        model: 'gemini-2.5-flash-image',
-        contents: {
-          parts: [
-            {
-              text: 'A cinematic and deeply introspective portrait of a woman, captured in a moment of profound stillness and self-reflection. She is looking into a circular mirror, her expression transitioning from exhaustion to a glimmer of presence and self-recognition. Soft, natural morning light filters through a window, highlighting the texture of her hair and the depth in her eyes. Minimalist, modern interior with a warm, calming atmosphere. High quality photography, muted natural colors, shallow depth of field, conveying the concept of "Despierta 72H" (Awaken 72H) - a pause to tune back in.',
-            },
-          ],
-        },
-        config: {
-          imageConfig: {
-            aspectRatio: "16:9",
-          },
-        }
-      });
-
-      for (const part of response.candidates[0].content.parts) {
-        if (part.inlineData) {
-          const base64EncodeString: string = part.inlineData.data;
-          const fullImageUrl = `data:image/png;base64,${base64EncodeString}`;
-          setImageUrl(fullImageUrl);
-          // 2. Cache it to avoid repeated quota usage
-          localStorage.setItem('last_generated_emotional_image_v3', fullImageUrl);
-          break;
-        }
-      }
-    } catch (err: any) {
-      const errorString = err?.toString() || "";
-      const errorMessage = err?.message || "";
-      const errorCode = err?.error?.code || err?.code;
-      const errorStatus = err?.error?.status || err?.status;
-      
-      const isQuotaError = 
-        errorCode === 429 ||
-        errorStatus === "RESOURCE_EXHAUSTED" ||
-        errorString.includes("429") || 
-        errorMessage.includes("429") || 
-        errorString.includes("RESOURCE_EXHAUSTED") ||
-        errorMessage.includes("RESOURCE_EXHAUSTED") ||
-        errorString.includes("quota") ||
-        errorMessage.includes("quota");
-
-      if (isQuotaError) {
-        // Silently fallback without alarming error logs
-        setImageUrl(FALLBACK_IMAGE);
-      } else {
-        console.warn("Image generation failed, using fallback:", errorMessage || errorString);
-        setImageUrl(FALLBACK_IMAGE);
-      }
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    generateImage();
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="w-full h-full bg-slate-50 flex items-center justify-center">
-        <div className="flex flex-col items-center gap-4">
-          <RefreshCw className="w-8 h-8 text-violet-200 animate-spin" />
-          <span className="text-xs text-slate-400 font-medium tracking-widest uppercase italic">Conectando con tu calma...</span>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <img 
-      src={imageUrl || FALLBACK_IMAGE} 
-      alt="Retrato introspectivo generado por IA" 
-      className="w-full h-full object-cover"
-      referrerPolicy="no-referrer"
-    />
   );
 };
 
@@ -190,13 +94,18 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               transition={{ duration: 1.2, delay: 0.3 }}
               className="max-w-md mx-auto overflow-hidden rounded-xl shadow-lg border border-slate-50 mb-8 opacity-90"
             >
+             
               <div className="relative aspect-[16/9]">
-                <AIGeneratedEmotionalImage />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/5 via-transparent to-transparent"></div>
-              </div>
-            </motion.div>
+  <img 
+    src="https://images.unsplash.com/photo-1516589174184-c68d8e5f1bd4?auto=format&fit=crop&q=80&w=1920"
+    className="w-full h-full object-cover"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/5 via-transparent to-transparent"></div>
+</div>
 
-            {/* Principal CTA Button */}
+  
+
+    
             <div className="flex flex-col items-center">
               <button
                 onClick={onPurchase}
