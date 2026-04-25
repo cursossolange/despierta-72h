@@ -6,16 +6,7 @@ export default function LandingPage() {
  return (
   <div style={{ minHeight: "100vh", background: "white", fontFamily: "Arial, sans-serif", color: "#0f172a" }}>
 
-<img
-  src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1920"
-  alt="Pausa con café"
-  style={{
-    width: "100%",
-    height: "400px",
-    objectFit: "cover",
-    borderRadius: "24px"
-  }}
-/>
+
       <header style={{ padding: "40px 24px 32px", textAlign: "center" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           
@@ -59,15 +50,17 @@ export default function LandingPage() {
             Solo un espacio breve para reconectar contigo.
           </p>
 
-          <div style={{ 
-  maxWidth: "520px", 
-  margin: "0 auto 34px", 
-  borderRadius: "18px", 
-  overflow: "visible",
-  boxShadow: "0 20px 45px rgba(15,23,42,0.18)"
-}}>
-<div style={{ width: "100%", height: "400px", background: "#e5e5e5" }} />
-
+         <div style={{ textAlign: "center", margin: "40px 0" }}>
+  <img
+    src="https://images.unsplash.com/photo-1516589174184-c68d8e5f1bd4?auto=format&fit=crop&q=80&w=1200"
+    alt="Pausa con café"
+    style={{
+      width: "100%",
+      maxWidth: "820px",
+      height: "500px",
+      objectFit: "cover"
+    }}
+  />
 </div>
          
 
