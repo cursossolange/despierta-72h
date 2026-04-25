@@ -6,16 +6,15 @@ export default function LandingPage() {
  return (
   <div style={{ minHeight: "100vh", background: "white", fontFamily: "Arial, sans-serif", color: "#0f172a" }}>
 
-    <img
-src="/pausa-cafe.png"
-alt="Pausa con café"
-style={{
-  width: "100%",
-  height: "400px",
-  objectFit: "cover",
-  borderRadius: "24px",
-  marginBottom: "30px"
-}}
+<img
+  src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1920"
+  alt="Pausa con café"
+  style={{
+    width: "100%",
+    height: "400px",
+    objectFit: "cover",
+    borderRadius: "24px"
+  }}
 />
       <header style={{ padding: "40px 24px 32px", textAlign: "center" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
