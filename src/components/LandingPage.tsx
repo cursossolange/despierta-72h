@@ -3,9 +3,20 @@ export default function LandingPage() {
     alert("Aquí después conectamos el botón de pago.");
   };
 
-  return (
-    <div style={{ minHeight: "100vh", background: "white", fontFamily: "Arial, sans-serif", color: "#0f172a" }}>
-      
+ return (
+  <div style={{ minHeight: "100vh", background: "white", fontFamily: "Arial, sans-serif", color: "#0f172a" }}>
+
+    <img
+src="/pausa-cafe.png"
+alt="Pausa con café"
+style={{
+  width: "100%",
+  height: "400px",
+  objectFit: "cover",
+  borderRadius: "24px",
+  marginBottom: "30px"
+}}
+/>
       <header style={{ padding: "40px 24px 32px", textAlign: "center" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           
