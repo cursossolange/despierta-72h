@@ -290,7 +290,7 @@ src="/pausa-cafe.png"
     </p>
 
     <div style={{ textAlign: "left", fontSize: "18px", fontWeight: 700, lineHeight: "1.8" }}>
-      <p>✓ Audios breves (8–10 min) que puedes escuchar cuando quieras</p>
+      <p>✓ Audios breves (3-5 min) para escuchar cuando quieras</p>
       <p>✓ Ejercicios simples para ordenar lo que sientes, sin exigencia</p>
       <p>✓ Una guía que te acompaña de forma cercana</p>
       <p>✓ Un cierre que te deja con más claridad, no más dudas</p>
