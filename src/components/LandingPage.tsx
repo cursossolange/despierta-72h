@@ -1,7 +1,7 @@
 export default function LandingPage() {
-  const onPurchase = () => {
-    alert("Aquí después conectamos el botón de pago.");
-  };
+const onPurchase = () => {
+  window.location.href = "https://pay.hotmart.com/O105550362E";
+};  
 
  return (
   <div style={{ minHeight: "100vh", background: "white", fontFamily: "Arial, sans-serif", color: "#0f172a" }}>
@@ -65,7 +65,7 @@ src="/pausa-cafe.png"
          
 
           <button
-     onClick={() => window.location.href = "https://pay.hotmart.com/O105550362E"}
+    onClick={onPurchase}
             style={{
               background: "#7C3AED",
               color: "white",
@@ -235,7 +235,7 @@ src="/pausa-cafe.png"
     </div>
 
     <button
-    onClick={() => window.location.href = "https://pay.hotmart.com/O105550362E"}
+    onClick={onPurchase}
       style={{
         background: "#7c3aed",
         color: "white",
@@ -346,7 +346,7 @@ src="/pausa-cafe.png"
   </p>
 
   <button
-  onClick={() => window.location.href = "https://pay.hotmart.com/O105550362E"}
+  onClick={onPurchase}
     style={{
       background: "#7c3aed",
       color: "white",
@@ -362,7 +362,9 @@ src="/pausa-cafe.png"
     }}
   >
     Acceder ahora →
-  </button>
+  <button
+  onClick={onPurchase}
+  style={{
 
   <p style={{ marginTop: "18px", fontSize: "13px", color: "#64748b", fontWeight: 700 }}>
     Pago seguro · Garantía total
