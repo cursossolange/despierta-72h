@@ -48,7 +48,7 @@ export default function LandingPage({ onPurchase }: Props) {
 
       {/* PROBLEMA */}
     <section className="px-6 py-20">
-<div className="max-w-3xl mx-auto bg-[#ECE7F2] rounded-2xl p-12 text-center shadow-sm">
+<div className="max-w-3xl mx-auto bg-white rounded-2xl p-12 text-center shadow-sm">
      <h2 className="text-xl font-semibold mb-6">¿Te ha pasado esto?</h2>
 
       <ul className="space-y-4 text-gray-700">
