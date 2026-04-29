@@ -80,7 +80,7 @@ export default function LandingPage({ onPurchase }: Props) {
 
       {/* DÍAS */}
    <section className="px-6 py-20 max-w-5xl mx-auto">
-    <div className="bg-[#F4F1EE] rounded-3xl p-10">
+   <div className="bg-white rounded-3xl p-10">
       <h2 className="text-2xl font-semibold text-center mb-8">
   No necesitas hacerlo mejor.<br />
   Solo necesitas parar un momento.
@@ -110,9 +110,9 @@ export default function LandingPage({ onPurchase }: Props) {
       Reconoces las emociones que están guiando tus respuestas, sin necesidad de cambiarlas.
     </p>
   </div>
-
 </div>
 </div>
+     </section>
       {/* RESULTADO */}
       <section className="px-6 py-16 max-w-2xl mx-auto">
         <h2 className="font-bold mb-4">Lo que te llevas</h2>
