@@ -12,6 +12,7 @@ AUTOMÁTICO
 </h1>
 
 <p className="text-base text-[#4B5563]">
+<p className="text-base text-[#4B5563]"
 Un espacio breve para reconectar contigo.
 </p>
 
