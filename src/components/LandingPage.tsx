@@ -15,13 +15,11 @@ AUTOMÁTICO
 Un espacio breve para reconectar contigo.
 </p>
 
-<p className="text-sm text-[#9CA3AF]">
-Retrato introspectivo generado por IA
-</p>
+
 
 <button
 onClick={handlePurchase}
-className="bg-gradient-to-r from-[#C4B5FD] to-[#8B5CF6] hover:from-[#A78BFA] hover:to-[#7C3AED] transition text-white px-8 py-4 rounded-full text-lg shadow-lg"
+className="bg-[#8B5CF6] hover:bg-[#7C3AED] transition text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg"
 >
 Acceder ahora
 </button>
