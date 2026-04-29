@@ -79,26 +79,40 @@ export default function LandingPage({ onPurchase }: Props) {
       </section>
 
       {/* DÍAS */}
-      <section className="px-6 py-16 max-w-2xl mx-auto space-y-10">
-        <div>
-          <p className="font-bold">Día 1</p>
-          <p>Bajas el ruido</p>
-          <p>Tu mente se desacelera y aparece espacio para observar lo que te pasa.</p>
-        </div>
+   <section className="px-6 py-20 max-w-5xl mx-auto">
+    <div className="bg-[#F4F1EE] rounded-3xl p-10">
+      <h2 className="text-2xl font-semibold text-center mb-8">
+  No necesitas hacerlo mejor.<br />
+  Solo necesitas parar un momento.
+</h2>
+<div className="grid md:grid-cols-3 gap-6">
 
-        <div>
-          <p className="font-bold">Día 2</p>
-          <p>Te das cuenta del automático</p>
-          <p>Empiezas a reconocer tus reacciones antes de que ocurran y aparece un espacio para parar.</p>
-        </div>
+<div className="bg-white rounded-2xl p-6 shadow-sm text-left transition hover:shadow-md hover:-translate-y-1">
+    <p className="text-sm text-[#9A7C6A] mb-2">Día 1</p>
+    <h3 className="font-semibold mb-2">Bajas el ruido</h3>
+    <p className="text-sm text-gray-600">
+      Tu mente se desacelera y aparece espacio para observar lo que te pasa.
+    </p>
+  </div>
 
-        <div>
-          <p className="font-bold">Día 3</p>
-          <p>Identificas desde dónde estás actuando</p>
-          <p>Reconoces las emociones que están guiando tus respuestas, sin necesidad de cambiarlas.</p>
-        </div>
-      </section>
+ <div className="bg-white rounded-2xl p-6 shadow-sm text-left transition hover:shadow-md hover:-translate-y-1">
+    <p className="text-sm text-[#7A5C4B] mb-2">Día 2</p>
+    <h3 className="font-semibold mb-2">Te das cuenta del automático</h3>
+    <p className="text-sm text-gray-600">
+      Empiezas a reconocer tus reacciones antes de que ocurran y aparece un espacio para parar.
+    </p>
+  </div>
 
+<div className="bg-white rounded-2xl p-6 shadow-sm text-left transition hover:shadow-md hover:-translate-y-1">
+    <p className="text-sm text-[#7A5C4B] mb-2">Día 3</p>
+    <h3 className="font-semibold mb-2">Identificas desde dónde estás actuando</h3>
+    <p className="text-sm text-gray-600">
+      Reconoces las emociones que están guiando tus respuestas, sin necesidad de cambiarlas.
+    </p>
+  </div>
+
+</div>
+</div>
       {/* RESULTADO */}
       <section className="px-6 py-16 max-w-2xl mx-auto">
         <h2 className="font-bold mb-4">Lo que te llevas</h2>
