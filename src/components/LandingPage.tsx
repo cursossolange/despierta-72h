@@ -9,7 +9,7 @@ export default function LandingPage({ onPurchase }: Props) {
   };
 
   return (
-   <div className="bg-[#F7F3EE] text-[#1F2933] font-sans leading-relaxed">
+  <div className="bg-white text-[#1F2933] font-sans leading-relaxed">
 
       {/* HERO */}
    <section className="px-6 pt-32 pb-24 max-w-3xl mx-auto text-center">
