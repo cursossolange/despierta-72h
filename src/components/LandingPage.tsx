@@ -47,16 +47,18 @@ export default function LandingPage({ onPurchase }: Props) {
 </section>
 
       {/* PROBLEMA */}
-      <section className="px-6 py-16 max-w-2xl mx-auto">
-        <h2 className="font-bold mb-6">¿Te ha pasado esto?</h2>
+    <section className="px-6 py-20">
+<div className="max-w-3xl mx-auto bg-[#ECE7F2] rounded-2xl p-12 text-center shadow-sm">
+     <h2 className="text-xl font-semibold mb-6">¿Te ha pasado esto?</h2>
 
-        <ul className="space-y-3">
+      <ul className="space-y-4 text-gray-700">
           <li>Empiezas el día y sigues con lo que toca, casi sin pensarlo</li>
           <li>Cumples con todo, pero muchas veces vas en automático</li>
           <li>Te cuesta parar, incluso cuando tienes un momento para hacerlo</li>
           <li>Estás presente, pero con la cabeza en otra parte</li>
         </ul>
-      </section>
+</div>
+</section>
 
       {/* PROMESA */}
       <section className="px-6 py-16 max-w-2xl mx-auto">
