@@ -9,38 +9,42 @@ export default function LandingPage({ onPurchase }: Props) {
   };
 
   return (
-    <div className="bg-white text-black font-sans leading-relaxed">
+   <div className="bg-[#F7F3EE] text-[#1F2933] font-sans leading-relaxed">
 
       {/* HERO */}
-      <section className="px-6 py-16 max-w-2xl mx-auto">
-        <p className="text-sm mb-6">Despierta 72H</p>
+     <section className="px-6 py-24 max-w-3xl mx-auto text-center">
 
-        <h1 className="text-4xl font-bold leading-tight mb-6">
-          ESTÁS FUNCIONANDO…<br />
-          PERO HACE RATO<br />
-          QUE VAS EN<br />
-          AUTOMÁTICO
-        </h1>
+ <p className="text-xs tracking-[0.3em] text-[#9A7B6F] mb-6">
+    DESPIERTA 72H
+  </p>
 
-        <p className="mb-4">
-          Un espacio breve para reconectar contigo.
-        </p>
+ <h1 className="text-5xl md:text-6xl font-semibold leading-tight mb-8">
+    ESTÁS FUNCIONANDO…<br />
+    PERO HACE RATO<br />
+    QUE VAS EN<br />
+    AUTOMÁTICO
+  </h1>
 
-        <p className="text-sm text-gray-500 mb-8">
-          Retrato introspectivo generado por IA
-        </p>
+  <p className="text-lg text-[#4B5563] mb-6">
+    Un espacio breve para reconectar contigo.
+  </p>
 
-        <button
-          onClick={handlePurchase}
-          className="bg-black text-white px-6 py-3 rounded-full"
-        >
-          Acceder ahora
-        </button>
+  <p className="text-sm text-[#9CA3AF] mb-10">
+    Retrato introspectivo generado por IA
+  </p>
 
-        <p className="text-sm mt-3">
-          $29.990 CLP · Garantía de 7 días
-        </p>
-      </section>
+  <button
+    onClick={handlePurchase}
+    className="bg-[#1F2933] text-white px-8 py-4 rounded-full text-lg"
+  >
+    Acceder ahora
+  </button>
+
+  <p className="text-sm text-[#6B7280] mt-4">
+    $29.990 CLP · Garantía de 7 días
+  </p>
+
+</section>
 
       {/* PROBLEMA */}
       <section className="px-6 py-16 max-w-2xl mx-auto">
