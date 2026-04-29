@@ -9,35 +9,35 @@ export default function LandingPage({ onPurchase }: Props) {
   };
 
   return (
-    <div className="bg-white text-black font-sans">
+    <div className="bg-white text-black font-sans leading-relaxed">
 
       {/* HERO */}
       <section className="px-6 py-16 max-w-2xl mx-auto">
-        <p className="text-sm tracking-widest mb-6">Despierta 72H</p>
+        <p className="text-sm mb-6">Despierta 72H</p>
 
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        <h1 className="text-4xl font-bold leading-tight mb-6">
           ESTÁS FUNCIONANDO…<br />
           PERO HACE RATO<br />
           QUE VAS EN<br />
           AUTOMÁTICO
         </h1>
 
-        <p className="mb-6">
+        <p className="mb-4">
           Un espacio breve para reconectar contigo.
         </p>
 
-        <p className="text-sm text-gray-500 mb-10">
+        <p className="text-sm text-gray-500 mb-8">
           Retrato introspectivo generado por IA
         </p>
 
         <button
           onClick={handlePurchase}
-          className="bg-black text-white px-6 py-3 rounded-full mb-2"
+          className="bg-black text-white px-6 py-3 rounded-full"
         >
           Acceder ahora
         </button>
 
-        <p className="text-sm text-gray-500">
+        <p className="text-sm mt-3">
           $29.990 CLP · Garantía de 7 días
         </p>
       </section>
@@ -46,7 +46,7 @@ export default function LandingPage({ onPurchase }: Props) {
       <section className="px-6 py-16 max-w-2xl mx-auto">
         <h2 className="font-bold mb-6">¿Te ha pasado esto?</h2>
 
-        <ul className="space-y-4">
+        <ul className="space-y-3">
           <li>Empiezas el día y sigues con lo que toca, casi sin pensarlo</li>
           <li>Cumples con todo, pero muchas veces vas en automático</li>
           <li>Te cuesta parar, incluso cuando tienes un momento para hacerlo</li>
@@ -62,7 +62,9 @@ export default function LandingPage({ onPurchase }: Props) {
           Empiezas a salir del automático y a volver a sentirte presente.
         </p>
 
-        <p className="mb-4">A tu ritmo. Sin exigencias.</p>
+        <p className="mb-4">
+          A tu ritmo. Sin exigencias.
+        </p>
 
         <p>
           No necesitas hacerlo mejor.<br />
@@ -70,7 +72,7 @@ export default function LandingPage({ onPurchase }: Props) {
         </p>
       </section>
 
-      {/* DIAS */}
+      {/* DÍAS */}
       <section className="px-6 py-16 max-w-2xl mx-auto space-y-10">
         <div>
           <p className="font-bold">Día 1</p>
@@ -100,14 +102,14 @@ export default function LandingPage({ onPurchase }: Props) {
         </p>
       </section>
 
-      {/* SOBRE TI */}
+      {/* SOBRE */}
       <section className="px-6 py-16 max-w-2xl mx-auto space-y-4">
         <h2 className="font-bold">Sobre esta experiencia</h2>
 
         <p>Soy Solange.</p>
 
         <p>
-          Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional.
+          Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional. Fue una etapa muy valiosa, que me dio estructura, criterio y experiencia.
         </p>
 
         <p>
@@ -119,35 +121,56 @@ export default function LandingPage({ onPurchase }: Props) {
         </p>
 
         <p>
-          En ese camino profundicé en neurociencia y me formé en neurocoaching.
+          En ese camino profundicé en neurociencia y me formé en neurocoaching, lo que me permitió entender mejor cómo funcionan nuestros patrones cuando estamos en automático o bajo exigencia.
         </p>
 
         <p>
           Despierta 72H nace desde ahí. No desde teoría, sino desde algo vivido y comprendido.
         </p>
+
+        <p>
+          Un espacio simple para bajar el ruido y volver a ti con más claridad.
+        </p>
       </section>
 
-      {/* COMO FUNCIONA */}
+      {/* CÓMO FUNCIONA */}
       <section className="px-6 py-16 max-w-2xl mx-auto space-y-4">
         <h2 className="font-bold">¿Cómo funciona esta experiencia?</h2>
 
         <p>
-          Cada día tiene 3 momentos clave
+          Un proceso simple, guiado y pensado para que puedas parar sin exigencia.
         </p>
 
-        <p><strong>En la mañana:</strong> escuchas un audio breve (3–5 min)</p>
-        <p><strong>Durante el día:</strong> observas tus comportamientos</p>
-        <p><strong>En la noche:</strong> reflexionas y escribes</p>
+        <p className="mt-4 font-medium">Cada día tiene 3 momentos clave</p>
+
+        <p><strong>En la mañana</strong><br />
+        Escuchas un audio breve (3–5 min) que te invita a poner tu atención en situaciones específicas.</p>
+
+        <p>No lo analizas. Solo observas.</p>
+
+        <p><strong>Durante el día</strong><br />
+        Empiezas a observar tus comportamientos frente a esas situaciones.</p>
+
+        <p>Cuándo aparecen, qué los gatilla y cómo reaccionas.</p>
+
+        <p><strong>En la noche</strong><br />
+        Reflexionas y escribes en tu cuaderno.</p>
+
+        <p>
+          El escribir te permite ordenar lo que viviste y transformar la experiencia en aprendizaje.
+        </p>
 
         <p className="mt-4">
-          1. Detectas lo que aparece<br />
-          2. Entiendes cuándo se activa<br />
-          3. Empiezas a intervenir con más consciencia
+          1<br />
+          Detectas lo que aparece<br />
+          2<br />
+          Entiendes cuándo se activa<br />
+          3<br />
+          Y empiezas a intervenir con más consciencia
         </p>
-      </section>
 
-      {/* GARANTIA */}
-      <section className="px-6 py-16 max-w-2xl mx-auto text-center">
+        <p className="mt-4 font-medium">No necesitas hacerlo perfecto</p>
+
         <p>
           Si en 7 días no estás conforme, te hacemos devolución completa.
         </p>
@@ -158,7 +181,12 @@ export default function LandingPage({ onPurchase }: Props) {
         <h2 className="font-bold mb-4">Bonus</h2>
 
         <p>
-          7 señales de que estás en automático y cómo salir de ahí.
+          7 señales de que estás en automático<br />
+          y cómo salir de ahí
+        </p>
+
+        <p className="mt-4">
+          Una guía breve para reconocer cuándo estás en automático y tener un punto claro para volver a ti cuando lo necesites.
         </p>
 
         <p className="mt-4">
@@ -179,8 +207,9 @@ export default function LandingPage({ onPurchase }: Props) {
           Pago seguro · Garantía total
         </p>
 
-        <p className="text-xs mt-6">
-          Despierta 72H © 2026
+        <p className="text-xs mt-8">
+          Despierta 72H<br />
+          © 2026 Despierta 72
         </p>
       </section>
 
