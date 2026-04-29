@@ -1,51 +1,34 @@
-type Props = {
-  onPurchase?: () => void;
-};
+<section className="px-6 py-24 max-w-3xl mx-auto text-center space-y-6">
 
-export default function LandingPage({ onPurchase }: Props) {
-  const handlePurchase = () => {
-    if (onPurchase) return onPurchase();
-    window.location.href = "https://pay.hotmart.com/O105550362E";
-  };
+<p className="text-xs tracking-[0.3em] text-[#9A7B6F]">
+DESPIERTA 72H
+</p>
 
-  return (
-<div
-  className="min-h-screen bg-white text-[#1F2933] font-sans leading-relaxed"
-style={{ backgroundColor: "#FFFFFF" }}
+<h1 className="text-5xl md:text-6xl font-semibold leading-tight">
+ESTÁS FUNCIONANDO…<br />
+PERO HACE RATO<br />
+QUE VAS EN<br />
+AUTOMÁTICO
+</h1>
+
+<p className="text-base text-[#4B5563]">
+Un espacio breve para reconectar contigo.
+</p>
+
+<p className="text-sm text-[#9CA3AF]">
+Retrato introspectivo generado por IA
+</p>
+
+<button
+onClick={handlePurchase}
+className="bg-gradient-to-r from-[#C4B5FD] to-[#8B5CF6] hover:from-[#A78BFA] hover:to-[#7C3AED] transition text-white px-8 py-4 rounded-full text-lg shadow-lg"
 >
+Acceder ahora
+</button>
 
-      {/* HERO */}
-  <section className="bg-white px-6 pt-32 pb-24 max-w-3xl mx-auto text-center">
-
- <p className="text-xs tracking-[0.3em] text-[#9A7B6F] mb-6">
-    DESPIERTA 72H
-  </p>
-
- <h1 className="text-5xl md:text-6xl font-semibold leading-tight mb-8">
-    ESTÁS FUNCIONANDO…<br />
-    PERO HACE RATO<br />
-    QUE VAS EN<br />
-    AUTOMÁTICO
-  </h1>
-
-  <p className="text-lg text-[#4B5563] mb-6">
-    Un espacio breve para reconectar contigo.
-  </p>
-
-  <p className="text-sm text-[#9CA3AF] mb-10">
-    Retrato introspectivo generado por IA
-  </p>
-
-  <button
-    onClick={handlePurchase}
-  className="bg-gradient-to-r from-[#C4B5FD] to-[#8B5CF6] hover:from-[#A78BFA] hover:to-[#7C3AED] transition text-white px-8 py-4 rounded-full text-lg shadow-lg"
-  >
-    Acceder ahora
-  </button>
-
-  <p className="text-sm text-[#6B7280] mt-4">
-    $29.990 CLP · Garantía de 7 días
-  </p>
+<p className="text-sm text-[#6B7280]">
+$29.990 CLP · Garantía de 7 días
+</p>
 
 </section>
 
