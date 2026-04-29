@@ -37,7 +37,7 @@ export default function LandingPage({ onPurchase }: Props) {
 
   <button
     onClick={handlePurchase}
-    className="bg-[#1F2933] text-white px-8 py-4 rounded-full text-lg"
+  className="bg-gradient-to-r from-[#C4B5FD] to-[#8B5CF6] hover:from-[#A78BFA] hover:to-[#7C3AED] transition text-white px-8 py-4 rounded-full text-lg shadow-lg"
   >
     Acceder ahora
   </button>
