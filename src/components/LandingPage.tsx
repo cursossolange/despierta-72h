@@ -12,7 +12,7 @@ export default function LandingPage({ onPurchase }: Props) {
    <div className="bg-[#F7F3EE] text-[#1F2933] font-sans leading-relaxed">
 
       {/* HERO */}
-     <section className="px-6 py-24 max-w-3xl mx-auto text-center">
+   <section className="px-6 pt-32 pb-24 max-w-3xl mx-auto text-center">
 
  <p className="text-xs tracking-[0.3em] text-[#9A7B6F] mb-6">
     DESPIERTA 72H
