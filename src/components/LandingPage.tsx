@@ -1,5 +1,3 @@
-import { ArrowRight, CheckCircle, Clock, ShieldCheck, Heart, Sparkles } from "lucide-react";
-
 type Props = {
   onPurchase?: () => void;
 };
@@ -10,7 +8,6 @@ export default function LandingPage({ onPurchase }: Props) {
       onPurchase();
       return;
     }
-
     window.location.href = "https://pay.hotmart.com/O105550362E";
   };
 
@@ -18,255 +15,204 @@ export default function LandingPage({ onPurchase }: Props) {
     <div className="bg-[#F7F3EE] text-[#1F2933] font-sans">
 
       {/* HERO */}
-      <section className="px-6 py-16 md:py-24">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <p className="uppercase tracking-[0.25em] text-xs text-[#7A5C4B] mb-5">
-              Despierta 72H
-            </p>
+      <section className="px-6 py-16 max-w-5xl mx-auto">
+        <p className="text-xs tracking-[0.25em] text-[#7A5C4B] mb-4">
+          DESPIERTA 72H
+        </p>
 
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-              Estás funcionando… pero hace rato que vas en automático.
-            </h1>
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          ESTÁS FUNCIONANDO…<br />
+          PERO HACE RATO<br />
+          QUE VAS EN<br />
+          AUTOMÁTICO
+        </h1>
 
-            <p className="text-lg md:text-xl text-[#4B5563] leading-relaxed mb-8">
-              Una experiencia guiada de 72 horas para bajar el ruido, interrumpir el automático y volver a sentirte presente.
-            </p>
+        <p className="text-lg text-[#4B5563] mb-6">
+          Un espacio breve para reconectar contigo.
+        </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-              <button
-                onClick={handlePurchase}
-                className="bg-[#1F2933] text-white px-7 py-4 rounded-full font-semibold flex items-center gap-2 hover:opacity-90 transition"
-              >
-                Acceder ahora <ArrowRight size={18} />
-              </button>
+        <p className="text-sm text-[#9CA3AF] mb-10">
+          Retrato introspectivo generado por IA
+        </p>
 
-              <p className="text-sm text-[#6B7280]">
-                $29.990 CLP · Garantía de 7 días
-              </p>
-            </div>
-          </div>
+        <button
+          onClick={handlePurchase}
+          className="bg-[#1F2933] text-white px-6 py-4 rounded-full font-semibold"
+        >
+          Acceder ahora
+        </button>
 
-          <div className="bg-white rounded-[2rem] p-8 shadow-sm">
-            <div className="aspect-square rounded-[1.5rem] bg-gradient-to-br from-[#E8DDD2] to-[#C9B6A6] flex items-center justify-center text-center px-8">
-              <p className="text-2xl md:text-3xl font-semibold text-[#1F2933] leading-snug">
-                Solo necesitas una pausa real para empezar a volver a ti.
-              </p>
-            </div>
-          </div>
-        </div>
+        <p className="text-sm text-[#6B7280] mt-3">
+          $29.990 CLP · Garantía de 7 días
+        </p>
       </section>
 
       {/* PROBLEMA */}
       <section className="bg-white px-6 py-16">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold mb-6">
             ¿Te ha pasado esto?
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-5">
-            {[
-              "Empiezas el día y sigues con lo que toca, casi sin pensarlo.",
-              "Cumples con todo, pero muchas veces vas en automático.",
-              "Te cuesta parar, incluso cuando tienes un momento para hacerlo.",
-              "Estás presente, pero con la cabeza en otra parte.",
-              "Sientes que algo ya no se siente igual, aunque no sabes bien cómo explicarlo.",
-              "No estás mal… pero tampoco estás bien."
-            ].map((item) => (
-              <div key={item} className="border border-[#E5E0DA] rounded-2xl p-5 bg-[#FAF7F3]">
-                <p className="text-[#374151] leading-relaxed">{item}</p>
-              </div>
-            ))}
-          </div>
+          <ul className="space-y-4 text-[#374151]">
+            <li>Empiezas el día y sigues con lo que toca, casi sin pensarlo</li>
+            <li>Cumples con todo, pero muchas veces vas en automático</li>
+            <li>Te cuesta parar, incluso cuando tienes un momento para hacerlo</li>
+            <li>Estás presente, pero con la cabeza en otra parte</li>
+          </ul>
         </div>
       </section>
 
       {/* PROMESA */}
-      <section className="px-6 py-16">
-        <div className="max-w-3xl mx-auto text-center">
-          <Sparkles className="mx-auto mb-5 text-[#7A5C4B]" size={34} />
+      <section className="px-6 py-16 text-center max-w-3xl mx-auto">
+        <h2 className="text-2xl font-bold mb-4">
+          En solo 72 horas…
+        </h2>
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            No necesitas resolver tu vida en tres días.
+        <p className="text-[#4B5563] mb-4">
+          Empiezas a salir del automático y a volver a sentirte presente.
+        </p>
+
+        <p className="text-[#6B7280]">
+          A tu ritmo. Sin exigencias.
+        </p>
+
+        <p className="mt-6 text-[#1F2933] font-medium">
+          No necesitas hacerlo mejor.<br />
+          Solo necesitas parar un momento.
+        </p>
+      </section>
+
+      {/* 3 DÍAS */}
+      <section className="bg-white px-6 py-16">
+        <div className="max-w-4xl mx-auto space-y-10">
+
+          <div>
+            <h3 className="font-bold mb-2">Día 1</h3>
+            <p className="font-medium mb-1">Bajas el ruido</p>
+            <p className="text-[#4B5563]">
+              Tu mente se desacelera y aparece espacio para observar lo que te pasa.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-bold mb-2">Día 2</h3>
+            <p className="font-medium mb-1">Te das cuenta del automático</p>
+            <p className="text-[#4B5563]">
+              Empiezas a reconocer tus reacciones antes de que ocurran y aparece un espacio para parar.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-bold mb-2">Día 3</h3>
+            <p className="font-medium mb-1">Identificas desde dónde estás actuando</p>
+            <p className="text-[#4B5563]">
+              Reconoces las emociones que están guiando tus respuestas, sin necesidad de cambiarlas.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* RESULTADO */}
+      <section className="px-6 py-16 text-center max-w-3xl mx-auto">
+        <h2 className="text-2xl font-bold mb-4">
+          Lo que te llevas
+        </h2>
+
+        <p className="text-[#4B5563]">
+          Reconoces cuando estás en automático y puedes parar para elegir distinto.
+        </p>
+      </section>
+
+      {/* SOBRE TI */}
+      <section className="bg-white px-6 py-16">
+        <div className="max-w-3xl mx-auto space-y-5">
+          <h2 className="text-2xl font-bold">
+            Sobre esta experiencia
           </h2>
 
-          <p className="text-lg text-[#4B5563] leading-relaxed">
-            Despierta 72H no promete decisiones mágicas. Te ofrece algo más simple y más posible:
-            parar, observar lo que te está pasando y empezar a salir del piloto automático con una guía clara.
+          <p>Soy Solange.</p>
+
+          <p>
+            Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional.
+          </p>
+
+          <p>
+            Pero no fue ahí donde más aprendí de verdad.
+          </p>
+
+          <p>
+            Ese aprendizaje vino después, cuando me tocó vivir mis propios procesos y entender que muchas veces no se trata de resolver más rápido, sino de parar.
+          </p>
+
+          <p>
+            Despierta 72H nace desde ahí. No desde teoría, sino desde algo vivido y comprendido.
           </p>
         </div>
       </section>
 
       {/* COMO FUNCIONA */}
-      <section className="bg-[#1F2933] text-white px-6 py-16">
-        <div className="max-w-5xl mx-auto">
-          <p className="uppercase tracking-[0.25em] text-xs text-[#D8C4B4] mb-4">
-            La experiencia
-          </p>
+      <section className="px-6 py-16 max-w-4xl mx-auto space-y-6">
+        <h2 className="text-2xl font-bold">
+          ¿Cómo funciona esta experiencia?
+        </h2>
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-10">
-            72 horas, 3 momentos, una pausa distinta.
-          </h2>
+        <p>
+          Cada día tiene 3 momentos clave:
+        </p>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white/10 rounded-3xl p-6">
-              <p className="text-sm text-[#D8C4B4] mb-3">Día 1</p>
-              <h3 className="text-xl font-semibold mb-3">Detectar</h3>
-              <p className="text-white/80 leading-relaxed">
-                Empiezas a escuchar tu ruido interior. No lo analizas. No lo peleas. Solo comienzas a observarlo.
-              </p>
-            </div>
+        <ul className="space-y-4 text-[#4B5563]">
+          <li><strong>En la mañana:</strong> escuchas un audio breve (3–5 min)</li>
+          <li><strong>Durante el día:</strong> observas tus comportamientos</li>
+          <li><strong>En la noche:</strong> escribes y reflexionas</li>
+        </ul>
 
-            <div className="bg-white/10 rounded-3xl p-6">
-              <p className="text-sm text-[#D8C4B4] mb-3">Día 2</p>
-              <h3 className="text-xl font-semibold mb-3">Entender</h3>
-              <p className="text-white/80 leading-relaxed">
-                Pones atención a cuándo aparece ese ruido, qué lo gatilla y cómo se manifiesta en tu día.
-              </p>
-            </div>
-
-            <div className="bg-white/10 rounded-3xl p-6">
-              <p className="text-sm text-[#D8C4B4] mb-3">Día 3</p>
-              <h3 className="text-xl font-semibold mb-3">Intervenir</h3>
-              <p className="text-white/80 leading-relaxed">
-                Empiezas a hacer algo distinto con eso que observaste. Una primera forma de volver a estar presente.
-              </p>
-            </div>
-          </div>
-        </div>
+        <p className="mt-6">
+          1. Detectas lo que aparece<br />
+          2. Entiendes cuándo se activa<br />
+          3. Empiezas a intervenir con más consciencia
+        </p>
       </section>
 
-      {/* QUE INCLUYE */}
-      <section className="bg-white px-6 py-16">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-start">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              ¿Qué incluye?
-            </h2>
-
-            <p className="text-lg text-[#4B5563] leading-relaxed">
-              Una experiencia breve, simple y guiada para que puedas hacerla a tu ritmo, sin exigirte más.
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            {[
-              "Audios breves de 3 a 5 minutos.",
-              "Ejercicios simples para observarte durante el día.",
-              "Una guía escrita para registrar lo que vas descubriendo.",
-              "Acceso inmediato después de la compra.",
-              "Garantía de 7 días."
-            ].map((item) => (
-              <div key={item} className="flex gap-3 items-start">
-                <CheckCircle className="text-[#7A5C4B] mt-1" size={20} />
-                <p className="text-[#374151] leading-relaxed">{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+      {/* GARANTÍA */}
+      <section className="bg-white px-6 py-16 text-center">
+        <p className="text-[#4B5563]">
+          Si en 7 días no estás conforme, te hacemos devolución completa.
+        </p>
       </section>
 
-      {/* PARA QUIEN */}
-      <section className="px-6 py-16">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
-          <div className="bg-white rounded-3xl p-8 shadow-sm">
-            <Heart className="text-[#7A5C4B] mb-4" size={30} />
-            <h2 className="text-2xl font-bold mb-5">Es para ti si…</h2>
-            <ul className="space-y-3 text-[#4B5563]">
-              <li>• Sientes que estás funcionando, pero desconectada de ti.</li>
-              <li>• Necesitas bajar el ruido mental.</li>
-              <li>• Quieres una pausa guiada, breve y concreta.</li>
-              <li>• Buscas reconectar sin exigirte resolverlo todo ahora.</li>
-            </ul>
-          </div>
+      {/* BONUS */}
+      <section className="px-6 py-16 max-w-3xl mx-auto text-center">
+        <h2 className="text-2xl font-bold mb-4">
+          Bonus
+        </h2>
 
-          <div className="bg-white rounded-3xl p-8 shadow-sm">
-            <ShieldCheck className="text-[#7A5C4B] mb-4" size={30} />
-            <h2 className="text-2xl font-bold mb-5">No es para ti si…</h2>
-            <ul className="space-y-3 text-[#4B5563]">
-              <li>• Buscas terapia o acompañamiento clínico.</li>
-              <li>• Quieres una solución instantánea.</li>
-              <li>• No quieres detenerte a observar nada.</li>
-              <li>• Necesitas un proceso largo y personalizado.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        <p className="text-[#4B5563]">
+          7 señales de que estás en automático y cómo salir de ahí.
+        </p>
 
-      {/* SOBRE MI */}
-      <section className="bg-[#FAF7F3] px-6 py-16">
-        <div className="max-w-3xl mx-auto">
-          <p className="uppercase tracking-[0.25em] text-xs text-[#7A5C4B] mb-4">
-            Quién guía esta experiencia
-          </p>
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Soy Solange.
-          </h2>
-
-          <p className="text-lg text-[#4B5563] leading-relaxed mb-5">
-            Soy mujer, profesional y sobre todo madre de dos hijas que son lo más importante en mi vida.
-          </p>
-
-          <p className="text-lg text-[#4B5563] leading-relaxed mb-5">
-            Viví esta sensación en un momento muy complicado de mi vida, con muchas cosas cambiando, transformándose y poniendo a prueba creencias con las que había crecido.
-          </p>
-
-          <p className="text-lg text-[#4B5563] leading-relaxed">
-            En ese momento lo único que quería era resolver rápido. Pero aprendí que muchas veces el proceso determina el resultado, y que para poder continuar, primero hay que parar.
-          </p>
-        </div>
-      </section>
-
-      {/* RESULTADO */}
-      <section className="bg-white px-6 py-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <Clock className="mx-auto mb-5 text-[#7A5C4B]" size={34} />
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Lo que puedes empezar a notar después de 72 horas
-          </h2>
-
-          <p className="text-lg text-[#4B5563] leading-relaxed mb-10">
-            Más que una gran respuesta, esta experiencia busca ayudarte a conseguir una primera victoria: darte cuenta, bajar el ruido y volver a estar un poco más contigo.
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-5 text-left">
-            {[
-              "Mayor claridad sobre lo que te está pasando.",
-              "Más conciencia de tus patrones automáticos.",
-              "Una primera sensación de pausa y reconexión."
-            ].map((item) => (
-              <div key={item} className="bg-[#F7F3EE] rounded-2xl p-5">
-                <p className="text-[#374151] leading-relaxed">{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        <p className="mt-4 text-[#6B7280]">
+          Y muchas veces, parar ya es suficiente para empezar.
+        </p>
       </section>
 
       {/* CTA FINAL */}
-      <section className="px-6 py-20">
-        <div className="max-w-3xl mx-auto text-center bg-[#1F2933] text-white rounded-[2rem] p-10 md:p-14">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Puedes seguir funcionando en automático… o puedes darte una pausa real.
-          </h2>
+      <section className="px-6 py-20 text-center">
+        <button
+          onClick={handlePurchase}
+          className="bg-[#1F2933] text-white px-6 py-4 rounded-full font-semibold"
+        >
+          Acceder ahora
+        </button>
 
-          <p className="text-white/80 text-lg leading-relaxed mb-8">
-            Empieza hoy Despierta 72H y regálate tres días para bajar el ruido y volver a escucharte.
-          </p>
+        <p className="text-sm text-[#6B7280] mt-4">
+          Pago seguro · Garantía total
+        </p>
 
-          <button
-            onClick={handlePurchase}
-            className="bg-white text-[#1F2933] px-7 py-4 rounded-full font-semibold flex items-center gap-2 mx-auto hover:opacity-90 transition"
-          >
-            Acceder ahora <ArrowRight size={18} />
-          </button>
-
-          <p className="text-sm text-white/60 mt-5">
-            $29.990 CLP · Acceso inmediato · Garantía de 7 días
-          </p>
-        </div>
+        <p className="text-xs text-[#9CA3AF] mt-8">
+          Despierta 72H © 2026
+        </p>
       </section>
 
     </div>
