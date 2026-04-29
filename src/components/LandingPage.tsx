@@ -11,7 +11,8 @@ export default function LandingPage({ onPurchase }: Props) {
   return (
 <div
   className="min-h-screen bg-white text-[#1F2933] font-sans leading-relaxed"
-  style={{ backgroundColor: "#FFFFFF" }}
+style={{ backgroundColor: "#FFFFFF" }}
+>
 
       {/* HERO */}
   <section className="bg-white px-6 pt-32 pb-24 max-w-3xl mx-auto text-center">
@@ -220,7 +221,7 @@ export default function LandingPage({ onPurchase }: Props) {
       <section className="px-6 py-16 text-center">
         <button
           onClick={handlePurchase}
-          className="bg-black text-white px-6 py-3 rounded-full"
+         className="bg-gradient-to-r from-[#C4B5FD] to-[#8B5CF6] hover:from-[#A78BFA] hover:to-[#7C3AED] transition text-white px-8 py-4 rounded-full text-lg shadow-lg"
         >
           Acceder ahora
         </button>
