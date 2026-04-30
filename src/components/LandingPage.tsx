@@ -97,7 +97,7 @@ const AIGeneratedEmotionalImage = () => {
 
   return (
     <img 
-      src={imageUrl || FALLBACK_IMAGE} 
+     src="/cafe.png"
       alt="Retrato introspectivo generado por IA" 
       className="w-full h-full object-cover"
       referrerPolicy="no-referrer"
