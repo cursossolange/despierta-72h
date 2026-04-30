@@ -6,7 +6,10 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white text-[#1F2933] font-sans leading-relaxed">
 
-<section className="px-6 pt-20 pb-14 max-w-3xl mx-auto text-center space-y-6">
+<section className="px-6 pt-20 pb-14">
+  <div className="max-w-3xl mx-auto text-center space-y-6">
+
+    
         <p className="text-xs tracking-[0.3em] text-[#9A7B6F]">
           DESPIERTA 72H
         </p>
@@ -32,10 +35,12 @@ Acceder ahora
 </button>
 
 <p className="text-sm text-[#6B7280]">
-$29.990 CLP · Garantía de 7 días
+  $29.990 CLP · Garantía de 7 días
 </p>
 
+</div>
 </section>
+
 
       {/* PROBLEMA */}
    <section className="px-6 py-16 bg-[#FAF7FF]">
