@@ -6,8 +6,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white text-[#1F2933] font-sans leading-relaxed">
 
-<section className="px-6 py-16 bg-[#FAF7FF]">
-
+<section className="px-6 pt-20 pb-14 max-w-3xl mx-auto text-center space-y-6">
         <p className="text-xs tracking-[0.3em] text-[#9A7B6F]">
           DESPIERTA 72H
         </p>
@@ -39,11 +38,11 @@ $29.990 CLP · Garantía de 7 días
 </section>
 
       {/* PROBLEMA */}
-    <section className="px-6 py-20">
-<div className="max-w-3xl mx-auto bg-white rounded-2xl p-12 text-center shadow-sm">
-     <h2 className="text-xl font-semibold mb-6">¿Te ha pasado esto?</h2>
+   <section className="px-6 py-16 bg-[#FAF7FF]">
+<div className="max-w-3xl mx-auto bg-white border border-[#E9DFFF] rounded-3xl p-10 md:p-12 text-center shadow-sm">
+    <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8">
 
-      <ul className="space-y-4 text-gray-700">
+     <ul className="space-y-4 text-[#4B5563] text-base">
           <li>Empiezas el día y sigues con lo que toca, casi sin pensarlo</li>
           <li>Cumples con todo, pero muchas veces vas en automático</li>
           <li>Te cuesta parar, incluso cuando tienes un momento para hacerlo</li>
