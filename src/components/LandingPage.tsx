@@ -344,7 +344,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
           {/* Tres momentos clave */}
           <div className="max-w-4xl mx-auto mb-8 md:mb-10">
-            <h3 className="text-[10px] font-black text-violet-600 uppercase tracking-[0.3em] text-center mb-10">
+            <h3 className="text-base md:text-lg font-black text-violet-600 uppercase tracking-[0.3em] text-center mb-10">
               Cada día tiene 3 momentos clave
             </h3>
             <div className="grid md:grid-cols-3 gap-8 md:gap-6">
