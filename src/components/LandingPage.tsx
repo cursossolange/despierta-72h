@@ -5,56 +5,55 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-white text-[#1F2933] font-sans leading-relaxed">
+      {/* HERO */}
+      <section className="px-6 pt-20 pb-14">
+        <div className="max-w-3xl mx-auto text-center space-y-6">
+          <p className="text-xs tracking-[0.3em] text-[#9A7B6F]">
+            DESPIERTA 72H
+          </p>
 
-<section className="px-6 pt-20 pb-14">
-  <div className="max-w-3xl mx-auto text-center space-y-6">
+          <h1 className="text-5xl md:text-6xl font-semibold leading-tight">
+            ESTÁS FUNCIONANDO…<br />
+            PERO HACE RATO<br />
+            QUE VAS EN<br />
+            AUTOMÁTICO
+          </h1>
 
-    
-        <p className="text-xs tracking-[0.3em] text-[#9A7B6F]">
-          DESPIERTA 72H
-        </p>
+          <p className="text-base text-[#4B5563]">
+            Un espacio breve para reconectar contigo.
+          </p>
 
-        <h1 className="text-5xl md:text-6xl font-semibold leading-tight">
-          ESTÁS FUNCIONANDO…<br />
-          PERO HACE RATO<br />
-          QUE VAS EN<br />
-          AUTOMÁTICO
-        </h1>
+          <button
+            onClick={handlePurchase}
+            className="bg-[#8B5CF6] hover:bg-[#7C3AED] transition text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg"
+          >
+            Acceder ahora
+          </button>
 
-        <p className="text-base text-[#4B5563]">
-          Un espacio breve para reconectar contigo.
-        </p>
-
-
-
-<button
-onClick={handlePurchase}
-className="bg-[#8B5CF6] hover:bg-[#7C3AED] transition text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg"
->
-Acceder ahora
-</button>
-
-<p className="text-sm text-[#6B7280]">
-  $29.990 CLP · Garantía de 7 días
-</p>
-
-</div>
-</section>
-
+          <p className="text-sm text-[#6B7280]">
+            $29.990 CLP · Garantía de 7 días
+          </p>
+        </div>
+      </section>
 
       {/* PROBLEMA */}
-   <section className="px-6 py-16 bg-[#FAF7FF]">
-<div className="max-w-3xl mx-auto bg-white border border-[#E9DFFF] rounded-3xl p-10 md:p-12 text-center shadow-sm">
-    <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8">
+      <section className="px-6 py-16 bg-[#FAF7FF]">
+        <div className="max-w-3xl mx-auto bg-white border border-[#E9DFFF] rounded-3xl p-10 md:p-12 text-left shadow-sm">
+          <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8">
+            ¿Te ha pasado esto?
+          </h2>
 
-     <ul className="space-y-4 text-[#4B5563] text-base">
-          <li>Empiezas el día y sigues con lo que toca, casi sin pensarlo</li>
-          <li>Cumples con todo, pero muchas veces vas en automático</li>
-          <li>Te cuesta parar, incluso cuando tienes un momento para hacerlo</li>
-          <li>Estás presente, pero con la cabeza en otra parte</li>
-        </ul>
-</div>
-</section>
+          <ul className="space-y-4 text-[#4B5563] text-base">
+            <li>Empiezas el día y sigues con lo que toca, casi sin pensarlo</li>
+            <li>Cumples con todo, pero muchas veces vas en automático</li>
+            <li>Te cuesta parar, incluso cuando tienes un momento para hacerlo</li>
+            <li>Estás presente, pero con la cabeza en otra parte</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  );
+}
 
       {/* PROMESA */}
       <section className="px-6 py-16 max-w-2xl mx-auto">
