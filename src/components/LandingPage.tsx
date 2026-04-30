@@ -1,20 +1,27 @@
-<section className="px-6 py-24 max-w-3xl mx-auto text-center space-y-6">
+export default function LandingPage() {
+  const handlePurchase = () => {
+    window.location.href = "https://pay.hotmart.com/O105550362E";
+  };
 
-<p className="text-xs tracking-[0.3em] text-[#9A7B6F]">
-DESPIERTA 72H
-</p>
+  return (
+    <div className="min-h-screen bg-white text-[#1F2933] font-sans leading-relaxed">
 
-<h1 className="text-5xl md:text-6xl font-semibold leading-tight">
-ESTÁS FUNCIONANDO…<br />
-PERO HACE RATO<br />
-QUE VAS EN<br />
-AUTOMÁTICO
-</h1>
+      <section className="px-6 py-24 max-w-3xl mx-auto text-center space-y-6">
 
-<p className="text-base text-[#4B5563]">
-<p className="text-base text-[#4B5563]"
-Un espacio breve para reconectar contigo.
-</p>
+        <p className="text-xs tracking-[0.3em] text-[#9A7B6F]">
+          DESPIERTA 72H
+        </p>
+
+        <h1 className="text-5xl md:text-6xl font-semibold leading-tight">
+          ESTÁS FUNCIONANDO…<br />
+          PERO HACE RATO<br />
+          QUE VAS EN<br />
+          AUTOMÁTICO
+        </h1>
+
+        <p className="text-base text-[#4B5563]">
+          Un espacio breve para reconectar contigo.
+        </p>
 
 
 
