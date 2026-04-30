@@ -6,7 +6,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white text-[#1F2933] font-sans leading-relaxed">
 
-      <section className="px-6 py-24 max-w-3xl mx-auto text-center space-y-6">
+<section className="px-6 py-16 bg-[#FAF7FF]">
 
         <p className="text-xs tracking-[0.3em] text-[#9A7B6F]">
           DESPIERTA 72H
