@@ -194,13 +194,15 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
             {/* Principal CTA Button */}
             <div className="flex flex-col items-center">
-              <button
-                onClick={onPurchase}
-                className="bg-violet-600 text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-violet-700 shadow-lg hover:-translate-y-0.5 transition-all flex items-center gap-3 group"
-              >
-                <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
-                <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1.5 transition-transform shrink-0" />
-              </button>
+             <a
+  href="https://pay.hotmart.com/O105550362E"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-violet-600 text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-violet-700 shadow-lg hover:-translate-y-0.5 transition inline-flex items-center gap-2"
+>
+  <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
+  <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
+</a>
               <p className="mt-3 text-[9px] md:text-[10px] text-slate-500 font-semibold tracking-wide">
                 $29.990 CLP · Garantía de 7 días
               </p>
@@ -428,13 +430,15 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             
             <div className="pt-2 flex flex-col items-center">
               <p className="mb-3 text-xs md:text-sm text-slate-900 font-medium text-center">Y muchas veces, parar ya es suficiente para empezar.</p>
-              <button
-                onClick={onPurchase}
-                className="bg-violet-600 text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 shadow-xl hover:-translate-y-0.5 transition-all flex items-center gap-3 group"
-              >
-                <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
-                <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1.5 transition-transform shrink-0" />
-              </button>
+             <a
+  href="https://pay.hotmart.com/O105550362E"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-violet-600 text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 shadow-xl hover:-translate-y-0.5 transition inline-flex items-center gap-2"
+>
+  <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
+  <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
+</a>
               <p className="mt-4 text-[9px] md:text-[10px] text-slate-600 font-semibold tracking-wide">Pago seguro · Garantía total</p>
             </div>
           </div>
