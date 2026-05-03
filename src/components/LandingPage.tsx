@@ -207,7 +207,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                  <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
 </a>
               <a 
-  href="https://wa.me/56990991901?text=Hola%2C%20vi%20lo%20de%20las%2072%20horas%20y%20me%20hizo%20sentido.%20Quiero%20saber%20m%C3%A1s."
+  href="https://wa.me/56990991901?text=Hola%2C%20vi%20lo%20de%20las%2072%20horas%20y%20me%20hizo%20sentido.%20Quiero%20saber%20m%C3%A1s"
   target="_blank"
   rel="noopener noreferrer"
   className="block mt-4 text-sm text-slate-600 underline"
