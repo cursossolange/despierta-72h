@@ -194,6 +194,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
             {/* Principal CTA Button */}
             <div className="flex flex-col items-center">
+              <p className="text-sm text-slate-500 mb-3 text-center">
+  Acceso inmediato y liberado por 1 año.
+</p>
              <a
   href="https://pay.hotmart.com/O105550362E"
   target="_blank"
