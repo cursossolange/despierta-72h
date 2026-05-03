@@ -204,7 +204,15 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   className="bg-violet-600 text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-violet-700 shadow-lg hover:-translate-y-0.5 transition inline-flex items-center gap-2"
 >
   <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
-  <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
+                 <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
+</a>
+              <a 
+  href="https://wa.me/56990991901?text=Hola%2C%20vi%20lo%20de%20las%2072%20horas%20y%20me%20hizo%20sentido.%20Quiero%20saber%20m%C3%A1s."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block mt-4 text-sm text-slate-600 underline"
+>
+  Conversemos por WhatsApp
 </a>
               <p className="mt-3 text-[9px] md:text-[10px] text-slate-500 font-semibold tracking-wide">
                 $29.990 CLP · Garantía de 7 días
