@@ -315,6 +315,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto rounded-[2rem] bg-white border border-violet-100 p-8 md:p-12 shadow-sm flex flex-col items-center text-center">
             <h3 className="text-[10px] font-black text-slate-500 uppercase tracking-[0.4em] mb-6">Sobre esta experiencia</h3>
+<img src="/foto-solange.jpg" alt="Solange" className="w-32 h-32 object-cover rounded-full mx-auto mb-6" />
             <div className="space-y-4">
               <p className="text-xl md:text-2xl font-black text-slate-900">Bienvenida a este espacio. Soy Solange.</p>
               <div className="text-sm md:text-base text-slate-800 leading-relaxed font-semibold space-y-4">
