@@ -206,17 +206,18 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
                  <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
 </a>
-              <a 
-  href="https://wa.me/56990991901?text=Hola%2C%20vi%20lo%20de%20las%2072%20horas%20y%20me%20hizo%20sentido.%20Quiero%20saber%20m%C3%A1s"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="block mt-4 text-sm text-slate-600 underline"
->
-  Conversemos por WhatsApp
-</a>
+            
               <p className="mt-3 text-[9px] md:text-[10px] text-slate-500 font-semibold tracking-wide">
                 $29.990 CLP · Garantía de 7 días
               </p>
+              <a
+  href="https://wa.me/56990991901?text=Hola%2C%20vi%20lo%20de%20las%2072%20horas%20y%20me%20hizo%20sentido.%20Quiero%20m%C3%A1s%20informaci%C3%B3n."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-2 text-xs text-slate-400 hover:text-slate-600 transition"
+>
+  ¿Tienes dudas? Escríbeme aquí
+</a>
             </div>
           </motion.div>
         </div>
