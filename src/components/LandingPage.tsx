@@ -207,7 +207,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                  <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
 </a>
             
-              <p className="mt-3 text-[9px] md:text-[10px] text-slate-500 font-semibold tracking-wide">
+             <p className="mt-3 text-sm md:text-base text-slate-600 font-medium">
                 $29.990 CLP · Garantía de 7 días
               </p>
               <a
