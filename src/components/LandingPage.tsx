@@ -313,7 +313,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       {/* Authority Section - Compacto */}
       <section className="py-12 bg-slate-50/50">
         <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto rounded-[2rem] bg-white border border-violet-100 p-8 md:p-12 shadow-sm flex flex-col items-center text-center">
+         <div className="max-w-2xl mx-auto rounded-[2rem] bg-white border border-violet-100 p-8 md:p-12 shadow-sm flex flex-col items-start text-left">
             <h3 className="text-[10px] font-black text-slate-500 uppercase tracking-[0.4em] mb-6">Sobre esta experiencia</h3>
 <img src="/foto-solange.jpg" alt="Solange" className="w-32 h-32 object-cover rounded-full mx-auto mb-6" />
             <div className="space-y-4">
