@@ -216,7 +216,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   rel="noopener noreferrer"
   className="mt-3 text-sm text-slate-500 hover:text-slate-700 transition"
 >
-  ¿Tienes dudas? Escríbeme aquí
+ ¿Quieres confirmar si esto es para ti? Escríbeme aquí
 </a>
             </div>
           </motion.div>
