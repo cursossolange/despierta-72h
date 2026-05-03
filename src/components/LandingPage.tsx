@@ -315,9 +315,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         <div className="container mx-auto px-6">
          <div className="max-w-2xl mx-auto rounded-[2rem] bg-white border border-violet-100 p-8 md:p-12 shadow-sm flex flex-col items-start text-left">
             <h3 className="text-[10px] font-black text-slate-500 uppercase tracking-[0.4em] mb-6">Sobre esta experiencia</h3>
-<img src="/foto-solange.jpg" alt="Solange" className="w-32 h-32 object-cover rounded-full mx-auto mb-6" />
+<img src="/foto-solange.jpg" alt="Solange Henríquez" className="w-36 h-36 object-cover rounded-full mx-auto mb-8 shadow-md grayscale" />
             <div className="space-y-4">
-              <p className="text-xl md:text-2xl font-black text-slate-900">Bienvenida a este espacio. Soy Solange.</p>
+              <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">Bienvenida a este espacio. Soy Solange.</h2>
               <div className="text-sm md:text-base text-slate-800 leading-relaxed font-semibold space-y-4">
                 <p>Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional. Fue una etapa muy valiosa, que me dio estructura, criterio y experiencia.</p>
                 <p>Pero no fue ahí donde más aprendí de verdad.</p>
