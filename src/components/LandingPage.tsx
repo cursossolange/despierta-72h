@@ -319,7 +319,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             <div className="space-y-4">
               <h2 className="text-xl md:text-2xl font-medium text-slate-700 leading-tight text-center">
   <span className="block">Bienvenida a este espacio.</span>
-  <span className="block mt-1 text-4xl md:text-5xl font-black text-slate-900">Soy Solange.</span>
+  <span className="block mt-1 font-semibold text-slate-900">Soy Solange.</span>
 </h2>
               <div className="text-sm md:text-base text-slate-700 leading-relaxed font-normal space-y-4 max-w-xl">
                 <p>Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional. Fue una etapa muy valiosa, que me dio estructura, criterio y experiencia.</p>
