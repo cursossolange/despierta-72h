@@ -214,7 +214,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   href="https://wa.me/56990991901?text=Hola%2C%20vi%20lo%20de%20las%2072%20horas%20y%20me%20hizo%20sentido.%20Quiero%20m%C3%A1s%20informaci%C3%B3n."
   target="_blank"
   rel="noopener noreferrer"
-  className="mt-2 text-xs text-slate-400 hover:text-slate-600 transition"
+  className="mt-3 text-sm text-slate-500 hover:text-slate-700 transition"
 >
   ¿Tienes dudas? Escríbeme aquí
 </a>
