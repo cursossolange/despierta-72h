@@ -159,23 +159,22 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
             {/* 1. Título principal (grande pero ajustado) */}
             <h1 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-tight max-w-2xl mx-auto uppercase">
-              <span className="md:hidden">
-                ESTÁS FUNCIONANDO…<br />
-                PERO HACE RATO<br />
-                QUE VAS EN<br />
-                AUTOMÁTICO
-              </span>
-              <span className="hidden md:inline">
-                ESTÁS FUNCIONANDO…<br />
-                PERO HACE RATO QUE VAS EN AUTOMÁTICO
-              </span>
+             <span className="md:hidden">
+  SIGUES FUNCIONANDO,<br />
+  PERO EN MODO<br />
+  AUTOMÁTICO.
+</span>
+<span className="hidden md:inline">
+  SIGUES FUNCIONANDO,<br />
+  PERO EN MODO AUTOMÁTICO.
+</span>
             </h1>
 
 
             {/* 3. Bajada breve */}
             <div className="max-w-xl mx-auto mb-6 md:mb-8">
               <p className="text-sm md:text-base text-slate-600 leading-relaxed font-semibold italic">
-                Un espacio breve para reconectar contigo.
+                Una pausa guiada para darte cuenta de cosas que hoy haces en automático.
               </p>
             </div>
 
@@ -228,10 +227,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-base md:text-lg font-black text-slate-900 mb-3 uppercase tracking-[0.1em]">¿Te ha pasado esto?</h2>
           <div className="max-w-2xl mx-auto space-y-1.5 text-slate-700 font-semibold italic">
-            <p className="text-sm md:text-base">Empiezas el día y sigues con lo que toca, casi sin pensarlo</p>
-            <p className="text-sm md:text-base">Cumples con todo, pero muchas veces vas en automático</p>
-            <p className="text-sm md:text-base">Te cuesta parar, incluso cuando tienes un momento para hacerlo</p>
-            <p className="text-sm md:text-base">Estás presente, pero con la cabeza en otra parte</p>
+            <p className="text-sm md:text-base">Dices que sí… y después te preguntas por qué lo hiciste.</p>
+<p className="text-sm md:text-base">Incluso cuando tienes un momento para parar, tu cabeza no para.</p>
+<p className="text-sm md:text-base">Hay días en que haces todo… pero casi no recuerdas cómo los viviste.</p>
           </div>
         </div>
       </section>
@@ -247,13 +245,15 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             <div className="absolute top-[-20%] right-[-10%] w-[40%] h-[40%] bg-violet-600/10 rounded-full blur-[60px] pointer-events-none"></div>
             <div className="relative z-10">
-              <h2 className="text-xl md:text-2xl font-black text-white mb-3 leading-tight tracking-tight">
-                En solo 72 horas…
-              </h2>
-              <div className="text-sm md:text-lg text-slate-300 space-y-2 leading-snug">
-                <p>Empiezas a salir del automático y a volver a sentirte presente.</p>
-                <p className="italic text-violet-300 font-light text-xs md:text-sm">A tu ritmo. Sin exigencias.</p>
-              </div>
+             <h2 className="text-xl md:text-2xl font-black text-white mb-4 leading-tight tracking-tight">
+  Experiencia guiada de 3 días para:
+</h2>
+
+<div className="text-sm md:text-lg text-slate-300 space-y-3 leading-snug">
+  <p>· Observar cosas que normalmente haces en automático.</p>
+  <p>· Reconocer patrones que aparecen una y otra vez en tu día a día.</p>
+  <p className="font-bold text-white">· Entender mejor por qué reaccionas como reaccionas.</p>
+</div>
             </div>
           </motion.div>
         </div>
