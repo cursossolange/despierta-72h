@@ -411,7 +411,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               
               <div className="space-y-4 text-sm md:text-base text-slate-800 font-medium">
                 <div className="pt-4 border-t border-violet-100 mt-4">
-                  <p className="text-xs md:text-sm text-violet-700 font-bold">Si en 7 días no estás conforme, te hacemos devolución completa.</p>
+                  <p className="text-xs md:text-sm text-violet-700 font-bold">Si en 7 días sientes que esto no era para ti, te devolvemos el 100%.</p>
                 </div>
               </div>
             </div>
