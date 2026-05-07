@@ -408,7 +408,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <div className="max-w-xl mx-auto text-center space-y-6">
             <div className="p-6 md:p-8 rounded-[2rem] bg-violet-50/50 border border-violet-100 relative overflow-hidden">
               <ShieldCheck className="absolute top-3 right-3 w-8 h-8 text-violet-700 opacity-5" />
-              <h2 className="text-base md:text-lg font-black text-slate-900 mb-4">No necesitas hacerlo perfecto</h2>
+              
               <div className="space-y-4 text-sm md:text-base text-slate-800 font-medium">
                 <div className="pt-4 border-t border-violet-100 mt-4">
                   <p className="text-xs md:text-sm text-violet-700 font-bold">Si en 7 días no estás conforme, te hacemos devolución completa.</p>
