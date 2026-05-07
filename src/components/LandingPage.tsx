@@ -344,7 +344,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       </section>
 
       {/* ¿Cómo funciona esta experiencia? */}
-      <section className="pt-10 pb-4 md:pt-16 md:pb-6 bg-white">
+      <section className="pt-4 pb-8 md:pt-8 md:pb-10 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-4 tracking-tight uppercase">
