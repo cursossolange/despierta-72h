@@ -266,7 +266,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         <div className="container mx-auto px-6">
           <div className="bg-white rounded-[2rem] border border-violet-100 p-6 md:p-8 shadow-sm text-center">
             <div className="max-w-2xl mx-auto mb-6 text-center">
-              <h2 className="text-lg md:text-2xl font-black text-slate-900 leading-tight">
+              <h2 className="text-lg md:text-2xl font-bold text-slate-900 leading-tight">
                 No necesitas hacerlo mejor.<br />Solo necesitas parar un momento.
               </h2>
             </div>
