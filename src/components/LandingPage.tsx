@@ -416,7 +416,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               </div>
             </div>
 
-            <div className="p-5 md:p-6 rounded-2xl bg-slate-900 text-white relative shadow-lg">
+            <div className="p-5 md:p-6 rounded-2xl bg-[#17132A] text-white relative shadow-lg">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-violet-600 text-white px-4 py-1 rounded-full font-black text-[10px] uppercase tracking-[0.4em] shadow-md">Bonus</div>
               <h3 className="text-base md:text-lg font-black mb-2">
                 7 señales de que estás en automático <span className="text-violet-400 block md:inline">y cómo salir de ahí</span>
