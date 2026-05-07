@@ -304,8 +304,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-br from-violet-500 to-purple-600 rounded-[2.5rem] py-12 md:py-16 px-8 md:px-16 max-w-4xl mx-auto shadow-2xl relative overflow-hidden text-center"
-          >
+            className="bg-gradient-to-br from-[#5B4B8A] to-[#7A5CCF] rounded-[2.5rem] py-12 md:py-16 px-8 md:px-16 max-w-3xl mx-auto shadow-2xl relative overflow-hidden"
             {/* Elementos decorativos de fondo */}
             <div className="absolute top-0 left-0 w-full h-full opacity-10">
               <div className="absolute top-[-10%] left-[-10%] w-64 h-64 bg-white rounded-full blur-3xl"></div>
