@@ -440,7 +440,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                 7 señales de que estás en automático <span className="text-violet-400 block md:inline">y cómo salir de ahí</span>
               </h3>
               <p className="text-xs md:text-sm text-slate-300 italic leading-relaxed">
-                Una guía breve para reconocer cuándo estás en automático y tener un punto claro para volver a ti cuando lo necesites.
+                Una guía breve para reconocer cuándo estás en automático y tener un punto claro para observarte con más claridad.
               </p>
             </div>
             
