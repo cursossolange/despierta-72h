@@ -339,7 +339,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                 <p>Ese aprendizaje vino después, cuando me tocó vivir mis propios procesos y entender que muchas veces no se trata de resolver más rápido, sino de parar.</p>
                 <p>En ese camino profundicé en neurociencia y me formé en neurocoaching, lo que me permitió entender mejor cómo funcionan nuestros patrones cuando estamos en automático o bajo exigencia.</p>
                 <p>Despierta 72H nace desde ahí. No desde teoría, sino desde algo vivido y comprendido.</p>
-                <p className="italic text-slate-500 font-medium text-xs mt-2">Un espacio simple para bajar el ruido y volver a ti con más claridad.</p>
+               <p className="italic text-slate-500 font-medium text-xs mt-2">Un espacio simple para parar, observar y recuperar claridad.</p>
               </div>
             </div>
           </div>
