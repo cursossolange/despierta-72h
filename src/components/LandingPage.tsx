@@ -168,7 +168,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <span className="hidden md:inline">
   SIGUES FUNCIONANDO,<br />
   PERO EN MODO<br />
-  AUTOMÁTICO.
+  AUTOMÁTICO...
 </span>
             </h1>
 
