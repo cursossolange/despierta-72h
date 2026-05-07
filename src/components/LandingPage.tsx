@@ -310,7 +310,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               <div className="absolute bottom-[-10%] right-[-10%] w-40 h-40 bg-white/30 rounded-full blur-2xl"></div>
            
             
-            <div className="relative z-10 space-y-6">
+            <div className="relative z-10 space-y-6 max-w-2xl mx-auto text-center">
               <h3 className="text-violet-100 text-xs md:text-sm font-black uppercase tracking-[0.4em]">
                 Lo que te llevas
               </h3>
