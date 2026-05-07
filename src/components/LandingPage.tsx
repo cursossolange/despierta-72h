@@ -300,15 +300,15 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       {/* Resultado / Promesa Section - Destacado */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-6">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bg-gradient-to-br from-violet-500 to-purple-600 rounded-[2.5rem] py-12 md:py-16 px-8 md:px-16 max-w-3xl mx-auto shadow-2xl relative overflow-hidden"
-            <div className="absolute top-0 left-0 w-full h-full opacity-10">
+         <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  className="bg-gradient-to-br from-violet-500 to-purple-600 rounded-[2.5rem] py-12 md:py-16 px-8 md:px-16 max-w-3xl mx-auto shadow-2xl relative overflow-hidden"
+>
               <div className="absolute top-[-10%] left-[-10%] w-64 h-64 bg-white rounded-full blur-3xl"></div>
               <div className="absolute bottom-[-10%] right-[-10%] w-64 h-64 bg-white rounded-full blur-3xl"></div>
-            </div>
+           
             
             <div className="relative z-10 space-y-6">
               <h3 className="text-violet-100 text-xs md:text-sm font-black uppercase tracking-[0.4em]">
