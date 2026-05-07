@@ -158,16 +158,16 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             </div>
 
             {/* 1. Título principal (grande pero ajustado) */}
-            <h1 className="text-3xl md:text-4xl font-black
-             <span className="md:hidden">
- SIGUES FUNCIONANDO,<br /> PERO EN MODO AUTOMÁTICO...
-</span>
+           <h1 className="text-3xl md:text-4xl font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-tight max-w-2xl mx-auto uppercase">
+  <span className="md:hidden">
+    SIGUES FUNCIONANDO,<br /> PERO EN MODO AUTOMÁTICO...
+  </span>
 
-<span className="hidden md:inline">
- SIGUES FUNCIONANDO,<br />
-PERO EN MODO AUTOMÁTICO...
-</span>
-            </h1>
+  <span className="hidden md:inline">
+    SIGUES FUNCIONANDO,<br />
+    PERO EN MODO AUTOMÁTICO...
+  </span>
+</h1>
 
 
             {/* 3. Bajada breve */}
