@@ -254,7 +254,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <div className="text-sm md:text-lg text-slate-300 space-y-3 leading-snug">
   <p>· Observar cosas que normalmente haces en automático.</p>
   <p>· Reconocer patrones que aparecen una y otra vez en tu día a día.</p>
-  <p className="font-bold text-white">· Entender mejor por qué reaccionas como reaccionas.</p>
+  <p>· Entender mejor por qué reaccionas como reaccionas.</p>
 </div>
             </div>
           </motion.div>
