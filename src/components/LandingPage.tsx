@@ -394,24 +394,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             </div>
           </div>
 
-          <div className="max-w-xl mx-auto text-center mb-4 md:mb-6">
-            <div className="py-8 px-6 border-y border-slate-50 bg-slate-50/30">
-              <div className="flex flex-col gap-3 text-slate-900 font-black text-base md:text-lg">
-                <div className="flex items-center justify-center gap-3 bg-white/60 py-2.5 px-4 rounded-2xl border border-white/40 shadow-sm self-center">
-                 
-                  <span>Detectas lo que aparece</span>
-                </div>
-                <div className="flex items-center justify-center gap-3 bg-white/60 py-2.5 px-4 rounded-2xl border border-white/40 shadow-sm self-center">
-                 
-                  <span>Entiendes cuándo se activa</span>
-                </div>
-                <div className="flex items-center justify-center gap-3 bg-white/60 py-2.5 px-4 rounded-2xl border border-white/40 shadow-sm self-center">
-                 
-                  <span>Y empiezas a intervenir con más consciencia</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          
+    
 
 
 
