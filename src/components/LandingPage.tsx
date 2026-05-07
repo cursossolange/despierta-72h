@@ -174,11 +174,11 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
 
             {/* 3. Bajada breve */}
-            <div className="max-w-xl mx-auto mb-6 md:mb-8">
-              <p className="text-sm md:text-base text-slate-600 leading-relaxed font-semibold italic">
-                Una pausa guiada para darte cuenta de cosas que hoy haces en automático.
-              </p>
-            </div>
+        <div className="max-w-5xl mx-auto mb-5 md:mb-6">
+  <p className="text-sm md:text-lg text-slate-600 leading-relaxed font-semibold italic whitespace-nowrap">
+    Una pausa guiada para darte cuenta de cosas que haces en automático.
+  </p>
+</div>
 
             {/* Principal Hero Image (Compacta) */}
             <motion.div
