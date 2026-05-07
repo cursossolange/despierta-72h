@@ -306,8 +306,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   viewport={{ once: true }}
   className="bg-gradient-to-br from-violet-500 to-purple-600 rounded-[2.5rem] py-12 md:py-16 px-8 md:px-16 max-w-3xl mx-auto shadow-2xl relative overflow-hidden"
 >
-              <div className="absolute top-[-10%] left-[-10%] w-64 h-64 bg-white rounded-full blur-3xl"></div>
-              <div className="absolute bottom-[-10%] right-[-10%] w-64 h-64 bg-white rounded-full blur-3xl"></div>
+              <div className="absolute top-[-10%] left-[-10%] w-40 h-40 bg-white/30 rounded-full blur-2xl"></div>
+              <div className="absolute bottom-[-10%] right-[-10%] w-40 h-40 bg-white/30 rounded-full blur-2xl"></div>
            
             
             <div className="relative z-10 space-y-6">
