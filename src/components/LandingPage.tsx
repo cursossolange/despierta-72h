@@ -353,9 +353,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-4 tracking-tight uppercase">
               ¿Cómo funciona esta experiencia?
             </h2>
-            <p className="text-base md:text-lg text-slate-700 font-medium max-w-xl mx-auto">
-              Un proceso simple, guiado y pensado para que puedas parar sin exigencia.
-            </p>
+          
           </div>
 
           {/* Tres momentos clave */}
@@ -400,15 +398,15 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             <div className="py-8 px-6 border-y border-slate-50 bg-slate-50/30">
               <div className="flex flex-col gap-3 text-slate-900 font-black text-base md:text-lg">
                 <div className="flex items-center justify-center gap-3 bg-white/60 py-2.5 px-4 rounded-2xl border border-white/40 shadow-sm self-center">
-                  <span className="w-6 h-6 rounded-full bg-violet-100 text-violet-700 text-[10px] flex items-center justify-center shrink-0">1</span>
+                 
                   <span>Detectas lo que aparece</span>
                 </div>
                 <div className="flex items-center justify-center gap-3 bg-white/60 py-2.5 px-4 rounded-2xl border border-white/40 shadow-sm self-center">
-                  <span className="w-6 h-6 rounded-full bg-violet-100 text-violet-700 text-[10px] flex items-center justify-center shrink-0">2</span>
+                 
                   <span>Entiendes cuándo se activa</span>
                 </div>
                 <div className="flex items-center justify-center gap-3 bg-white/60 py-2.5 px-4 rounded-2xl border border-white/40 shadow-sm self-center">
-                  <span className="w-6 h-6 rounded-full bg-violet-100 text-violet-700 text-[10px] flex items-center justify-center shrink-0">3</span>
+                 
                   <span>Y empiezas a intervenir con más consciencia</span>
                 </div>
               </div>
