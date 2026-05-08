@@ -173,9 +173,11 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
             {/* 3. Bajada breve */}
         <div className="max-w-5xl mx-auto mb-5 md:mb-6">
-  <p className="text-sm md:text-lg text-slate-600 leading-relaxed font-semibold italic max-w-3xl mx-auto">
-    Una experiencia guiada de 3 días para generar pausas conscientes y darte cuenta de pequeñas cosas que normalmente haces en automático.
-  </p>
+<p className="text-sm md:text-lg text-slate-600 leading-relaxed font-semibold italic max-w-3xl mx-auto">
+  Cuando empiezas a darte cuenta de lo que haces en automático,<br />
+  aparece la posibilidad de elegir distinto.<br /><br />
+  Y eso cambia resultados.
+</p>
 </div>
 
             {/* Principal Hero Image (Compacta) */}
