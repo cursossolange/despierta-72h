@@ -172,7 +172,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
             {/* 3. Bajada breve */}
         <div className="max-w-5xl mx-auto mb-5 md:mb-6">
-  <p className="text-sm md:text-lg text-slate-600 leading-relaxed font-semibold italic">
+  <p className="text-sm md:text-lg text-slate-600 leading-relaxed font-semibold italic max-w-3xl mx-auto">
     Una experiencia guiada de 3 días para salir del automático y observarte con más claridad.
   </p>
 </div>
