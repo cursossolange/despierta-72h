@@ -389,19 +389,19 @@ Un espacio simple para parar, observar y elegir con más conciencia.
             <div className="grid md:grid-cols-3 gap-8 md:gap-6">
               {[
                 { 
-                  time: "En la mañana", 
+                  time: "ESCUCHAS", 
                   desc: "Escuchas un audio breve (3–5 min) que te invita a poner tu atención en situaciones específicas.", 
                   sub: "No lo analizas. Solo observas.",
                   icon: <Sunrise className="w-5 h-5 text-amber-500" />
                 },
                 { 
-                  time: "Durante el día", 
+                  time: "OBSERVAS",
                   desc: "Empiezas a observar tus comportamientos frente a esas situaciones.", 
                   sub: "Cuándo aparecen, qué los gatilla y cómo reaccionas.",
                   icon: <Sun className="w-5 h-5 text-orange-500" />
                 },
                 { 
-                  time: "En la noche", 
+                  time: "REFLEXIONAS",
                   desc: "Reflexionas y escribes en tu cuaderno.", 
                   sub: "El escribir te permite ordenar lo que viviste y transformar la experiencia en aprendizaje.",
                   icon: <Moon className="w-5 h-5 text-slate-400" />
