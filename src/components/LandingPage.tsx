@@ -353,7 +353,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <span className="block">Bienvenida a este espacio.</span>
   <span className="block mt-1 font-semibold text-slate-900">Soy Solange.</span>
 </h2>
-              <div className="text-sm md:text-[17px] text-slate-700 leading-9 font-normal space-y-6 max-w-2xl mx-auto">
+             <div className="text-sm md:text-[17px] text-slate-700 leading-9 font-normal space-y-6 max-w-3xl mx-auto">
                 Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional. Fue una etapa muy valiosa, que me dio estructura, criterio y experiencia.
 
 Pero no fue ahí donde más aprendí de verdad.
