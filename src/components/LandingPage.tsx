@@ -229,9 +229,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-base md:text-lg font-black text-slate-900 mb-3 uppercase tracking-[0.1em]">¿Te ha pasado esto?</h2>
           <div className="max-w-2xl mx-auto space-y-1.5 text-slate-700 font-semibold italic">
-            <p className="text-sm md:text-base">Dices que sí… y después te preguntas por qué lo hiciste.</p>
-<p className="text-sm md:text-base">Incluso cuando tienes un momento para parar, tu cabeza no para.</p>
-<p className="text-sm md:text-base">Hay días en que haces todo… pero casi no recuerdas cómo los viviste.</p>
+           <p className="text-sm md:text-base">Respondes algo… y después te preguntas por qué reaccionaste así.</p>
+<p className="text-sm md:text-base">Hay conversaciones que terminas teniendo igual, aunque prometiste hacerlo distinto.</p>
+<p className="text-sm md:text-base">A veces haces las cosas tan en automático que ni te das cuenta cómo llegaste ahí.</p>
           </div>
         </div>
       </section>
