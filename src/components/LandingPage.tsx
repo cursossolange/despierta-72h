@@ -298,7 +298,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         sub: "Reconoces las emociones que están guiando tus respuestas, sin necesidad de cambiarlas.",
         icon: <Heart className="w-5 h-5" />
       }
-    ].map((day, i) => (
+    ].map((card, i) => (
                 <div key={i} className="bg-violet-50/10 p-4 md:p-5 rounded-2xl border border-violet-100 shadow-[0_1px_4px_rgba(139,92,246,0.05)] text-left flex flex-col h-full hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-2 mb-3">
                     <div className="p-1 bg-white rounded-md shadow-sm border border-violet-50">{card.icon}</div>
