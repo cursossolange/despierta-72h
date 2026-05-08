@@ -264,22 +264,41 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       {/* Neuro Section (Benefits) - Más Compacta */}
       <section className="py-8 bg-violet-50/50">
         <div className="container mx-auto px-6">
-          <div className="bg-white rounded-[2rem] border border-violet-100 p-6 md:p-8 shadow-sm text-center">
-            <div className="max-w-2xl mx-auto mb-6 text-center">
-              <h2 className="text-lg md:text-2xl font-bold text-slate-900 leading-tight">
-  Cuando aparece consciencia,
-  <br />
-  aparece elección.
-</h2>
+       <div className="bg-white rounded-[2rem] border border-violet-100 p-6 md:p-8 shadow-sm text-center">
 
-<p className="text-sm md:text-base text-slate-600 italic mt-3">
-  Y eso cambia resultados.
-</p>
-              </div>
-                { day: "Día 1", title: "Bajas el ruido", sub: "Tu mente se desacelera y aparece espacio para observar lo que te pasa.", icon: <Sparkles className="w-5 h-5 text-violet-600" /> },
-                { day: "Día 2", title: "Te das cuenta del automático", sub: "Empiezas a reconocer tus reacciones antes de que ocurran y aparece un espacio para parar.", icon: <RefreshCw className="w-5 h-5 text-violet-600" /> },
-                { day: "Día 3", title: "Identificas desde dónde estás actuando", sub: "Reconoces las emociones que están guiando tus respuestas, sin necesidad de cambiarlas.", icon: <Heart className="w-5 h-5 text-violet-600" /> }
-              ].map((card, i) => (
+  <div className="max-w-2xl mx-auto mb-6 text-center">
+    <h2 className="text-lg md:text-2xl font-bold text-slate-900 leading-tight">
+      Cuando aparece consciencia,
+      <br />
+      aparece elección.
+    </h2>
+
+    <p className="text-sm md:text-base text-slate-600 italic mt-3">
+      Y eso cambia resultados.
+    </p>
+  </div>
+
+  <div className="grid lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+    {[
+      {
+        day: "Día 1",
+        title: "Bajas el ruido",
+        sub: "Tu mente se desacelera y aparece espacio para observar lo que te pasa.",
+        icon: <Sparkles className="w-5 h-5" />
+      },
+      {
+        day: "Día 2",
+        title: "Te das cuenta del automático",
+        sub: "Empiezas a reconocer tus reacciones antes de que ocurran y aparece un espacio para parar.",
+        icon: <RefreshCw className="w-5 h-5" />
+      },
+      {
+        day: "Día 3",
+        title: "Identificas desde dónde estás actuando",
+        sub: "Reconoces las emociones que están guiando tus respuestas, sin necesidad de cambiarlas.",
+        icon: <Heart className="w-5 h-5" />
+      }
+    ].map((day, i) => (
                 <div key={i} className="bg-violet-50/10 p-4 md:p-5 rounded-2xl border border-violet-100 shadow-[0_1px_4px_rgba(139,92,246,0.05)] text-left flex flex-col h-full hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-2 mb-3">
                     <div className="p-1 bg-white rounded-md shadow-sm border border-violet-50">{card.icon}</div>
