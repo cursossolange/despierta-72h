@@ -354,12 +354,17 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <span className="block mt-1 font-semibold text-slate-900">Soy Solange.</span>
 </h2>
               <div className="text-sm md:text-base text-slate-700 leading-relaxed font-normal space-y-4 max-w-xl">
-                <p>Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional. Fue una etapa muy valiosa, que me dio estructura, criterio y experiencia.</p>
-                <p>Pero no fue ahí donde más aprendí de verdad.</p>
-                <p>Ese aprendizaje vino después, cuando me tocó vivir mis propios procesos y entender que muchas veces no se trata de resolver más rápido, sino de parar.</p>
-                <p>En ese camino profundicé en neurociencia y me formé en neurocoaching, lo que me permitió entender mejor cómo funcionan nuestros patrones cuando estamos en automático o bajo exigencia.</p>
-                <p>Despierta 72H nace desde ahí. No desde teoría, sino desde algo vivido y comprendido.</p>
-               <p className="italic text-slate-500 font-medium text-xs mt-2">Un espacio simple para parar, observar y recuperar claridad.</p>
+                Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional. Fue una etapa muy valiosa, que me dio estructura, criterio y experiencia.
+
+Pero no fue ahí donde más aprendí de verdad.
+
+Ese aprendizaje vino después, cuando me tocó observar mis propios patrones y entender que muchas veces no necesitamos reaccionar más rápido, sino darnos un momento para observar.
+
+En ese camino profundicé en neurociencia y me formé en neurocoaching, lo que me permitió entender mejor cómo funcionan nuestros patrones cuando vivimos en automático.
+
+Despierta 72H nace desde ahí. No desde teoría, sino desde algo vivido y observado.
+
+Un espacio simple para parar, observar y elegir con más conciencia.
               </div>
             </div>
           </div>
