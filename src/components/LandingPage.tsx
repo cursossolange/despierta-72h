@@ -335,7 +335,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                 Lo que te llevas
               </h3>
               <p className="text-2xl md:text-4xl font-black text-white leading-tight md:leading-tight max-w-2xl mx-auto">
-                Reconoces cuando estás en automático y puedes parar para elegir distinto.
+                Reconoces cuándo estás en automático y aparece un espacio para elegir distinto.
               </p>
             </div>
           </motion.div>
