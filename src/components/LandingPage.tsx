@@ -267,14 +267,15 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <div className="bg-white rounded-[2rem] border border-violet-100 p-6 md:p-8 shadow-sm text-center">
             <div className="max-w-2xl mx-auto mb-6 text-center">
               <h2 className="text-lg md:text-2xl font-bold text-slate-900 leading-tight">
-                No necesitas hacerlo mejor.<br />Solo necesitas parar un momento.
-              </h2>
-            </div>
+  Cuando aparece consciencia,
+  <br />
+  aparece elección.
+</h2>
 
-
-            
-            <div className="grid lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-              {[
+<p className="text-sm md:text-base text-slate-600 italic mt-3">
+  Y eso cambia resultados.
+</p>
+              </div>
                 { day: "Día 1", title: "Bajas el ruido", sub: "Tu mente se desacelera y aparece espacio para observar lo que te pasa.", icon: <Sparkles className="w-5 h-5 text-violet-600" /> },
                 { day: "Día 2", title: "Te das cuenta del automático", sub: "Empiezas a reconocer tus reacciones antes de que ocurran y aparece un espacio para parar.", icon: <RefreshCw className="w-5 h-5 text-violet-600" /> },
                 { day: "Día 3", title: "Identificas desde dónde estás actuando", sub: "Reconoces las emociones que están guiando tus respuestas, sin necesidad de cambiarlas.", icon: <Heart className="w-5 h-5 text-violet-600" /> }
