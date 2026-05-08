@@ -160,12 +160,12 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             {/* 1. Título principal (grande pero ajustado) */}
            <h1 className="text-3xl md:text-4xl font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-tight max-w-2xl mx-auto uppercase">
  <span className="md:hidden">
-  Hay cosas que haces todos los días…<br />
+  Hay cosas que repites todos los días…<br />
   sin darte cuenta.
 </span>
 
 <span className="hidden md:inline">
-  Hay cosas que haces todos los días…<br />
+  Hay cosas que repites todos los días…<br />
   sin darte cuenta.
 </span>
 </h1>
