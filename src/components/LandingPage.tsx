@@ -174,9 +174,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             {/* 3. Bajada breve */}
         <div className="max-w-5xl mx-auto mb-5 md:mb-6">
 <p className="text-sm md:text-lg text-slate-600 leading-relaxed font-semibold italic max-w-3xl mx-auto">
-  Cuando empiezas a darte cuenta de lo que haces en automático,<br />
-  aparece la posibilidad de elegir distinto.<br /><br />
-  Y eso cambia resultados.
+  Cuando empiezas a darte cuenta de cómo estás viviendo en automático,<br />
+  aparece la posibilidad de responder, decidir y relacionarte distinto.<br /><br />
+  Y eso cambia la forma en que atraviesas tu día.
 </p>
 </div>
 
