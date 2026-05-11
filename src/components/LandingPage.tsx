@@ -172,9 +172,19 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             {/* 3. Bajada breve */}
         <div className="max-w-5xl mx-auto mb-5 md:mb-6">
 <p className="text-sm md:text-lg text-slate-600 leading-relaxed font-semibold italic max-w-3xl mx-auto">
-  Cuando empiezas a darte cuenta de cómo estás viviendo en automático,<br />
-  aparece la posibilidad de responder, decidir y relacionarte distinto.<br /><br />
-  Y eso cambia la forma en que atraviesas tu día.
+  Muchas veces pensamos que el cansancio es resultado de la cantidad de cosas que hacemos en el día a día…
+  <br />
+  y de lo acelerado que vivimos para poder cumplir con todo.
+  <br /><br />
+  Pero en el proceso,
+  <br />
+  repetimos formas de actuar o reaccionar de las que después nos arrepentimos.
+  <br />
+  “Pucha… lo hice otra vez.”
+  <br /><br />
+  Y muchas veces,
+  <br />
+  ese es nuestro mayor desgaste.
 </p>
 </div>
 
