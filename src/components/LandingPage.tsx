@@ -163,7 +163,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     Una experiencia guiada para bajar el ruido mental y observar cómo reaccionas en
   </span>
   <br />
-  <span className="block text-4xl md:text-7xl mt-2 uppercase tracking-tight">
+  <span className="block text-3xl md:text-5xl mt-2 uppercase tracking-tight font-black">
     piloto automático
   </span>
 </h1>
