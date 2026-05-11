@@ -170,24 +170,23 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
 
             {/* 3. Bajada breve */}
-        <div className="max-w-5xl mx-auto mb-5 md:mb-6">
-<p className="text-sm md:text-lg text-slate-600 leading-relaxed font-semibold italic max-w-3xl mx-auto">
-  Muchas veces pensamos que el cansancio es resultado de la cantidad de cosas que hacemos en el día a día…
-  <br />
-  y de lo acelerado que vivimos para poder cumplir con todo.
-  <br /><br />
-  Pero en el proceso,
-  <br />
-  repetimos formas de actuar o reaccionar de las que después nos arrepentimos.
-  <br />
-  “Pucha… lo hice otra vez.”
-  <br /><br />
-  Y muchas veces,
-  <br />
-  ese es nuestro mayor desgaste.
-</p>
-</div>
+       <div className="max-w-4xl mx-auto mb-6 md:mb-8">
+  <p className="text-base md:text-xl text-slate-700 leading-relaxed font-medium max-w-2xl mx-auto">
+    Muchas veces pensamos que el cansancio viene de hacer demasiadas cosas…
+    <br /><br />
+    Pero en el proceso,
+    repetimos formas de actuar de las que después nos arrepentimos.
+    <br /><br />
+    “Pucha… lo hice otra vez.”
+    <br /><br />
+    Y muchas veces,
+    ese es nuestro mayor desgaste.
+  </p>
 
+  <p className="mt-6 text-sm md:text-base text-slate-500 font-medium">
+    Acceso inmediato y disponible por 1 año.
+  </p>
+</div>
             {/* Principal Hero Image (Compacta) */}
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
