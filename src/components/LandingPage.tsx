@@ -158,16 +158,14 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             </div>
 
             {/* 1. Título principal (grande pero ajustado) */}
-           <h1 className="text-3xl md:text-4xl font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-tight max-w-2xl mx-auto uppercase">
- <span className="md:hidden">
-  Hay cosas que repites todos los días…<br />
-  sin darte cuenta.
-</span>
-
-<span className="hidden md:inline">
-  Hay cosas que repites todos los días…<br />
-  sin darte cuenta.
-</span>
+          <h1 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-tight">
+  <span>
+    Una experiencia guiada para bajar el ruido mental y observar cómo reaccionas en
+  </span>
+  <br />
+  <span className="block text-4xl md:text-7xl mt-2 uppercase tracking-tight">
+    piloto automático
+  </span>
 </h1>
 
 
