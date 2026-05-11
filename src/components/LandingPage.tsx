@@ -170,22 +170,31 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
 
             {/* 3. Bajada breve */}
-       <div className="max-w-4xl mx-auto mb-6 md:mb-8">
-  <p className="text-base md:text-xl text-slate-700 leading-relaxed font-medium max-w-2xl mx-auto">
-    Muchas veces pensamos que el cansancio viene de hacer demasiadas cosas…
-    <br /><br />
-    Pero en el proceso,
-    repetimos formas de actuar de las que después nos arrepentimos.
-    <br /><br />
-    “Pucha… lo hice otra vez.”
-    <br /><br />
-    Y muchas veces,
-    ese es nuestro mayor desgaste.
-  </p>
+     <div className="max-w-4xl mx-auto mb-8 md:mb-10 px-4">
+  <div className="max-w-3xl mx-auto text-left">
+    
+    <p className="text-base md:text-lg text-slate-700 leading-relaxed">
+      Muchas veces pensamos que el cansancio es resultado de la cantidad de cosas que hacemos en el día a día…
+      y de lo acelerado que vivimos para poder cumplir con todo.
+    </p>
 
-  <p className="mt-6 text-sm md:text-base text-slate-500 font-medium">
-    Acceso inmediato y disponible por 1 año.
-  </p>
+    <p className="text-base md:text-lg text-slate-700 leading-relaxed mt-5">
+      Pero en el proceso, repetimos formas de actuar o reaccionar de las que después nos arrepentimos.
+    </p>
+
+    <p className="text-lg md:text-xl font-semibold text-slate-900 mt-5">
+      “Pucha… lo hice otra vez.”
+    </p>
+
+    <p className="text-base md:text-lg text-slate-700 leading-relaxed mt-5">
+      Y muchas veces, ese es nuestro mayor desgaste.
+    </p>
+
+    <p className="mt-6 text-sm md:text-base text-slate-500">
+      Acceso inmediato y disponible por 1 año.
+    </p>
+
+  </div>
 </div>
             {/* Principal Hero Image (Compacta) */}
             <motion.div
