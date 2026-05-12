@@ -173,12 +173,12 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             {/* 3. Bajada breve */}
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4">
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4 text-center">
-<p className="text-[19px] md:text-2xl uppercase tracking-[0.2em] text-violet-600 font-black mb-5">
+<p className="text-[20px] md:text-[2rem] uppercase tracking-[0.12em] text-violet-600 font-black mb-5 whitespace-nowrap">
     Método de Interrupción Consciente
   </p>
 
   <p className="text-base md:text-lg text-slate-600 leading-relaxed">
-    Una experiencia guiada para empezar a notar lo que normalmente haces sin darte cuenta.
+    Una experiencia guiada para empezar a observar lo que normalmente haces sin darte cuenta.
   </p>
 </div>
   <p className="mt-4 text-sm md:text-base text-slate-500">
