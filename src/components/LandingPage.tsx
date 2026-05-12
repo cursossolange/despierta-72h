@@ -356,7 +356,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true }}
-  className="bg-gradient-to-br from-violet-500 to-purple-600 rounded-[2.5rem] py-12 md:py-16 px-8 md:px-16 max-w-3xl mx-auto shadow-2xl relative overflow-hidden"
+  className="bg-slate-900 rounded-[2.5rem] py-14 md:py-20 px-8 md:px-16 max-w-4xl mx-auto shadow-2xl"
 >
               <div className="absolute top-[-10%] left-[-10%] w-40 h-40 bg-white/30 rounded-full blur-2xl"></div>
               <div className="absolute bottom-[-10%] right-[-10%] w-40 h-40 bg-white/30 rounded-full blur-2xl"></div>
@@ -366,14 +366,12 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               <h3 className="text-violet-100 text-xs md:text-sm font-black uppercase tracking-[0.4em]">
                 Lo que te llevas
               </h3>
-              <p className="text-2xl md:text-4xl font-black text-white leading-tight md:leading-tight max-w-2xl mx-auto">
-                Reconoces cuándo estás en automático y aparece un espacio para elegir distinto.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
+              <p className="text-3xl md:text-5xl font-black text-white leading-tight">
+  Un método simple para interrumpir el automático y empezar a elegir distinto.
+</p>
+           <p className="text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
+  Una forma de observarte y decidir con más claridad que puedes volver a usar cada vez que lo necesites.
+</p>
            {/* ¿Cómo funciona esta experiencia? */}
       <section className="pt-4 pb-8 md:pt-8 md:pb-10 bg-white">
         <div className="container mx-auto px-6">
