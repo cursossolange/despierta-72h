@@ -425,7 +425,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <p>✓ Tu cabeza no logra desconectarse</p>
   <p>✓ Sigues funcionando aunque estés cansada</p>
 </div>
-        
+  </div>    
     {/* Texto */}
     <div className="flex-1 text-center md:text-left max-w-[640px]">
    <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
@@ -440,9 +440,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   Y poco a poco, puedes escoger distinto.
 </p>
     </div>
-
   </div>
-
             {/* Objeciones / dudas */}
 <div className="max-w-3xl mx-auto mb-10 bg-white border border-violet-100 rounded-[2rem] p-6 md:p-8 shadow-sm text-left">
   <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 text-center">
