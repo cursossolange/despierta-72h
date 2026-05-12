@@ -158,7 +158,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             </div>
 
             {/* 1. Título principal (grande pero ajustado) */}
-<h1 className="text-[1.9rem] md:text-[3.2rem] font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-[1.08]">
+<h1 className="text-[1.45rem] md:text-[2.6rem] font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-[1.08]">
   <>
     SIGUES FUNCIONANDO...
     <br />
