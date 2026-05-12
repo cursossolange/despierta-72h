@@ -299,28 +299,13 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </div>
 </section>
   
-   
-{/* Emotional Bridge Section (Compacta) */}
-<section className="py-8 bg-white overflow-hidden">
+  <section className="py-8 bg-violet-50/50">
   <div className="container mx-auto px-6">
-    <motion.div
-      initial={{ opacity: 0, scale: 0.98 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
-      className="max-w-2xl mx-auto rounded-2xl bg-slate-800/95 p-6 md:p-8 shadow-lg relative overflow-hidden"
-    >
-      <div className="absolute top-[-20%] right-[-10%] w-[40%] h-[40%] bg-violet-600/10 rounded-full blur-[60px] pointer-events-none"></div>
-
-         {/* Neuro Section (Benefits) - Más Compacta */}
-      <section className="py-8 bg-violet-50/50">
-        <div className="container mx-auto px-6">
-       <div className="bg-white rounded-[2rem] border border-violet-100 p-6 md:p-8 shadow-sm text-center">
-
- <div className="max-w-2xl mx-auto mb-8 text-center">
-  <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-    Lo que aprenderás en estos 3 días
-  </h2>
-
+    <div className="bg-white rounded-[2rem] border border-violet-100 p-6 md:p-8 shadow-sm text-center">
+      <div className="max-w-2xl mx-auto mb-8 text-center">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
+          Lo que aprenderás en estos 3 días
+        </h2>
   <p className="text-sm md:text-base text-slate-600 mt-3">
     Pequeñas observaciones guiadas para entender cómo piensas, reaccionas y actúas en automático.
   </p>
