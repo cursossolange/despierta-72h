@@ -415,7 +415,50 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                 Una guía breve para ayudarte a reconocerlo en tu día a día.
               </p>
             </div>
-            
+            {/* Objeciones / dudas */}
+<div className="max-w-3xl mx-auto mb-10 bg-white border border-violet-100 rounded-[2rem] p-6 md:p-8 shadow-sm text-left">
+  <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 text-center">
+    Si estás pensando esto…
+  </h3>
+
+  <div className="space-y-6">
+    <div>
+      <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+        “Me gustaría hacerlo… pero no tengo tiempo.”
+      </p>
+      <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+        Muchas veces, el automático también se ve así: seguir funcionando sin encontrar un momento para parar.
+      </p>
+    </div>
+
+    <div>
+      <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+       “¿Y si no logro observar mucho?”
+      </p>
+      <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+        No necesitas hacerlo perfecto. La práctica es empezar a notar pequeños momentos que normalmente pasan en automático.
+      </p>
+    </div>
+
+    <div>
+      <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+        “¿Y si me olvido durante el día?”
+      </p>
+      <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+        Es parte del proceso. Darte cuenta también es una forma de salir del automático.
+      </p>
+    </div>
+
+    <div>
+      <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+       “¿Y si necesito más tiempo?”
+      </p>
+      <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+        Puedes repetir los ejercicios las veces que necesites. La idea no es avanzar rápido, sino empezar a observar distinto.
+      </p>
+    </div>
+  </div>
+</div>
             <div className="pt-2 flex flex-col items-center">
               <p className="mb-3 text-xs md:text-sm text-slate-900 font-medium text-center">Y muchas veces, parar ya es suficiente para empezar.</p>
              <a
@@ -424,6 +467,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   rel="noopener noreferrer"
   className="bg-violet-600 text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 shadow-xl hover:-translate-y-0.5 transition inline-flex items-center gap-2"
 >
+               
   <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
   <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
 </a>
