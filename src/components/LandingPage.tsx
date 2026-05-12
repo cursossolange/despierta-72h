@@ -382,63 +382,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </div>
 </section>
              
-           {/* ¿Cómo funciona esta experiencia? */}
-      <section className="pt-4 pb-8 md:pt-8 md:pb-10 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-4 tracking-tight uppercase">
-              ¿Cómo funciona esta experiencia?
-            </h2>
-          
-          </div>
-{/* Tres momentos clave */}
-<div className="max-w-4xl mx-auto mb-5 md:mb-6">
-  <h3 className="text-base md:text-lg font-black text-violet-600 uppercase tracking-[0.3em] text-center mb-8">
-    Cada día activas un ciclo de interrupción consciente
-  </h3>
-
-  <div className="grid md:grid-cols-3 gap-8 md:gap-6">
-    {[
-      {
-        time: "ESCUCHAS",
-        desc: "Escuchas un audio breve que te ayuda a salir del automático y observar algo específico durante tu día.",
-        sub: "El audio prepara tu atención para detectar situaciones que normalmente pasan desapercibidas.",
-        icon: <Sunrise className="w-5 h-5 text-amber-500" />,
-      },
-      {
-        time: "OBSERVAS",
-        desc: "Durante el día haces pequeñas pausas conscientes mientras las situaciones están ocurriendo.",
-        sub: "Empiezas a notar qué activa tus reacciones y cómo respondes antes de darte cuenta.",
-        icon: <Sun className="w-5 h-5 text-orange-500" />,
-      },
-      {
-        time: "REFLEXIONAS",
-        desc: "Al final del día escribes lo que observaste para transformarlo en mayor claridad.",
-        sub: "La escritura ayuda a reconocer patrones y empezar a elegir distinto con más consciencia.",
-        icon: <Moon className="w-5 h-5 text-slate-400" />,
-      },
-    ].map((moment, i) => (
-      <div key={i} className="flex flex-col items-center text-center group">
-        <div className="w-12 h-12 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center shadow-sm mb-5">
-          {moment.icon}
-        </div>
-
-        <h4 className="text-sm font-black text-slate-900 mb-2 uppercase tracking-wide">
-          {moment.time}
-        </h4>
-
-        <p className="text-sm text-slate-800 font-semibold leading-relaxed mb-2">
-          {moment.desc}
-        </p>
-
-        <p className="text-[11px] text-slate-500 italic font-medium">
-          {moment.sub}
-        </p>
-      </div>
-    ))}
-  </div>
-</div>
-          
+       {/* Tres momentos clave */}<div className="max-w-4xl mx-auto mb-5 md:mb-6">  <h3 className="text-base md:text-lg font-black text-violet-600 uppercase tracking-[0.3em] text-center mb-8">    Cada día practicas 3 momentos clave  </h3>  <div className="grid md:grid-cols-3 gap-8 md:gap-6">    {[      {        time: "ESCUCHAS",        title: "Foco de atención",        desc: "Escuchas un audio breve que ayuda a bajar el ruido y dejar tu mente más disponible para observar el día con más claridad.",        icon: <Sunrise className="w-5 h-5 text-amber-500" />,      },      {        time: "OBSERVAS",        title: "Interrupción consciente",        desc: "Durante el día haces pequeñas pausas para observar qué aparece y cómo reaccionas mientras las situaciones están ocurriendo.",        icon: <Sun className="w-5 h-5 text-orange-500" />,      },      {        time: "REFLEXIONAS",        title: "Identificación y aprendizaje",        desc: "Al final del día escribes lo que observaste. Ahí empiezas a identificar patrones, entender mejor tus reacciones y aprender de lo que normalmente haces en automático.",        icon: <Moon className="w-5 h-5 text-slate-400" />,      },    ].map((moment, i) => (      <div key={i} className="flex flex-col items-center text-center group">        <div className="w-12 h-12 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center shadow-sm mb-5">          {moment.icon}        </div>        <h4 className="text-sm font-black text-slate-900 mb-1 uppercase tracking-wide">          {moment.time}        </h4>        <p className="text-sm font-semibold text-violet-600 mb-3">          {moment.title}        </p>        <p className="text-sm text-slate-700 leading-relaxed">          {moment.desc}        </p>      </div>    ))}  </div></div>
     
 
 
