@@ -442,7 +442,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     </div>
 
   </div>
-</div>
+
             {/* Objeciones / dudas */}
 <div className="max-w-3xl mx-auto mb-10 bg-white border border-violet-100 rounded-[2rem] p-6 md:p-8 shadow-sm text-left">
   <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 text-center">
