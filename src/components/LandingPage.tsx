@@ -506,7 +506,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             </div>
           </div>
         </div>
-      </section>
+     
 
       <footer className="py-6 border-t border-slate-100 text-center bg-white">
         <div className="container mx-auto px-6">
@@ -516,7 +516,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
      </footer>
 
 </div>
-</div>
+
 
 );
 }
