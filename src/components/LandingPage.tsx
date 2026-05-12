@@ -404,7 +404,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
             <div className="max-w-3xl mx-auto my-12 bg-white border border-violet-100 rounded-[2rem] p-6 md:p-8 shadow-sm">
 
-  className="flex flex-col md:flex-row items-center gap-8 md:gap-10"
+ className="flex flex-col md:flex-row items-center gap-8 md:gap-10"
 
     {/* Mockup visual */}
     <div className="w-full md:w-[260px] flex-shrink-0">
@@ -425,7 +425,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <p>✓ Tu cabeza no logra desconectarse</p>
   <p>✓ Sigues funcionando aunque estés cansada</p>
 </div>
-
+</div>
 </div>
               
 <div className="flex-1 text-center md:text-left max-w-[640px]">
