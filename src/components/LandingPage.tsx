@@ -211,14 +211,12 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
                  <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
 </a>
-      <div className="flex flex-col items-center">      
-            <p className="mt-3 text-sm md:text-base text-slate-600 font-medium">
+      <p className="mt-3 text-sm md:text-base text-slate-600 font-medium">
   $29.990 CLP · Garantía de 7 días
 </p>
 </div>
-</motion.div>
 </div>
-</header>
+</motion.div>
 
 {/* Authority Section - Compacto */}
 <section className="py-12 bg-slate-50/50">
