@@ -513,8 +513,10 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <Logo className="opacity-20 grayscale scale-40 mb-2" />
           <p className="text-slate-600 text-[8px] font-bold tracking-widest uppercase">© 2026 Despierta 72H</p>
         </div>
-      </footer>
-    </div>
-  );
-}
+     </footer>
 
+</div>
+</div>
+
+);
+}
