@@ -310,31 +310,32 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         </div>
       </section>
 
-      {/* Emotional Bridge Section (Compacta) */}
-      <section className="py-8 bg-white overflow-hidden">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.98 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="max-w-2xl mx-auto rounded-2xl bg-slate-800/95 p-6 md:p-8 shadow-lg relative overflow-hidden"
-          >
-            <div className="absolute top-[-20%] right-[-10%] w-[40%] h-[40%] bg-violet-600/10 rounded-full blur-[60px] pointer-events-none"></div>
-            <div className="relative z-10">
-             <h2 className="text-xl md:text-2xl font-black text-white mb-4 leading-tight tracking-tight">
-  Experiencia guiada de 3 días para:
-</h2>
+   
+{/* Emotional Bridge Section (Compacta) */}
+<section className="py-8 bg-white overflow-hidden">
+  <div className="container mx-auto px-6">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.98 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      className="max-w-2xl mx-auto rounded-2xl bg-slate-800/95 p-6 md:p-8 shadow-lg relative overflow-hidden"
+    >
+      <div className="absolute top-[-20%] right-[-10%] w-[40%] h-[40%] bg-violet-600/10 rounded-full blur-[60px] pointer-events-none"></div>
 
-<div className="text-sm md:text-lg text-slate-300 space-y-3 leading-snug">
-<p>· Reconocer cuándo estás funcionando en automático.</p>
-<p>· Observar qué situaciones activan tus reacciones.</p>
-<p>· Empezar a hacer micropausas conscientes durante el día.</p>
-</div>
-</div>
-            </div>
-          </motion.div>
+      <div className="relative z-10">
+        <h2 className="text-xl md:text-2xl font-black text-white mb-4 leading-tight tracking-tight">
+          Experiencia guiada de 3 días para:
+        </h2>
+
+        <div className="text-sm md:text-lg text-slate-300 space-y-3 leading-snug">
+          <p>· Reconocer cuándo estás funcionando en automático.</p>
+          <p>· Observar qué situaciones activan tus reacciones.</p>
+          <p>· Empezar a hacer micropausas conscientes durante el día.</p>
         </div>
-      </section>
+      </div>
+    </motion.div>
+  </div>
+</section>
 
       {/* Neuro Section (Benefits) - Más Compacta */}
       <section className="py-8 bg-violet-50/50">
