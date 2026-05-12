@@ -416,31 +416,41 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           Bonus incluido
         </p>
 
-     <h3 className="text-2xl font-black leading-tight mb-4">
-  Guía práctica:
-  <br />
-  7 señales de que estás funcionando en automático
-</h3>
+        <h3 className="text-2xl font-black leading-tight mb-5">
+          7 señales de que estás funcionando en automático
+        </h3>
 
-<div className="space-y-2 text-sm text-slate-300">
-  <p>✓ Reaccionas y te das cuenta después</p>
-  <p>✓ Te cuesta desconectarte mentalmente</p>
-  <p>✓ Sigues funcionando, aunque estés cansada</p>
-</div>
-{/* Texto */}
+        <div className="space-y-2 text-sm text-slate-300">
+          <p>✓ Reaccionas y te das cuenta después</p>
+          <p>✓ Sientes cansancio mental constante</p>
+          <p>✓ Te cuesta parar aunque tengas tiempo</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Texto */}
     <div className="flex-1 text-center md:text-left max-w-[640px]">
-<h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
-  Empiezas a reconocer cuándo estás funcionando en modo automático… y puedes parar y elegir distinto
+    <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
+  Hay momentos donde sigues funcionando… pero ya no estás realmente presente.
 </h3>
 
 <p className="text-slate-600 leading-relaxed text-base max-w-md">
-  Este recurso te ayuda a detectar pequeños comportamientos automáticos que normalmente pasan desapercibidos.
+  Respondes en automático y recién después te das cuenta.
 
   <br /><br />
 
-  Y cuando empiezas a observarlos, también empiezas a interrumpirlos.
-</p>
+  Tu cabeza sigue activa incluso cuando intentas descansar.
 
+  <br /><br />
+
+  Vas a un lugar y olvidas a qué ibas.
+  Abres el celular sin pensarlo.
+  Sigues haciendo cosas aunque ya estés agotada.
+
+  <br /><br />
+
+  Pequeños comportamientos automáticos que muchas veces pasan desapercibidos… hasta que empiezas a observarlos.
+</p>
     </div>
 
   </div>
@@ -498,24 +508,21 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   className="bg-violet-600 text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 shadow-xl hover:-translate-y-0.5 transition inline-flex items-center gap-2"
 >
                
-<span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
-<ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
+  <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
+  <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
 </a>
-<p className="mt-4 text-[9px] md:text-[10px] text-slate-600 font-semibold tracking-wide">
-  Pago seguro · Garantía total de 7 días
-</p>
-</div>
-</div>
-</section>
+              <p className="mt-4 text-[9px] md:text-[10px] text-slate-600 font-semibold tracking-wide">Pago seguro · Garantía total</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<footer className="py-6 border-t border-slate-100 text-center bg-white">
-  <div className="container mx-auto px-6">
-    <Logo className="opacity-20 grayscale scale-40 mb-2" />
-    <p className="text-slate-600 text-[8px] font-bold tracking-widest uppercase">
-      © 2026 Despierta 72H
-    </p>
-  </div>
-</footer>
-</div>
+      <footer className="py-6 border-t border-slate-100 text-center bg-white">
+        <div className="container mx-auto px-6">
+          <Logo className="opacity-20 grayscale scale-40 mb-2" />
+          <p className="text-slate-600 text-[8px] font-bold tracking-widest uppercase">© 2026 Despierta 72H</p>
+        </div>
+      </footer>
+    </div>
   );
 }
