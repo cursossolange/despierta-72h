@@ -311,19 +311,19 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     {[
      {
   day: "Día 1",
-  title: "Empiezas a bajar el ruido",
+  title: "Empiezas a bajar el ruido en tu cabeza",
   sub: "Empiezas a identificar los pensamientos que más se repiten en tu cabeza y cuándo tu mente se acelera.",
  icon: <Sparkles className="w-5 h-5" />,
 },
 {
   day: "Día 2",
-  title: "Detectas el automático",
+  title: "Detectas tus comportamientos automáticos",
   sub: "Observas qué situaciones activan tus reacciones y cómo respondes antes de darte cuenta.",
  icon: <RefreshCw className="w-5 h-5" />,
 },
 {
   day: "Día 3",
-  title: "Entiendes desde dónde actúas",
+  title: "Entiendes qué hay detrás de esas reacciones",
   sub: "Empiezas a reconocer qué necesidad, emoción o tensión está guiando tus respuestas.",
   icon: <Heart className="w-5 h-5" />,
 }
