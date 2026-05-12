@@ -430,15 +430,21 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
     {/* Texto */}
     <div className="flex-1 text-center md:text-left max-w-[520px]">
-      <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
-        Un recurso simple para ayudarte a reconocerlo en tu día a día.
-      </h3>
+    <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
+  Hay momentos donde sigues funcionando… pero ya no estás realmente presente.
+</h3>
 
       <p className="text-slate-600 leading-relaxed text-base max-w-md">
-        Vas a empezar a notar patrones que normalmente pasan desapercibidos:
-        reacciones automáticas, cansancio acumulado y pequeñas señales que muestran
-        cuánto tiempo llevas funcionando sin detenerte.
-      </p>
+  Respondes en automático y recién después te das cuenta.
+  Tu cabeza sigue activa incluso cuando intentas descansar.
+  Vas a un lugar y olvidas a qué ibas.
+  Abres el celular sin pensarlo.
+  Sigues haciendo cosas aunque ya estés agotada.
+
+  <br /><br />
+
+  Pequeños comportamientos automáticos que muchas veces pasan desapercibidos… hasta que empiezas a observarlos.
+</p>
     </div>
 
   </div>
