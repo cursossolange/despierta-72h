@@ -516,8 +516,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     </p>
   </div>
 </footer>
-
 </div>
-
-);
+  );
 }
