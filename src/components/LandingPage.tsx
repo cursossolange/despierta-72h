@@ -404,7 +404,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
             <div className="max-w-3xl mx-auto my-12 bg-white border border-violet-100 rounded-[2rem] p-6 md:p-8 shadow-sm">
 
-  <div className="flex flex-col md:flex-row items-center gap-6">
+  className="flex flex-col md:flex-row items-center gap-8 md:gap-10"
 
     {/* Mockup visual */}
     <div className="w-full md:w-[260px] flex-shrink-0">
