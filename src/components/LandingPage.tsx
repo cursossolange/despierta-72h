@@ -235,17 +235,25 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <span className="block mt-1 font-semibold text-slate-900">Soy Solange.</span>
 </h2>
              <div className="text-sm md:text-[17px] text-slate-700 leading-8 font-normal space-y-5 max-w-3xl mx-auto">
-                Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional. Fue una etapa muy valiosa, que me dio estructura, criterio y experiencia.
+               Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional. Fue una etapa muy valiosa, que me dio estructura, criterio y experiencia.
 
 Pero no fue ahí donde más aprendí de verdad.
 
-Ese aprendizaje vino después, cuando me tocó observar mis propios patrones y entender que muchas veces no necesitamos reaccionar más rápido, sino darnos un momento para observar.
+Ese aprendizaje vino después, cuando me tocó observar mis propios patrones y entender que muchas veces el mayor desgaste no viene solo de hacer mucho, sino de vivir en piloto automático.
+
+Resolviendo.
+Reaccionando.
+Avanzando.
+
+Y repitiendo formas de actuar de las que después nos arrepentimos.
+
+“Pucha… lo hice otra vez.”
 
 En ese camino profundicé en neurociencia y me formé en neurocoaching, lo que me permitió entender mejor cómo funcionan nuestros patrones cuando vivimos en automático.
 
 Despierta 72H nace desde ahí. No desde teoría, sino desde algo vivido y observado.
 
-Un espacio simple para parar, observar y elegir con más conciencia.
+Una experiencia guiada de 3 días basada en pequeñas micropausas conscientes para ayudarte a observar cómo piensas, reaccionas y actúas mientras tu día está pasando.
               </div>
             </div>
           </div>
