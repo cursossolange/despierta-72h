@@ -159,15 +159,14 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
             {/* 1. Título principal (grande pero ajustado) */}
           <h1 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-tight">
-  <span>
-    Una experiencia guiada para bajar el ruido mental y observar cómo reaccionas en
-  </span>
+  <>
+  SIGUES FUNCIONANDO.
   <br />
-  <span className="block text-3xl md:text-5xl mt-2 uppercase tracking-tight font-black">
-    piloto automático
-  </span>
+  REACCIONANDO.
+  <br />
+  Y DÁNDOTE CUENTA DESPUÉS.
+</>
 </h1>
-
 
             {/* 3. Bajada breve */}
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4">
@@ -176,6 +175,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     <br />
     pero el mayor desgaste viene de vivir en piloto automático.
   </p>
+</div>
 
   <p className="mt-4 text-sm md:text-base text-slate-500">
     Acceso inmediato y disponible por 1 año.
