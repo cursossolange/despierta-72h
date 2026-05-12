@@ -342,36 +342,34 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         <div className="container mx-auto px-6">
        <div className="bg-white rounded-[2rem] border border-violet-100 p-6 md:p-8 shadow-sm text-center">
 
-  <div className="max-w-2xl mx-auto mb-6 text-center">
-    <h2 className="text-lg md:text-2xl font-bold text-slate-900 leading-tight">
-      Cuando aparece consciencia,
-      <br />
-      aparece elección.
-    </h2>
+ <div className="max-w-2xl mx-auto mb-8 text-center">
+  <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
+    Lo que aprenderás en estos 3 días
+  </h2>
 
-    <p className="text-sm md:text-base text-slate-600 italic mt-3">
-      Y eso cambia resultados.
-    </p>
-  </div>
-
+  <p className="text-sm md:text-base text-slate-600 mt-3">
+    Pequeñas observaciones guiadas para entender cómo piensas, reaccionas y actúas en automático.
+  </p>
+</div>
   <div className="grid lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
     {[
       {
         day: "Día 1",
-        title: "Bajas el ruido",
-        sub: "Tu mente se desacelera y aparece espacio para observar lo que te pasa.",
+        title: "Empiezas a bajar el ruido",
+         "Empiezas a identificar los pensamientos que más se repiten en tu cabeza y cuándo tu mente se acelera.",
         icon: <Sparkles className="w-5 h-5" />
       },
       {
         day: "Día 2",
-        title: "Te das cuenta del automático",
-        sub: "Empiezas a reconocer tus reacciones antes de que ocurran y aparece un espacio para parar.",
+        title: title: "Detectas el automático",
+          "Observas qué situaciones activan tus reacciones y cómo respondes, antes de darte cuenta.",
         icon: <RefreshCw className="w-5 h-5" />
       },
       {
         day: "Día 3",
-        title: "Identificas desde dónde estás actuando",
-        sub: "Reconoces las emociones que están guiando tus respuestas, sin necesidad de cambiarlas.",
+    title: "Entiendes desde dónde actúas",
+       description:
+  "Empiezas a reconocer qué necesidad, emoción o tensión está guiando tus respuestas.",
         icon: <Heart className="w-5 h-5" />
       }
     ].map((card, i) => (
