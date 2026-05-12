@@ -429,12 +429,12 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     </div>
 
     {/* Texto */}
-    <div className="flex-1 text-center md:text-left">
-      <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-4">
+    <div className="flex-1 text-center md:text-left max-w-[520px]">
+      <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
         Un recurso simple para ayudarte a reconocerlo en tu día a día.
       </h3>
 
-      <p className="text-slate-600 leading-relaxed text-base md:text-lg">
+      <p className="text-slate-600 leading-relaxed text-base max-w-md">
         Vas a empezar a notar patrones que normalmente pasan desapercibidos:
         reacciones automáticas, cansancio acumulado y pequeñas señales que muestran
         cuánto tiempo llevas funcionando sin detenerte.
