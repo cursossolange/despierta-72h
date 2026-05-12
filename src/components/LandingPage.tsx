@@ -413,10 +413,10 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         <div className="absolute top-0 right-0 w-24 h-24 bg-violet-500/20 rounded-full blur-2xl" />
 
         <p className="text-[10px] uppercase tracking-[0.3em] text-violet-300 font-bold mb-4">
-          Bonus incluido
-        </p>
+  Bonus incluido
+</p>
 
-      <h3 className="text-2xl font-black leading-tight mb-5">
+<h3 className="text-2xl font-black leading-tight mb-5">
   Conductas automáticas que empiezas a detectar
 </h3>
 
@@ -425,24 +425,29 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <p>✓ Tu cabeza no logra desconectarse</p>
   <p>✓ Sigues funcionando aunque estés cansada</p>
 </div>
-  </div>    
-    {/* Texto */}
-    <div className="flex-1 text-center md:text-left max-w-[640px]">
-   <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
-  Cuando empiezas a observar lo que haces en automático, algo cambia.
-</h3>
 
-<p className="text-slate-600 leading-relaxed text-base max-w-md">
-  Empiezas a darte cuenta antes.
-  <br /><br />
-  Interrumpes respuestas automáticas.
-  <br /><br />
-  Y poco a poco, puedes escoger distinto.
-</p>
-    </div>
-  </div>
-            {/* Objeciones / dudas */}
-<div className="max-w-3xl mx-auto mb-10 bg-white border border-violet-100 rounded-[2rem] p-6 md:p-8 shadow-sm text-left">
+</div>
+</div>
+</div>
+
+{/* Texto */}
+<div className="flex-1 text-center md:text-left max-w-[640px]">
+  <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
+    Cuando empiezas a observar lo que haces en automático, algo cambia.
+  </h3>
+
+  <p className="text-slate-600 leading-relaxed text-base max-w-md">
+    Empiezas a darte cuenta antes.
+    <br /><br />
+    Interrumpes respuestas automáticas.
+    <br /><br />
+    Y poco a poco, puedes escoger distinto.
+  </p>
+</div>
+</div>
+</div>
+
+{/* Objeciones / dudas */}
   <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 text-center">
     Si estás pensando esto…
   </h3>
