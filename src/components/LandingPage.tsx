@@ -417,40 +417,31 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         </p>
 
         <h3 className="text-2xl font-black leading-tight mb-5">
-          7 señales de que estás funcionando en automático
+          7 señales de que estás funcionando en modo automático
         </h3>
 
         <div className="space-y-2 text-sm text-slate-300">
-          <p>✓ Reaccionas y te das cuenta después</p>
-          <p>✓ Sientes cansancio mental constante</p>
-          <p>✓ Te cuesta parar aunque tengas tiempo</p>
-        </div>
-      </div>
-    </div>
 
+          <div className="space-y-3 text-sm text-slate-300 leading-relaxed">
+  <p>✓ Tu cabeza sigue activa incluso cuando intentas descansar</p>
+
+  <p>✓ Vas a un lugar y olvidas a qué ibas</p>
+
+  <p>✓ Abres el celular sin pensarlo</p>
     {/* Texto */}
     <div className="flex-1 text-center md:text-left max-w-[640px]">
-    <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
-  Hay momentos donde sigues funcionando… pero ya no estás realmente presente.
+<h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
+  Empiezas a reconocer cuándo estás funcionando en modo automático… y puedes parar y elegir distinto
 </h3>
 
 <p className="text-slate-600 leading-relaxed text-base max-w-md">
-  Respondes en automático y recién después te das cuenta.
+  Este recurso te ayuda a detectar pequeños comportamientos automáticos que normalmente pasan desapercibidos.
 
   <br /><br />
 
-  Tu cabeza sigue activa incluso cuando intentas descansar.
-
-  <br /><br />
-
-  Vas a un lugar y olvidas a qué ibas.
-  Abres el celular sin pensarlo.
-  Sigues haciendo cosas aunque ya estés agotada.
-
-  <br /><br />
-
-  Pequeños comportamientos automáticos que muchas veces pasan desapercibidos… hasta que empiezas a observarlos.
+  Y cuando empiezas a observarlos, también empiezas a interrumpirlos.
 </p>
+
     </div>
 
   </div>
