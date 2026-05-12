@@ -363,15 +363,24 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
            
             
             <div className="relative z-10 space-y-6 max-w-2xl mx-auto text-center">
-              <h3 className="text-violet-100 text-xs md:text-sm font-black uppercase tracking-[0.4em]">
-                Lo que te llevas
-              </h3>
-              <p className="text-3xl md:text-5xl font-black text-white leading-tight">
-  Un método simple para interrumpir el automático y empezar a elegir distinto.
-</p>
-           <p className="text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
-  Una forma de observarte y decidir con más claridad que puedes volver a usar cada vez que lo necesites.
-</p>
+
+  <h3 className="text-violet-300 text-xs md:text-sm font-black uppercase tracking-[0.4em]">
+    Lo que te llevas
+  </h3>
+
+  <p className="text-3xl md:text-5xl font-black text-white leading-tight">
+    Un método simple para interrumpir el automático y empezar a elegir distinto.
+  </p>
+
+  <p className="text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
+    Una forma de observarte y decidir con más claridad que puedes volver a usar cada vez que lo necesites.
+  </p>
+
+</div>
+</motion.div>
+</div>
+</section>
+             
            {/* ¿Cómo funciona esta experiencia? */}
       <section className="pt-4 pb-8 md:pt-8 md:pb-10 bg-white">
         <div className="container mx-auto px-6">
