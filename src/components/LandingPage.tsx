@@ -428,21 +428,11 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
 </div>
 </div>
-</div>
-
-{/* Texto */}
+              
 <div className="flex-1 text-center md:text-left max-w-[640px]">
-  <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
-    Cuando empiezas a observar lo que haces en automático, algo cambia.
+  <h3 className="text-xl md:text-2xl font-black text-slate-900 leading-tight">
+    Empiezas a detectar patrones automáticos que antes pasaban desapercibidos.
   </h3>
-
-  <p className="text-slate-600 leading-relaxed text-base max-w-md">
-    Empiezas a darte cuenta antes.
-    <br /><br />
-    Interrumpes respuestas automáticas.
-    <br /><br />
-    Y poco a poco, puedes escoger distinto.
-  </p>
 </div>
 </div>
 </div>
