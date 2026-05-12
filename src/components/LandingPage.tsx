@@ -502,11 +502,11 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
 <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
 </a>
-
 <p className="mt-4 text-[9px] md:text-[10px] text-slate-600 font-semibold tracking-wide">
   Pago seguro · Garantía total de 7 días
 </p>
 
+</div>
 </div>
 </div>
 </section>
@@ -519,6 +519,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     </p>
   </div>
 </footer>
+
+</div>
 
 );
 }
