@@ -401,20 +401,20 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     {[
       {
         time: "ESCUCHAS",
-        desc: "Una guía breve dirige tu atención hacia un patrón específico de tu día.",
-        sub: "Preparas tu mente para detectar en tiempo real lo que normalmente ocurre en automático.",
+        desc: "Escuchas un audio breve que te ayuda a salir del automático y observar algo específico durante tu día.",
+        sub: "El audio prepara tu atención para detectar situaciones que normalmente pasan desapercibidas.",
         icon: <Sunrise className="w-5 h-5 text-amber-500" />,
       },
       {
         time: "OBSERVAS",
-        desc: "Durante el día haces micro pausas conscientes mientras las situaciones están ocurriendo.",
-        sub: "Empiezas a identificar qué activa tus reacciones, cómo respondes y qué ocurre antes de darte cuenta.",
+        desc: "Durante el día haces pequeñas pausas conscientes mientras las situaciones están ocurriendo.",
+        sub: "Empiezas a notar qué activa tus reacciones y cómo respondes antes de darte cuenta.",
         icon: <Sun className="w-5 h-5 text-orange-500" />,
       },
       {
         time: "REFLEXIONAS",
-        desc: "Al final del día registras lo observado para transformar la experiencia en consciencia práctica.",
-        sub: "La escritura ayuda a ordenar patrones, reconocer repeticiones y empezar a elegir con más claridad.",
+        desc: "Al final del día escribes lo que observaste para transformarlo en mayor claridad.",
+        sub: "La escritura ayuda a reconocer patrones y empezar a elegir distinto con más consciencia.",
         icon: <Moon className="w-5 h-5 text-slate-400" />,
       },
     ].map((moment, i) => (
@@ -438,7 +438,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     ))}
   </div>
 </div>
-
           
     
 
