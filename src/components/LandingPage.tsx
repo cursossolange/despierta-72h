@@ -490,13 +490,15 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     </div>
   </div>
 </div>
-            <div className="pt-2 flex flex-col items-center">
-              <p className="mb-3 text-xs md:text-sm text-slate-900 font-medium text-center">Y muchas veces, parar ya es suficiente para empezar.</p>
-             <a
+<div className="pt-2 flex flex-col items-center">
+  <p className="mb-3 text-xs md:text-sm text-slate-900 font-medium text-center">
+    Y muchas veces, parar ya es empezar a salir del automático.
+  </p>
+            <a
   href="https://pay.hotmart.com/O105550362E"
   target="_blank"
   rel="noopener noreferrer"
-  className="bg-violet-600 text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 shadow-xl hover:-translate-y-0.5 transition inline-flex items-center gap-2"
+  className="bg-violet-600 text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 transition-all duration-300 flex items-center gap-2"
 >
                
   <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
