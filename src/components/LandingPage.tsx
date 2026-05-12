@@ -502,11 +502,11 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
   <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
 </a>
-              <p className="mt-4 text-[9px] md:text-[10px] text-slate-600 font-semibold tracking-wide">Pago seguro · Garantía total</p>
-            </div>
-          </div>
-        </div>
-     
+<p className="mt-4 text-[9px] md:text-[10px] text-slate-600 font-semibold tracking-wide">Pago seguro · Garantía total</p>
+</div>
+</div>
+</div>
+</section>
 
       <footer className="py-6 border-t border-slate-100 text-center bg-white">
         <div className="container mx-auto px-6">
@@ -514,9 +514,19 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <p className="text-slate-600 text-[8px] font-bold tracking-widest uppercase">© 2026 Despierta 72H</p>
         </div>
      </footer>
+</div>
+</div>
+</div>
+</section>
+
+<footer className="py-6 border-t border-slate-100 text-center bg-white">
+  <div className="container mx-auto px-6">
+    <Logo className="opacity-20 grayscale scale-40 mb-2" />
+    <p className="text-slate-600 text-[8px] font-bold tracking-widest uppercase">© 2026 Despierta 72H</p>
+  </div>
+</footer>
 
 </div>
-
 
 );
 }
