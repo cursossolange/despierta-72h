@@ -216,13 +216,20 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                 $29.990 CLP · Garantía de 7 días
               </p>
               <a
-  href="https://wa.me/56990991901?text=Hola%2C%20vi%20lo%20de%20las%2072%20horas%20y%20me%20hizo%20sentido.%20Quiero%20m%C3%A1s%20informaci%C3%B3n."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-3 text-sm text-slate-500 hover:text-slate-700 transition"
->
- ¿Quieres confirmar si esto es para ti? Escríbeme aquí
-</a>
+ <div className="max-w-xl mx-auto mt-8 mb-4 px-6 py-5 rounded-[1.5rem] bg-violet-50/70 border border-violet-100 text-center">
+   <p className="text-base md:text-lg font-black text-slate-900 mb-2">
+    ¿Quieres confirmar si esto es para ti?
+  </p>
+
+  <a
+    href="https://wa.me/56990991901?text=Hola%2C%20quiero%20saber%20si%20Despierta%2072H%20es%20para%20m%C3%AD"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-violet-600 hover:text-violet-700 transition-colors font-bold text-base md:text-lg"
+  >
+    Escríbeme aquí
+  </a>
+</div>
             </div>
           </motion.div>
         </div>
