@@ -393,11 +393,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     Al escribir, ordenas la experiencia y empiezas a identificar patrones con más claridad.
   </p>
 </div>
-
-          {/* Footer del bloque */}
-        </div>
-      </section>
-
       <section className="pt-0 pb-6 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-xl mx-auto text-center space-y-6">
