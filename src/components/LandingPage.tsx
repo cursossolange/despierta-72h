@@ -223,20 +223,82 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </motion.div>
         </div>
       </header>
-       {/* Authority Section - Compacto */}
-      <section className="py-12 bg-slate-50/50">
-        <div className="container mx-auto px-6">
-        <div className="max-w-2xl mx-auto rounded-[2rem] bg-white border border-violet-100 p-8 md:p-12 shadow-sm flex flex-col items-center text-center">
-            <h3 className="text-[10px] font-black text-slate-500 uppercase tracking-[0.4em] mb-6">Sobre esta experiencia</h3>
-<img src="/foto-solange.jpg" alt="Solange Henríquez" className="w-36 h-36 object-cover rounded-full mx-auto mb-8 shadow-md grayscale" />
-            <div className="space-y-4">
-             <h2 className="text-xl md:text-2xl font-medium text-slate-700 leading-tight text-center">
-  <span className="block">Bienvenida a este espacio.</span>
-  <span className="block mt-1 font-semibold text-slate-900">Soy Solange.</span>
-</h2>
-             <div className="text-sm md:text-[17px] text-slate-700 leading-8 font-normal space-y-5 max-w-3xl mx-auto">
-              <p>  Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional.</p><p>  Fue una etapa muy valiosa, que me dio estructura, criterio y experiencia.</p><p className="font-semibold text-slate-900">  Pero no fue ahí donde más aprendí de verdad.</p><p>  Ese aprendizaje vino después.</p><p>  Cuando me tocó observar mis propios patrones y entender que muchas veces el mayor desgaste no viene solo de hacer mucho…</p><p className="font-semibold text-slate-900">  sino de vivir en automático.</p><p>  Resolviendo.<br />  Reaccionando.<br />  Avanzando.</p><p>  Y repitiendo formas de actuar de las que después nos arrepentimos.</p><p className="italic">  “Pucha… lo hice otra vez.”</p><p>  En ese camino profundicé en neurociencia y me formé en neurocoaching, lo que me permitió entender mejor cómo funcionan nuestros patrones cuando vivimos en automático.</p><p>  <span className="font-semibold text-slate-900">Despierta 72H nace desde ahí.</span><br />  No desde teoría, sino desde algo vivido y observado.</p><p className="font-medium">  Una experiencia guiada de 3 días basada en pequeñas micropausas conscientes para ayudarte a observar cómo piensas, reaccionas y actúas mientras tu día está pasando.</p>
+      {/* Authority Section - Compacto */}
+<section className="py-12 bg-slate-50/50">
+  <div className="container mx-auto px-6">
+    <div className="max-w-2xl mx-auto rounded-[2rem] bg-white border border-violet-100 p-8 md:p-12 shadow-sm flex flex-col items-center text-center">
+      <h3 className="text-[10px] font-black text-slate-500 uppercase tracking-[0.4em] mb-6">
+        Sobre esta experiencia
+      </h3>
 
+      <img
+        src="/foto-solange.jpg"
+        alt="Solange Henríquez"
+        className="w-36 h-36 object-cover rounded-full mx-auto mb-8 shadow-md grayscale"
+      />
+
+      <div className="space-y-4">
+        <h2 className="text-xl md:text-2xl font-medium text-slate-700 leading-tight text-center">
+          <span className="block">Bienvenida a este espacio.</span>
+          <span className="block mt-1 font-semibold text-slate-900">Soy Solange.</span>
+        </h2>
+
+        <div className="text-sm md:text-[17px] text-slate-700 leading-8 font-normal space-y-5 max-w-3xl mx-auto">
+          <p>
+            Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional.
+          </p>
+
+          <p>
+            Fue una etapa muy valiosa, que me dio estructura, criterio y experiencia.
+          </p>
+
+          <p className="font-semibold text-slate-900">
+            Pero no fue ahí donde más aprendí de verdad.
+          </p>
+
+          <p>
+            Ese aprendizaje vino después.
+          </p>
+
+          <p>
+            Cuando me tocó observar mis propios patrones y entender que muchas veces el mayor desgaste no viene solo de hacer mucho…
+          </p>
+
+          <p className="font-semibold text-slate-900">
+            sino de vivir en automático.
+          </p>
+
+          <p>
+            Resolviendo.<br />
+            Reaccionando.<br />
+            Avanzando.
+          </p>
+
+          <p>
+            Y repitiendo formas de actuar de las que después nos arrepentimos.
+          </p>
+
+          <p className="italic">
+            “Pucha… lo hice otra vez.”
+          </p>
+
+          <p>
+            En ese camino profundicé en neurociencia y me formé en neurocoaching, lo que me permitió entender mejor cómo funcionan nuestros patrones cuando vivimos en automático.
+          </p>
+
+          <p>
+            <span className="font-semibold text-slate-900">Despierta 72H nace desde ahí.</span><br />
+            No desde teoría, sino desde algo vivido y observado.
+          </p>
+
+          <p className="font-medium text-slate-900">
+            Una experiencia guiada de 3 días basada en pequeñas micropausas conscientes para ayudarte a observar cómo piensas, reaccionas y actúas mientras tu día está pasando.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       {/* ¿Te ha pasado esto? Section (Compacta) */}
       <section className="py-8 bg-violet-50/50">
         <div className="container mx-auto px-6 text-center">
