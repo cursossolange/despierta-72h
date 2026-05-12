@@ -504,7 +504,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <p className="mt-4 text-[9px] md:text-[10px] text-slate-600 font-semibold tracking-wide">
   Pago seguro · Garantía total de 7 días
 </p>
-
+</div>
 </div>
 </div>
 </div>
@@ -519,7 +519,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   </div>
 </footer>
 
-</div>
+
 
 );
 
