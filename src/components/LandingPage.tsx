@@ -215,21 +215,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
              <p className="mt-3 text-sm md:text-base text-slate-600 font-medium">
                 $29.990 CLP · Garantía de 7 días
               </p>
-              <a
- <div className="max-w-xl mx-auto mt-8 mb-4 px-6 py-5 rounded-[1.5rem] bg-violet-50/70 border border-violet-100 text-center">
-   <p className="text-base md:text-lg font-black text-slate-900 mb-2">
-    ¿Quieres confirmar si esto es para ti?
-  </p>
-
-  <a
-    href="https://wa.me/56990991901?text=Hola%2C%20quiero%20saber%20si%20Despierta%2072H%20es%20para%20m%C3%AD"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-violet-600 hover:text-violet-700 transition-colors font-bold text-base md:text-lg"
-  >
-    Escríbeme aquí
-  </a>
-</div>
+             <div className="max-w-xl mx-auto mt-8 mb-4 px-6 py-5 rounded-[1.5rem] bg-violet-50/70 border border-violet-100 text-center">  <p className="text-base md:text-lg font-black text-slate-900 mb-2">    ¿Quieres confirmar si esto es para ti?  </p>  <a    href="https://wa.me/56990991901?text=Hola%2C%20quiero%20saber%20si%20Despierta%2072H%20es%20para%20m%C3%AD"    target="_blank"    rel="noopener noreferrer"    className="text-violet-600 hover:text-violet-700 transition-colors font-bold text-base md:text-lg"  >    Escríbeme aquí  </a></div>
+Debe quedar justo después del cierre </p> del precio/garantía.
             </div>
           </motion.div>
         </div>
