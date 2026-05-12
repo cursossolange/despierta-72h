@@ -416,7 +416,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           Bonus incluido
         </p>
 
-       <h3 className="text-2xl font-black leading-tight mb-4">
+     <h3 className="text-2xl font-black leading-tight mb-4">
   Guía práctica:
   <br />
   7 señales de que estás funcionando en automático
@@ -427,7 +427,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <p>✓ Te cuesta desconectarte mentalmente</p>
   <p>✓ Sigues funcionando, aunque estés cansada</p>
 </div>
-    {/* Texto */}
+{/* Texto */}
     <div className="flex-1 text-center md:text-left max-w-[640px]">
 <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
   Empiezas a reconocer cuándo estás funcionando en modo automático… y puedes parar y elegir distinto
