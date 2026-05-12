@@ -416,7 +416,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           Bonus incluido
         </p>
 
-        <h3 className="text-xl font-black leading-tight mb-5">
+        <h3 className="text-2xl font-black leading-tight mb-5">
           7 señales de que estás funcionando en automático
         </h3>
 
@@ -429,14 +429,20 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     </div>
 
     {/* Texto */}
-    <div className="flex-1 text-center md:text-left max-w-[520px]">
+    <div className="flex-1 text-center md:text-left max-w-[640px]">
     <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
   Hay momentos donde sigues funcionando… pero ya no estás realmente presente.
 </h3>
 
-      <p className="text-slate-600 leading-relaxed text-base max-w-md">
+<p className="text-slate-600 leading-relaxed text-base max-w-md">
   Respondes en automático y recién después te das cuenta.
+
+  <br /><br />
+
   Tu cabeza sigue activa incluso cuando intentas descansar.
+
+  <br /><br />
+
   Vas a un lugar y olvidas a qué ibas.
   Abres el celular sin pensarlo.
   Sigues haciendo cosas aunque ya estés agotada.
