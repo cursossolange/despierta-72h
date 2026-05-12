@@ -170,13 +170,15 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
             {/* 3. Bajada breve */}
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4">
+<div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4 text-center">
+  <p className="text-[11px] md:text-xs uppercase tracking-[0.3em] text-violet-600 font-bold mb-4">
+    Método de Interrupción Consciente
+  </p>
+
   <p className="text-base md:text-lg text-slate-600 leading-relaxed">
-    Muchas veces pensamos que el cansancio viene de todo lo que hacemos día a día…
-    <br />
-    pero el mayor desgaste viene de vivir en piloto automático.
+    Una experiencia guiada para empezar a notar lo que normalmente haces sin darte cuenta.
   </p>
 </div>
-
   <p className="mt-4 text-sm md:text-base text-slate-500">
     Acceso inmediato y disponible por 1 año.
   </p>
