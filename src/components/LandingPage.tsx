@@ -243,8 +243,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <span className="block mt-1 font-semibold text-slate-900">Soy Solange.</span>
         </h2>
 
-        <div className="text-sm md:text-[17px] text-slate-700 leading-8 font-normal space-y-6 max-w-2xl mx-auto text-left">
-          <p>
+       <div className="text-sm md:text-[17px] text-slate-700 leading-8 font-normal space-y-4 max-w-2xl mx-auto text-left">
   Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional.
 </p>
 
