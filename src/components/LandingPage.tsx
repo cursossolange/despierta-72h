@@ -427,7 +427,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </div>
 
 </div>
-</div>
               
 <div className="flex-1 text-center md:text-left max-w-[640px]">
   <h3 className="text-xl md:text-2xl font-black text-slate-900 leading-tight">
