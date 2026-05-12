@@ -326,9 +326,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </h2>
 
 <div className="text-sm md:text-lg text-slate-300 space-y-3 leading-snug">
- · Reconocer cuándo estás funcionando en automático.
-  <p>· Observar qué situaciones activan tus reacciones.</p>
-  <p>· Empezar a hacer micropausas conscientes durante el día.</p>
+<p>· Reconocer cuándo estás funcionando en automático.</p>
+<p>· Observar qué situaciones activan tus reacciones.</p>
+<p>· Empezar a hacer micropausas conscientes durante el día.</p>
 </div>
 </div>
             </div>
