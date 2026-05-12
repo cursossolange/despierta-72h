@@ -365,13 +365,17 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     Lo que te llevas
   </h3>
 
-  <p className="text-3xl md:text-5xl font-black text-white leading-tight">
-    Un método simple para interrumpir el automático y empezar a elegir distinto.
-  </p>
+<p className="text-3xl md:text-5xl font-black text-white leading-tight">
+  Método de Interrupción Consciente
+</p>
 
-  <p className="text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
-    Una forma de observarte y decidir con más claridad que puedes volver a usar cada vez que lo necesites.
-  </p>
+<p className="text-xl md:text-3xl font-bold text-white/90 leading-tight max-w-3xl mx-auto">
+  para salir del piloto automático y empezar a elegir distinto.
+</p>
+
+<p className="text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
+  Una forma de observarte y decidir con más claridad que puedes volver a usar cada vez que lo necesites.
+</p>
 
 </div>
 </motion.div>
