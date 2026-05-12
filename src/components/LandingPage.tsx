@@ -391,44 +391,53 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             </h2>
           
           </div>
+{/* Tres momentos clave */}
+<div className="max-w-4xl mx-auto mb-5 md:mb-6">
+  <h3 className="text-base md:text-lg font-black text-violet-600 uppercase tracking-[0.3em] text-center mb-8">
+    Cada día activas un ciclo de interrupción consciente
+  </h3>
 
-          {/* Tres momentos clave */}
-          <div className="max-w-4xl mx-auto mb-5 md:mb-6">
-            <h3 className="text-base md:text-lg font-black text-violet-600 uppercase tracking-[0.3em] text-center mb-10">
-              Cada día tiene 3 momentos clave
-            </h3>
-            <div className="grid md:grid-cols-3 gap-8 md:gap-6">
-              {[
-                { 
-                  time: "ESCUCHAS", 
-                  desc: "Escuchas un audio breve (3–5 min) que te invita a poner tu atención en situaciones específicas.", 
-                  sub: "No lo analizas. Solo observas.",
-                  icon: <Sunrise className="w-5 h-5 text-amber-500" />
-                },
-                { 
-                  time: "OBSERVAS",
-                  desc: "Empiezas a observar tus comportamientos frente a esas situaciones.", 
-                  sub: "Cuándo aparecen, qué los gatilla y cómo reaccionas.",
-                  icon: <Sun className="w-5 h-5 text-orange-500" />
-                },
-                { 
-                  time: "REFLEXIONAS",
-                  desc: "Reflexionas y escribes en tu cuaderno.", 
-                  sub: "El escribir te permite ordenar lo que viviste y transformar la experiencia en aprendizaje.",
-                  icon: <Moon className="w-5 h-5 text-slate-400" />
-                }
-              ].map((moment, i) => (
-                <div key={i} className="flex flex-col items-center text-center group">
-                  <div className="w-12 h-12 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center mb-4 shadow-sm group-hover:bg-slate-100 transition-colors">
-                    {moment.icon}
-                  </div>
-                  <h4 className="text-sm font-black text-slate-900 mb-2 uppercase tracking-wide">{moment.time}</h4>
-                  <p className="text-sm text-slate-800 font-semibold leading-relaxed mb-2">{moment.desc}</p>
-                  <p className="text-[11px] text-slate-500 italic font-medium">{moment.sub}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+  <div className="grid md:grid-cols-3 gap-8 md:gap-6">
+    {[
+      {
+        time: "ESCUCHAS",
+        desc: "Una guía breve dirige tu atención hacia un patrón específico de tu día.",
+        sub: "Preparas tu mente para detectar en tiempo real lo que normalmente ocurre en automático.",
+        icon: <Sunrise className="w-5 h-5 text-amber-500" />,
+      },
+      {
+        time: "OBSERVAS",
+        desc: "Durante el día haces micro pausas conscientes mientras las situaciones están ocurriendo.",
+        sub: "Empiezas a identificar qué activa tus reacciones, cómo respondes y qué ocurre antes de darte cuenta.",
+        icon: <Sun className="w-5 h-5 text-orange-500" />,
+      },
+      {
+        time: "REFLEXIONAS",
+        desc: "Al final del día registras lo observado para transformar la experiencia en consciencia práctica.",
+        sub: "La escritura ayuda a ordenar patrones, reconocer repeticiones y empezar a elegir con más claridad.",
+        icon: <Moon className="w-5 h-5 text-slate-400" />,
+      },
+    ].map((moment, i) => (
+      <div key={i} className="flex flex-col items-center text-center group">
+        <div className="w-12 h-12 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center shadow-sm mb-5">
+          {moment.icon}
+        </div>
+
+        <h4 className="text-sm font-black text-slate-900 mb-2 uppercase tracking-wide">
+          {moment.time}
+        </h4>
+
+        <p className="text-sm text-slate-800 font-semibold leading-relaxed mb-2">
+          {moment.desc}
+        </p>
+
+        <p className="text-[11px] text-slate-500 italic font-medium">
+          {moment.sub}
+        </p>
+      </div>
+    ))}
+  </div>
+</div>
 
           
     
