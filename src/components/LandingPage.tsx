@@ -416,14 +416,17 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           Bonus incluido
         </p>
 
-        <h3 className="text-2xl font-black leading-tight mb-5">
-          7 señales de que estás funcionando en automático
-        </h3>
+       <h3 className="text-2xl font-black leading-tight mb-4">
+  Guía práctica:
+  <br />
+  7 señales de que estás funcionando en automático
+</h3>
 
-        <div className="space-y-2 text-sm text-slate-300">
-          <p>✓ Reaccionas y te das cuenta después</p>
-          <p>✓ Sientes cansancio mental constante</p>
-          <p>✓ Te cuesta parar aunque tengas tiempo</p>
+<div className="space-y-2 text-sm text-slate-300">
+  <p>✓ Reaccionas y te das cuenta después</p>
+  <p>✓ Te cuesta desconectarte mentalmente</p>
+  <p>✓ Sigues funcionando, aunque estés cansada</p>
+</div>
         </div>
       </div>
     </div>
