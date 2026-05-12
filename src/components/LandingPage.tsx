@@ -416,14 +416,15 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           Bonus incluido
         </p>
 
-       <h3 className="text-2xl font-black leading-tight mb-5">
-  Conductas automáticas que puedes empezar a detectar
+      <h3 className="text-2xl font-black leading-tight mb-5">
+  Conductas automáticas que empiezas a detectar
 </h3>
 
 <div className="space-y-2 text-sm text-slate-300">
   <p>✓ Reaccionas y te das cuenta después</p>
-  <p>✓ Te cuesta desconectarte mentalmente</p>
+  <p>✓ Tu cabeza no logra desconectarse</p>
   <p>✓ Sigues funcionando aunque estés cansada</p>
+</div>
         </div>
       </div>
     </div>
