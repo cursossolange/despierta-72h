@@ -164,7 +164,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     <br />
     Reaccionando...
     <br />
-    Y dándote cuenta despúes
+    Y dándote cuenta despúes...
     <br />
     De que podrías haberlo hecho distinto.
   </>
@@ -173,7 +173,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             {/* 3. Bajada breve */}
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4">
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4 text-center">
-  <p className="text-[11px] md:text-xs uppercase tracking-[0.3em] text-violet-600 font-bold mb-4">
+<p className="text-[22px] md:text-2xl uppercase tracking-[0.2em] text-violet-600 font-black mb-5">
     Método de Interrupción Consciente
   </p>
 
