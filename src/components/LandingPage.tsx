@@ -353,24 +353,23 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </div>
   <div className="grid lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
     {[
-      {
-       {
+     {
   day: "Día 1",
   title: "Empiezas a bajar el ruido",
   sub: "Empiezas a identificar los pensamientos que más se repiten en tu cabeza y cuándo tu mente se acelera.",
-  icon: <Sparkles className="w-5 h-5" />
+ icon: <Sparkles className="w-5 h-5" />,
 },
 {
   day: "Día 2",
   title: "Detectas el automático",
   sub: "Observas qué situaciones activan tus reacciones y cómo respondes antes de darte cuenta.",
-  icon: <RefreshCw className="w-5 h-5" />
+ icon: <RefreshCw className="w-5 h-5" />,
 },
 {
   day: "Día 3",
   title: "Entiendes desde dónde actúas",
   sub: "Empiezas a reconocer qué necesidad, emoción o tensión está guiando tus respuestas.",
-  icon: <Heart className="w-5 h-5" />
+  icon: <Heart className="w-5 h-5" />,
 }
     ].map((card, i) => (
                 <div key={i} className="bg-violet-50/10 p-4 md:p-5 rounded-2xl border border-violet-100 shadow-[0_1px_4px_rgba(139,92,246,0.05)] text-left flex flex-col h-full hover:shadow-md transition-shadow">
