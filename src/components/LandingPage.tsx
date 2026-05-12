@@ -416,14 +416,14 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           Bonus incluido
         </p>
 
-        <h3 className="text-2xl font-black leading-tight mb-5">
-          7 señales de que estás funcionando en automático
-        </h3>
+       <h3 className="text-2xl font-black leading-tight mb-5">
+  Conductas automáticas que puedes empezar a detectar
+</h3>
 
-        <div className="space-y-2 text-sm text-slate-300">
-          <p>✓ Reaccionas y te das cuenta después</p>
-          <p>✓ Sientes cansancio mental constante</p>
-          <p>✓ Te cuesta parar aunque tengas tiempo</p>
+<div className="space-y-2 text-sm text-slate-300">
+  <p>✓ Reaccionas y te das cuenta después</p>
+  <p>✓ Te cuesta desconectarte mentalmente</p>
+  <p>✓ Sigues funcionando aunque estés cansada</p>
         </div>
       </div>
     </div>
@@ -431,25 +431,17 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     {/* Texto */}
     <div className="flex-1 text-center md:text-left max-w-[640px]">
     <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
-  Hay momentos donde sigues funcionando… pero ya no estás realmente presente.
+  Empiezas a darte cuenta de lo que antes pasaba en automático.
 </h3>
 
 <p className="text-slate-600 leading-relaxed text-base max-w-md">
-  Respondes en automático y recién después te das cuenta.
-
+  Pequeñas reacciones.
   <br /><br />
-
-  Tu cabeza sigue activa incluso cuando intentas descansar.
-
+  Respuestas impulsivas.
   <br /><br />
-
-  Vas a un lugar y olvidas a qué ibas.
-  Abres el celular sin pensarlo.
-  Sigues haciendo cosas aunque ya estés agotada.
-
+  Cansancio que normalizaste.
   <br /><br />
-
-  Pequeños comportamientos automáticos que muchas veces pasan desapercibidos… hasta que empiezas a observarlos.
+  Cuando empiezas a observarlo, algo cambia: dejas de funcionar solo por inercia.
 </p>
     </div>
 
