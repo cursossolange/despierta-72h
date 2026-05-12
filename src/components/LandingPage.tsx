@@ -382,7 +382,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </div>
 </section>
              
-     {/* Tres momentos clave */}
+{/* Tres momentos clave */}
 <div className="max-w-4xl mx-auto mb-5 md:mb-6">
   <h3 className="text-base md:text-lg font-black text-violet-600 uppercase tracking-[0.3em] text-center mb-4">
     Cada día tiene 3 momentos clave
@@ -390,12 +390,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
   <p className="text-sm md:text-base text-slate-600 text-center leading-relaxed max-w-2xl mx-auto">
     Escuchas un audio, observas lo que aparece y reconoces cómo reaccionas.
-Al escribir, ordenas la experiencia y empiezas a identificar patrones con más claridad.
+    Al escribir, ordenas la experiencia y empiezas a identificar patrones con más claridad.
   </p>
 </div>
-    
-
-
 
           {/* Footer del bloque */}
         </div>
