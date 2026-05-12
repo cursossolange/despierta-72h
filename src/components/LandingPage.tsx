@@ -306,9 +306,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
           Lo que aprenderás en estos 3 días
         </h2>
-  <p className="text-sm md:text-base text-slate-600 mt-3">
-    Pequeñas observaciones guiadas para entender cómo piensas, reaccionas y actúas en automático.
-  </p>
 </div>
   <div className="grid lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
     {[
