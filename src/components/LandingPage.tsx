@@ -298,18 +298,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </div>
 </div>
 </section>
-      {/* ¿Te ha pasado esto? Section (Compacta) */}
-      <section className="py-8 bg-violet-50/50">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-base md:text-lg font-black text-slate-900 mb-3 uppercase tracking-[0.1em]">¿Te ha pasado esto?</h2>
-          <div className="max-w-2xl mx-auto space-y-1.5 text-slate-700 font-semibold italic">
-           <p className="text-sm md:text-base">Respondes algo… y después te preguntas por qué reaccionaste así.</p>
-<p className="text-sm md:text-base">Hay conversaciones que terminas teniendo igual, aunque prometiste hacerlo distinto.</p>
-<p className="text-sm md:text-base">A veces haces las cosas tan en automático que ni te das cuenta cómo llegaste ahí.</p>
-          </div>
-        </div>
-      </section>
-
+  
    
 {/* Emotional Bridge Section (Compacta) */}
 <section className="py-8 bg-white overflow-hidden">
