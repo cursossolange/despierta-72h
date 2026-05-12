@@ -425,24 +425,19 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <p>✓ Tu cabeza no logra desconectarse</p>
   <p>✓ Sigues funcionando aunque estés cansada</p>
 </div>
-        </div>
-      </div>
-    </div>
-
+        
     {/* Texto */}
     <div className="flex-1 text-center md:text-left max-w-[640px]">
-    <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
-  Empiezas a darte cuenta de lo que antes pasaba en automático.
+   <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-4 leading-tight">
+  Cuando empiezas a observar lo que haces en automático, algo cambia.
 </h3>
 
 <p className="text-slate-600 leading-relaxed text-base max-w-md">
-  Pequeñas reacciones.
+  Empiezas a darte cuenta antes.
   <br /><br />
-  Respuestas impulsivas.
+  Interrumpes respuestas automáticas.
   <br /><br />
-  Cansancio que normalizaste.
-  <br /><br />
-  Cuando empiezas a observarlo, algo cambia: dejas de funcionar solo por inercia.
+  Y poco a poco, puedes escoger distinto.
 </p>
     </div>
 
