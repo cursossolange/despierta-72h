@@ -326,9 +326,10 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </h2>
 
 <div className="text-sm md:text-lg text-slate-300 space-y-3 leading-snug">
-  <p>· Observar cosas que normalmente haces en automático.</p>
-  <p>· Reconocer patrones que aparecen una y otra vez en tu día a día.</p>
-  <p>· Entender mejor por qué reaccionas como reaccionas.</p>
+ · Reconocer cuándo estás funcionando en automático.
+  <p>· Observar qué situaciones activan tus reacciones.</p>
+  <p>· Empezar a hacer micropausas conscientes durante el día.</p>
+</div>
 </div>
             </div>
           </motion.div>
