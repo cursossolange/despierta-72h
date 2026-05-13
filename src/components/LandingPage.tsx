@@ -248,7 +248,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <p>
   Pero el aprendizaje más importante vino después:
   observar cómo muchas veces reaccionamos en automático…
-  y nos damos cuenta tarde.
+  y recién después nos damos cuenta de que podríamos haberlo hecho distinto
 </p>
 
 <p className="italic text-slate-600">
