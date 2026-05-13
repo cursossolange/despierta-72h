@@ -359,14 +359,12 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
   <h3 className="text-violet-300 text-xs md:text-sm font-black uppercase tracking-[0.4em]">
     Lo que te llevas
-  </h3>
+ <h3 className="text-xl md:text-2xl font-black text-slate-900 leading-tight">
+  En la velocidad en que vivimos, muchas veces dejamos de escucharnos.
+</h3>
 
-<p className="text-3xl md:text-5xl font-black text-white leading-tight">
-  Método de Interrupción Consciente
-</p>
-
-<p className="text-xl md:text-3xl font-bold text-white/90 leading-tight max-w-3xl mx-auto">
-  para salir del piloto automático y empezar a elegir distinto.
+<p className="text-slate-600 leading-relaxed text-base max-w-md mt-4">
+  Y cuando eso pasa, empezamos a reaccionar más de lo que realmente elegimos.
 </p>
 
 <p className="text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
