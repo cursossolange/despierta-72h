@@ -175,13 +175,10 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             {/* 3. Bajada breve */}
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4">
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4 text-center">
-<p className="text-[18px] md:text-[1.7rem] tracking-[0.04em] text-violet-600 font-black mb-5 text-center">
-    Método de Interrupción Consciente
-  </p>
 
-  <p className="text-base md:text-lg text-slate-600 leading-relaxed">
-    Una experiencia guiada para empezar a observar lo que normalmente haces sin darte cuenta.
-  </p>
+ <p className="text-[18px] md:text-[1.4rem] text-violet-600 font-black mb-5 text-center max-w-3xl mx-auto leading-snug">
+  Una experiencia guiada de 3 días para aprender un método simple que te ayude a interrumpir tu piloto automático.
+</p>
 </div>
   <p className="mt-4 text-sm md:text-base text-slate-500">
     Acceso inmediato y disponible por 1 año.
