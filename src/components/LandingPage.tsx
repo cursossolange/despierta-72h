@@ -379,13 +379,13 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
   <div className="flex flex-col md:flex-row items-center justify-center gap-10">
 
     {/* Mockup visual */}
-    <div className="w-full md:w-[260px] flex-shrink-0">
+    <div className="w-full md:w-[420px] flex-shrink-0">
       <div className="rounded-[1.8rem] bg-[#17132A] p-6 shadow-xl text-white text-left relative overflow-hidden">
         <div className="absolute top-0 right-0 w-24 h-24 bg-violet-500/20 rounded-full blur-2xl" />
 <img
   src="/bonus-portada.jpg.png"
   alt="Guía bonus Despierta 72H"
-  className="w-full rounded-2xl shadow-lg mb-6"
+  className="w-full max-h-[320px] object-cover object-top rounded-2xl shadow-lg mb-6"
 />
 
 <div className="space-y-4">
