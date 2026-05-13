@@ -479,12 +479,19 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
     Pago seguro · Acceso inmediato
   </p>
   <p className="mt-4 text-xs md:text-sm text-slate-500 text-center leading-relaxed">
-  Si tienes dudas sobre si esta experiencia es para ti, puedes escribirme directamente.
+ <p className="mt-4 text-sm text-slate-500 text-center">
+  ¿Tienes dudas antes de empezar?
 </p>
 
-<p className="mt-2 text-sm font-semibold text-slate-700">
-  +56 9 90991901
-</p>
+<a
+  href="https://wa.me/56990991901"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-violet-600 font-semibold hover:text-violet-700 transition-colors"
+>
+  Conversemos por WhatsApp
+</a>
+
 </div>
           </div>
 </section>
