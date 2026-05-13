@@ -177,7 +177,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4">
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4 text-center">
 
- <p className="text-[18px] md:text-[1.4rem] text-slate-700 font-black mb-5 text-center max-w-3xl mx-auto leading-relaxed">
+<p className="text-[18px] md:text-[1.4rem] text-slate-700 font-medium mb-5 text-center max-w-3xl mx-auto leading-relaxed">
   Una experiencia guiada de 3 días para aprender un método simple que te ayude a interrumpir tu piloto automático.
 </p>
 </div>
