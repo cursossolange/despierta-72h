@@ -97,7 +97,7 @@ const AIGeneratedEmotionalImage = () => {
 
   return (
     <img 
-     src="/cafe.png.png"
+     src="/despierta72h-banner.jpg.png"
       alt="Retrato introspectivo generado por IA" 
       className="w-full h-full object-cover"
       referrerPolicy="no-referrer"
