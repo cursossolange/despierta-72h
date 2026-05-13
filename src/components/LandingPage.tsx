@@ -382,20 +382,33 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
     <div className="w-full md:w-[260px] flex-shrink-0">
       <div className="rounded-[1.8rem] bg-[#17132A] p-6 shadow-xl text-white text-left relative overflow-hidden">
         <div className="absolute top-0 right-0 w-24 h-24 bg-violet-500/20 rounded-full blur-2xl" />
+<img
+  src="/bonus-portada.jpg.png"
+  alt="Guía bonus Despierta 72H"
+  className="w-full rounded-2xl shadow-lg mb-6"
+/>
 
-        <p className="text-[10px] uppercase tracking-[0.3em] text-violet-300 font-bold mb-4">
-          Bonus incluido
-        </p>
+<div className="space-y-4">
+  <div>
+    <p className="text-[10px] uppercase tracking-[0.3em] text-violet-300 font-bold mb-3">
+      Bonus incluido
+    </p>
 
-        <h3 className="text-2xl font-black leading-tight mb-5">
-          Guía para detectar conductas automáticas
-        </h3>
+    <h3 className="text-2xl font-black leading-tight">
+      Guía para detectar conductas automáticas
+    </h3>
+  </div>
 
-        <div className="space-y-2 text-sm text-slate-300">
-          <p>✓ Reaccionas y te das cuenta después</p>
-          <p>✓ Tu cabeza no logra desconectarse</p>
-          <p>✓ Sigues funcionando aunque estés cansada</p>
-        </div>
+  <p className="text-sm text-slate-300 leading-relaxed">
+    Una guía práctica para ayudarte a reconocer señales cotidianas de que estás funcionando en automático.
+  </p>
+
+  <div className="space-y-2 text-sm text-slate-300">
+    <p>✓ Reaccionas y te das cuenta después</p>
+    <p>✓ Tu cabeza no logra desconectarse</p>
+    <p>✓ Sigues funcionando aunque estés cansada</p>
+  </div>
+</div>
       </div>
     </div>
 
