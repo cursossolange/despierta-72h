@@ -500,6 +500,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       © 2026 Despierta 72H
     </p>
   </div>
+ 
 </footer>
 </div>
 );
