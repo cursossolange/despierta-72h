@@ -158,17 +158,17 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             </div>
 
             {/* 1. Título principal (grande pero ajustado) */}
-<h1 className="text-[1.45rem] md:text-[2.6rem] font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-[1.08]">
- <>
+className="text-[1.45rem] md:text-[2.6rem] font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-[1.15]">
   Reaccionas…
+<br />
+y después piensas:
+<br />
+<br />
+<span className="italic">
+  “No quería responder
   <br />
-  y después piensas:
-  <br />
-  <span className="italic">
-    “Pucha,
-    <br />
-    no quería responder así otra vez.”
-  </span>
+  así otra vez.”
+</span>
 </>
 </h1>
 
