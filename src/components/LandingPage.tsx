@@ -241,7 +241,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <div className="text-sm md:text-[17px] text-slate-700 leading-8 font-normal space-y-4 max-w-2xl mx-auto text-left">
 
   <p>
-  Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional.
+    Durante más de 20 años trabajé liderando equipos y procesos.
+  Fue una etapa que me enseñó mucho sobre liderazgo, gestión y método.
 </p>
 
 <p>
