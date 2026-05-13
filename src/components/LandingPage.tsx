@@ -357,20 +357,17 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             
             <div className="relative z-10 space-y-6 max-w-2xl mx-auto text-center">
 
-  <h3 className="text-violet-300 text-xs md:text-sm font-black uppercase tracking-[0.4em]">
-    Lo que te llevas
- <h3 className="text-xl md:text-2xl font-black text-slate-900 leading-tight">
-  En la velocidad en que vivimos, muchas veces dejamos de escucharnos.
+ <h3 className="text-violet-300 text-xs md:text-sm font-black uppercase tracking-[0.4em]">
+  Lo que te llevas
 </h3>
 
-<p className="text-slate-600 leading-relaxed text-base max-w-md mt-4">
-  Y cuando eso pasa, empezamos a reaccionar más de lo que realmente elegimos.
-</p>
+<h3 className="text-xl md:text-2xl font-black text-white leading-tight">
+  En la velocidad en que vivimos, muchas veces dejamos de escucharnos.
+</h3>
 
 <p className="text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
   Una forma de observarte y decidir con más claridad que puedes volver a usar cada vez que lo necesites.
 </p>
-
 </div>
 </motion.div>
 </div>
@@ -491,6 +488,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     Pago seguro · Acceso inmediato
   </p>
 </div>
+          </div>
 </section>
 
 <footer className="py-6 border-t border-slate-100 text-center bg-white">
