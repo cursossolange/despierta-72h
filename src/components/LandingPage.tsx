@@ -241,29 +241,13 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <div className="text-sm md:text-[17px] text-slate-700 leading-8 font-normal space-y-4 max-w-2xl mx-auto text-left">
 
   <p>
-    Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional.
-  </p>
-
-  <p>
-    Fue una etapa muy valiosa, que me dio estructura, criterio y experiencia.
-  </p>
-
-<p>
-  <span className="font-semibold text-slate-900">
-    Pero no fue ahí donde más aprendí de verdad.
-  </span>
+  Durante más de 20 años trabajé liderando equipos y procesos en contextos donde decidir bien no era opcional.
 </p>
 
 <p>
-  Ese aprendizaje vino después, cuando me tocó observar mis propios patrones y entender que muchas veces el mayor desgaste no viene solo de hacer mucho, sino de vivir en automático.
-</p>
-
-<p>
-  Resolviendo. Reaccionando. Avanzando.
-</p>
-
-<p>
-  Y repitiendo formas de actuar de las que después nos arrepentimos.
+  Pero el aprendizaje más importante vino después:
+  observar cómo muchas veces reaccionamos en automático…
+  y recién después nos damos cuenta de que podríamos haberlo hecho distinto.
 </p>
 
 <p className="italic text-slate-600">
@@ -271,22 +255,12 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </p>
 
 <p>
-  En ese camino profundicé en neurociencia y me formé en neurocoaching, lo que me permitió entender mejor cómo funcionan nuestros patrones cuando vivimos en automático.
-</p>
-
-<p>
-  <span className="font-semibold text-slate-900">
-    Despierta 72H nace desde ahí.
-  </span>
-</p>
-
-<p>
-  No desde teoría, sino desde algo vivido y observado.
+  Despierta 72H nace desde ahí.
 </p>
 
 <p className="font-medium text-slate-900">
-  Una experiencia guiada de 3 días basada en pequeñas micropausas conscientes
-  para ayudarte a observar cómo piensas, reaccionas y actúas mientras tu día está pasando.
+  Una experiencia guiada de 3 días para ayudarte a interrumpir ese piloto automático
+y darte cuenta de lo que normalmente haces sin verlo.
 </p>
 </div>
 </div>
