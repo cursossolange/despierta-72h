@@ -247,7 +247,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <p>
   Pero el aprendizaje más importante vino después:
   observar cómo muchas veces reaccionamos en automático…
-  y recién después nos damos cuenta de que podríamos haberlo hecho distinto.
+  y nos damos cuenta tarde.
 </p>
 
 <p className="italic text-slate-600">
@@ -255,12 +255,16 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </p>
 
 <p>
+  Esa búsqueda me llevó a profundizar en neurociencia y certificarme en neurocoaching.
+</p>
+
+<p>
   Despierta 72H nace desde ahí.
 </p>
 
-<p className="font-medium text-slate-900">
+<p className="mt-6 font-medium text-slate-900">
   Una experiencia guiada de 3 días para ayudarte a interrumpir ese piloto automático
-y darte cuenta de lo que normalmente haces sin verlo.
+  y darte cuenta de lo que normalmente haces sin verlo.
 </p>
 </div>
 </div>
