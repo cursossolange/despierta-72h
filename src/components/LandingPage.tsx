@@ -340,11 +340,11 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </h3>
 
 <h3 className="text-xl md:text-2xl font-black text-white leading-tight">
-  En la velocidad en que vivimos, muchas veces dejamos de escucharnos.
+  Una metodología práctica para interrumpir reacciones automáticas.
 </h3>
 
 <p className="text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
-  Una forma de observarte y decidir con más claridad que puedes volver a usar cada vez que lo necesites.
+  Basada en observación consciente, micropausas y reconocimiento de patrones cotidianos.
 </p>
 </div>
 </motion.div>
