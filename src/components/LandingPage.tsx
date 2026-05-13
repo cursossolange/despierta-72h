@@ -400,38 +400,38 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               </div>
             </div>
 
-            <div className="max-w-3xl mx-auto my-12 bg-white border border-violet-100 rounded-[2rem] p-6 md:p-8 shadow-sm">
-
- <div className="flex flex-col md:flex-row items-center gap-10">
+           <div className="max-w-3xl mx-auto my-12 bg-white border border-violet-100 rounded-[2rem] p-6 md:p-8 shadow-sm">
+  <div className="flex flex-col md:flex-row items-center gap-10">
 
     {/* Mockup visual */}
     <div className="w-full md:w-[260px] flex-shrink-0">
       <div className="rounded-[1.8rem] bg-[#17132A] p-6 shadow-xl text-white text-left relative overflow-hidden">
-
         <div className="absolute top-0 right-0 w-24 h-24 bg-violet-500/20 rounded-full blur-2xl" />
 
         <p className="text-[10px] uppercase tracking-[0.3em] text-violet-300 font-bold mb-4">
-  Bonus incluido
-</p>
+          Bonus incluido
+        </p>
 
-<h3 className="text-2xl font-black leading-tight mb-5">
-  Conductas automáticas que empiezas a detectar
-</h3>
+        <h3 className="text-2xl font-black leading-tight mb-5">
+          Conductas automáticas que empiezas a detectar
+        </h3>
 
-<div className="space-y-2 text-sm text-slate-300">
-  <p>✓ Reaccionas y te das cuenta después</p>
-  <p>✓ Tu cabeza no logra desconectarse</p>
-  <p>✓ Sigues funcionando aunque estés cansada</p>
-</div>
-</div>
-</div>
-              
-<div className="flex-1 text-center md:text-left max-w-[640px]">
-  <h3 className="text-xl md:text-2xl font-black text-slate-900 leading-tight">
-    Empiezas a detectar patrones automáticos que antes pasaban desapercibidos.
-  </h3>
-</div>
-</div>
+        <div className="space-y-2 text-sm text-slate-300">
+          <p>✓ Reaccionas y te das cuenta después</p>
+          <p>✓ Tu cabeza no logra desconectarse</p>
+          <p>✓ Sigues funcionando aunque estés cansada</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Texto */}
+    <div className="flex-1 text-center md:text-left max-w-[640px]">
+      <h3 className="text-xl md:text-2xl font-black text-slate-900 leading-tight">
+        Empiezas a detectar patrones automáticos que antes pasaban desapercibidos.
+      </h3>
+    </div>
+
+  </div>
 </div>
 
 {/* Objeciones / dudas */}
