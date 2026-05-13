@@ -234,10 +234,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 />
 
 <div className="space-y-4">
-  <h2 className="text-xl md:text-2xl font-medium text-slate-700 leading-tight text-center">
-    <span className="block">Bienvenida a este espacio.</span>
-    <span className="block mt-1 font-semibold text-slate-900">Soy Solange.</span>
-  </h2>
+  <h2 className="text-xl md:text-2xl font-semibold text-slate-900 leading-tight text-center">
+  Hola, soy Solange Henríquez.
+</h2>
 
   <div className="text-sm md:text-[17px] text-slate-700 leading-8 font-normal space-y-4 max-w-2xl mx-auto text-left">
 
