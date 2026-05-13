@@ -162,7 +162,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <>
     Reaccionas...
     <br />
-    y después piensas:
+    y después piensas...
     <br />
     <br />
     <span className="italic">
