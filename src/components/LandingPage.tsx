@@ -227,11 +227,11 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         Sobre esta experiencia
       </h3>
 
-      <img
-        src="/foto-solange.jpg"
-        alt="Solange Henríquez"
-        className="w-36 h-36 object-cover rounded-full mx-auto mb-8 shadow-md grayscale"
-      />
+     <img
+  src="/bienvenida-solange.png"
+  alt="Solange Henríquez"
+  className="w-full max-w-5xl mx-auto rounded-[2rem] mb-10"
+/>
 
 <div className="space-y-4">
   <h2 className="text-xl md:text-2xl font-medium text-slate-700 leading-tight text-center">
