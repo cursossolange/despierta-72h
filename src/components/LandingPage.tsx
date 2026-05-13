@@ -358,8 +358,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   </h3>
 
   <p className="text-sm md:text-base text-slate-600 text-center leading-relaxed max-w-2xl mx-auto">
-    Escuchas un audio, observas lo que aparece y reconoces cómo reaccionas.
-    Al escribir, ordenas la experiencia y empiezas a identificar patrones con más claridad.
+   Durante 3 días escuchas audios breves, haces micropausas conscientes y observas cómo reaccionas en situaciones cotidianas.
+Al escribir lo que observaste, empiezas a reconocer patrones automáticos con más claridad.
   </p>
 </div>
       <section className="pt-0 pb-6 bg-white">
