@@ -478,19 +478,20 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
   <p className="mt-4 text-[9px] md:text-[10px] text-slate-600 font-semibold tracking-wide">
     Pago seguro · Acceso inmediato
   </p>
-  <p className="mt-4 text-xs md:text-sm text-slate-500 text-center leading-relaxed">
- <p className="mt-4 text-sm text-slate-500 text-center">
-  ¿Tienes dudas antes de empezar?
-</p>
+ <div className="mt-4 text-center">
+  <p className="text-sm text-slate-500 mb-2">
+    ¿Tienes dudas antes de empezar?
+  </p>
 
-<a
-  href="https://wa.me/56990991901"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-violet-600 font-semibold hover:text-violet-700 transition-colors"
->
-  Conversemos por WhatsApp
-</a>
+  <a
+    href="https://wa.me/56990991901"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-violet-600 font-semibold hover:text-violet-700 transition-colors"
+  >
+    Conversemos por WhatsApp
+  </a>
+</div>
 
 </div>
           </div>
