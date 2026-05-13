@@ -162,13 +162,13 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <>
     Reaccionas...
     <br />
-    y despuéste das cuenta que...
+    y después te das cuenta que...
     <br />
     <br />
     <span className="italic">
       “No quería responder
       <br />
-      así otra vez.”
+      así.”
     </span>
   </>
 </h1>
