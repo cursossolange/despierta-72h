@@ -522,7 +522,7 @@ Al escribir lo que observaste, empiezas a reconocer patrones autom√°ticos con m√
     </a>
   </div>
 </div>
-</div>
+
 
 
 <footer className="py-6 border-t border-slate-100 text-center bg-white">
