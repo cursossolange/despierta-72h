@@ -360,15 +360,17 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             <div className="relative z-10 space-y-6 max-w-2xl mx-auto text-center">
 
  <h3 className="text-violet-300 text-xs md:text-sm font-black uppercase tracking-[0.4em]">
-  Lo que te llevas
+  Lo que empieza a cambiar en ti
 </h3>
 
-<h3 className="text-xl md:text-2xl font-black text-white leading-tight">
-  Una metodología práctica para interrumpir reacciones automáticas.
+<h3 className="text-2xl md:text-4xl font-black text-white leading-tight">
+  En 3 días empezarás a sentir menos ruido en tu cabeza, más claridad y más control sobre cómo reaccionas.
 </h3>
 
-<p className="text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
-  Basada en observación consciente, micropausas y reconocimiento de patrones cotidianos.
+<p className="text-base md:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
+  El cambio empieza desde el primer día. <br className="hidden md:block" />
+  Porque cuando dejas de funcionar en automático, empiezas a decidir distinto.
+</p>
 </p>
 </div>
 </motion.div>
