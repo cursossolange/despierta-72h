@@ -188,10 +188,10 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             {/* Bloque de identificación del dolor */}
 <div className="max-w-4xl mx-auto mt-12 mb-14 px-6">
   <div className="bg-[#F6F2FF] rounded-[32px] px-8 py-10 md:px-12 md:py-14 shadow-sm text-center">
-  <p className="text-xl md:text-2xl font-semibold text-slate-900 mb-6">
-    Si últimamente:
-  </p>
-
+ <p className="text-2xl md:text-4xl font-bold text-slate-900 mb-8 leading-tight">
+  Si esto te está pasando más seguido de lo que te gustaría...
+</p>
+  
   <div className="space-y-3 text-lg md:text-xl text-slate-700 leading-relaxed">
   <p><span className="text-violet-500 mr-2">✓</span>reaccionas y después piensas “no quería responder así”,</p>
 
