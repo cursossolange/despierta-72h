@@ -433,11 +433,11 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
                   </h3>
                 </div>
               </div>
-              <p className<h3 className="text-3xl md:text-4xl font-black leading-tight text-white">="text-base md:text-lg text-slate-300 leading-relaxed">
-                Empiezas a notar patrones que antes pasaban desapercibidos.
-                Y cuando los ves antes, puedes empezar a reaccionar distinto.
-              </p>
-              <div className="space-y-2 text-sm text-slate-300">
+             <p className="text-sm md:text-base text-slate-300 leading-relaxed">
+  Empiezas a notar patrones que antes pasaban desapercibidos.
+  Y cuando los ves antes, puedes empezar a reaccionar distinto.
+</p>
+             <div className="space-y-2 text-sm text-slate-300">
                 <p>✓ Reaccionas y te das cuenta después</p>
                 <p>✓ Tu cabeza no logra desconectarse</p>
                 <p>✓ Sigues funcionando aunque estés cansada</p>
