@@ -428,12 +428,12 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
                   <p className="text-2xl md:text-3xl uppercase tracking-[0.2em] text-violet-200 font-black mb-6">
                     Guía descargable incluida
                   </p>
-                  <h3 className="text-5xl md:text-6xl font-black leading-tight text-white">
-                    7 señales de que estás funcionando en automático
+                  <h3 className="text-3xl md:text-4xl font-black leading-tight text-white">
+                    Empieza a observar lo que antes pasaba desapercibido
                   </h3>
                 </div>
               </div>
-              <p className="text-base md:text-lg text-slate-300 leading-relaxed">
+              <p className<h3 className="text-3xl md:text-4xl font-black leading-tight text-white">="text-base md:text-lg text-slate-300 leading-relaxed">
                 Empiezas a notar patrones que antes pasaban desapercibidos.
                 Y cuando los ves antes, puedes empezar a reaccionar distinto.
               </p>
