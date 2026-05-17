@@ -309,8 +309,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     {[
      {
   day: "Día 1",
-  title: "Bajar el ruido que no para en tu cabeza",
-  sub: "Empiezas a identificar los pensamientos que más se repiten en tu cabeza y cuándo tu mente se acelera.",
+  title: "Dejar de sentir que tu cabeza no para",
+  sub: "Empiezas a notar qué acelera tu mente y por qué te cuesta desconectarte.",
  icon: <Sparkles className="w-5 h-5" />,
 },
 {
