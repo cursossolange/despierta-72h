@@ -205,7 +205,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   </div>
 
 <p className="mt-10 text-2xl md:text-4xl font-extrabold text-slate-900 leading-tight">
-  Entonces Despierta 72H es para ti.
+Porque seguir funcionando así tiene un costo.
 </p>
     </div>
 </div>
