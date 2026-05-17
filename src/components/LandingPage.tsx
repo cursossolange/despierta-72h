@@ -186,17 +186,22 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   </p>
 </div>
             {/* Bloque de identificación del dolor */}
-<div className="max-w-3xl mx-auto mt-10 mb-10 px-6 text-center">
+<div className="max-w-4xl mx-auto mt-12 mb-14 px-6">
+  <div className="bg-[#F6F2FF] rounded-[32px] px-8 py-10 md:px-12 md:py-14 shadow-sm text-center">
   <p className="text-xl md:text-2xl font-semibold text-slate-900 mb-6">
     Si últimamente:
   </p>
 
   <div className="space-y-3 text-lg md:text-xl text-slate-700 leading-relaxed">
-    <p>reaccionas y después piensas “no quería responder así”,</p>
-    <p>sientes que tu cabeza nunca descansa,</p>
-    <p>sigues funcionando aunque estás agotada,</p>
-    <p>te cuesta desconectarte incluso cuando tienes tiempo,</p>
-   <p>o hace tiempo sientes que solo estás resolviendo…</p>
+  <p><span className="text-violet-500 mr-2">✓</span>reaccionas y después piensas “no quería responder así”,</p>
+
+<p><span className="text-violet-500 mr-2">✓</span>sientes que tu cabeza nunca descansa,</p>
+
+<p><span className="text-violet-500 mr-2">✓</span>sigues funcionando aunque estás agotada,</p>
+
+<p><span className="text-violet-500 mr-2">✓</span>te cuesta desconectarte incluso cuando tienes tiempo,</p>
+
+<p><span className="text-violet-500 mr-2">✓</span>o hace tiempo sientes que solo estás resolviendo...</p>
   </div>
 
   <p className="mt-8 text-xl md:text-2xl font-bold text-slate-900">
