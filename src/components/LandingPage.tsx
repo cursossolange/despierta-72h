@@ -265,15 +265,19 @@ más pierdes tu libertad de elegir cómo quieres vivir.
 
   <div className="text-sm md:text-[17px] text-slate-700 leading-8 font-normal space-y-4 max-w-2xl mx-auto text-left">
 
-  <p>
-    Durante más de 20 años trabajé liderando equipos y procesos.
-  Fue una etapa que me enseñó mucho sobre liderazgo, gestión y método.
+ <p>
+  Durante más de 20 años trabajé liderando equipos y procesos.
+  Fue una etapa que me enseñó mucho sobre liderazgo, gestión y resultados.
 </p>
 
 <p>
-  Pero el aprendizaje más importante vino después:
-  observar cómo muchas veces reaccionamos en automático…
-  y recién después nos damos cuenta de que podríamos haberlo hecho distinto
+  Pero la vida terminó enseñándome algo todavía más importante:
+  parar no es perder el tiempo.
+</p>
+
+<p>
+  Durante años seguí funcionando, resolviendo y avanzando…
+  sin darme cuenta de cuánto me estaba alejando de mí misma.
 </p>
 
 <p className="italic text-slate-600">
@@ -281,11 +285,18 @@ más pierdes tu libertad de elegir cómo quieres vivir.
 </p>
 
 <p>
-  Esa búsqueda me llevó a profundizar en neurociencia y certificarme en neurocoaching.
+  Reaccionar desde el cansancio.
+  Responder en automático.
+  Seguir funcionando sin realmente escucharme.
 </p>
 
 <p>
-  Despierta 72H nace desde ahí.
+  Y recién cuando aprendí a parar un momento,
+  empecé a observarme distinto.
+</p>
+
+<p className="font-semibold text-slate-900">
+  Por eso creé Despierta 72H.
 </p>
 
 <p className="mt-6 font-medium text-slate-900">
