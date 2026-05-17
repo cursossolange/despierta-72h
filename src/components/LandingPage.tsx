@@ -416,11 +416,11 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
 
 <div className="space-y-4">
  <div>
-  <p className="text-sm uppercase tracking-[0.3em] text-violet-300 font-black mb-4">
+  <p className="text-base md:text-lg uppercase tracking-[0.35em] text-violet-200 font-black mb-5">
     Guía descargable incluida
   </p>
 
-  <h3 className="text-3xl md:text-4xl font-black leading-tight text-white">
+  <h3 className="text-4xl md:text-5xl font-black leading-tight text-white">
     7 señales de que estás funcionando en automático
   </h3>
 </div>
