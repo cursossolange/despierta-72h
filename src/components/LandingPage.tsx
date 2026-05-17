@@ -522,6 +522,7 @@ Al escribir lo que observaste, empiezas a reconocer patrones autom√°ticos con m√
     </a>
   </div>
 </div>
+ </div>
 </section>
 
 
