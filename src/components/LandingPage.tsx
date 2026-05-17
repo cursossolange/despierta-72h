@@ -271,7 +271,7 @@ más pierdes tu libertad de elegir cómo quieres vivir.
 </p>
 
 <p>
-  Pero no fue ahí donde más aprendi, mi mayor aprendizaje vino después cuando entendí que " parar no es perder el tiempo" 
+  Pero no fue ahí donde más aprendi, mi mayor aprendizaje vino después cuando entendí que "parar no es perder el tiempo" 
 </p>
 
 <p>
@@ -280,7 +280,7 @@ más pierdes tu libertad de elegir cómo quieres vivir.
 </p>
 
 <p className="italic text-slate-600">
-  y comportándome de una manera que que ya no me representaba … lo hice otra vez.”
+  y el costo que estaba pagando.
 </p>
 
 <p>
