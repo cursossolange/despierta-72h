@@ -531,8 +531,5 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
       © 2026 Despierta 72H
     </p>
   </div>
- 
 </footer>
-);
-}
 
