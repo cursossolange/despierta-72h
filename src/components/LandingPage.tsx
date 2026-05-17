@@ -271,17 +271,16 @@ más pierdes tu libertad de elegir cómo quieres vivir.
 </p>
 
 <p>
-  Pero la vida terminó enseñándome algo todavía más importante:
-  parar no es perder el tiempo.
+  Pero no fue ahí donde más aprendi, mi mayor aprendizaje vino después cuando entendí que " parar no es perder el tiempo" 
 </p>
 
 <p>
-  Durante años seguí funcionando, resolviendo y avanzando…
+  Durante años viví funcionando, resolviendo y avanzando…
   sin darme cuenta de cuánto me estaba alejando de mí misma.
 </p>
 
 <p className="italic text-slate-600">
-  “Pucha… lo hice otra vez.”
+  y comportándome de una manera que que ya no me representaba … lo hice otra vez.”
 </p>
 
 <p>
@@ -291,7 +290,7 @@ más pierdes tu libertad de elegir cómo quieres vivir.
 </p>
 
 <p>
-  Y recién cuando aprendí a parar un momento,
+  Y recién cuando la vida me llevo a "parar un momento",
   empecé a observarme distinto.
 </p>
 
@@ -301,7 +300,7 @@ más pierdes tu libertad de elegir cómo quieres vivir.
 
 <p className="mt-6 font-medium text-slate-900">
   Una experiencia guiada de 3 días para ayudarte a interrumpir ese piloto automático
-  y darte cuenta de lo que normalmente haces sin verlo.
+  y darte cuenta del costo que te está significando.
 </p>
 </div>
 </div>
