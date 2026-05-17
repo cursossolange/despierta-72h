@@ -207,6 +207,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <p className="mt-8 text-xl md:text-2xl font-bold text-slate-900">
    Entonces Despierta 72H es para ti.
   </p>
+    </div>
 </div>
             {/* Principal Hero Image (Compacta) */}
             <motion.div
