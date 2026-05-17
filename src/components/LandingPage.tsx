@@ -294,7 +294,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </div>
 </div>
 </div>
-
+</div>
 </section>
   
   <section className="py-8 bg-violet-50/50">
