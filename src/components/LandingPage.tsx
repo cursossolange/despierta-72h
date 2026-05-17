@@ -510,26 +510,18 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
   <p className="text-sm text-slate-500 mb-2">
     ¿Tienes dudas antes de empezar?
   </p>
+ </section>
 
-  <a
-    href="https://wa.me/56990991901"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-violet-600 font-semibold hover:text-violet-700 transition-colors"
-  >
-    Conversemos por WhatsApp
-  </a>
-     </div>
-    </section>
+      <footer className="py-6 border-t border-slate-100 text-center bg-white">
+        <div className="container mx-auto px-6">
+          <Logo className="opacity-20 grayscale scale-40 mb-2" />
 
-    
-
-<footer className="py-6 border-t border-slate-100 text-center bg-white">
-  <div className="container mx-auto px-6">
-    <Logo className="opacity-20 grayscale scale-40 mb-2" />
-    <p className="text-slate-600 text-[8px] font-bold tracking-widest uppercase">
-      © 2026 Despierta 72H
-    </p>
-  </div>
-</footer>
-
+          <p className="text-slate-600 text-[8px] font-bold tracking-widest uppercase">
+            © 2026 Despierta 72H
+          </p>
+        </div>
+      </footer>
+    </>
+  );
+}
+ 
