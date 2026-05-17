@@ -415,19 +415,21 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
 />
 
 <div className="space-y-4">
-  <div>
-    <p className="text-[10px] uppercase tracking-[0.3em] text-violet-300 font-bold mb-3">
-      Bonus incluido
-    </p>
+ <div>
+  <p className="text-sm uppercase tracking-[0.3em] text-violet-300 font-black mb-4">
+    Guía descargable incluida
+  </p>
 
-    <h3 className="text-2xl font-black leading-tight">
-      Guía para detectar conductas automáticas
-    </h3>
+  <h3 className="text-3xl md:text-4xl font-black leading-tight text-white">
+    7 señales de que estás funcionando en automático
+  </h3>
+</div>
   </div>
 
-  <p className="text-sm text-slate-300 leading-relaxed">
-    Una guía práctica para ayudarte a reconocer señales cotidianas de que estás funcionando en automático.
-  </p>
+  <p className="text-base md:text-lg text-slate-300 leading-relaxed">
+  Empiezas a notar patrones que antes pasaban desapercibidos.
+  Y cuando los ves antes, puedes empezar a reaccionar distinto.
+</p>
 
   <div className="space-y-2 text-sm text-slate-300">
     <p>✓ Reaccionas y te das cuenta después</p>
