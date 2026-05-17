@@ -495,7 +495,7 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
     href="https://pay.hotmart.com/O105550362E"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-violet-600 text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 transition-all duration-300 flex items-center gap-2"
+    className="bg-violet-600 text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 transition-colors inline-flex items-center gap-2"
   >
     <span className="uppercase tracking-widest text-xs md:text-sm">
       Acceder ahora
@@ -504,23 +504,25 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
   </a>
 
   <p className="mt-4 text-[9px] md:text-[10px] text-slate-600 font-semibold tracking-wide">
-    Pago seguro · Acceso inmediato
-  </p>
- <div className="mt-4 text-center">
-  <p className="text-sm text-slate-500 mb-2">
-    ¿Tienes dudas antes de empezar?
+    Pago seguro • Acceso inmediato
   </p>
 
-  <a
-    href="https://wa.me/56990991901"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-violet-600 font-semibold hover:text-violet-700 transition-colors"
-  >
-    Conversemos por WhatsApp
-  </a>
+  <div className="mt-4 text-center">
+    <p className="text-sm text-slate-500 mb-2">
+      ¿Tienes dudas antes de empezar?
+    </p>
+
+    <a
+      href="https://wa.me/56990991901"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-violet-600 font-semibold hover:text-violet-700 transition-colors"
+    >
+      Conversemos por WhatsApp
+    </a>
+  </div>
 </div>
-
+</div>
 </section>
 
 <footer className="py-6 border-t border-slate-100 text-center bg-white">
@@ -532,6 +534,6 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
     </p>
   </div>
 </footer>
-
 </>
- 
+);
+}
