@@ -193,18 +193,18 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </p>
   
   <div className="space-y-3 text-lg md:text-xl text-slate-700 leading-relaxed">
-  <p><span className="text-violet-500 mr-2">✓</span>reaccionas y después piensas “no quería responder así”,</p>
+  <p><span className="text-violet-500 mr-2">✓</span>Reaccionas y después piensas “no quería responder así”,</p>
 
-<p><span className="text-violet-500 mr-2">✓</span>sientes que tu cabeza nunca descansa,</p>
+<p><span className="text-violet-500 mr-2">✓</span>Sientes que tu cabeza nunca descansa,</p>
 
-<p><span className="text-violet-500 mr-2">✓</span>sigues funcionando aunque estás agotada,</p>
+<p><span className="text-violet-500 mr-2">✓</span>Sigues funcionando aunque estás agotada,</p>
 
-<p><span className="text-violet-500 mr-2">✓</span>te cuesta desconectarte incluso cuando tienes tiempo,</p>
+<p><span className="text-violet-500 mr-2">✓</span>Te cuesta desconectarte incluso cuando tienes tiempo,</p>
 
-<p><span className="text-violet-500 mr-2">✓</span>o hace tiempo sientes que solo estás resolviendo...</p>
+<p><span className="text-violet-500 mr-2">✓</span>O hace tiempo sientes que solo estás resolviendo...</p>
   </div>
 
-  <p className="mt-8 text-xl md:text-2xl font-bold text-slate-900">
+  className="mt-10 text-2xl md:text-4xl font-extrabold text-slate-900 leading-tight"
    Entonces Despierta 72H es para ti.
   </p>
     </div>
