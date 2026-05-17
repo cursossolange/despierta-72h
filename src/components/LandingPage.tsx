@@ -537,6 +537,6 @@ Al escribir lo que observaste, empiezas a reconocer patrones autom√°ticos con m√
  
 </footer>
 </div>
-</>
+
 );
 }
