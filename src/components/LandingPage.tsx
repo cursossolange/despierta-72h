@@ -519,11 +519,10 @@ Al escribir lo que observaste, empiezas a reconocer patrones automÃ¡ticos con mÃ
   >
     Conversemos por WhatsApp
   </a>
-</div>
+     </div>
+    </section>
 
-</div>
-          </div>
-</section>
+    <footer className="py-6 border-t border-slate-100 text-center bg-white">
 
 <footer className="py-6 border-t border-slate-100 text-center bg-white">
   <div className="container mx-auto px-6">
