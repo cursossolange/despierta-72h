@@ -178,7 +178,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4 text-center">
 
 <p className="text-[18px] md:text-[1.4rem] text-slate-700 font-medium mb-5 text-center max-w-3xl mx-auto leading-relaxed">
-  Una experiencia guiada de 3 días para ayudarte a parar antes de reaccionar en automático.
+  Una experiencia guiada de 3 días para dejar de reaccionar desde el cansancio, el ruido mental y el automático.
 </p>
 </div>
   <p className="mt-4 text-sm md:text-base text-slate-500">
@@ -205,7 +205,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   </div>
 
 <p className="mt-10 text-2xl md:text-4xl font-extrabold text-slate-900 leading-tight">
-Porque seguir funcionando así tiene un costo.
+Porque seguir funcionando así no solo te agota. También tien un costo diario en cómo reaccionas, cómo te relacionas y cómo estás viviendo tu día a día.
 </p>
     </div>
 </div>
