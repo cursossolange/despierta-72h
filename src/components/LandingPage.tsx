@@ -206,7 +206,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
 <p className="mt-10 text-2xl md:text-4xl font-extrabold text-slate-900 leading-tight">
 Porque mientras más tiempo funcionas así,
-más pierdes tú libertad para elegir día a día cómo quieres vivir.
+más pierdes tu libertad de elegir cómo quieres vivir.
 </p>
     </div>
 </div>
