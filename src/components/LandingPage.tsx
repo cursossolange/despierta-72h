@@ -205,8 +205,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   </div>
 
 <p className="mt-10 text-2xl md:text-4xl font-extrabold text-slate-900 leading-tight">
-Porque seguir funcionando así no solo te agota.
-También tiene un costo en cómo reaccionas, cómo te relacionas y cómo te sientes contigo misma.
+Porque mientras más tiempo funcionas así,
+más normalizas reaccionar desde el cansancio en lugar de elegir cómo quieres responder.
 </p>
     </div>
 </div>
