@@ -388,143 +388,135 @@ Porque seguir funcionando así no solo te agota. También tien un costo diario e
 Al escribir lo que observaste, empiezas a reconocer patrones automáticos con más claridad.
   </p>
 </div>
-      <section className="pt-0 pb-6 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-xl mx-auto text-center space-y-6">
-            <div className="p-6 md:p-8 rounded-[2rem] bg-violet-50/50 border border-violet-100 relative overflow-hidden">
-              <ShieldCheck className="absolute top-3 right-3 w-8 h-8 text-violet-700 opacity-5" />
-              
-              <div className="space-y-4 text-sm md:text-base text-slate-800 font-medium">
-                <div className="pt-4 border-t border-violet-100 mt-4">
-                  <p className="text-xs md:text-sm text-violet-700 font-bold">Si en 7 días sientes que esto no era para ti, te devolvemos el 100%.</p>
+<section className="pt-0 pb-6 bg-white">
+  <div className="container mx-auto px-6">
+    <div className="max-w-xl mx-auto text-center space-y-6">
+      <div className="p-6 md:p-8 rounded-[2rem] bg-violet-50/50 border border-violet-100 relative overflow-hidden">
+        <ShieldCheck className="absolute top-3 right-3 w-8 h-8 text-violet-700 opacity-5" />
+        <div className="space-y-4 text-sm md:text-base text-slate-800 font-medium">
+          <div className="pt-4 border-t border-violet-100 mt-4">
+            <p className="text-xs md:text-sm text-violet-700 font-bold">
+              Si en 7 días sientes que esto no era para ti, te devolvemos el 100%.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-xl mx-auto my-12 bg-white border border-violet-100 rounded-[2rem] p-6 shadow-xl shadow-violet-100/40">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+          <div className="w-full md:w-[420px] flex-shrink-0">
+            <div className="rounded-[1.8rem] bg-[#17132A] p-6 shadow-xl text-white text-left relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-violet-500/20 rounded-full blur-2xl" />
+              <img
+                src="/bonus-portada.jpg.png"
+                alt="Guía bonus Despierta 72H"
+                className="w-full max-h-[320px] object-cover object-top rounded-2xl shadow-lg mb-6"
+              />
+              <div className="space-y-4">
+                <div>
+                  <p className="text-lg md:text-2xl uppercase tracking-[0.4em] text-violet-200 font-black mb-6">
+                    Guía descargable incluida
+                  </p>
+                  <h3 className="text-5xl md:text-6xl font-black leading-tight text-white">
+                    7 señales de que estás funcionando en automático
+                  </h3>
                 </div>
               </div>
+              <p className="text-base md:text-lg text-slate-300 leading-relaxed">
+                Empiezas a notar patrones que antes pasaban desapercibidos.
+                Y cuando los ves antes, puedes empezar a reaccionar distinto.
+              </p>
+              <div className="space-y-2 text-sm text-slate-300">
+                <p>✓ Reaccionas y te das cuenta después</p>
+                <p>✓ Tu cabeza no logra desconectarse</p>
+                <p>✓ Sigues funcionando aunque estés cansada</p>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-           <div className="max-w-xl mx-auto my-12 bg-white border border-violet-100 rounded-[2rem] p-6 shadow-xl shadow-violet-100/40">
-  <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+      <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 text-center">
+        Si estás pensando esto…
+      </h3>
 
-    {/* Mockup visual */}
-    <div className="w-full md:w-[420px] flex-shrink-0">
-      <div className="rounded-[1.8rem] bg-[#17132A] p-6 shadow-xl text-white text-left relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-24 h-24 bg-violet-500/20 rounded-full blur-2xl" />
-<img
-  src="/bonus-portada.jpg.png"
-  alt="Guía bonus Despierta 72H"
-  className="w-full max-h-[320px] object-cover object-top rounded-2xl shadow-lg mb-6"
-/>
+      <div className="space-y-6">
+        <div>
+          <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+            “Me gustaría hacerlo… pero no tengo tiempo.”
+          </p>
+          <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+            Muchas veces, el automático también se ve así: seguir funcionando sin encontrar un momento para parar.
+          </p>
+        </div>
 
-<div className="space-y-4">
- <div>
-  <p className="text-lg md:text-2xl uppercase tracking-[0.4em] text-violet-200 font-black mb-6">
-    Guía descargable incluida
-  </p>
+        <div>
+          <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+            “¿Y si no logro observar mucho?”
+          </p>
+          <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+            No necesitas hacerlo perfecto. La práctica es empezar a notar pequeños momentos que normalmente pasan en automático.
+          </p>
+        </div>
 
-  <h3 className="text-5xl md:text-6xl font-black leading-tight text-white">
-    7 señales de que estás funcionando en automático
-  </h3>
-</div>
-  </div>
+        <div>
+          <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+            “¿Y si me olvido durante el día?”
+          </p>
+          <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+            Es parte del proceso. Darte cuenta también es una forma de salir del automático.
+          </p>
+        </div>
 
-  <p className="text-base md:text-lg text-slate-300 leading-relaxed">
-  Empiezas a notar patrones que antes pasaban desapercibidos.
-  Y cuando los ves antes, puedes empezar a reaccionar distinto.
-</p>
+        <div>
+          <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+            “¿Y si necesito más tiempo?”
+          </p>
+          <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+            Puedes repetir los ejercicios las veces que necesites. La idea no es avanzar rápido, sino empezar a observar distinto.
+          </p>
+        </div>
+      </div>
 
-  <div className="space-y-2 text-sm text-slate-300">
-    <p>✓ Reaccionas y te das cuenta después</p>
-    <p>✓ Tu cabeza no logra desconectarse</p>
-    <p>✓ Sigues funcionando aunque estés cansada</p>
-  </div>
-</div>
+      <div className="pt-2 flex flex-col items-center">
+        <p className="mb-3 text-xs md:text-sm text-slate-900 font-medium text-center">
+          Y muchas veces, parar ya es empezar a salir del automático.
+        </p>
+
+        <a
+          href="https://pay.hotmart.com/O105550362E"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-violet-600 text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 transition-colors inline-flex items-center gap-2"
+        >
+          <span className="uppercase tracking-widest text-xs md:text-sm">
+            Acceder ahora
+          </span>
+          <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
+        </a>
+
+        <p className="mt-4 text-[9px] md:text-[10px] text-slate-600 font-semibold tracking-wide">
+          Pago seguro • Acceso inmediato
+        </p>
+
+        <div className="mt-4 text-center">
+          <p className="text-sm text-slate-500 mb-2">
+            ¿Tienes dudas antes de empezar?
+          </p>
+
+          <a
+            href="https://wa.me/56990991901"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-violet-600 font-semibold hover:text-violet-700 transition-colors"
+          >
+            Conversemos por WhatsApp
+          </a>
+        </div>
       </div>
     </div>
-
-    </div>
-</div>
-
-{/* Objeciones / dudas */}
-  <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 text-center">
-    Si estás pensando esto…
-  </h3>
-
-  <div className="space-y-6">
-    <div>
-      <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
-        “Me gustaría hacerlo… pero no tengo tiempo.”
-      </p>
-      <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-        Muchas veces, el automático también se ve así: seguir funcionando sin encontrar un momento para parar.
-      </p>
-    </div>
-
-    <div>
-      <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
-       “¿Y si no logro observar mucho?”
-      </p>
-      <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-        No necesitas hacerlo perfecto. La práctica es empezar a notar pequeños momentos que normalmente pasan en automático.
-      </p>
-    </div>
-
-    <div>
-      <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
-        “¿Y si me olvido durante el día?”
-      </p>
-      <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-        Es parte del proceso. Darte cuenta también es una forma de salir del automático.
-      </p>
-    </div>
-
-    <div>
-      <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
-       “¿Y si necesito más tiempo?”
-      </p>
-      <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-        Puedes repetir los ejercicios las veces que necesites. La idea no es avanzar rápido, sino empezar a observar distinto.
-      </p>
-    </div>
   </div>
-</div>
-<div className="pt-2 flex flex-col items-center">
-  <p className="mb-3 text-xs md:text-sm text-slate-900 font-medium text-center">
-    Y muchas veces, parar ya es empezar a salir del automático.
-  </p>
-
-  <a
-    href="https://pay.hotmart.com/O105550362E"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-violet-600 text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 transition-colors inline-flex items-center gap-2"
-  >
-    <span className="uppercase tracking-widest text-xs md:text-sm">
-      Acceder ahora
-    </span>
-    <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
-  </a>
-
-  <p className="mt-4 text-[9px] md:text-[10px] text-slate-600 font-semibold tracking-wide">
-    Pago seguro • Acceso inmediato
-  </p>
-
-  <div className="mt-4 text-center">
-    <p className="text-sm text-slate-500 mb-2">
-      ¿Tienes dudas antes de empezar?
-    </p>
-
-    <a
-      href="https://wa.me/56990991901"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-violet-600 font-semibold hover:text-violet-700 transition-colors"
-    >
-      Conversemos por WhatsApp
-    </a>
-  </div>
-</div>
- </div>
 </section>
-
 
 <footer className="py-6 border-t border-slate-100 text-center bg-white">
   <div className="container mx-auto px-6">
@@ -534,9 +526,8 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
       © 2026 Despierta 72H
     </p>
   </div>
- 
 </footer>
 </div>
+  );
+}      
 
-);
-}
