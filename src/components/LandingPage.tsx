@@ -302,26 +302,26 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     <div className="bg-white rounded-[2rem] border border-violet-100 p-6 md:p-8 shadow-sm text-center">
       <div className="max-w-2xl mx-auto mb-8 text-center">
         <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-          Lo que aprenderás en estos 3 días
+          En solo 3 días empezarás a:
         </h2>
 </div>
   <div className="grid lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
     {[
      {
   day: "Día 1",
-  title: "Empiezas a bajar el ruido en tu cabeza",
+  title: "Bajar el ruido que no para en tu cabeza",
   sub: "Empiezas a identificar los pensamientos que más se repiten en tu cabeza y cuándo tu mente se acelera.",
  icon: <Sparkles className="w-5 h-5" />,
 },
 {
   day: "Día 2",
-  title: "Detectas tus comportamientos automáticos",
-  sub: "Observas qué situaciones activan tus reacciones y cómo respondes antes de darte cuenta.",
+  title: "Darte cuenta antes de reaccionar",
+  sub: "Observas qué situaciones activan tus reacciones automáticas y cómo respondes antes de darte cuenta.",
  icon: <RefreshCw className="w-5 h-5" />,
 },
 {
   day: "Día 3",
-  title: "Entiendes qué hay detrás de esas reacciones",
+  title: "Entender qué hay detrás de tus respuestas automáticas",
   sub: "Empiezas a reconocer qué necesidad, emoción o tensión está guiando tus respuestas.",
   icon: <Heart className="w-5 h-5" />,
 }
