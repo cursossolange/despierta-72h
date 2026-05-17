@@ -371,7 +371,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   El cambio empieza desde el primer día. <br className="hidden md:block" />
   Porque cuando dejas de funcionar en automático, empiezas a decidir distinto.
 </p>
-</p>
+
 </div>
 </motion.div>
 </div>
