@@ -372,20 +372,12 @@ Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven
             
             <div className="relative z-10 space-y-6 max-w-2xl mx-auto text-center">
 
- <h3 className="text-violet-300 text-xs md:text-sm font-black uppercase tracking-[0.4em]">
-  Lo que empieza a cambiar en ti
-</h3>
-
 <h3 className="text-3xl md:text-5xl font-black leading-tight text-white mb-8">
-  En 3 días empezarás a salir
-  <br />
-  del modo resolver todo.
+  En 3 días empezarás a sentirte más tranquila.
 </h3>
 
-  <p className="text-lg md:text-2xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
- Porque cuando bajas el ritmo por un momento,
-  empiezas a darte cuenta
-  de cuánto necesitabas parar.
+<p className="text-lg md:text-2xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
+  Porque cuando dejas de resolver todo por un momento, empiezas a sentir un poco más de calma.
 </p>
 
 </div>
