@@ -204,10 +204,11 @@ Para mujeres que sienten que hace tiempo viven resolviendo todo..
 <p><span className="text-violet-500 mr-2">✓</span>O hace tiempo sientes que solo estás resolviendo...</p>
   </div>
 
-<p className="mt-10 text-xl md:text-3xl font-bold text-slate-900 leading-tight">
-Llevas demasiado tiempo funcionando sin parar.
-Y cuando eso se vuelve normal,
-empiezas a reaccionar más de lo que eliges cómo quieres vivir.
+<p className="mt-10 text-lg md:text-2xl font-semibold text-slate-900 leading-tight">
+  Quizás hace tiempo empezaste a normalizar vivir así.
+  <br /><br />
+  Y cuando eso se vuelve normal,
+  tu cabeza nunca termina de descansar.
 </p>
     </div>
 </div>
