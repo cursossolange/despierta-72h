@@ -204,7 +204,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <p><span className="text-violet-500 mr-2">✓</span>O hace tiempo sientes que solo estás resolviendo...</p>
   </div>
 
-<p className="mt-10 text-2xl md:text-4xl font-extrabold text-slate-900 leading-tight">
+<p className="mt-10 text-xl md:text-3xl font-bold text-slate-900 leading-tight">
 Llevas demasiado tiempo funcionando sin parar.
 Y cuando eso se vuelve normal,
 empiezas a reaccionar más de lo que eliges cómo quieres vivir.
