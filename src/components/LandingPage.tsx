@@ -366,7 +366,8 @@ y volver a sentir un poco más de calma.
 </h3>
 
 <p className="text-lg md:text-2xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
-  Porque cuando dejas de resolver todo por un momento, empiezas a sentir un poco más de calma.
+  Porque cuando bajas el ritmo,
+empiezas a sentir más calma y menos cansancio mental.
 </p>
 
 </div>
