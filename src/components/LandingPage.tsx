@@ -178,7 +178,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4 text-center">
 
 <p className="text-[18px] md:text-[1.4rem] text-slate-700 font-medium mb-5 text-center max-w-3xl mx-auto leading-relaxed">
-Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven resolviendo todo… y necesitan un momento para sentirse menos sobrepasadas
+Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven resolviendo todo. Un espacio breve para bajar el ritmo y sentirte más tranquila.
 </p>
 </div>
   <p className="mt-4 text-sm md:text-base text-slate-500">
@@ -286,7 +286,7 @@ Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven
 
 <p>
   Reaccionar desde el cansancio.
-  Responder en automático.
+  Responder desde el cansancio.
   Seguir funcionando sin realmente escucharme.
 </p>
 
@@ -300,7 +300,7 @@ Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven
 </p>
 
 <p className="mt-6 font-medium text-slate-900">
-  Una experiencia guiada de 3 días para ayudarte a interrumpir ese piloto automático
+  Una experiencia guiada de 3 días para ayudarte a bajar el ritmo
   y darte cuenta del costo que te está significando.
 </p>
 </div>
@@ -327,14 +327,14 @@ Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven
 },
 {
   day: "Día 2",
-  title: "Darte cuenta antes de reaccionar",
-  sub: "Observas qué situaciones activan tus reacciones automáticas y cómo respondes antes de darte cuenta.",
+  title: "Empezar a bajar el ritmo antes de reaccionar"
+    sub: "Empiezas a notar qué cosas te sobrepasan y cómo reaccionas cuando llevas demasiado tiempo funcionando así.",
  icon: <RefreshCw className="w-5 h-5" />,
 },
 {
   day: "Día 3",
-  title: "Entender qué hay detrás de tus respuestas automáticas",
-  sub: "Empiezas a reconocer qué necesidad, emoción o tensión está guiando tus respuestas.",
+  title: "Entender qué te está agotando tanto",
+  sub: "Empiezas a entender por qué te cuesta tanto bajar el ritmo y desconectarte de verdad.",
   icon: <Heart className="w-5 h-5" />,
 }
     ].map((card, i) => (
