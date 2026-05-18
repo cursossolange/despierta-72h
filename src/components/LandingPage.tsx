@@ -288,7 +288,7 @@ Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven
 
 <p>
   Y recién cuando la vida me llevo a "parar un momento",
-  empecé a observarme distinto.
+ me di cuenta de lo cansada que estaba.
 </p>
 
 <p className="font-semibold text-slate-900">
@@ -296,8 +296,8 @@ Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven
 </p>
 
 <p className="mt-6 font-medium text-slate-900">
-  Una experiencia guiada de 3 días para ayudarte a bajar el ritmo
-  y darte que es posible vivir con mayor tranquilidad.
+Una experiencia guiada de 3 días para ayudarte a bajar el ritmo
+y volver a sentir un poco más de calma.
 </p>
 </div>
 </div>
@@ -388,7 +388,7 @@ Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven
 
   <p className="text-sm md:text-base text-slate-600 text-center leading-relaxed max-w-2xl mx-auto">
    Durante 3 días escuchas audios breves, haces micropausas conscientes y observas cómo reaccionas en situaciones cotidianas.
-Al escribir lo que observaste, empiezas a reconocer patrones automáticos con más claridad.
+Al escribir lo que observaste, empiezas a reconocer reacciones repetitivas con más claridad.
   </p>
 </div>
 <section className="pt-0 pb-6 bg-white">
