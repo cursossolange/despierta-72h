@@ -210,8 +210,7 @@ Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2, delay: 0.3 }}
-              className="max-w-md mx-auto overflow-hidden rounded-xl shadow-lg border border-slate-50 mb-8 opacity-90"
-            >
+             className="max-w-2xl mx-auto overflow-hidden rounded-[28px] shadow-2xl border border-slate-100 mb-10 opacity-95"
               <div className="relative aspect-[16/9]">
                 <AIGeneratedEmotionalImage />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/5 via-transparent to-transparent"></div>
