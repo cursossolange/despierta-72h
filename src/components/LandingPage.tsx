@@ -286,8 +286,8 @@ Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven
 
 <p>
   Reaccionar desde el cansancio.
-  Responder desde el cansancio.
-  Seguir funcionando sin realmente escucharme.
+  Responder de inmediato.
+  Seguir funcionando sin realmente detenerme.
 </p>
 
 <p>
@@ -301,7 +301,7 @@ Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven
 
 <p className="mt-6 font-medium text-slate-900">
   Una experiencia guiada de 3 días para ayudarte a bajar el ritmo
-  y darte cuenta del costo que te está significando.
+  y darte que es posible vivir con mayor tranquilidad.
 </p>
 </div>
 </div>
@@ -327,7 +327,7 @@ Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven
 },
 {
   day: "Día 2",
-  title: "Empezar a bajar el ritmo antes de reaccionar"
+  title: "Empezar a bajar el ritmo antes de reaccionar",
     sub: "Empiezas a notar qué cosas te sobrepasan y cómo reaccionas cuando llevas demasiado tiempo funcionando así.",
  icon: <RefreshCw className="w-5 h-5" />,
 },
