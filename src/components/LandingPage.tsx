@@ -376,13 +376,16 @@ Para mujeres que sienten que hace tiempo viven resolviendo todo..
   Lo que empieza a cambiar en ti
 </h3>
 
-<h3 className="text-2xl md:text-4xl font-black text-white leading-tight">
-  En 3 días empezarás a sentir menos ruido en tu cabeza, más claridad y más control sobre cómo reaccionas.
+<h3 className="text-3xl md:text-5xl font-black leading-tight text-white mb-8">
+  En 3 días empezarás a salir
+  <br />
+  del modo resolver todo.
 </h3>
 
-<p className="text-base md:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
-  El cambio empieza desde el primer día. <br className="hidden md:block" />
-  Porque cuando dejas de funcionar en automático, empiezas a decidir distinto.
+  <p className="text-lg md:text-2xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
+ Porque cuando bajas el ritmo por un momento,
+  empiezas a darte cuenta
+  de cuánto necesitabas parar.
 </p>
 
 </div>
