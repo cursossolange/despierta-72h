@@ -432,7 +432,7 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
   Guía descargable para reconocer reacciones automáticas.
 </span>
                   </p>
-                  <h3 className="text-3xl md:text-4xl font-black leading-tight text-white">
+                  <h3 className="text-2xl md:text-3xl font-black leading-tight text-white">
                     Empieza a observar lo que antes pasaba desapercibido
                   </h3>
                 </div>
