@@ -3,7 +3,7 @@ import { Check, ArrowRight, Play, Volume2, Brain, Zap, Clock, ShieldCheck, Refre
 import { GoogleGenAI } from "@google/genai";
 import { useState, useEffect } from "react";
 
-const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY || "";});
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY || "" });
 
 const AIGeneratedEmotionalImage = () => {
   const [imageUrl, setImageUrl] = useState<string | null>(null);
