@@ -189,7 +189,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <div className="max-w-4xl mx-auto mt-12 mb-14 px-6">
   <div className="bg-[#F6F2FF] rounded-[32px] px-8 py-10 md:px-12 md:py-14 shadow-sm text-center">
  <p className="text-2xl md:text-4xl font-bold text-slate-900 mb-8 leading-tight">
-  Si esto te está pasando más seguido de lo que te gustaría...
+  Si esto se volvió normal para ti…...
 </p>
   
   <div className="space-y-3 text-lg md:text-xl text-slate-700 leading-relaxed">
@@ -205,8 +205,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   </div>
 
 <p className="mt-10 text-2xl md:text-4xl font-extrabold text-slate-900 leading-tight">
-Porque mientras más tiempo funcionas así,
-más pierdes tu libertad de elegir cómo quieres vivir.
+Llevas demasiado tiempo funcionando sin parar.
+Y cuando eso se vuelve normal,
+empiezas a reaccionar más de lo que eliges cómo quieres vivir.
 </p>
     </div>
 </div>
@@ -259,7 +260,7 @@ más pierdes tu libertad de elegir cómo quieres vivir.
 />
 
 <div className="space-y-4">
-  <h2 className="text-base md:text-lg font-semibold text-slate-900 leading-tight text-center">
+  <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 leading-tight text-center">
   Hola, soy Solange Henríquez.
 </h2>
 
