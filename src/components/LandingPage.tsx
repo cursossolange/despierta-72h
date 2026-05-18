@@ -204,11 +204,10 @@ Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven
 <p><span className="text-violet-500 mr-2">✓</span>O hace tiempo sientes que solo estás resolviendo...</p>
   </div>
 
-<p className="mt-10 text-lg md:text-2xl font-semibold text-slate-900 leading-tight">
-  Hace tiempo empezaste a normalizar vivir así.
+<p className="mt-10 text-base md:text-xl font-semibold text-slate-900 leading-relaxed">
+ Quizás hace tiempo empezaste a vivir así sin darte cuenta.
   <br /><br />
-  Y cuando eso se vuelve normal,
-  tu cabeza nunca termina de descansar.
+ Y aunque pares un momento, sientes que sigues funcionando igual.
 </p>
     </div>
 </div>
