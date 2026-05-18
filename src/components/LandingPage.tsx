@@ -425,8 +425,8 @@ Al escribir lo que observaste, empiezas a reconocer patrones automáticos con m�
               />
               <div className="space-y-4">
                 <div>
-                  <p className="text-lg md:text-2xl uppercase tracking-[0.18em] text-violet-200 font-black mb-6 leading-snug">
-                    Bonus especial:  Guía descargable para detectas automatismos.
+                  <p className="text-base md:text-xl uppercase tracking-[0.16em] text-violet-200 font-black mb-5 leading-snug">
+                    Bonus especial:  Guía descargable para reconocer reacciones automáticas.
                   </p>
                   <h3 className="text-3xl md:text-4xl font-black leading-tight text-white">
                     Empieza a observar lo que antes pasaba desapercibido
