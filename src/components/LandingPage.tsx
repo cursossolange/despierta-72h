@@ -205,7 +205,7 @@ Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven
   </div>
 
 <p className="mt-10 text-base md:text-xl font-semibold text-slate-900 leading-relaxed">
- Quizás hace tiempo empezaste a vivir así sin darte cuenta.
+ Quizás hace tiempo empezaste a vivir así, sin darte cuenta.
   <br /><br />
  Y aunque pares un momento, sientes que sigues funcionando igual.
 </p>
@@ -278,10 +278,6 @@ Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven
 <p>
   Durante años viví funcionando, resolviendo y avanzando…
   sin darme cuenta de cuánto me estaba alejando de mí misma.
-</p>
-
-<p className="italic text-slate-600">
-  y el costo que estaba pagando.
 </p>
 
 <p>
