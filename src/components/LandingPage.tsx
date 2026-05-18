@@ -188,7 +188,7 @@ Para mujeres que sienten que hace tiempo viven resolviendo todo..
             {/* Bloque de identificación del dolor */}
 <div className="max-w-4xl mx-auto mt-12 mb-14 px-6">
   <div className="bg-[#F6F2FF] rounded-[32px] px-8 py-10 md:px-12 md:py-14 shadow-sm text-center">
- <p className="text-2xl md:text-4xl font-bold text-slate-900 mb-8 leading-tight">
+<p className="text-xl md:text-3xl font-bold text-slate-900 mb-8 leading-tight">
   Si esto se volvió normal para ti…...
 </p>
   
@@ -205,7 +205,7 @@ Para mujeres que sienten que hace tiempo viven resolviendo todo..
   </div>
 
 <p className="mt-10 text-lg md:text-2xl font-semibold text-slate-900 leading-tight">
-  Quizás hace tiempo empezaste a normalizar vivir así.
+  Hace tiempo empezaste a normalizar vivir así.
   <br /><br />
   Y cuando eso se vuelve normal,
   tu cabeza nunca termina de descansar.
