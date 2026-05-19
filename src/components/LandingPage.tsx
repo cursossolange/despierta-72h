@@ -259,16 +259,13 @@ Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
  <div className="text-[15px] md:text-[16px] text-slate-700 leading-[1.9] font-normal space-y-4 max-w-2xl mx-auto text-left">
 
 <p>
-  Durante años trabajé acompañando procesos de cambio, liderazgo y conversaciones difíciles en personas que seguían funcionando normalmente… mientras por dentro estaban agotadas.
+  Durante mucho tiempo viví funcionando sin detenerme realmente.
 </p>
 
 <p>
-  Y también viví eso en mí.
-</p>
-
-<p>
-  Durante mucho tiempo creí que no podía parar.
-  Que parar era un lujo que no podía darme.
+  Resolviendo.
+  Respondiendo.
+  Sosteniendo todo.
 </p>
 
 <p>
@@ -276,19 +273,21 @@ Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
   muchas veces el cansancio no aparece como una crisis.
 </p>
 
-<p>
+ <p>
   Aparece como vivir con la cabeza constantemente ocupada.
-  Reaccionar rápido.
   Seguir funcionando incluso cuando ya no tienes energía.
-  O sentir que incluso descansando… tu mente sigue funcionando.
 </p>
 
 <p>
-  Ese proceso me llevó a interesarme profundamente en  neurociencia y certificarme en neurocoaching para entender mejor por qué vivimos tanto tiempo en automático sin darnos cuenta.
+  Ese proceso me llevó a profundizar en neurociencia y neurocoaching para entender por qué vivimos tanto tiempo en automático sin darnos cuenta.
 </p>
 
 <p>
-  Despierta 72H nace de todo ese aprendizaje para acompañar a otras mujeres que también sienten que hace demasiado tiempo sostienen todo.
+  Despierta 72H nace desde ahí.
+</p>
+
+<p>
+  Como una pausa breve y guiada para ayudarte a bajar el ritmo, observarte distinto y encontrar un poco más de calma mental.
 </p>
 
 <p className="font-semibold text-slate-900">
