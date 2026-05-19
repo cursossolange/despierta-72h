@@ -187,22 +187,22 @@ Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
   Si esto se volvió normal para ti…...
 </p>
   
-  <div className="space-y-3 text-lg md:text-xl text-slate-700 leading-relaxed">
+ <div className="space-y-3 text-lg md:text-xl text-slate-700 leading-relaxed">
   <p><span className="text-violet-500 mr-2">✓</span>Reaccionas y después piensas “no quería responder así”,</p>
 
-<p><span className="text-violet-500 mr-2">✓</span>Sientes que tu cabeza nunca descansa,</p>
+  <p><span className="text-violet-500 mr-2">✓</span>Sientes que tu cabeza nunca descansa,</p>
 
-<p><span className="text-violet-500 mr-2">✓</span>Sigues funcionando aunque estás agotada,</p>
+  <p><span className="text-violet-500 mr-2">✓</span>Sigues funcionando aunque estás agotada,</p>
 
-<p><span className="text-violet-500 mr-2">✓</span>Te cuesta desconectarte incluso cuando tienes tiempo,</p>
+  <p><span className="text-violet-500 mr-2">✓</span>Te cuesta desconectarte incluso cuando tienes tiempo,</p>
 
-<p><span className="text-violet-500 mr-2">✓</span>O hace tiempo sientes que solo estás resolviendo...</p>
-  </div>
+  <p><span className="text-violet-500 mr-2">✓</span>O hace tiempo sientes que solo estás resolviendo...</p>
+</div>
 
 <p className="mt-10 text-base md:text-xl font-semibold text-slate-900 leading-relaxed">
- Quizás hace tiempo empezaste a vivir así, sin darte cuenta.
+  Quizás hace tiempo empezaste a vivir así, sin darte cuenta.
   <br /><br />
- Y aunque pares un momento, sientes que sigues funcionando igual.
+  Y aunque pares un momento, sientes que sigues funcionando igual.
 </p>
     </div>
 </div>
