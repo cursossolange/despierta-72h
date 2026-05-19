@@ -172,7 +172,7 @@ vives resolviendo todo.
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4 text-center">
 
 <p className="text-[18px] md:text-[1.4rem] text-slate-700 font-medium mb-5 text-center max-w-3xl mx-auto leading-relaxed">
-Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven en modo resolver. Un espacio breve para bajar el ritmo y sentirte más tranquila.
+Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven en modo resolver. Un espacio breve para bajar el ritmo, bajar el ruido mental y sentirte un poco más tranquila.
 </p>
 </div>
   <p className="mt-4 text-sm md:text-base text-slate-500">
