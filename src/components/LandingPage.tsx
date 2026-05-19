@@ -461,36 +461,28 @@ Al escribir lo que observaste, empiezas a reconocer reacciones repetitivas con m
         </div>
 
         <div>
-          <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
-            “¿Y si no logro observar mucho?”
-          </p>
-          <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-            No necesitas hacerlo perfecto. La práctica es empezar a notar pequeños momentos que normalmente pasan en automático.
-          </p>
-        </div>
+  <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+    “¿Y si me cuesta parar?”
+  </p>
 
-        <div>
-          <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
-            “¿Y si me olvido durante el día?”
-          </p>
-          <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-            Es parte del proceso. Darte cuenta también es una forma de salir del automático.
-          </p>
-        </div>
+  <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+    Está bien. Muchas veces el primer paso es darte cuenta de que llevas demasiado tiempo funcionando sin detenerte.
+  </p>
+</div>
 
-        <div>
-          <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
-            “¿Y si necesito más tiempo?”
-          </p>
-          <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-            Puedes repetir los ejercicios las veces que necesites. La idea no es avanzar rápido, sino empezar a observar distinto.
-          </p>
-        </div>
+<div>
+  <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+    “¿Y si me olvido durante el día?”
+  </p>
+
+  <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+    También es parte del proceso. Cuando vuelvas a acordarte, simplemente vuelves. No tienes que hacerlo perfecto.
+  </p>
       </div>
 
       <div className="pt-2 flex flex-col items-center">
         <p className="mb-3 text-xs md:text-sm text-slate-900 font-medium text-center">
-          Y muchas veces, parar ya es empezar a salir del automático.
+          Y muchas veces, parar un momento ya es parte del proceso.
         </p>
 
         <a
