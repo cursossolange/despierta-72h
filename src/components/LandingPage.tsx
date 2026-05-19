@@ -319,8 +319,8 @@ Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
     {[
      {
   day: "Día 1",
-  title: "Dejar de sentir que tu cabeza no para",
-  sub: "Empiezas a notar qué acelera tu mente y por qué te cuesta desconectarte.",
+  title: "Empezar a bajar el ruido mental.",
+  sub: "Empezar a notar cuándo ya estás sobrepasada.",
  icon: <Sparkles className="w-5 h-5" />,
 },
 {
@@ -331,7 +331,7 @@ Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
 },
 {
   day: "Día 3",
-  title: "Entender qué te está agotando tanto",
+  title: "Entender qué te está agotando tanto por dentro",
   sub: "Empiezas a entender por qué te cuesta tanto bajar el ritmo y desconectarte de verdad.",
   icon: <Heart className="w-5 h-5" />,
 }
