@@ -370,12 +370,12 @@ Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
             <div className="relative z-10 space-y-6 max-w-2xl mx-auto text-center">
 
 <h3 className="text-3xl md:text-5xl font-black leading-tight text-white mb-8">
-  En 3 días empezarás a sentirte más tranquila.
+  En 3 días puedes empezar a bajar el ritmo y encontrar calma mental.
 </h3>
 
 <p className="text-lg md:text-2xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
   Porque cuando bajas el ritmo,
-empiezas a sentir más calma y menos cansancio mental.
+tu mente empieza a sentirse menos cansada y más tranquila.
 </p>
 
 </div>
