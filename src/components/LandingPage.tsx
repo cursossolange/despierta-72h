@@ -259,7 +259,7 @@ Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
   Hola, soy Solange Henríquez.
 </h2>
 
-  <div className="text-sm md:text-[17px] text-slate-700 leading-8 font-normal space-y-4 max-w-2xl mx-auto text-left">
+ <div className="text-[15px] md:text-[16px] text-slate-700 leading-[1.9] font-normal space-y-4 max-w-2xl mx-auto text-left">
 
 <p>
   Durante años trabajé acompañando procesos de cambio, liderazgo y conversaciones difíciles en personas que seguían funcionando normalmente… mientras por dentro estaban agotadas.
@@ -287,7 +287,7 @@ Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
 </p>
 
 <p>
-  Ese proceso me llevó a estudiar neurociencia y certificarme en neurocoaching para entender mejor por qué vivimos tanto tiempo en automático sin darnos cuenta.
+  Ese proceso me llevó a interesarme profundamente en  neurociencia y certificarme en neurocoaching para entender mejor por qué vivimos tanto tiempo en automático sin darnos cuenta.
 </p>
 
 <p>
