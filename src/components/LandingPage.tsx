@@ -389,10 +389,19 @@ tu mente empieza a sentirse más tranquila y menos cansada.
     Cada día tiene 3 momentos clave
   </h3>
 
-  <p className="text-sm md:text-base text-slate-600 text-center leading-relaxed max-w-2xl mx-auto">
-   Durante 3 días escuchas audios breves, haces micropausas conscientes y observas cómo reaccionas en situaciones cotidianas.
-Al escribir lo que observaste, empiezas a reconocer reacciones repetitivas con más claridad.
-  </p>
+ <p className="text-sm md:text-base text-slate-600 text-center leading-relaxed max-w-2xl mx-auto space-y-2">
+  <span className="block">
+    <span className="text-violet-600 font-semibold">Escuchas</span> un audio breve.
+  </span>
+
+  <span className="block">
+    <span className="text-violet-600 font-semibold">Observas</span> cómo reaccionas en situaciones cotidianas.
+  </span>
+
+  <span className="block">
+    <span className="text-violet-600 font-semibold">Escribes y reflexionas</span> sobre lo que descubriste.
+  </span>
+</p>
 </div>
 <section className="pt-0 pb-6 bg-white">
   <div className="container mx-auto px-6">
