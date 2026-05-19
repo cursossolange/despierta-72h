@@ -291,7 +291,7 @@ Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
 </p>
 
 <p>
-  Despierta 72H nace de todo ese aprendizaje y de mi experiencia para acompañar a otras mujeres que también sienten que hace demasiado tiempo sostienen todo.
+  Despierta 72H nace de todo ese aprendizaje para acompañar a otras mujeres que también sienten que hace demasiado tiempo sostienen todo.
 </p>
 
 <p className="font-semibold text-slate-900">
