@@ -530,6 +530,7 @@ Al escribir lo que observaste, empiezas a reconocer reacciones repetitivas con m
   </div>
 </footer>
 </div>
+ </div>
   );
 }      
 
