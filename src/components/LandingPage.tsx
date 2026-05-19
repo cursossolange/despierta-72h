@@ -319,13 +319,13 @@ Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
     {[
      {
   day: "Día 1",
-  title: "Empezar a bajar el ruido mental.",
-  sub: "Empezar a notar cuándo ya estás sobrepasada.",
+  title: "Bajar el ruido mental.",
+  sub: "Bajar el ritmo antes de reaccionar.",
  icon: <Sparkles className="w-5 h-5" />,
 },
 {
   day: "Día 2",
-  title: "Empezar a bajar el ritmo antes de reaccionar",
+  title: "Reconocer algunas reacciones automáticas",
     sub: "Empiezas a notar qué cosas te sobrepasan y cómo reaccionas cuando llevas demasiado tiempo funcionando así.",
  icon: <RefreshCw className="w-5 h-5" />,
 },
@@ -375,7 +375,7 @@ Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
 
 <p className="text-lg md:text-2xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
   Porque cuando bajas el ritmo,
-tu mente empieza a sentirse menos cansada y más tranquila.
+tu mente empieza a sentirse más tranquila y menos cansada.
 </p>
 
 </div>
