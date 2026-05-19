@@ -518,6 +518,7 @@ Al escribir lo que observaste, empiezas a reconocer reacciones repetitivas con m
       </div>
     </div>
   </div>
+   </div> 
 </section>
 
 <footer className="py-6 border-t border-slate-100 text-center bg-white">
