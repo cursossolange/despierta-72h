@@ -261,38 +261,45 @@ Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
 
   <div className="text-sm md:text-[17px] text-slate-700 leading-8 font-normal space-y-4 max-w-2xl mx-auto text-left">
 
- <p>
-  Durante más de 20 años trabajé liderando equipos y procesos.
-  Fue una etapa que me enseñó mucho sobre liderazgo, gestión y resultados.
+<p>
+  Durante años trabajé acompañando procesos de cambio, liderazgo y conversaciones difíciles en personas que seguían funcionando normalmente… mientras por dentro estaban agotadas.
 </p>
 
 <p>
-  Pero no fue ahí donde más aprendi, mi mayor aprendizaje vino después cuando entendí que "parar no es perder el tiempo" 
+  Y también viví eso en mí.
 </p>
 
 <p>
-  Durante años viví funcionando, resolviendo y avanzando…
-  sin darme cuenta de cuánto me estaba alejando de mí misma.
+  Durante mucho tiempo creí que no podía parar.
+  Que parar era un lujo que no podía darme.
 </p>
 
 <p>
-  Reaccionar desde el cansancio.
-  Responder de inmediato.
-  Seguir funcionando sin realmente detenerme.
+  Hasta que entendí algo importante:
+  muchas veces el cansancio no aparece como una crisis.
 </p>
 
 <p>
-  Y recién cuando la vida me llevo a "parar un momento",
- me di cuenta de lo cansada que estaba.
+  Aparece como vivir con la cabeza constantemente ocupada.
+  Reaccionar rápido.
+  Seguir funcionando incluso cuando ya no tienes energía.
+  O sentir que incluso descansando… tu mente sigue funcionando.
+</p>
+
+<p>
+  Ese proceso me llevó a estudiar neurociencia y certificarme en neurocoaching para entender mejor por qué vivimos tanto tiempo en automático sin darnos cuenta.
+</p>
+
+<p>
+  Despierta 72H nace de todo ese aprendizaje y de mi experiencia acompañando a otras mujeres que también sienten que hace demasiado tiempo sostienen todo.
 </p>
 
 <p className="font-semibold text-slate-900">
-  Por eso creé Despierta 72H.
+  No es otra experiencia para exigirte más.
 </p>
 
 <p className="mt-6 font-medium text-slate-900">
-Una experiencia guiada de 3 días para ayudarte a bajar el ritmo
-y volver a sentir un poco más de calma.
+  Es una pausa breve y guiada para ayudarte a bajar el ritmo, bajar el ruido mental y sentir un poco más de calma en medio de la rutina.
 </p>
 </div>
 </div>
