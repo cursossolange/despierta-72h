@@ -187,7 +187,7 @@ Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
   Si esto se volvió normal para ti…...
 </p>
   
- <div className="space-y-3 text-lg md:text-xl text-slate-700 leading-relaxed">
+ <div className="space-y-2 text-base md:text-lg text-slate-700 leading-relaxed">
   <p><span className="text-violet-500 mr-2">✓</span>Reaccionas y después piensas “no quería responder así”,</p>
 
   <p><span className="text-violet-500 mr-2">✓</span>Sientes que tu cabeza nunca descansa,</p>
