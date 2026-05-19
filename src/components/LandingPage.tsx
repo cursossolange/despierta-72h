@@ -160,10 +160,10 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             {/* 1. Título principal (grande pero ajustado) */}
 <h1 className="text-[1.45rem] md:text-[2.6rem] font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-[1.15]">
   <>
-   Avanzas…<br />
-y después te das cuenta<br />
-que hace tiempo<br />
-vives resolviendo todo.
+    Hace tiempo<br />
+  vives resolviendo todo.<br />
+  Y en algún momento,<br />
+  olvidaste lo cansada que estabas.
      </>
 </h1>
 
@@ -172,7 +172,8 @@ vives resolviendo todo.
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4 text-center">
 
 <p className="text-[18px] md:text-[1.4rem] text-slate-700 font-medium mb-5 text-center max-w-3xl mx-auto leading-relaxed">
-Una experiencia guiada de 3 días para mujeres que sienten que hace tiempo viven en modo resolver. Un espacio breve para bajar el ritmo, bajar el ruido mental y sentirte un poco más en calma.
+Una experiencia guiada de 3 días para mujeres que hace tiempo sostienen demasiado.
+Un espacio breve para bajar el ritmo, bajar el ruido mental y sentirte un poco más en calma.
 </p>
 </div>
   <p className="mt-4 text-sm md:text-base text-slate-500">
