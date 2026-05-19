@@ -312,7 +312,7 @@ Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
     <div className="bg-white rounded-[2rem] border border-violet-100 p-6 md:p-8 shadow-sm text-center">
       <div className="max-w-2xl mx-auto mb-8 text-center">
         <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-         Lo que puedes empezar a notar en solo 3 días:
+         Cómo puedes empezar a sentirte en estos 3 días:
         </h2>
 </div>
   <div className="grid lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
