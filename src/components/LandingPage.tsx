@@ -174,6 +174,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <p className="text-[16px] md:text-[1.12rem] text-slate-700 font-medium mb-5 text-center max-w-[860px] mx-auto leading-[1.6]">
 Una experiencia guiada de 3 días para mujeres que hace tiempo sostienen demasiado.
 Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
+  100% online, a tu ritmo y dentro de tu vida cotidiana.
 </p>
 </div>
   <p className="mt-4 text-sm md:text-base text-slate-500">
