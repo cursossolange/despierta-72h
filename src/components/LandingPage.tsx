@@ -391,15 +391,15 @@ tu mente empieza a sentirse más tranquila y menos cansada.
 
  <p className="text-sm md:text-base text-slate-600 text-center leading-relaxed max-w-2xl mx-auto space-y-2">
   <span className="block">
-    <span className="text-violet-600 font-semibold">Escuchas</span> cada mañana un audio guía de menos de 5 minutos para enfocar tu observación del día.
+    <span className="text-violet-600 font-semibold">Escuchas</span> cada mañana un audio guía, de menos de 5 minutos, para enfocar tu observación del día.
   </span>
 
   <span className="block">
-    <span className="text-violet-600 font-semibold">Observas</span> durante el día cómo reaccionas, piensas o actúas en situaciones cotidianas específicas. Observas en los minutos que te detienes, no todo el día.
+    <span className="text-violet-600 font-semibold">Observas</span> durante el día cómo reaccionas, piensas o actúas en situaciones cotidianas. Observas en los minutos que te detienes, no todo el día.
   </span>
 
   <span className="block">
-    <span className="text-violet-600 font-semibold">Escribes y reflexionas</span> con el apoyo de una guía, cada noche sobre lo que observaste y descubriste.
+    <span className="text-violet-600 font-semibold">Escribes </span> con el apoyo de una guía, cada noche sobre lo que observaste y descubriste.
   </span>
 </p>
 </div>
