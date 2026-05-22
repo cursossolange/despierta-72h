@@ -386,7 +386,7 @@ tu mente empieza a sentirse más tranquila y menos cansada.
 {/* Tres momentos clave */}
 <div className="max-w-4xl mx-auto mb-5 md:mb-6">
   <h3 className="text-base md:text-lg font-black text-violet-600 uppercase tracking-[0.3em] text-center mb-4">
-    Cada día tiene 3 momentos clave
+    Solo necesitas menos de 30 minutos al día, distribuídos en 3 momentos simples.
   </h3>
 
  <p className="text-sm md:text-base text-slate-600 text-center leading-relaxed max-w-2xl mx-auto space-y-2">
