@@ -402,6 +402,9 @@ tu mente empieza a sentirse más tranquila y menos cansada.
     <span className="text-violet-600 font-semibold">Escribes </span> con el apoyo de una guía, cada noche sobre lo que observaste y descubriste.
   </span>
 </p>
+  <p className="mt-6 text-sm md:text-base text-slate-500 text-center max-w-3xl mx-auto leading-relaxed">
+  La metodología de Despierta 72H utiliza principios de neurociencia y observación consciente para ayudarte a reconocer patrones automáticos con mayor claridad y conciencia.
+</p>
 </div>
 <section className="pt-0 pb-6 bg-white">
   <div className="container mx-auto px-6">
