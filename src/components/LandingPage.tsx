@@ -366,38 +366,41 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               <div className="absolute top-[-10%] left-[-10%] w-40 h-40 bg-white/30 rounded-full blur-2xl"></div>
               <div className="absolute bottom-[-10%] right-[-10%] w-40 h-40 bg-white/30 rounded-full blur-2xl"></div>
            
- <h2 className="text-4xl md:text-6xl font-black text-white leading-tight mb-8">
-  En 3 días puedes empezar
-  <br />
-  a responder distinto
-  <br />
-  al automático.
+<h2 className="text-4xl md:text-6xl font-black text-white leading-tight mb-10">
+  En 3 días:
 </h2>
 
-<div className="space-y-5 text-lg md:text-2xl text-slate-200 leading-relaxed max-w-4xl mx-auto">
-  <p>
-    Aprendes a hacer pausas conscientes.
-  </p>
+<div className="space-y-6 text-lg md:text-2xl text-slate-200 leading-relaxed max-w-4xl mx-auto">
 
-  <p>
-   Empiezas a observar situaciones cotidianas y a entender mejor tus reacciones y comportamientos automáticos.
-  </p>
+  <div className="flex items-start gap-4">
+    <span className="text-violet-300 text-2xl">✦</span>
+    <p>
+      Aprendes a hacer pausas conscientes.
+    </p>
+  </div>
 
-  <p>
-Y poco a poco, mientras los observas y entiendes distinto, recuperas la posibilidad de decidir diferente al automático.
-  </p>
+  <div className="flex items-start gap-4">
+    <span className="text-violet-300 text-2xl">✦</span>
+    <p>
+      Empiezas a observar situaciones cotidianas y a entender mejor tus reacciones y comportamientos automáticos.
+    </p>
+  </div>
 
-  <p className="font-semibold text-white">
-    Ahí empieza la posibilidad de cambiar.
-  </p>
+  <div className="flex items-start gap-4">
+    <span className="text-violet-300 text-2xl">✦</span>
+    <p>
+      Recuperas la posibilidad de decidir distinto al automático.
+    </p>
+  </div>
+
+  <div className="flex items-start gap-4">
+    <span className="text-violet-300 text-2xl">✦</span>
+    <p className="font-semibold text-white">
+      Y te llevas un método de observación consciente que puedes seguir aplicando todas las veces que lo necesites. El curso termina, pero el método queda contigo.
+    </p>
+  </div>
+
 </div>
-
-<div className="mt-10 flex items-center justify-center gap-3 text-violet-300 text-base md:text-lg font-medium">
-  <span>🏅</span>
-  <span>
-    Te llevas un método simple de observación consciente que puedes seguir aplicando mucho después de los 3 días.
-  </span>
-</div>           
             
 </motion.div>
 </div>
