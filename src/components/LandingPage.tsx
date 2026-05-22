@@ -521,7 +521,7 @@ Solo en pequeños momentos conscientes.
   </p>
 </div>
 </div>
-
+</div>
 <div className="mt-8 text-center">
   <a
     href="https://pay.hotmart.com/O105550362E"
