@@ -395,11 +395,11 @@ tu mente empieza a sentirse más tranquila y menos cansada.
   </span>
 
   <span className="block">
-    <span className="text-violet-600 font-semibold">Observas</span> cómo reaccionas en situaciones cotidianas.
+    <span className="text-violet-600 font-semibold">Observas</span> durante el día cómo reaccionas, piensas o actúas en situaciones cotidianas específicas. Observas en los minutos que te detienes, no todo el día.
   </span>
 
   <span className="block">
-    <span className="text-violet-600 font-semibold">Escribes y reflexionas</span> sobre lo que descubriste.
+    <span className="text-violet-600 font-semibold">Escribes y reflexionas</span> con el apoyo de una guía, cada noche sobre lo que observaste y descubriste.
   </span>
 </p>
 </div>
