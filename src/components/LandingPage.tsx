@@ -484,6 +484,33 @@ Solo en pequeños momentos conscientes.
       <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 text-center">
         Si estás pensando esto…
       </h3>
+      <div className="space-y-6">
+  <div>
+    <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+      “Me gustaría hacerlo… pero no tengo tiempo.”
+    </p>
+    <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+      Muchas veces, el automático también se ve así: seguir funcionando sin encontrar un momento para parar.
+    </p>
+  </div>
+
+  <div>
+    <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+      “¿Y si me cuesta parar?”
+    </p>
+    <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+      Está bien. Muchas veces el primer paso es darte cuenta de que llevas demasiado tiempo funcionando sin detenerte.
+    </p>
+  </div>
+
+  <div>
+    <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+      “¿Y si me olvido durante el día?”
+    </p>
+    <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+      También es parte del proceso. Cuando vuelvas a acordarte, simplemente vuelves. No tienes que hacerlo perfecto.
+    </p>
+  </div>
 <div>
   <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
     “¿Y si tengo dudas durante el proceso?”
