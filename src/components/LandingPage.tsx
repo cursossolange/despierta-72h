@@ -405,6 +405,9 @@ tu mente empieza a sentirse más tranquila y menos cansada.
   <p className="mt-6 text-sm md:text-base text-slate-500 text-center max-w-3xl mx-auto leading-relaxed">
   La metodología de Despierta 72H utiliza principios de neurociencia y observación consciente para ayudarte a reconocer patrones automáticos con mayor claridad y conciencia.
 </p>
+  <p className="mt-3 text-xs md:text-sm text-slate-400 text-center max-w-3xl mx-auto leading-relaxed">
+  No hay clases en vivo ni sesiones grupales. Puedes hacerlo completamente a tu ritmo, pero tendrás canales de contacto disponibles si necesitas acompañamiento durante el proceso.
+</p>
 </div>
 <section className="pt-0 pb-6 bg-white">
   <div className="container mx-auto px-6">
