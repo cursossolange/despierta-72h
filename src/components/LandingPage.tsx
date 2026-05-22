@@ -515,19 +515,18 @@ Solo en pequeños momentos conscientes.
   </p>
       </div>
 
-     <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
-    “¿Y si tengo dudas durante el proceso?”
-  </p>
-
- <div className="mt-4 text-center">
+<div>
   <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
     “¿Y si tengo dudas durante el proceso?”
   </p>
 
-  <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-6">
+  <p className="text-sm md:text-base text-slate-600 leading-relaxed">
     Tendrás canales de contacto disponibles para acompañarte si necesitas orientación durante el proceso.
   </p>
+</div>
+</div>
 
+<div className="mt-8 text-center">
   <a
     href="https://pay.hotmart.com/O105550362E"
     target="_blank"
@@ -537,6 +536,7 @@ Solo en pequeños momentos conscientes.
     <span className="uppercase tracking-widest text-xs md:text-sm">
       Acceder ahora
     </span>
+
     <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
   </a>
 
@@ -559,6 +559,7 @@ Solo en pequeños momentos conscientes.
     </a>
   </div>
 </div>
+</div>
 </section>
 
 <footer className="py-6 border-t border-slate-100 text-center bg-white">
@@ -571,6 +572,5 @@ Solo en pequeños momentos conscientes.
   </div>
 </footer>
 </div>
-</section>
 );
 }
