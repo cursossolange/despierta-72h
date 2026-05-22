@@ -519,44 +519,46 @@ Solo en pequeños momentos conscientes.
     “¿Y si tengo dudas durante el proceso?”
   </p>
 
-  <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-   Tendrás canales de contacto disponibles para acompañarte si necesitas orientación durante el proceso.
+ <div className="mt-4 text-center">
+  <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+    “¿Y si tengo dudas durante el proceso?”
   </p>
-</div>
-        <a
-          href="https://pay.hotmart.com/O105550362E"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-violet-600 text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 transition-colors inline-flex items-center gap-2"
-        >
-          <span className="uppercase tracking-widest text-xs md:text-sm">
-            Acceder ahora
-          </span>
-          <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
-        </a>
 
-        <p className="mt-5 text-sm md:text-base text-slate-700 font-medium text-center">
-         Pago seguro • Acceso inmediato • No necesitas cambiar tu vida en 3 días. Solo necesitas empezar a observarte distinto.
-        </p>
+  <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-6">
+    Tendrás canales de contacto disponibles para acompañarte si necesitas orientación durante el proceso.
+  </p>
 
-        <div className="mt-4 text-center">
-          <p className="text-sm text-slate-500 mb-2">
-            ¿Tienes dudas antes de empezar?
-          </p>
+  <a
+    href="https://pay.hotmart.com/O105550362E"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-violet-600 text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 transition-colors inline-flex items-center gap-2"
+  >
+    <span className="uppercase tracking-widest text-xs md:text-sm">
+      Acceder ahora
+    </span>
+    <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
+  </a>
 
-          <a
-            href="https://wa.me/56990991901"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-violet-600 font-semibold hover:text-violet-700 transition-colors"
-          >
-            Conversemos por WhatsApp
-          </a>
-        </div>
-      </div>
-    </div>
+  <p className="mt-5 text-sm md:text-base text-slate-700 font-medium text-center">
+    Pago seguro • Acceso inmediato • No necesitas cambiar tu vida en 3 días. Solo necesitas empezar a observarte distinto.
+  </p>
+
+  <div className="mt-4 text-center">
+    <p className="text-sm text-slate-500 mb-2">
+      ¿Tienes dudas antes de empezar?
+    </p>
+
+    <a
+      href="https://wa.me/56990991901"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-violet-600 font-semibold hover:text-violet-700 transition-colors"
+    >
+      Conversemos por WhatsApp
+    </a>
   </div>
-   </div> 
+</div>
 </section>
 
 <footer className="py-6 border-t border-slate-100 text-center bg-white">
