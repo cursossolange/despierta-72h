@@ -571,6 +571,6 @@ Solo en pequeños momentos conscientes.
   </div>
 </footer>
 </div>
-</div>
+</section>
 );
 }
