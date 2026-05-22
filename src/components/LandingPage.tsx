@@ -523,7 +523,15 @@ Solo en pequeños momentos conscientes.
         <p className="mb-3 text-xs md:text-sm text-slate-900 font-medium text-center">
           Y muchas veces, parar un momento ya es parte del proceso.
         </p>
+<div>
+  <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+    “¿Y si tengo dudas durante el proceso?”
+  </p>
 
+  <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+   Tendrás canales de contacto disponibles para acompañarte si necesitas orientación durante el proceso.
+  </p>
+</div>
         <a
           href="https://pay.hotmart.com/O105550362E"
           target="_blank"
@@ -536,9 +544,8 @@ Solo en pequeños momentos conscientes.
           <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
         </a>
 
-        <p className="mt-4 text-[9px] md:text-[10px] text-slate-600 font-semibold tracking-wide">
-          Pago seguro • Acceso inmediato
-          No necesitas cambiar tu vida en 3 días. Solo necesitas empezar a observarte distinto.
+        <p className="mt-5 text-sm md:text-base text-slate-700 font-medium text-center">
+         Pago seguro • Acceso inmediato • No necesitas cambiar tu vida en 3 días. Solo necesitas empezar a observarte distinto.
         </p>
 
         <div className="mt-4 text-center">
