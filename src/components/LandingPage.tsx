@@ -172,18 +172,14 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4 text-center">
 
 <p className="text-[16px] md:text-[1.12rem] text-slate-700 font-medium mb-5 text-center max-w-[860px] mx-auto leading-relaxed">
-  Una experiencia guiada de 3 días para mujeres que hace tiempo sostienen demasiado.
-  Un espacio breve para bajar el ritmo y sentirte un poco más en calma.
+  Una experiencia guiada de 3 días para empezar a observarte distinto y salir del automático.
 </p>
 
 <p className="text-[15px] md:text-[1rem] text-slate-500 text-center mb-5">
-  100% online, a tu ritmo y dentro de tu vida cotidiana.
+  100% online • A tu ritmo • Acceso por 1 año
 </p>
 </div>
-  <p className="mt-4 text-sm md:text-base text-slate-500">
-    Acceso inmediato y disponible por 1 año desde la fecha de compra.
-  </p>
-</div>
+  </div>
             {/* Bloque de identificación del dolor */}
 <div className="max-w-4xl mx-auto mt-12 mb-14 px-6">
   <div className="bg-[#F6F2FF] rounded-[32px] px-8 py-10 md:px-12 md:py-14 shadow-sm text-center">
@@ -519,12 +515,7 @@ Solo en pequeños momentos conscientes.
   </p>
       </div>
 
-      <div className="pt-2 flex flex-col items-center">
-        <p className="mb-3 text-xs md:text-sm text-slate-900 font-medium text-center">
-          Y muchas veces, parar un momento ya es parte del proceso.
-        </p>
-<div>
-  <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
+     <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
     “¿Y si tengo dudas durante el proceso?”
   </p>
 
