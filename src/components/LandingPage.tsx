@@ -391,7 +391,7 @@ tu mente empieza a sentirse más tranquila y menos cansada.
 
  <p className="text-sm md:text-base text-slate-600 text-center leading-relaxed max-w-2xl mx-auto space-y-2">
   <span className="block">
-    <span className="text-violet-600 font-semibold">Escuchas</span> un audio breve.
+    <span className="text-violet-600 font-semibold">Escuchas</span> cada mañana un audio guía de menos de 5 minutos para enfocar tu observación del día.
   </span>
 
   <span className="block">
