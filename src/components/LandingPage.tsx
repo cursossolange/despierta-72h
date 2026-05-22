@@ -181,7 +181,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </p>
 </div>
   <p className="mt-4 text-sm md:text-base text-slate-500">
-    Acceso inmediato y disponible por 1 año.
+    Acceso inmediato y disponible por 1 año desde la fecha de compra.
   </p>
 </div>
             {/* Bloque de identificación del dolor */}
@@ -389,7 +389,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   <div className="flex items-start gap-4">
     <span className="text-violet-300 text-2xl">✦</span>
     <p>
-      Recuperas la posibilidad de decidir distinto al automático.
+      Recuperas la posibilidad de decidir distinto al modo automático.
     </p>
   </div>
 
@@ -418,7 +418,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   </span>
 
   <span className="block">
-    <span className="text-violet-600 font-semibold">Observas</span> durante el día cómo reaccionas, piensas o actúas en situaciones cotidianas. Observas en los minutos que te detienes, no todo el día.
+    <span className="text-violet-600 font-semibold">Observas</span> durante el día cómo reaccionas, piensas o actúas en situaciones cotidianas. No necesitas observarte todo el día.
+Solo en pequeños momentos conscientes.
   </span>
 
   <span className="block">
@@ -537,6 +538,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
         <p className="mt-4 text-[9px] md:text-[10px] text-slate-600 font-semibold tracking-wide">
           Pago seguro • Acceso inmediato
+          No necesitas cambiar tu vida en 3 días. Solo necesitas empezar a observarte distinto.
         </p>
 
         <div className="mt-4 text-center">
