@@ -183,30 +183,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </p>
 </div>
   </div>
-            {/* Bloque de identificación del dolor */}
-<div className="max-w-4xl mx-auto mt-12 mb-14 px-6">
-  <div className="bg-[#F6F2FF] rounded-[32px] px-8 py-10 md:px-12 md:py-14 shadow-sm text-center">
-<p className="text-xl md:text-3xl font-bold text-slate-900 mb-8 leading-tight">
-  Si esto se volvió normal para ti…...
-</p>
-  
- <div className="space-y-2 text-base md:text-lg text-slate-700 leading-relaxed">
-  <p><span className="text-violet-500 mr-2">✓</span>Reaccionas y después piensas “no quería responder así”,</p>
-
-  <p><span className="text-violet-500 mr-2">✓</span>Sigues resolviendo todo aunque ya estas agotada,</p>
-
-  <p><span className="text-violet-500 mr-2">✓</span>Tu cabeza sigue funcionando incluso cuando intentas descansar.</p>
-
-    </div>
-
-<p className="mt-10 text-base md:text-xl font-semibold text-slate-900 leading-relaxed">
-  Quizás hace tiempo empezaste a vivir así, sin darte cuenta.
-  <br /><br />
-  Y aunque pares un momento, sientes que sigues funcionando igual.
-</p>
-    </div>
-</div>
-            {/* Principal Hero Image (Compacta) */}
+                       {/* Principal Hero Image (Compacta) */}
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
