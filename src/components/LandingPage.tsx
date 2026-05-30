@@ -158,14 +158,17 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             </div>
 
             {/* 1. Título principal (grande pero ajustado) */}
-<h1 className="text-[1.45rem] md:text-[2.6rem] font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-[1.15]">
-  <>
-    Hace tiempo<br />
-  vives resolviendo todo.<br />
-  Y en algún momento,<br />
-  olvidaste lo cansada que estabas.
-     </>
+<p className="text-[10px] md:text-xs font-bold text-violet-500 uppercase tracking-[0.3em] mb-3">
+  Experiencia online · 3 días
+</p>
+<h1 className="text-[1.6rem] md:text-[2.8rem] font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-[1.15]">
+  Olvidaste lo cansada<br />que estabas.
 </h1>
+<p className="text-base md:text-lg text-slate-500 font-medium mb-6 max-w-md mx-auto leading-relaxed">
+  Hace tiempo vives resolviendo todo.<br />
+  Y te acostumbraste a funcionar así.
+</p>
+
 
             {/* 3. Bajada breve */}
 <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4">
@@ -241,8 +244,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <section className="py-12 bg-slate-50/50">
   <div className="container mx-auto px-6">
     <div className="max-w-2xl mx-auto rounded-[2rem] bg-white border border-violet-100 p-8 md:p-12 shadow-sm">
-      <h3 className="text-[10px] font-black text-slate-500 uppercase tracking-[0.4em] mb-6">
-        Sobre esta experiencia
+       <h3 className="text-[10px] font-black text-violet-400 uppercase tracking-[0.4em] mb-6">
+        Quién está detrás de esto
       </h3>
 
      <img
@@ -294,9 +297,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   No es otra experiencia para exigirte más.
 </p>
 
-<p className="mt-6 font-medium text-slate-900">
-  Es una pausa breve y guiada para ayudarte a bajar el ritmo, bajar el ruido mental y sentir un poco más de calma en medio de la rutina.
-</p>
 </div>
 </div>
 </div>
