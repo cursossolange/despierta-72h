@@ -88,7 +88,7 @@ const AIGeneratedEmotionalImage = () => {
     return (
       <div className="w-full h-full bg-slate-50 flex items-center justify-center">
         <div className="flex flex-col items-center gap-4">
-          <RefreshCw className="w-8 h-8 text-violet-200 animate-spin" />
+          <div className="w-8 h-8 rounded-full border-2 border-[#7D1F3B]/20 border-t-[#7D1F3B] animate-spin" />
           <span className="text-xs text-slate-400 font-medium tracking-widest uppercase italic">Conectando con tu calma...</span>
         </div>
       </div>
@@ -114,16 +114,9 @@ const Isotype = ({ className }: { className?: string }) => (
 
 const Logo = ({ className }: { className?: string }) => (
   <div className={`flex flex-col items-center text-center ${className}`}>
-    <div className="bg-gradient-to-b from-[#1E202E] to-[#3B344D] p-7 rounded-2xl flex flex-col items-center border border-white/5 shadow-xl">
-      <div className="relative w-[72px] h-[72px] mb-4">
-        <svg viewBox="0 0 100 100" className="w-full h-full -rotate-[20deg]" fill="none" stroke="#C4B5FD" strokeWidth="6" strokeLinecap="round">
-          <path d="M 67.5 19.7 A 35 35 0 1 1 32.5 19.7" />
-        </svg>
-      </div>
-      <span className="text-xs font-medium tracking-[0.4em] uppercase text-white">
-        Despierta 72H
-      </span>
-    </div>
+    <div className="text-[#7D1F3B] tracking-[0.4em] text-xs font-bold uppercase">
+  Despierta 72H
+</div>
   </div>
 );
 
@@ -145,15 +138,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             {/* Logo area */}
             <div className="flex flex-col items-center mb-6 md:mb-8">
-              <div className="bg-gradient-to-b from-[#1E202E] to-[#3B344D] p-2.5 md:p-3 rounded-xl flex flex-col items-center border border-white/5 shadow-lg">
-                <div className="relative w-7 h-7 md:w-8 md:h-8 mb-1">
-                  <svg viewBox="0 0 100 100" className="w-full h-full -rotate-[20deg]" fill="none" stroke="#C4B5FD" strokeWidth="6" strokeLinecap="round">
-                    <path d="M 67.5 19.7 A 35 35 0 1 1 32.5 19.7" />
-                  </svg>
-                </div>
-                <span className="text-[8px] md:text-[9px] font-bold text-white tracking-[0.4em] uppercase">
-                  Despierta 72H
-                </span>
+              <div className="text-[#7D1F3B] tracking-[0.4em] text-[9px] font-bold uppercase">
+  Despierta 72H
+</div>
               </div>
             </div>
 
