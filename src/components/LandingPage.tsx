@@ -141,7 +141,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               <div className="text-[#7D1F3B] tracking-[0.4em] text-[9px] font-bold uppercase">
   Despierta 72H
 </div>
-              </div>
+            </div>
             </div>
 
             {/* 1. Título principal (grande pero ajustado) */}
@@ -215,7 +215,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       </div>
     </div>
   </motion.div>
-</div>
+
 </header>
 <section className="py-12 bg-slate-50/50">
   <div className="container mx-auto px-6">
