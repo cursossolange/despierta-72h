@@ -1,500 +1,417 @@
 import { motion } from "motion/react";
-import { Check, ArrowRight, Play, Volume2, Brain, Zap, Clock, ShieldCheck, RefreshCw, Sparkles, Trophy, Heart, Sunrise, Sun, Moon } from "lucide-react";
-import { GoogleGenAI } from "@google/genai";
+import { ArrowRight, ShieldCheck, RefreshCw, Sparkles, Heart } from "lucide-react";
 import { useState, useEffect } from "react";
 
-const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY || "" });
-
-const AIGeneratedEmotionalImage = () => {
-  const [imageUrl, setImageUrl] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
-
-  const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1516589174184-c68d8e5f1bd4?auto=format&fit=crop&q=80&w=1920";
-
-  const generateImage = async (forceReset = false) => {
-    try {
-      setLoading(true);
-      setError(false);
-
-      const cachedImage = localStorage.getItem('last_generated_emotional_image_v3');
-      if (cachedImage && !forceReset) {
-        setImageUrl(cachedImage);
-        setLoading(false);
-        return;
-      }
-
-      const response = await ai.models.generateContent({
-        model: 'gemini-2.5-flash-image',
-        contents: {
-          parts: [
-            {
-              text: 'A cinematic and deeply introspective portrait of a woman, captured in a moment of profound stillness and self-reflection. She is looking into a circular mirror, her expression transitioning from exhaustion to a glimmer of presence and self-recognition. Soft, natural morning light filters through a window, highlighting the texture of her hair and the depth in her eyes. Minimalist, modern interior with a warm, calming atmosphere. High quality photography, muted natural colors, shallow depth of field, conveying the concept of "Despierta 72H" (Awaken 72H) - a pause to tune back in.',
-            },
-          ],
-        },
-        config: {
-          imageConfig: {
-            aspectRatio: "16:9",
-          },
-        }
-      });
-
-      for (const part of response.candidates[0].content.parts) {
-        if (part.inlineData) {
-          const base64EncodeString: string = part.inlineData.data;
-          const fullImageUrl = `data:image/png;base64,${base64EncodeString}`;
-          setImageUrl(fullImageUrl);
-          localStorage.setItem('last_generated_emotional_image_v3', fullImageUrl);
-          break;
-        }
-      }
-    } catch (err: any) {
-      const errorString = err?.toString() || "";
-      const errorMessage = err?.message || "";
-      const errorCode = err?.error?.code || err?.code;
-      const errorStatus = err?.error?.status || err?.status;
-
-      const isQuotaError =
-        errorCode === 429 ||
-        errorStatus === "RESOURCE_EXHAUSTED" ||
-        errorString.includes("429") ||
-        errorMessage.includes("429") ||
-        errorString.includes("RESOURCE_EXHAUSTED") ||
-        errorMessage.includes("RESOURCE_EXHAUSTED") ||
-        errorString.includes("quota") ||
-        errorMessage.includes("quota");
-
-      if (isQuotaError) {
-        setImageUrl(FALLBACK_IMAGE);
-      } else {
-        console.warn("Image generation failed, using fallback:", errorMessage || errorString);
-        setImageUrl(FALLBACK_IMAGE);
-      }
-    } finally {
-      setLoading(false);
+// ─── Countdown Timer (urgencia real) ────────────────────────────────────────
+const CountdownTimer = () => {
+  const getInitialSeconds = () => {
+    const stored = localStorage.getItem("despierta_countdown_end");
+    if (stored) {
+      const diff = Math.floor((parseInt(stored) - Date.now()) / 1000);
+      return diff > 0 ? diff : 0;
     }
+    const end = Date.now() + 24 * 60 * 60 * 1000;
+    localStorage.setItem("despierta_countdown_end", end.toString());
+    return 24 * 60 * 60;
   };
 
+  const [seconds, setSeconds] = useState(getInitialSeconds);
+
   useEffect(() => {
-    generateImage();
+    const interval = setInterval(() => {
+      setSeconds((s) => {
+        if (s <= 1) {
+          const end = Date.now() + 24 * 60 * 60 * 1000;
+          localStorage.setItem("despierta_countdown_end", end.toString());
+          return 24 * 60 * 60;
+        }
+        return s - 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
   }, []);
 
-  if (loading) {
-    return (
-      <div className="w-full h-full bg-slate-50 flex items-center justify-center">
-        <div className="flex flex-col items-center gap-4">
-          <div className="w-8 h-8 rounded-full border-2 border-[#7D1F3B]/20 border-t-[#7D1F3B] animate-spin" />
-          <span className="text-xs text-slate-400 font-medium tracking-widest uppercase italic">Conectando con tu calma...</span>
-        </div>
-      </div>
-    );
-  }
+  const h = String(Math.floor(seconds / 3600)).padStart(2, "0");
+  const m = String(Math.floor((seconds % 3600) / 60)).padStart(2, "0");
+  const s = String(seconds % 60).padStart(2, "0");
 
   return (
-    <img
-      src="/despierta72h-banner.jpg.png"
-      alt="Retrato introspectivo generado por IA"
-      className="w-full h-full object-cover"
-      referrerPolicy="no-referrer"
-    />
+    <div className="flex items-center justify-center gap-2">
+      {[h, m, s].map((unit, i) => (
+        <div key={i} className="flex items-center gap-2">
+          <div className="bg-[#7D1F3B] text-white rounded-lg px-3 py-2 text-center min-w-[52px]">
+            <span className="text-2xl md:text-3xl font-black tabular-nums leading-none">{unit}</span>
+            <p className="text-[9px] uppercase tracking-widest opacity-70 mt-0.5">
+              {i === 0 ? "horas" : i === 1 ? "min" : "seg"}
+            </p>
+          </div>
+          {i < 2 && <span className="text-[#7D1F3B] font-black text-2xl">:</span>}
+        </div>
+      ))}
+    </div>
   );
 };
 
-const Isotype = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 100 100" className={`${className} -rotate-[20deg]`} fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round">
-    <path d="M 67.5 19.7 A 35 35 0 1 1 32.5 19.7" />
-  </svg>
+// ─── Hero Image ──────────────────────────────────────────────────────────────
+const HeroImage = () => (
+  <img
+    src="/despierta72h-banner.jpg.png"
+    alt="Despierta 72H"
+    className="w-full h-full object-cover"
+  />
 );
 
-const Logo = ({ className }: { className?: string }) => (
-  <div className={`flex flex-col items-center text-center ${className}`}>
-    <div className="text-[#7D1F3B] tracking-[0.4em] text-xs font-bold uppercase">
-      Despierta 72H
-    </div>
-  </div>
+// ─── CTA Button ──────────────────────────────────────────────────────────────
+const CTAButton = ({ label = "Quiero empezar ahora", size = "lg" }: { label?: string; size?: "sm" | "lg" }) => (
+  <a
+    href="https://pay.hotmart.com/O105550362E"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`bg-[#7D1F3B] text-white rounded-xl font-black hover:bg-[#6B1A32] shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all inline-flex items-center justify-center gap-2 ${
+      size === "lg"
+        ? "px-8 md:px-12 py-4 md:py-5 text-base md:text-lg"
+        : "px-6 py-3 text-sm md:text-base"
+    }`}
+  >
+    <span className="uppercase tracking-widest text-xs md:text-sm">{label}</span>
+    <ArrowRight className="w-4 h-4 md:w-5 md:h-5 shrink-0" />
+  </a>
 );
 
+// ─── Main Component ───────────────────────────────────────────────────────────
 interface LandingPageProps {
   onPurchase: () => void;
 }
 
 export default function LandingPage({ onPurchase }: LandingPageProps) {
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-violet-100 selection:text-violet-900 leading-normal">
+    <div className="min-h-screen bg-white font-sans leading-normal selection:bg-rose-50 selection:text-[#7D1F3B]">
 
-      {/* Hero Section */}
-      <header className="relative overflow-hidden pt-8 pb-6 md:pt-10 md:pb-8 bg-white">
-        <div className="container mx-auto px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto text-center"
+      {/* ── BARRA DE URGENCIA SUPERIOR ── */}
+      <div className="bg-[#7D1F3B] text-white text-center py-2.5 px-4">
+        <p className="text-xs md:text-sm font-semibold tracking-wide">
+          🔥 Precio de lanzamiento disponible por tiempo limitado — <span className="underline font-bold">$29.990 CLP</span>
+        </p>
+      </div>
+
+      {/* ── HERO ── */}
+      <header className="bg-white pt-10 pb-0">
+        <div className="container mx-auto px-6 max-w-3xl text-center">
+
+          {/* Marca */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-[#7D1F3B] tracking-[0.5em] text-xs font-black uppercase mb-6"
           >
-            {/* Logo area */}
-            <div className="flex flex-col items-center mb-6 md:mb-8">
-              <div className="text-[#7D1F3B] tracking-[0.4em] text-[9px] font-bold uppercase">
-                Despierta 72H
-              </div>
-            </div>
+            Despierta 72H
+          </motion.p>
 
-            {/* 1. Título principal */}
-            <p className="text-[10px] md:text-xs font-bold text-[#7D1F3B] uppercase tracking-[0.3em] mb-3">
-              Experiencia online · 3 días
+          {/* Golpe emocional — EL PROBLEMA */}
+          <motion.h1
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="text-[2rem] md:text-[3.2rem] font-black tracking-tight text-slate-900 leading-[1.1] mb-5"
+          >
+            Llevas meses funcionando<br className="hidden md:block" /> en modo automático.<br />
+            <span className="text-[#7D1F3B]">Y ya no recuerdas cuándo fue la última vez que te sentiste tú.</span>
+          </motion.h1>
+
+          {/* Agitación */}
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.25 }}
+            className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-8 max-w-2xl mx-auto"
+          >
+            Resuelves, sostienes, respondes. Te dices "cuando pase esto, descanso".<br />
+            Pero ese momento nunca llega — y tú sigues adelante igual.
+          </motion.p>
+
+          {/* Promesa clara */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="bg-[#7D1F3B]/5 border border-[#7D1F3B]/20 rounded-2xl p-5 md:p-6 mb-8 text-left max-w-2xl mx-auto"
+          >
+            <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-2">La promesa</p>
+            <p className="text-slate-800 text-base md:text-lg font-semibold leading-relaxed">
+              En 3 días — con menos de 30 minutos al día — vas a empezar a <strong>reconocer tus patrones automáticos</strong>, hacer pausas conscientes y volver a sentirte presente en tu propia vida.
             </p>
-            <h1 className="text-[1.6rem] md:text-[2.8rem] font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-[1.15]">
-              Olvidaste lo cansada<br />que estabas.
-            </h1>
-            <p className="text-base md:text-lg text-slate-500 font-medium mb-6 max-w-md mx-auto leading-relaxed">
-              Hace tiempo vives resolviendo todo.<br />
-              Y te acostumbraste a funcionar así.
-            </p>
-
-            {/* 3. Bajada breve */}
-            <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4">
-              <div className="max-w-2xl mx-auto mb-8 md:mb-10 px-4 text-center">
-                <p className="text-[16px] md:text-[1.12rem] text-slate-700 font-medium mb-5 text-center max-w-[860px] mx-auto leading-relaxed">
-                  Una experiencia guiada de 3 días para empezar a observarte distinto y salir del automático.
-                </p>
-                <p className="text-[15px] md:text-[1rem] text-slate-500 text-center mb-5">
-                  100% online • A tu ritmo • Acceso por 1 año
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center mb-8">
-              <a
-                href="https://pay.hotmart.com/O105550362E"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#7D1F3B] text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-[#6B1A32] shadow-lg hover:-translate-y-0.5 transition inline-flex items-center gap-2"
-              >
-                <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
-                <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
-              </a>
-              <p className="mt-2 text-sm text-slate-500 font-medium">$29.990 CLP · Garantía 7 días</p>
-            </div>
-
-            {/* Principal Hero Image */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.98 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.2, delay: 0.3 }}
-              className="max-w-2xl mx-auto overflow-hidden rounded-[28px] shadow-2xl border border-slate-100 mb-10 opacity-95"
-            >
-              <div className="relative aspect-[16/9]">
-                <AIGeneratedEmotionalImage />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/5 via-transparent to-transparent"></div>
-              </div>
-            </motion.div>
-
-            {/* Principal CTA Button */}
-            <div className="flex flex-col items-center">
-              <p className="text-sm text-slate-500 mb-3 text-center"></p>
-              <a
-                href="https://pay.hotmart.com/O105550362E"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#7D1F3B] text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-[#6B1A32] shadow-lg hover:-translate-y-0.5 transition inline-flex items-center gap-2"
-              >
-                <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
-                <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
-              </a>
-              <div className="flex flex-col items-center">
-                <p className="mt-3 text-sm md:text-base text-slate-600 font-medium">
-                  $29.990 CLP · Garantía de 7 días
-                </p>
-              </div>
-            </div>
-
           </motion.div>
+
+          {/* CTA + precio */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.55 }}
+            className="flex flex-col items-center gap-3 mb-10"
+          >
+            <CTAButton label="Quiero empezar ahora" size="lg" />
+            <p className="text-sm text-slate-500">$29.990 CLP · Acceso inmediato · Garantía 7 días</p>
+          </motion.div>
+
+          {/* Imagen hero */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.97 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, delay: 0.3 }}
+            className="overflow-hidden rounded-[24px] shadow-2xl border border-slate-100"
+          >
+            <div className="relative aspect-[16/9]">
+              <HeroImage />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 via-transparent to-transparent" />
+            </div>
+          </motion.div>
+
         </div>
       </header>
 
-      <section className="py-12 bg-slate-50/50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto rounded-[2rem] bg-white border border-violet-100 p-8 md:p-12 shadow-sm">
-            <h3 className="text-[10px] font-black text-[#7D1F3B] uppercase tracking-[0.4em] mb-6">
-              Quién está detrás de esto
-            </h3>
+      {/* ── PRUEBA SOCIAL / MICRO-VALIDACIÓN ── */}
+      <section className="py-10 bg-slate-50 border-y border-slate-100">
+        <div className="container mx-auto px-6 max-w-3xl">
+          <p className="text-center text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Lo que sienten quienes ya lo hicieron</p>
+          <div className="grid md:grid-cols-3 gap-4">
+            {[
+              { quote: "Por primera vez en meses, sentí que podía respirar distinto.", name: "Camila R." },
+              { quote: "No esperaba tanto en 3 días. Empecé a notar cosas que antes ni veía.", name: "Valentina M." },
+              { quote: "Me ayudó a entender por qué seguía reaccionando igual aunque no quería.", name: "Andrea S." },
+            ].map((t, i) => (
+              <div key={i} className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm text-left">
+                <p className="text-slate-700 text-sm leading-relaxed mb-3 italic">"{t.quote}"</p>
+                <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest">— {t.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
+      {/* ── AGITACIÓN DEL PROBLEMA ── */}
+      <section className="py-14 bg-white">
+        <div className="container mx-auto px-6 max-w-2xl text-center">
+          <p className="text-xs font-black text-[#7D1F3B] uppercase tracking-widest mb-4">¿Te suena familiar?</p>
+          <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight mb-8">
+            Sabes que necesitas parar.<br />Pero no sabes cómo.
+          </h2>
+          <div className="space-y-3 text-left max-w-md mx-auto">
+            {[
+              "Tu cabeza sigue activa incluso cuando intentas descansar.",
+              "Reaccionas de formas que no quieres — y te das cuenta cuando ya es tarde.",
+              "Sientes que llevas demasiado tiempo funcionando sin realmente estar presente.",
+              "Tienes claro que algo tiene que cambiar, pero no sabes por dónde empezar.",
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-3 bg-rose-50 rounded-xl px-4 py-3 border border-rose-100">
+                <span className="text-[#7D1F3B] font-black mt-0.5">✗</span>
+                <p className="text-slate-700 text-sm md:text-base leading-relaxed">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── QUÉ ES DESPIERTA 72H ── */}
+      <section className="py-14 bg-slate-900 text-white">
+        <div className="container mx-auto px-6 max-w-3xl text-center">
+          <p className="text-xs font-black text-[#e8a0b0] uppercase tracking-widest mb-4">La solución</p>
+          <h2 className="text-3xl md:text-5xl font-black leading-tight mb-6">
+            Una pausa guiada de 3 días<br />para salir del automático.
+          </h2>
+          <p className="text-slate-300 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
+            Despierta 72H es una experiencia online que combina neurociencia y observación consciente para ayudarte a reconocer tus patrones — y empezar a reaccionar distinto.
+          </p>
+          <div className="grid md:grid-cols-3 gap-4 text-left">
+            {[
+              { icon: <Sparkles className="w-5 h-5" />, day: "Día 1", title: "Bajar el ruido mental", desc: "Aprendes a hacer una pausa real antes de reaccionar." },
+              { icon: <RefreshCw className="w-5 h-5" />, day: "Día 2", title: "Ver tus patrones automáticos", desc: "Empiezas a notar qué te sobrepasa y por qué sigues respondiendo igual." },
+              { icon: <Heart className="w-5 h-5" />, day: "Día 3", title: "Entender qué te agota por dentro", desc: "Comprendes por qué te cuesta desconectarte — y qué puedes hacer diferente." },
+            ].map((card, i) => (
+              <div key={i} className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition-colors">
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="p-1.5 bg-[#7D1F3B]/30 rounded-lg text-[#e8a0b0]">{card.icon}</div>
+                  <span className="text-[#e8a0b0] text-xs font-black uppercase tracking-widest">{card.day}</span>
+                </div>
+                <h4 className="text-white font-black text-lg leading-tight mb-2">{card.title}</h4>
+                <p className="text-slate-400 text-sm leading-relaxed">{card.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CÓMO FUNCIONA ── */}
+      <section className="py-14 bg-white">
+        <div className="container mx-auto px-6 max-w-2xl text-center">
+          <p className="text-xs font-black text-[#7D1F3B] uppercase tracking-widest mb-4">Menos de 30 min al día</p>
+          <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight mb-10">
+            Tres momentos simples. Sin clases en vivo. A tu ritmo.
+          </h2>
+          <div className="space-y-5 text-left">
+            {[
+              { emoji: "🎧", cuando: "Mañana", title: "Escuchas", desc: "Un audio guía de menos de 5 minutos para enfocar tu observación del día." },
+              { emoji: "👁", cuando: "Durante el día", title: "Observas", desc: "En pequeños momentos cotidianos, empiezas a notar cómo reaccionas y piensas. No tienes que hacer nada especial." },
+              { emoji: "✍️", cuando: "Noche", title: "Escribes", desc: "Con el apoyo de una guía, registras lo que observaste. Ahí es donde ocurre la toma de conciencia real." },
+            ].map((step, i) => (
+              <div key={i} className="flex items-start gap-5 bg-slate-50 rounded-2xl p-5 border border-slate-100">
+                <div className="text-3xl shrink-0">{step.emoji}</div>
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-[#7D1F3B] font-black text-base">{step.title}</span>
+                    <span className="text-slate-400 text-xs">— {step.cuando}</span>
+                  </div>
+                  <p className="text-slate-600 text-sm md:text-base leading-relaxed">{step.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── QUIÉN SOY ── */}
+      <section className="py-14 bg-slate-50">
+        <div className="container mx-auto px-6 max-w-2xl">
+          <div className="bg-white rounded-[2rem] border border-slate-100 p-8 md:p-12 shadow-sm">
+            <p className="text-xs font-black text-[#7D1F3B] uppercase tracking-widest mb-6 text-center">Quién está detrás de esto</p>
             <img
               src="/bienvenida-solange.png"
               alt="Solange Henríquez"
-              className="w-full max-w-5xl mx-auto rounded-[2rem] mb-10"
+              className="w-full rounded-[1.5rem] mb-8"
             />
-
-            <div className="space-y-4">
-              <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 leading-tight text-center">
-                Hola, soy Solange Henríquez.
-              </h2>
-
-              <div className="text-[15px] md:text-[16px] text-slate-700 leading-[1.9] font-normal space-y-4 max-w-2xl mx-auto text-left">
-                <p>Durante mucho tiempo viví funcionando sin detenerme realmente.</p>
-                <p>Resolviendo. Respondiendo. Sosteniendo todo.</p>
-                <p>Hasta que entendí algo importante: muchas veces el cansancio no aparece como una crisis.</p>
-                <p>Aparece como vivir con la cabeza constantemente ocupada. Seguir funcionando incluso cuando ya no tienes energía.</p>
-                <p>Ese proceso me llevó a profundizar en neurociencia y neurocoaching para entender por qué vivimos tanto tiempo en automático sin darnos cuenta.</p>
-                <p>Despierta 72H nace desde ahí.</p>
-                <p>Como una pausa breve y guiada para ayudarte a bajar el ritmo, observarte distinto y encontrar un poco más de calma mental.</p>
-                <p className="font-semibold text-slate-900">No es otra experiencia para exigirte más.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-8 bg-violet-50/50">
-        <div className="container mx-auto px-6">
-          <div className="bg-white rounded-[2rem] border border-violet-100 p-6 md:p-8 shadow-sm text-center">
-            <div className="max-w-2xl mx-auto mb-8 text-center">
-              <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                Cómo puedes empezar a sentirte en estos 3 días:
-              </h2>
-            </div>
-            <div className="grid lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-              {[
-                {
-                  day: "Día 1",
-                  title: "Bajar el ruido mental.",
-                  sub: "Bajar el ritmo antes de reaccionar.",
-                  icon: <Sparkles className="w-5 h-5" />,
-                },
-                {
-                  day: "Día 2",
-                  title: "Reconocer algunas reacciones automáticas",
-                  sub: "Empiezas a notar qué cosas te sobrepasan y cómo reaccionas cuando llevas demasiado tiempo funcionando así.",
-                  icon: <RefreshCw className="w-5 h-5" />,
-                },
-                {
-                  day: "Día 3",
-                  title: "Entender qué te está agotando tanto por dentro",
-                  sub: "Empiezas a entender por qué te cuesta tanto bajar el ritmo y desconectarte de verdad.",
-                  icon: <Heart className="w-5 h-5" />,
-                }
-              ].map((card, i) => (
-                <div key={i} className="bg-violet-50/10 p-4 md:p-5 rounded-2xl border border-violet-100 shadow-[0_1px_4px_rgba(139,92,246,0.05)] text-left flex flex-col h-full hover:shadow-md transition-shadow">
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="p-1 bg-white rounded-md shadow-sm border border-violet-50">{card.icon}</div>
-                    <span className="text-[16px] font-black text-[#7D1F3B] uppercase tracking-widest leading-none">{card.day}</span>
-                  </div>
-                  <h4 className="text-lg md:text-xl font-black text-slate-900 mb-3 leading-tight font-sans">
-                    {card.title}
-                  </h4>
-                  <p className="text-slate-700 text-[13px] leading-relaxed font-medium">
-                    {card.sub}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Resultado / Promesa Section */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bg-slate-900 rounded-[2.5rem] py-14 md:py-20 px-8 md:px-16 max-w-4xl mx-auto shadow-2xl"
-          >
-            <div className="absolute top-[-10%] left-[-10%] w-40 h-40 bg-white/30 rounded-full blur-2xl"></div>
-            <div className="absolute bottom-[-10%] right-[-10%] w-40 h-40 bg-white/30 rounded-full blur-2xl"></div>
-
-            <h2 className="text-4xl md:text-6xl font-black text-white leading-tight mb-10">
-              En 3 días:
+            <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 leading-tight text-center mb-6">
+              Hola, soy Solange Henríquez.
             </h2>
-
-            <div className="space-y-6 text-lg md:text-2xl text-slate-200 leading-relaxed max-w-4xl mx-auto">
-              <div className="flex items-start gap-4">
-                <span className="text-violet-300 text-2xl">✦</span>
-                <p>Aprendes a hacer pausas conscientes.</p>
-              </div>
-              <div className="flex items-start gap-4">
-                <span className="text-violet-300 text-2xl">✦</span>
-                <p>Empiezas a observar situaciones cotidianas y a entender mejor tus reacciones y comportamientos automáticos.</p>
-              </div>
-              <div className="flex items-start gap-4">
-                <span className="text-violet-300 text-2xl">✦</span>
-                <p>Recuperas la posibilidad de decidir distinto al modo automático.</p>
-              </div>
-              <div className="flex items-start gap-4">
-                <span className="text-violet-300 text-2xl">✦</span>
-                <p className="font-semibold text-white">
-                  Y te llevas un método de observación consciente que puedes seguir aplicando todas las veces que lo necesites. El curso termina, pero el método queda contigo.
-                </p>
-              </div>
+            <div className="text-[15px] md:text-base text-slate-700 leading-[1.9] space-y-4">
+              <p>Durante mucho tiempo viví funcionando sin detenerme realmente. Resolviendo. Respondiendo. Sosteniendo todo.</p>
+              <p>Hasta que entendí que el cansancio muchas veces no aparece como una crisis. Aparece como vivir con la cabeza ocupada, seguir funcionando cuando ya no tienes energía.</p>
+              <p>Ese proceso me llevó a profundizar en neurociencia y neurocoaching — para entender por qué vivimos tanto tiempo en automático sin darnos cuenta.</p>
+              <p className="font-semibold text-slate-900">Despierta 72H nace desde ahí. Como una pausa breve y guiada para ayudarte a bajar el ritmo, observarte distinto y encontrar un poco más de calma mental.</p>
             </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Tres momentos clave */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto mb-5 md:mb-6">
-            <h3 className="text-base md:text-lg font-black text-[#7D1F3B] uppercase tracking-[0.3em] text-center mb-4">
-              Solo necesitas menos de 30 minutos al día, distribuídos en 3 momentos simples.
-            </h3>
-
-            <p className="text-sm md:text-base text-slate-600 text-center leading-relaxed max-w-2xl mx-auto space-y-2">
-              <span className="block">
-                <span className="text-[#7D1F3B] font-semibold">Escuchas</span> cada mañana un audio guía, de menos de 5 minutos, para enfocar tu observación del día.
-              </span>
-              <span className="block">
-                <span className="text-[#7D1F3B] font-semibold">Observas</span> durante el día cómo reaccionas, piensas o actúas en situaciones cotidianas. No necesitas observar. Solo en pequeños momentos conscientes.
-              </span>
-              <span className="block">
-                <span className="text-[#7D1F3B] font-semibold">Escribes </span> con el apoyo de una guía, cada noche sobre lo que observaste y descubriste.
-              </span>
-            </p>
-            <p className="mt-6 text-sm md:text-base text-slate-500 text-center max-w-3xl mx-auto leading-relaxed">
-              La metodología de Despierta 72H utiliza principios de neurociencia y observación consciente para ayudarte a reconocer patrones automáticos con mayor claridad y conciencia.
-            </p>
-            <p className="mt-3 text-xs md:text-sm text-slate-400 text-center max-w-3xl mx-auto leading-relaxed">
-              No hay clases en vivo ni sesiones grupales. Puedes hacerlo completamente a tu ritmo, pero tendrás canales de contacto disponibles si necesitas acompañamiento durante el proceso.
-            </p>
           </div>
         </div>
       </section>
 
-      <section className="pt-0 pb-6 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-xl mx-auto text-center space-y-6">
-            <div className="p-6 md:p-8 rounded-[2rem] bg-violet-50/50 border border-violet-100 relative overflow-hidden">
-              <ShieldCheck className="absolute top-3 right-3 w-8 h-8 text-violet-700 opacity-5" />
-              <div className="space-y-4 text-sm md:text-base text-slate-800 font-medium">
-                <div className="pt-4 border-t border-violet-100 mt-4">
-                  <p className="text-xs md:text-sm text-[#7D1F3B] font-bold">
-                    Si en 7 días sientes que esto no era para ti, te devolvemos el 100%.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="max-w-xl mx-auto my-12 bg-white border border-violet-100 rounded-[2rem] p-6 shadow-xl shadow-violet-100/40">
-              <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-                <div className="w-full md:w-[420px] flex-shrink-0">
-                  <div className="rounded-[1.8rem] bg-[#17132A] p-6 shadow-xl text-white text-left relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-violet-500/20 rounded-full blur-2xl" />
-                    <img
-                      src="/bonus-portada.jpg.png"
-                      alt="Guía bonus Despierta 72H"
-                      className="w-full max-h-[320px] object-cover object-top rounded-2xl shadow-lg mb-6"
-                    />
-                    <div className="space-y-4">
-                      <div>
-                        <p className="text-base md:text-xl uppercase tracking-[0.16em] text-violet-200 font-black mb-5 leading-snug">
-                          BONUS:<br />
-                          <span className="normal-case tracking-normal">
-                            Guía descargable para reconocer reacciones automáticas.
-                          </span>
-                        </p>
-                        <h3 className="text-2xl md:text-3xl font-black leading-tight text-white">
-                          Empieza a observar lo que antes pasaba desapercibido
-                        </h3>
-                      </div>
-                    </div>
-                    <p className="text-sm md:text-base text-slate-300 leading-relaxed">
-                      Empiezas a notar patrones que antes pasaban desapercibidos. Y cuando los ves antes, puedes empezar a reaccionar distinto.
-                    </p>
-                    <div className="space-y-2 text-sm text-slate-300">
-                      <p>✓ Reaccionas y te das cuenta después</p>
-                      <p>✓ Tu cabeza no logra desconectarse</p>
-                      <p>✓ Sigues funcionando aunque estés cansada</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 text-center">
-              Si estás pensando esto…
+      {/* ── BONUS ── */}
+      <section className="py-14 bg-white">
+        <div className="container mx-auto px-6 max-w-2xl">
+          <div className="rounded-[1.8rem] bg-[#17132A] p-6 md:p-8 shadow-xl text-white relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-violet-500/20 rounded-full blur-2xl" />
+            <p className="text-[#e8a0b0] text-xs font-black uppercase tracking-widest mb-4">Incluido sin costo extra</p>
+            <img
+              src="/bonus-portada.jpg.png"
+              alt="Guía bonus Despierta 72H"
+              className="w-full max-h-[300px] object-cover object-top rounded-2xl shadow-lg mb-6"
+            />
+            <h3 className="text-2xl md:text-3xl font-black leading-tight text-white mb-3">
+              Guía descargable: Reconoce tus reacciones automáticas
             </h3>
-            <div className="space-y-6">
-              <div>
-                <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
-                  "Me gustaría hacerlo… pero no tengo tiempo."
-                </p>
-                <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-                  Muchas veces, el automático también se ve así: seguir funcionando sin encontrar un momento para parar.
-                </p>
-              </div>
-              <div>
-                <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
-                  "¿Y si me cuesta parar?"
-                </p>
-                <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-                  Está bien. Muchas veces el primer paso es darte cuenta de que llevas demasiado tiempo funcionando sin detenerte.
-                </p>
-              </div>
-              <div>
-                <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
-                  "¿Y si me olvido durante el día?"
-                </p>
-                <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-                  También es parte del proceso. Cuando vuelvas a acordarte, simplemente vuelves. No tienes que hacerlo perfecto.
-                </p>
-              </div>
-              <div>
-                <p className="text-base md:text-lg font-bold text-slate-900 mb-1">
-                  "¿Y si tengo dudas durante el proceso?"
-                </p>
-                <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-                  Tendrás canales de contacto disponibles para acompañarte si necesitas orientación durante el proceso.
-                </p>
-              </div>
+            <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-4">
+              Una herramienta práctica para seguir usando el método después de los 3 días. Cuando ves tus patrones antes, puedes empezar a reaccionar distinto.
+            </p>
+            <div className="space-y-2 text-sm text-slate-400">
+              <p>✓ Reaccionas y te das cuenta después</p>
+              <p>✓ Tu cabeza no logra desconectarse</p>
+              <p>✓ Sigues funcionando aunque estés cansada</p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="mt-8 text-center">
+      {/* ── URGENCIA + COUNTDOWN ── */}
+      <section className="py-14 bg-[#7D1F3B]/5 border-y border-[#7D1F3B]/10">
+        <div className="container mx-auto px-6 max-w-2xl text-center">
+          <p className="text-xs font-black text-[#7D1F3B] uppercase tracking-widest mb-3">Precio de lanzamiento</p>
+          <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-2">Esta oferta termina en:</h2>
+          <p className="text-slate-500 text-sm mb-8">Después de este período, el precio sube a $49.990 CLP.</p>
+          <CountdownTimer />
+          <div className="mt-8 flex flex-col items-center gap-3">
+            <CTAButton label="Acceder al precio de lanzamiento" size="lg" />
+            <p className="text-sm text-slate-500">$29.990 CLP · Acceso por 1 año · Garantía 7 días</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── OBJECIONES ── */}
+      <section className="py-14 bg-white">
+        <div className="container mx-auto px-6 max-w-2xl">
+          <h2 className="text-2xl md:text-3xl font-black text-slate-900 text-center mb-10">
+            Si estás pensando esto…
+          </h2>
+          <div className="space-y-6">
+            {[
+              {
+                q: '"No tengo tiempo para esto."',
+                a: "Necesitas menos de 30 minutos al día — distribuidos en 3 momentos pequeños. El automático también se ve como no tener tiempo para parar.",
+              },
+              {
+                q: '"¿Y si me cuesta empezar?"',
+                a: "Está bien. Muchas veces el primer paso es simplemente darte cuenta de que llevas demasiado tiempo sin detenerte.",
+              },
+              {
+                q: '"¿Qué pasa si me olvido durante el día?"',
+                a: "También es parte del proceso. Cuando te acuerdes, simplemente vuelves. No hay nada que hacer perfecto aquí.",
+              },
+              {
+                q: '"¿Y si tengo dudas mientras lo hago?"',
+                a: "Tendrás canales de contacto disponibles durante todo el proceso. No estás sola.",
+              },
+            ].map((item, i) => (
+              <div key={i} className="border border-slate-100 rounded-2xl p-5 md:p-6">
+                <p className="text-base md:text-lg font-black text-slate-900 mb-2">{item.q}</p>
+                <p className="text-sm md:text-base text-slate-600 leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── GARANTÍA ── */}
+      <section className="py-10 bg-slate-50 border-y border-slate-100">
+        <div className="container mx-auto px-6 max-w-xl text-center">
+          <div className="flex justify-center mb-4">
+            <ShieldCheck className="w-10 h-10 text-[#7D1F3B]" />
+          </div>
+          <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-3">Garantía de 7 días sin preguntas</h3>
+          <p className="text-slate-600 text-sm md:text-base leading-relaxed">
+            Si en los primeros 7 días sientes que esto no era para ti, te devolvemos el 100% de tu dinero. Sin formularios. Sin excusas.
+          </p>
+        </div>
+      </section>
+
+      {/* ── CTA FINAL ── */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6 max-w-2xl text-center">
+          <h2 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight mb-4">
+            El mejor momento para empezar<br />era hace un mes.
+          </h2>
+          <p className="text-xl text-[#7D1F3B] font-bold mb-8">El segundo mejor momento es ahora.</p>
+          <div className="flex flex-col items-center gap-3 mb-6">
+            <CTAButton label="Quiero empezar hoy" size="lg" />
+            <p className="text-sm text-slate-500">$29.990 CLP · Acceso inmediato · Garantía 7 días</p>
+          </div>
+          <div className="mt-6">
+            <p className="text-sm text-slate-400 mb-1">¿Tienes dudas antes de empezar?</p>
             <a
-              href="https://pay.hotmart.com/O105550362E"
+              href="https://wa.me/56990991901"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#7D1F3B] text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-[#6B1A32] transition-colors inline-flex items-center gap-2"
+              className="text-[#7D1F3B] font-bold text-sm hover:underline"
             >
-              <span className="uppercase tracking-widest text-xs md:text-sm">
-                Acceder ahora
-              </span>
-              <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
+              Conversemos por WhatsApp →
             </a>
-
-            <p className="mt-5 text-sm md:text-base text-slate-700 font-medium text-center">
-              Pago seguro • Acceso inmediato • No necesitas cambiar tu vida en 3 días. Solo necesitas empezar a observarte distinto.
-            </p>
-
-            <div className="mt-4 text-center">
-              <p className="text-sm text-slate-500 mb-2">
-                ¿Tienes dudas antes de empezar?
-              </p>
-              <a
-                href="https://wa.me/56990991901"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#7D1F3B] font-semibold hover:text-[#6B1A32] transition-colors"
-              >
-                Conversemos por WhatsApp
-              </a>
-            </div>
           </div>
         </div>
       </section>
 
+      {/* ── FOOTER ── */}
       <footer className="py-6 border-t border-slate-100 text-center bg-white">
         <div className="container mx-auto px-6">
-          <Logo className="opacity-20 grayscale scale-40 mb-2" />
-          <p className="text-slate-600 text-[8px] font-bold tracking-widest uppercase">
-            © 2026 Despierta 72H
-          </p>
+          <p className="text-[#7D1F3B] tracking-[0.4em] text-xs font-black uppercase opacity-40 mb-1">Despierta 72H</p>
+          <p className="text-slate-400 text-[10px] font-medium tracking-widest uppercase">© 2026</p>
         </div>
       </footer>
 
     </div>
   );
 }
-
-
