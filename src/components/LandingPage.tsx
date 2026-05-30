@@ -158,7 +158,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             </div>
 
             {/* 1. Título principal (grande pero ajustado) */}
-<p className="text-[10px] md:text-xs font-bold text-text-violet-500 uppercase tracking-[0.3em] mb-3">
+<p className="text-[10px] md:text-xs font-bold text-[#7D1F3B] uppercase tracking-[0.3em] mb-3">
   Experiencia online · 3 días
 </p>
 <h1 className="text-[1.6rem] md:text-[2.8rem] font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-[1.15]">
@@ -184,11 +184,11 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </div>
   </div>
             <div className="flex flex-col items-center mb-8">
-  
-    href="https://pay.hotmart.com/O105550362E"
+  <a
+     href="https://pay.hotmart.com/O105550362E"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-[#7D1F3B] text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-violet-700 shadow-lg hover:-translate-y-0.5 transition inline-flex items-center gap-2"
+    className="bg-[#7D1F3B] text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-[#6B1A32] shadow-lg hover:-translate-y-0.5 transition inline-flex items-center gap-2"
   >
     <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
     <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
@@ -216,7 +216,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   href="https://pay.hotmart.com/O105550362E"
   target="_blank"
   rel="noopener noreferrer"
-  className="bg-[#7D1F3B] text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-violet-700 shadow-lg hover:-translate-y-0.5 transition inline-flex items-center gap-2"
+ className="bg-[#7D1F3B] text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-[#6B1A32] shadow-lg hover:-translate-y-0.5 transition inline-flex items-center gap-2"
 >
   <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
                  <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
@@ -233,7 +233,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 <section className="py-12 bg-slate-50/50">
   <div className="container mx-auto px-6">
     <div className="max-w-2xl mx-auto rounded-[2rem] bg-white border border-violet-100 p-8 md:p-12 shadow-sm">
-       <h3 className="text-[10px] font-black text-violet-400 uppercase tracking-[0.4em] mb-6">
+       <h3 className="text-[10px] font-black text-[#7D1F3B] uppercase tracking-[0.4em] mb-6">
         Quién está detrás de esto
       </h3>
 
@@ -324,7 +324,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                 <div key={i} className="bg-violet-50/10 p-4 md:p-5 rounded-2xl border border-violet-100 shadow-[0_1px_4px_rgba(139,92,246,0.05)] text-left flex flex-col h-full hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-2 mb-3">
                     <div className="p-1 bg-white rounded-md shadow-sm border border-violet-50">{card.icon}</div>
-                    <span className="text-[16px] font-black text-violet-500 uppercase tracking-widest leading-none">{card.day}</span>
+                    <span className="text-[16px] font-black text-[#7D1F3B] uppercase tracking-widest leading-none">{card.day}</span>
                   </div>
                   <h4 className="text-lg md:text-xl font-black text-slate-900 mb-3 leading-tight font-sans">
                     {card.title}
@@ -393,22 +393,22 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
              
 {/* Tres momentos clave */}
 <div className="max-w-4xl mx-auto mb-5 md:mb-6">
-  <h3 className="text-base md:text-lg font-black text-violet-600 uppercase tracking-[0.3em] text-center mb-4">
+  <h3 className="text-base md:text-lg font-black text-[#7D1F3B] uppercase tracking-[0.3em] text-center mb-4">
     Solo necesitas menos de 30 minutos al día, distribuídos en 3 momentos simples.
   </h3>
 
  <p className="text-sm md:text-base text-slate-600 text-center leading-relaxed max-w-2xl mx-auto space-y-2">
   <span className="block">
-    <span className="text-violet-600 font-semibold">Escuchas</span> cada mañana un audio guía, de menos de 5 minutos, para enfocar tu observación del día.
+    <span className="text-[#7D1F3B] font-semibold">Escuchas</span> cada mañana un audio guía, de menos de 5 minutos, para enfocar tu observación del día.
   </span>
 
   <span className="block">
-    <span className="text-violet-600 font-semibold">Observas</span> durante el día cómo reaccionas, piensas o actúas en situaciones cotidianas. No necesitas observarte todo el día.
+    <span className="text-[#7D1F3B] font-semibold">Observas</span> durante el día cómo reaccionas, piensas o actúas en situaciones cotidianas. No necesitas observar
 Solo en pequeños momentos conscientes.
   </span>
 
   <span className="block">
-    <span className="text-violet-600 font-semibold">Escribes </span> con el apoyo de una guía, cada noche sobre lo que observaste y descubriste.
+  <span className="text-[#7D1F3B] font-semibold">Escribes </span> con el apoyo de una guía, cada noche sobre lo que observaste y descubriste.
   </span>
 </p>
   <p className="mt-6 text-sm md:text-base text-slate-500 text-center max-w-3xl mx-auto leading-relaxed">
@@ -425,7 +425,7 @@ Solo en pequeños momentos conscientes.
         <ShieldCheck className="absolute top-3 right-3 w-8 h-8 text-violet-700 opacity-5" />
         <div className="space-y-4 text-sm md:text-base text-slate-800 font-medium">
           <div className="pt-4 border-t border-violet-100 mt-4">
-            <p className="text-xs md:text-sm text-violet-700 font-bold">
+            <p className="text-xs md:text-sm text-[#7D1F3B] font-bold">
               Si en 7 días sientes que esto no era para ti, te devolvemos el 100%.
             </p>
           </div>
@@ -516,7 +516,7 @@ Solo en pequeños momentos conscientes.
     href="https://pay.hotmart.com/O105550362E"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-[#7D1F3B] text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 transition-colors inline-flex items-center gap-2"
+   className="bg-[#7D1F3B] text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-[#6B1A32] transition-colors inline-flex items-center gap-2"
   >
     <span className="uppercase tracking-widest text-xs md:text-sm">
       Acceder ahora
@@ -538,7 +538,7 @@ Solo en pequeños momentos conscientes.
       href="https://wa.me/56990991901"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-violet-600 font-semibold hover:text-violet-700 transition-colors"
+      className="text-[#7D1F3B] font-semibold hover:text-[#6B1A32] transition-colors"
     >
       Conversemos por WhatsApp
     </a>
