@@ -158,7 +158,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             </div>
 
             {/* 1. Título principal (grande pero ajustado) */}
-<p className="text-[10px] md:text-xs font-bold text-violet-500 uppercase tracking-[0.3em] mb-3">
+<p className="text-[10px] md:text-xs font-bold text-text-violet-500 uppercase tracking-[0.3em] mb-3">
   Experiencia online · 3 días
 </p>
 <h1 className="text-[1.6rem] md:text-[2.8rem] font-black tracking-tight text-slate-900 mt-0 mb-4 md:mb-6 leading-[1.15]">
@@ -188,7 +188,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
     href="https://pay.hotmart.com/O105550362E"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-violet-600 text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-violet-700 shadow-lg hover:-translate-y-0.5 transition inline-flex items-center gap-2"
+    className="bg-[#7D1F3B] text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-violet-700 shadow-lg hover:-translate-y-0.5 transition inline-flex items-center gap-2"
   >
     <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
     <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
@@ -216,7 +216,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   href="https://pay.hotmart.com/O105550362E"
   target="_blank"
   rel="noopener noreferrer"
-  className="bg-violet-600 text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-violet-700 shadow-lg hover:-translate-y-0.5 transition inline-flex items-center gap-2"
+  className="bg-[#7D1F3B] text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-violet-700 shadow-lg hover:-translate-y-0.5 transition inline-flex items-center gap-2"
 >
   <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
                  <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
@@ -516,7 +516,7 @@ Solo en pequeños momentos conscientes.
     href="https://pay.hotmart.com/O105550362E"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-violet-600 text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 transition-colors inline-flex items-center gap-2"
+    className="bg-[#7D1F3B] text-white px-7 md:px-9 py-3 md:py-4 rounded-xl font-bold text-base hover:bg-violet-700 transition-colors inline-flex items-center gap-2"
   >
     <span className="uppercase tracking-widest text-xs md:text-sm">
       Acceder ahora
