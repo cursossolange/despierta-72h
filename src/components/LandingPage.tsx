@@ -183,6 +183,18 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 </p>
 </div>
   </div>
+            <div className="flex flex-col items-center mb-8">
+  
+    href="https://pay.hotmart.com/O105550362E"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-violet-600 text-white px-7 md:px-9 py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-violet-700 shadow-lg hover:-translate-y-0.5 transition inline-flex items-center gap-2"
+  >
+    <span className="uppercase tracking-widest text-xs md:text-sm">Acceder ahora</span>
+    <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform shrink-0" />
+  </a>
+  <p className="mt-2 text-sm text-slate-500 font-medium">$29.990 CLP · Garantía 7 días</p>
+</div>
                        {/* Principal Hero Image (Compacta) */}
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
