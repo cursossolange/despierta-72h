@@ -425,16 +425,16 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               className="w-full max-h-[300px] object-cover object-top rounded-2xl shadow-lg mb-6"
             />
             <h3 className="text-2xl md:text-3xl font-black leading-tight text-white mb-3">
-              Guía descargable: Reconoce tus reacciones automáticas
+             7 señales de que estás funcionando en automático
             </h3>
             <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-4">
-              Una herramienta práctica para seguir usando el método después de los
-              3 días. Cuando ves tus patrones antes, puedes empezar a reaccionar distinto.
+              Pequeñas cosas que muchas veces normalizamos… pero que pueden mostrar
+que llevamos demasiado tiempo funcionando sin detenernos a observar.
             </p>
             <div className="space-y-2 text-sm text-slate-400">
-              <p>✓ Reaccionas y te das cuenta después</p>
-              <p>✓ Tu cabeza no logra desconectarse</p>
-              <p>✓ Sigues funcionando aunque estés agotada</p>
+<p>✓ Tu mente sigue activa aunque quieras descansar</p>
+<p>✓ Reaccionas rápido y recién después te das cuenta</p>
+<p>✓ Hay temas que vuelven una y otra vez</p>
             </div>
           </div>
         </div>
