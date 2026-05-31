@@ -289,19 +289,19 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                 icon: <Sparkles className="w-5 h-5" />,
                 day: "Día 1",
                 title: "Tu cabeza baja el ruido",
-                desc: "Aprendes a hacer una pausa real antes de reaccionar. Primera microintervención.",
+                desc: "Primera microintervención: haces pausas conscientes para observar qué está procesando tu cerebro sin que te des cuenta. Interrumpes el modo automático.",
               },
               {
                 icon: <RefreshCw className="w-5 h-5" />,
                 day: "Día 2",
-                title: "Entiendes por qué reaccionas así",
-                desc: "Empiezas a ver tus patrones automáticos y por qué se repiten aunque no quieras.",
+                title: " Interrumpir el automático",
+                desc: "Segunda microintervención: observas en qué momentos reaccionas en automático y qué lo dispara. Lo que ves, ya no te controla igual.",
               },
               {
                 icon: <Heart className="w-5 h-5" />,
                 day: "Día 3",
-                title: "Te llevas un método para seguir",
-                desc: "El curso termina. El método queda contigo para usarlo cada vez que lo necesites.",
+                title: "Entiendes qué hay detrás",
+                desc: "Tercer paso del método: identificas la necesidad real detrás de cada reacción. Cuando la ves, se abre la posibilidad de elegir distinto.",
               },
             ].map((card, i) => (
               <div
