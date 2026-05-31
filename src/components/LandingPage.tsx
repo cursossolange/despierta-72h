@@ -294,7 +294,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               {
                 icon: <RefreshCw className="w-5 h-5" />,
                 day: "Día 2",
-                title: " Interrumpir el automático",
+                title: " Interrumpes el automático",
                 desc: "Segunda microintervención: Observas en qué momentos reaccionas en automático y qué lo dispara. Lo que ves, ya no te controla igual.",
               },
               {
