@@ -121,9 +121,10 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-[2rem] md:text-[3.2rem] font-black tracking-tight text-slate-900 leading-[1.1] mb-5"
           >
-            No estás mal.<br />
+                    Funcionar no es lo mismo<br className="hidden md:block" /> que estar bien.<br />
             <span className="text-[#7D1F3B]">
-              Estás agotada de una forma que no sabes cómo explicarle a nadie.
+              Y tú lo sabes.
+            </span>
             </span>
           </motion.h1>
 
@@ -134,8 +135,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-8 max-w-2xl mx-auto"
           >
-            Tu cabeza no para. Sigues funcionando aunque no tengas energía.<br />
-            Ese cansancio invisible que llevas meses cargando. Sin saber cómo explicarle a nadie.
+                      Sientes que algo tiene que cambiar.<br />
+              Pero no tienes energía ni para decidir qué.
           </motion.p>
 
           {/* PROMESA */}
