@@ -149,8 +149,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               La promesa
             </p>
             <p className="text-slate-800 text-base md:text-lg font-semibold leading-relaxed">
-              En 3 días vas a entender qué te está pasando por dentro. Te vas a llevar{" "}
-              <strong>herramientas concretas para empezar a gestionarlo.</strong>
+               En 3 días vas a entender qué te está pasando por dentro. Te vas a llevar{" "}
+              <strong>herramientas concretas para empezar a observarte distinto y responder de otra manera.</strong>
             </p>
           </motion.div>
 
@@ -260,8 +260,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             La base detrás de esto
           </p>
           <p className="text-slate-800 text-base md:text-lg font-semibold leading-relaxed mb-3">
-            Aplicando principios de neurociencia, observación consciente y microintervenciones
-            para reconocer patrones automáticos y empezar a gestionarlos.
+            Un método de observación consciente basado en principios de neurociencia.
           </p>
           <p className="text-slate-500 text-sm leading-relaxed max-w-xl mx-auto">
             Tu cerebro automatiza lo que repites. Por eso no puedes salir sola de esto
@@ -282,8 +281,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             para entenderte y gestionarte mejor.
           </h2>
           <p className="text-slate-300 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
-            No es terapia. No es meditación. Es coaching basado en neurociencias —
-            traducido en microintervenciones que puedes hacer en tu día a día.
+            No es terapia. No es meditación. Es un método de observación consciente basado en principios de neurociencia, traducido en microintervenciones que puedes hacer en tu día a día.
           </p>
           <div className="grid md:grid-cols-3 gap-4 text-left">
             {[
@@ -396,9 +394,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             {/* CREDENCIAL EXACTA — antes del relato */}
             <div className="bg-[#7D1F3B]/5 border border-[#7D1F3B]/15 rounded-xl px-5 py-4 mb-6 text-center">
               <p className="text-[#7D1F3B] text-sm font-semibold leading-relaxed">
-                Coach certificada en Coaching Basado en Neurociencias —
-                NeuroLeadership Institute (acreditado ICF) · Más de 20 años
-                liderando operaciones comerciales en retail y servicios.
+                Certificada en Coaching Basado en Neurociencias por el
+NeuroLeadership Institute (acreditado ICF). Más de 20 años
+liderando operaciones comerciales en retail y servicios.
               </p>
             </div>
 
@@ -505,7 +503,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               },
               {
                 q: '"¿Esto es como terapia?"',
-                a: "No. Es coaching basado en neurociencias, traducido en microintervenciones concretas. No estás aquí para ser arreglada. Estás aquí para entenderte mejor y tener herramientas para gestionarte.",
+                a: "No. Es un método de observación consciente basado en principios de neurociencia, traducido en microintervenciones concretas. No estás aquí para ser arreglada. Estás aquí para entenderte mejor y empezar a responder distinto.",
               },
               {
                 q: '"Ya intenté meditación, apps, vacaciones... y volví igual."',
