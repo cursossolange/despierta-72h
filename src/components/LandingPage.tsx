@@ -121,10 +121,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-[2rem] md:text-[3.2rem] font-black tracking-tight text-slate-900 leading-[1.1] mb-5"
           >
-                    Funcionar no es lo mismo<br className="hidden md:block" /> que estar bien.<br />
+                        Funcionar no es lo mismo<br className="hidden md:block" /> que estar bien.<br />
             <span className="text-[#7D1F3B]">
               Y tú lo sabes.
-            </span>
             </span>
           </motion.h1>
 
