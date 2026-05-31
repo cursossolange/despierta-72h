@@ -4,29 +4,11 @@ import { useState, useEffect } from "react";
 
 // ─── Countdown Timer ─────────────────────────────────────────────────────────
 const CountdownTimer = () => {
-  const getInitialSeconds = () => {
-    const stored = localStorage.getItem("despierta_countdown_end");
-    if (stored) {
-      const diff = Math.floor((parseInt(stored) - Date.now()) / 1000);
-      return diff > 0 ? diff : 0;
-    }
-    const end = Date.now() + 24 * 60 * 60 * 1000;
-    localStorage.setItem("despierta_countdown_end", end.toString());
-    return 24 * 60 * 60;
-  };
-
-  const [seconds, setSeconds] = useState(getInitialSeconds);
+  const [seconds, setSeconds] = useState(24 * 60 * 60);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSeconds((s) => {
-        if (s <= 1) {
-          const end = Date.now() + 24 * 60 * 60 * 1000;
-          localStorage.setItem("despierta_countdown_end", end.toString());
-          return 24 * 60 * 60;
-        }
-        return s - 1;
-      });
+      setSeconds((s) => (s <= 1 ? 24 * 60 * 60 : s - 1));
     }, 1000);
     return () => clearInterval(interval);
   }, []);
@@ -121,7 +103,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-[2rem] md:text-[3.2rem] font-black tracking-tight text-slate-900 leading-[1.1] mb-5"
           >
-                        Funcionar no es lo mismo<br className="hidden md:block" /> que estar bien.<br />
+            Funcionar no es lo mismo<br className="hidden md:block" /> que estar bien.<br />
             <span className="text-[#7D1F3B]">
               Y tú lo sabes.
             </span>
@@ -134,8 +116,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-8 max-w-2xl mx-auto"
           >
-                      Sientes que algo tiene que cambiar.<br />
-              Pero no tienes energía ni para decidir qué.
+            Sientes que algo tiene que cambiar.<br />
+            Pero no tienes energía ni para decidir qué.
           </motion.p>
 
           {/* PROMESA */}
@@ -149,7 +131,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               La promesa
             </p>
             <p className="text-slate-800 text-base md:text-lg font-semibold leading-relaxed">
-               En 3 días vas a entender qué te está pasando por dentro. Te vas a llevar{" "}
+              En 3 días vas a entender qué te está pasando por dentro. Te vas a llevar{" "}
               <strong>herramientas concretas para empezar a observarte distinto y responder de otra manera.</strong>
             </p>
           </motion.div>
@@ -276,9 +258,10 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <p className="text-xs font-black text-[#e8a0b0] uppercase tracking-widest mb-4">
             La solución
           </p>
+          {/* CAMBIO: "para entenderte y gestionarte mejor" → "para empezar a observarte distinto" */}
           <h2 className="text-3xl md:text-5xl font-black leading-tight mb-6">
             Una experiencia guiada de 3 días<br />
-            para entenderte y gestionarte mejor.
+            para empezar a observarte distinto.
           </h2>
           <p className="text-slate-300 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
             No es terapia. No es meditación. Es un método de observación consciente basado en principios de neurociencia, traducido en microintervenciones que puedes hacer en tu día a día.
@@ -294,7 +277,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               {
                 icon: <RefreshCw className="w-5 h-5" />,
                 day: "Día 2",
-                title: " Interrumpes el automático",
+                title: "Interrumpes el automático",
                 desc: "Segunda microintervención: Observas en qué momentos reaccionas en automático y qué lo dispara. Lo que ves, ya no te controla igual.",
               },
               {
@@ -395,8 +378,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             <div className="bg-[#7D1F3B]/5 border border-[#7D1F3B]/15 rounded-xl px-5 py-4 mb-6 text-center">
               <p className="text-[#7D1F3B] text-sm font-semibold leading-relaxed">
                 Certificada en Coaching Basado en Neurociencias por el
-NeuroLeadership Institute (acreditado ICF). Más de 20 años
-liderando operaciones comerciales en retail y servicios.
+                NeuroLeadership Institute (acreditado ICF). Más de 20 años
+                liderando operaciones comerciales en retail y servicios.
               </p>
             </div>
 
