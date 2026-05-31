@@ -135,7 +135,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-8 max-w-2xl mx-auto"
           >
             Tu cabeza no para. Sigues funcionando aunque no tengas energía.<br />
-            Y lo más difícil es que ni siquiera sabes bien por qué.
+            Ese cansancio invisible que llevas meses cargando. Sin saber cómo explicarle a nadie.
           </motion.p>
 
           {/* PROMESA */}
@@ -149,7 +149,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               La promesa
             </p>
             <p className="text-slate-800 text-base md:text-lg font-semibold leading-relaxed">
-              En 3 días vas a entender qué te está pasando por dentro — y te vas a llevar{" "}
+              En 3 días vas a entender qué te está pasando por dentro. Te vas a llevar{" "}
               <strong>herramientas concretas para empezar a gestionarlo.</strong>
             </p>
           </motion.div>
@@ -235,8 +235,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <div className="space-y-3 text-left max-w-md mx-auto">
             {[
               "Tu cabeza sigue activa aunque intentes descansar.",
-              "Reaccionas de formas que no quieres — y te das cuenta cuando ya es tarde.",
-              "No puedes explicar por qué estás tan cansada si 'no hiciste nada extraordinario'.",
+              "Reaccionas de formas que no quieres. Te das cuenta cuando ya es tarde.",
+              "No puedes explicar por qué estás tan cansada si no hiciste nada extraordinario.",
               "Llevas tiempo diciéndote que cuando pase esto, vas a parar. Y ese momento nunca llega.",
             ].map((item, i) => (
               <div
@@ -265,7 +265,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </p>
           <p className="text-slate-500 text-sm leading-relaxed max-w-xl mx-auto">
             Tu cerebro automatiza lo que repites. Por eso no puedes salir sola de esto
-            solo con fuerza de voluntad. En 3 días vas a entender el mecanismo — y vas
+            solo con fuerza de voluntad. En 3 días vas a entender el mecanismo y vas
             a tener herramientas concretas para interrumpirlo.
           </p>
         </div>
@@ -279,7 +279,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </p>
           <h2 className="text-3xl md:text-5xl font-black leading-tight mb-6">
             Una experiencia guiada de 3 días<br />
-            para entenderte — y gestionarte mejor.
+            para entenderte y gestionarte mejor.
           </h2>
           <p className="text-slate-300 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
             No es terapia. No es meditación. Es coaching basado en neurociencias —
@@ -297,7 +297,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                 icon: <RefreshCw className="w-5 h-5" />,
                 day: "Día 2",
                 title: "Entiendes por qué reaccionas así",
-                desc: "Empiezas a ver tus patrones automáticos — y por qué se repiten aunque no quieras.",
+                desc: "Empiezas a ver tus patrones automáticos y por qué se repiten aunque no quieras.",
               },
               {
                 icon: <Heart className="w-5 h-5" />,
@@ -349,7 +349,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                 emoji: "👁",
                 cuando: "Durante el día",
                 title: "Observas",
-                desc: "En pequeños momentos cotidianos, empiezas a notar cómo reaccionas y piensas. No tienes que hacer nada especial — solo prestar atención.",
+                desc: "En pequeños momentos cotidianos, empiezas a notar cómo reaccionas y piensas. No tienes que hacer nada especial. Solo prestar atención.",
               },
               {
                 emoji: "✍️",
@@ -413,16 +413,16 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               <p>
                 Hasta que entendí que el cansancio muchas veces no aparece como
                 una crisis. Aparece como vivir con la cabeza ocupada, seguir
-                funcionando cuando ya no tienes energía — y no saber explicar por qué.
+                funcionando cuando ya no tienes energía. Sin saber explicar por qué.
               </p>
               <p>
                 Ese proceso me llevó a certificarme en Coaching Basado en
-                Neurociencias — para entender por qué vivimos tanto tiempo en
+                Neurociencias, para entender por qué vivimos tanto tiempo en
                 automático sin darnos cuenta, y qué podemos hacer para interrumpirlo.
               </p>
               <p className="font-semibold text-slate-900">
                 Despierta 72H nace desde ahí. No para exigirte más. Para que por
-                fin entiendas qué te está pasando — y tengas herramientas reales
+                fin entiendas qué te está pasando y tengas herramientas reales
                 para empezar a gestionarlo.
               </p>
             </div>
@@ -470,7 +470,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-lg mx-auto mb-6">
             Cada semana que pasa sin entenderlo, el patrón se refuerza. Tu cerebro
-            automatiza lo que repite — y salir sola se vuelve más difícil. Después
+            automatiza lo que repite. Salir sola se vuelve más difícil. Después
             de este período, el precio sube a $49.990 CLP.
           </p>
           <CountdownTimer />
@@ -493,7 +493,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             {[
               {
                 q: '"No tengo tiempo para esto."',
-                a: "Necesitas menos de 30 minutos al día — en 3 momentos pequeños. El automático también se ve como no tener tiempo para parar. Eso es exactamente lo que vamos a trabajar.",
+                a: "Necesitas menos de 30 minutos al día, en 3 momentos pequeños. El automático también se ve como no tener tiempo para parar. Eso es exactamente lo que vamos a trabajar.",
               },
               {
                 q: '"¿Y si me cuesta empezar?"',
@@ -505,7 +505,11 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               },
               {
                 q: '"¿Esto es como terapia?"',
-                a: "No. Es coaching basado en neurociencias — traducido en microintervenciones concretas. No estás aquí para ser 'arreglada'. Estás aquí para entenderte mejor y tener herramientas para gestionarte.",
+                a: "No. Es coaching basado en neurociencias, traducido en microintervenciones concretas. No estás aquí para ser arreglada. Estás aquí para entenderte mejor y tener herramientas para gestionarte.",
+              },
+              {
+                q: '"Ya intenté meditación, apps, vacaciones... y volví igual."',
+                a: "Porque ninguna de esas cosas trabaja el mecanismo. El problema no es que no tengas voluntad. Es que tu cerebro automatizó ese patrón. Despierta 72H trabaja exactamente eso: entender el mecanismo para poder interrumpirlo.",
               },
               {
                 q: '"¿Y si tengo dudas mientras lo hago?"',
@@ -552,7 +556,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </p>
           <p className="text-slate-500 text-sm md:text-base mb-8 max-w-md mx-auto leading-relaxed">
             Cada día que pasa funcionando así, el patrón se hace más automático.
-            Tú puedes ser la primera en entender qué te está pasando — y hacer algo distinto.
+            Tú puedes ser la primera en entender qué te está pasando y hacer algo distinto.
           </p>
           <div className="flex flex-col items-center gap-3 mb-6">
             <CTAButton label="Quiero empezar hoy" size="lg" />
