@@ -216,20 +216,20 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </div>
 
           {/* EL RESULTADO */}
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 text-left mb-6">
-            <p className="text-[#e8a0b0] text-xs font-black uppercase tracking-widest mb-2">
+          <div className="bg-white rounded-2xl p-6 md:p-8 text-left mb-6">
+            <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-2">
               El resultado
             </p>
-            <p className="text-white font-black text-lg md:text-xl mb-1">
+            <p className="text-slate-900 font-black text-lg md:text-xl mb-1">
               Lo que te llevarás al finalizar
             </p>
-            <p className="text-[#e8a0b0] font-black text-base mb-4">
+            <p className="text-[#7D1F3B] font-black text-base mb-4">
               Tu Mapa de Comportamientos Automáticos
             </p>
-            <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-4">
+            <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
               Una representación clara de los comportamientos que hoy están influyendo en tu vida cotidiana. Con mayor claridad sobre:
             </p>
-            <div className="space-y-2 text-slate-300 text-sm md:text-base">
+            <div className="space-y-2 text-slate-700 text-sm md:text-base">
               <p>✦ Qué comportamientos están presentes hoy en tu vida.</p>
               <p>✦ Cuáles quieres seguir fortaleciendo porque siguen aportando valor.</p>
               <p>✦ Cuáles te gustaría comenzar a transformar porque ya no están al servicio de quien eres hoy.</p>
