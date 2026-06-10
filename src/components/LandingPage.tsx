@@ -40,13 +40,13 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       {/* ── HERO ── */}
       <header className="bg-white pt-12 pb-0">
-        <div className="container mx-auto px-6 max-w-3xl text-center">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
 
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="text-[#7D1F3B] tracking-[0.5em] text-xs font-black uppercase mb-8"
+            className="text-[#7D1F3B] tracking-[0.3em] text-4xl md:text-6xl font-black uppercase mb-6"
           >
             Despierta
           </motion.p>
@@ -144,7 +144,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       {/* ── AGITACIÓN ── */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-6 max-w-2xl text-center">
+        <div className="container mx-auto px-6 max-w-3xl text-center">
           <h2 className="text-2xl md:text-3xl font-black leading-tight mb-10" style={{ color: '#1F1F1F' }}>
             Hay comportamientos que dejamos de cuestionar hace tiempo,<br className="hidden md:block" /> pero no de sentir sus consecuencias.
           </h2>
@@ -166,7 +166,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       {/* ── EL GRAN RESULTADO ── */}
       <section className="py-16 bg-[#F7F7F7]">
-        <div className="container mx-auto px-6 max-w-3xl">
+        <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-10">
             <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-3">El resultado</p>
             <h2 className="text-2xl md:text-4xl font-black leading-tight mb-4" style={{ color: '#1F1F1F' }}>
@@ -225,7 +225,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       {/* ── BASE METODOLÓGICA ── */}
       <section className="py-12 bg-white border-y border-slate-100">
-        <div className="container mx-auto px-6 max-w-2xl text-center">
+        <div className="container mx-auto px-6 max-w-3xl text-center">
           <p className="font-black text-xl md:text-2xl mb-4" style={{ color: '#1F1F1F' }}>
             Antes de cambiar algo, necesitas verlo.
           </p>
@@ -237,7 +237,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       {/* ── LA SOLUCIÓN ── */}
       <section className="py-16 bg-[#F7F7F7]">
-        <div className="container mx-auto px-6 max-w-3xl text-center">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
           <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-4">La solución</p>
           <h2 className="text-2xl md:text-4xl font-black leading-tight mb-4" style={{ color: '#1F1F1F' }}>
             Despierta no es un curso.<br />Es una experiencia de observación guiada.
@@ -280,7 +280,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       {/* ── LO QUE INCLUYE ── */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-6 max-w-2xl">
+        <div className="container mx-auto px-6 max-w-3xl">
           <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-8 text-center">Lo que incluye Despierta</p>
           <div className="space-y-3">
             {[
@@ -323,7 +323,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       {/* ── QUIÉN SOY ── */}
       <section className="py-16 bg-[#F7F7F7]">
-        <div className="container mx-auto px-6 max-w-2xl">
+        <div className="container mx-auto px-6 max-w-3xl">
           <div className="bg-white rounded-[2rem] border border-slate-100 p-8 md:p-12 shadow-sm">
             <p className="text-xs font-black text-[#7D1F3B] uppercase tracking-widest mb-6 text-center">
               Quién está detrás de esto
@@ -355,7 +355,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       {/* ── PRECIO ── */}
       <section className="py-16 bg-white border-y border-slate-100">
-        <div className="container mx-auto px-6 max-w-xl text-center">
+        <div className="container mx-auto px-6 max-w-2xl text-center">
           <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-3">Primera edición</p>
           <h2 className="text-2xl md:text-3xl font-black mb-2" style={{ color: '#1F1F1F' }}>
             Despierta · Inicio 3 de agosto
@@ -378,7 +378,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       {/* ── PREGUNTAS FRECUENTES ── */}
       <section className="py-16 bg-[#F7F7F7]">
-        <div className="container mx-auto px-6 max-w-2xl">
+        <div className="container mx-auto px-6 max-w-3xl">
           <h2 className="text-2xl md:text-3xl font-black text-center mb-10" style={{ color: '#1F1F1F' }}>
             Si estás pensando esto…
           </h2>
@@ -420,7 +420,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       {/* ── GARANTÍA ── */}
       <section className="py-12 bg-[#F5F4F3] border-y border-slate-100">
-        <div className="container mx-auto px-6 max-w-xl text-center">
+        <div className="container mx-auto px-6 max-w-2xl text-center">
           <div className="flex justify-center mb-4">
             <ShieldCheck className="w-10 h-10 text-[#7D1F3B]" />
           </div>
@@ -433,7 +433,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       {/* ── CTA FINAL ── */}
       <section className="py-20 bg-[#F7F7F7]">
-        <div className="container mx-auto px-6 max-w-2xl text-center">
+        <div className="container mx-auto px-6 max-w-3xl text-center">
           <h2 className="text-3xl md:text-5xl font-black leading-tight mb-4" style={{ color: '#1F1F1F' }}>
             No se trata de convertirte<br />en alguien diferente.
           </h2>
