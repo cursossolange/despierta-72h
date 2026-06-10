@@ -197,7 +197,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             ].map((card, i) => (
               <div
                 key={i}
-                className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition-colors"
+                className="bg-white rounded-2xl p-5 hover:bg-slate-50 transition-colors"
               >
                 <div className="flex items-center gap-2 mb-3">
                   <div className="p-1.5 bg-[#7D1F3B]/30 rounded-lg text-[#e8a0b0]">
@@ -207,79 +207,92 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                     {card.semana}
                   </span>
                 </div>
-                <h4 className="text-white font-black text-lg leading-tight mb-2">
+                <h4 className="text-slate-900 font-black text-lg leading-tight mb-2">
                   {card.title}
                 </h4>
-                <p className="text-slate-400 text-sm leading-relaxed">{card.desc}</p>
+                <p className="text-slate-600 text-sm leading-relaxed">{card.desc}</p>
               </div>
             ))}
           </div>
 
-          {/* EL RESULTADO */}
-          <div className="bg-white rounded-2xl p-6 md:p-8 text-left mb-6">
+        </div>
+      </section>
+
+      {/* ── EL RESULTADO ── */}
+      <section className="py-14 bg-white">
+        <div className="container mx-auto px-6 max-w-3xl">
+          <div className="max-w-2xl mx-auto">
             <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-2">
               El resultado
             </p>
-            <p className="text-slate-900 font-black text-lg md:text-xl mb-1">
+            <p className="text-slate-900 font-black text-2xl md:text-3xl mb-2">
               Lo que te llevarás al finalizar
             </p>
-            <p className="text-[#7D1F3B] font-black text-base mb-4">
+            <p className="text-[#7D1F3B] font-black text-lg mb-4">
               Tu Mapa de Comportamientos Automáticos
             </p>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
+            <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               Una representación clara de los comportamientos que hoy están influyendo en tu vida cotidiana. Con mayor claridad sobre:
             </p>
-            <div className="space-y-2 text-slate-700 text-sm md:text-base">
-              <p>✦ Qué comportamientos están presentes hoy en tu vida.</p>
-              <p>✦ Cuáles quieres seguir fortaleciendo porque siguen aportando valor.</p>
-              <p>✦ Cuáles te gustaría comenzar a transformar porque ya no están al servicio de quien eres hoy.</p>
-              <p>✦ Dónde existen oportunidades para recuperar mayor margen de elección en tu día a día.</p>
-            </div>
-          </div>
-
-          {/* LO QUE INCLUYE */}
-          <div className="bg-white rounded-2xl p-6 md:p-8 text-left">
-            <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-6">
-              Lo que incluye Despierta
-            </p>
-            <div className="space-y-5">
+            <div className="space-y-3">
               {[
-                {
-                  title: "3 sesiones grupales en vivo",
-                  benefit: "Para ayudarte a avanzar semana a semana con una guía clara y un espacio para profundizar lo que vas descubriendo.",
-                },
-                {
-                  title: "Guías de observación y reflexión",
-                  benefit: "Para saber exactamente dónde poner tu atención, sin tener que inventar el proceso por tu cuenta.",
-                },
-                {
-                  title: "Comunidad privada de acompañamiento",
-                  benefit: "Para compartir la experiencia con otras mujeres que están recorriendo el mismo camino y sentirte acompañada durante el proceso.",
-                },
-                {
-                  title: "Acceso a las grabaciones de todas las sesiones",
-                  benefit: "Para avanzar a tu ritmo y volver a los contenidos cuando lo necesites.",
-                },
-                {
-                  title: "Tu Mapa de Comportamientos Automáticos",
-                  benefit: "Para llevarte una visión clara de los comportamientos que hoy están presentes en tu vida y de aquellos que te gustaría comenzar a transformar.",
-                },
-                {
-                  title: "Método de Observación Consciente",
-                  benefit: "Para que puedas seguir utilizándolo después de Despierta cada vez que necesites detenerte, observar y recuperar claridad.",
-                },
+                "Qué comportamientos están presentes hoy en tu vida.",
+                "Cuáles quieres seguir fortaleciendo porque siguen aportando valor.",
+                "Cuáles te gustaría comenzar a transformar porque ya no están al servicio de quien eres hoy.",
+                "Dónde existen oportunidades para recuperar mayor margen de elección en tu día a día.",
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <span className="text-[#e8a0b0] font-black mt-0.5 shrink-0">✦</span>
-                  <div>
-                    <p className="text-slate-900 font-black text-sm md:text-base mb-1">{item.title}</p>
-                    <p className="text-slate-400 text-sm leading-relaxed">{item.benefit}</p>
-                  </div>
+                <div key={i} className="flex items-start gap-3 bg-rose-50 rounded-xl px-4 py-3 border border-rose-100">
+                  <span className="text-[#7D1F3B] font-black mt-0.5 shrink-0">✦</span>
+                  <p className="text-slate-700 text-sm md:text-base leading-relaxed">{item}</p>
                 </div>
               ))}
             </div>
           </div>
+        </div>
+      </section>
 
+      {/* ── LO QUE INCLUYE ── */}
+      <section className="py-14 bg-slate-50 border-y border-slate-100">
+        <div className="container mx-auto px-6 max-w-2xl">
+          <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-8 text-center">
+            Lo que incluye Despierta
+          </p>
+          <div className="space-y-6">
+            {[
+              {
+                title: "3 sesiones grupales en vivo",
+                benefit: "Para ayudarte a avanzar semana a semana con una guía clara y un espacio para profundizar lo que vas descubriendo.",
+              },
+              {
+                title: "Guías de observación y reflexión",
+                benefit: "Para saber exactamente dónde poner tu atención, sin tener que inventar el proceso por tu cuenta.",
+              },
+              {
+                title: "Comunidad privada de acompañamiento",
+                benefit: "Para compartir la experiencia con otras mujeres que están recorriendo el mismo camino y sentirte acompañada durante el proceso.",
+              },
+              {
+                title: "Acceso a las grabaciones de todas las sesiones",
+                benefit: "Para avanzar a tu ritmo y volver a los contenidos cuando lo necesites.",
+              },
+              {
+                title: "Tu Mapa de Comportamientos Automáticos",
+                benefit: "Para llevarte una visión clara de los comportamientos que hoy están presentes en tu vida y de aquellos que te gustaría comenzar a transformar.",
+              },
+              {
+                title: "Método de Observación Consciente",
+                benefit: "Para que puedas seguir utilizándolo después de Despierta cada vez que necesites detenerte, observar y recuperar claridad.",
+              },
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-4 bg-white rounded-2xl p-5 border border-slate-100 shadow-sm">
+                <span className="text-[#7D1F3B] font-black mt-0.5 shrink-0 text-lg">✦</span>
+                <div>
+                  <p className="text-slate-900 font-black text-sm md:text-base mb-1">{item.title}</p>
+                  <p className="text-slate-500 text-sm leading-relaxed">{item.benefit}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
