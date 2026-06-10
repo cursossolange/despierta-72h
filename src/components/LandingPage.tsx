@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, ShieldCheck, Calendar } from "lucide-react";
+import { ArrowRight, ShieldCheck, Calendar, Clock } from "lucide-react";
 
 const CTAButton = ({
   label = "Quiero reservar mi lugar",
@@ -74,8 +74,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="text-lg md:text-xl font-medium leading-relaxed mb-6 max-w-2xl mx-auto"
-            style={{ color: '#444' }}
+            className="text-lg md:text-xl font-black leading-relaxed mb-6 max-w-2xl mx-auto"
+            style={{ color: '#1F1F1F' }}
           >
             ¿Y si algunas de las cosas que haces cada día ya no fueran una elección, sino una costumbre?
           </motion.p>
@@ -84,20 +84,24 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="text-base md:text-lg leading-relaxed mb-4 max-w-xl mx-auto"
+            className="text-base md:text-lg leading-relaxed mb-6 max-w-2xl mx-auto"
             style={{ color: '#555' }}
           >
-            En solo 3 semanas identificarás los 3 comportamientos automáticos que hoy tienen el mayor costo para ti. Y tendrás mayor claridad para decidir qué quieres seguir manteniendo y qué ya no está al servicio de quien eres hoy.
+            Identificarás los 3 comportamientos automáticos que hoy tienen el mayor costo para tu bienestar, tu energía y la vida que quieres construir.
           </motion.p>
 
+          {/* URGENCIA */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.45 }}
-            className="flex items-center justify-center gap-2 mb-6"
+            className="inline-flex items-center gap-3 bg-[#7D1F3B] text-white rounded-2xl px-6 py-3 mb-6"
           >
-            <Calendar className="w-4 h-4 text-[#7D1F3B]" />
-            <span className="text-[#7D1F3B] font-black text-sm md:text-base tracking-wide">Inicio: 3 de agosto</span>
+            <Calendar className="w-5 h-5 shrink-0" />
+            <div className="text-left">
+              <p className="font-black text-base md:text-lg leading-none">Inicio: 3 de agosto</p>
+              <p className="text-xs opacity-80 mt-0.5">Cupos limitados · Primera edición</p>
+            </div>
           </motion.div>
 
           <motion.div
@@ -131,16 +135,27 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             <div className="relative aspect-[16/9]">
               <img
-                src="/despierta72h-banner.jpg.png"
+                src="/banner-despierta.png"
                 alt="Despierta"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
             </div>
           </motion.div>
 
         </div>
       </header>
+
+      {/* ── COSTO DE INACCIÓN ── */}
+      <section className="py-14 bg-[#7D1F3B] text-white">
+        <div className="container mx-auto px-6 max-w-3xl text-center">
+          <p className="text-lg md:text-2xl font-black leading-relaxed mb-3">
+            Cada semana que pasa sin verlo,<br className="hidden md:block" /> el patrón se vuelve más difícil de interrumpir.
+          </p>
+          <p className="text-sm md:text-base opacity-80 max-w-xl mx-auto">
+            Tu cerebro automatiza lo que repite. No es falta de voluntad. Es el mecanismo. Y cuanto más tiempo pasa, más profundo queda.
+          </p>
+        </div>
+      </section>
 
       {/* ── AGITACIÓN ── */}
       <section className="py-16 bg-white">
@@ -168,34 +183,20 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       <section className="py-16 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-10">
-            <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-3">El resultado</p>
-            <h2 className="text-2xl md:text-4xl font-black leading-tight mb-4" style={{ color: '#1F1F1F' }}>
+            <p className="text-[#7D1F3B] text-sm font-black uppercase tracking-widest mb-3">El resultado</p>
+            <h2 className="text-3xl md:text-5xl font-black leading-tight mb-4" style={{ color: '#1F1F1F' }}>
               Tus 3 comportamientos automáticos<br className="hidden md:block" /> prioritarios a transformar
             </h2>
-            <p className="text-base md:text-lg leading-relaxed max-w-xl mx-auto" style={{ color: '#555' }}>
+            <p className="text-base md:text-lg leading-relaxed max-w-xl mx-auto mb-2" style={{ color: '#555' }}>
               Identificarás los 3 comportamientos que hoy tienen el mayor costo para tu bienestar, tu energía o la vida que quieres construir.
             </p>
-            <p className="text-sm md:text-base mt-3 max-w-lg mx-auto" style={{ color: '#777' }}>
+            <p className="text-sm md:text-base max-w-lg mx-auto" style={{ color: '#777' }}>
               Porque no todo necesita cambiar. Aprenderás a reconocer dónde vale la pena empezar.
             </p>
           </div>
 
-          {/* CLARIDAD ELECCIÓN DIRECCIÓN */}
-          <div className="grid md:grid-cols-3 gap-4 mb-10">
-            {[
-              { label: "Claridad", desc: "Sobre qué está influyendo hoy en tu forma de actuar." },
-              { label: "Elección", desc: "Sobre qué quieres seguir manteniendo y qué ya no." },
-              { label: "Dirección", desc: "Sobre dónde vale la pena enfocar tu energía primero." },
-            ].map((item, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 border border-[#E8D5DA] text-center shadow-sm">
-                <p className="text-[#7D1F3B] font-black text-xl mb-2">{item.label}</p>
-                <p className="text-sm leading-relaxed" style={{ color: '#666' }}>{item.desc}</p>
-              </div>
-            ))}
-          </div>
-
           {/* MAPA */}
-          <div className="bg-white rounded-2xl p-6 md:p-8 border-2 border-[#7D1F3B]/20 shadow-sm">
+          <div className="bg-white rounded-2xl p-6 md:p-8 border-2 border-[#7D1F3B]/20 shadow-sm max-w-2xl mx-auto">
             <div className="flex items-start gap-3 mb-4">
               <span className="text-2xl">📍</span>
               <div>
@@ -224,7 +225,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       </section>
 
       {/* ── BASE METODOLÓGICA ── */}
-      <section className="py-12 bg-white border-y border-slate-100">
+      <section className="py-12 bg-[#F5F0EE] border-y border-[#E8D5DA]">
         <div className="container mx-auto px-6 max-w-3xl text-center">
           <p className="font-black text-xl md:text-2xl mb-4" style={{ color: '#1F1F1F' }}>
             Antes de cambiar algo, necesitas verlo.
@@ -235,10 +236,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         </div>
       </section>
 
-      {/* ── LA SOLUCIÓN ── */}
+      {/* ── LAS 3 SEMANAS ── */}
       <section className="py-16 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-4xl text-center">
-          <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-4">La solución</p>
           <h2 className="text-2xl md:text-4xl font-black leading-tight mb-4" style={{ color: '#1F1F1F' }}>
             Despierta no es un curso.<br />Es una experiencia de observación guiada.
           </h2>
@@ -246,7 +246,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             Durante 3 semanas observarás tu experiencia cotidiana con un foco distinto cada semana, acompañada durante todo el proceso.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-4 text-left">
+          <div className="grid md:grid-cols-3 gap-4 text-left mb-8">
             {[
               {
                 num: "01",
@@ -275,6 +275,17 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               </div>
             ))}
           </div>
+
+          {/* TIEMPO REQUERIDO */}
+          <div className="bg-white rounded-2xl p-5 border border-[#E8D5DA] flex flex-col md:flex-row items-center justify-center gap-6 max-w-2xl mx-auto">
+            <Clock className="w-8 h-8 text-[#7D1F3B] shrink-0" />
+            <div className="text-left">
+              <p className="font-black text-sm md:text-base mb-1" style={{ color: '#1F1F1F' }}>¿Cuánto tiempo necesitas dedicarle?</p>
+              <p className="text-sm leading-relaxed" style={{ color: '#666' }}>
+                <strong>1 hora a la semana</strong> en la sesión grupal en vivo + <strong>2 horas</strong> de observación y reflexión a tu ritmo.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -284,30 +295,12 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-8 text-center">Lo que incluye Despierta</p>
           <div className="space-y-3">
             {[
-              {
-                title: "3 sesiones grupales en vivo",
-                benefit: "Para acompañarte paso a paso durante todo el proceso.",
-              },
-              {
-                title: "Guías de observación y reflexión",
-                benefit: "Para ayudarte a saber exactamente qué observar cada semana.",
-              },
-              {
-                title: "Comunidad privada de acompañamiento",
-                benefit: "Para compartir el proceso con otras mujeres que están recorriendo el mismo camino.",
-              },
-              {
-                title: "Grabaciones de todas las sesiones",
-                benefit: "Para avanzar a tu ritmo y revisar el contenido cuando lo necesites.",
-              },
-              {
-                title: "Mapa de Automatismos e Impactos",
-                benefit: "Para visualizar con claridad aquello que hoy está influyendo en tu vida cotidiana.",
-              },
-              {
-                title: "Identificación de tus 3 comportamientos automáticos prioritarios",
-                benefit: "Para terminar el proceso sabiendo exactamente dónde vale la pena enfocar tu energía primero.",
-              },
+              { title: "3 sesiones grupales en vivo", benefit: "Para acompañarte paso a paso durante todo el proceso." },
+              { title: "Guías de observación y reflexión", benefit: "Para ayudarte a saber exactamente qué observar cada semana." },
+              { title: "Comunidad privada de acompañamiento", benefit: "Para compartir el proceso con otras mujeres que están recorriendo el mismo camino." },
+              { title: "Grabaciones de todas las sesiones", benefit: "Para avanzar a tu ritmo y revisar el contenido cuando lo necesites." },
+              { title: "Mapa de Automatismos e Impactos", benefit: "Para visualizar con claridad aquello que hoy está influyendo en tu vida cotidiana." },
+              { title: "Identificación de tus 3 comportamientos automáticos prioritarios", benefit: "Para terminar el proceso sabiendo exactamente dónde vale la pena enfocar tu energía primero." },
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-4 rounded-xl px-4 py-4 border border-slate-100">
                 <span className="text-[#7D1F3B] font-black shrink-0 mt-0.5">✦</span>
@@ -325,22 +318,14 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       <section className="py-16 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-3xl">
           <div className="bg-white rounded-[2rem] border border-slate-100 p-8 md:p-12 shadow-sm">
-            <p className="text-xs font-black text-[#7D1F3B] uppercase tracking-widest mb-6 text-center">
-              Quién está detrás de esto
-            </p>
-            <img
-              src="/bienvenida-solange.png"
-              alt="Solange Henríquez"
-              className="w-full rounded-[1.5rem] mb-6"
-            />
+            <p className="text-xs font-black text-[#7D1F3B] uppercase tracking-widest mb-6 text-center">Quién está detrás de esto</p>
+            <img src="/bienvenida-solange.png" alt="Solange Henríquez" className="w-full rounded-[1.5rem] mb-6" />
             <div className="bg-[#F7F7F7] rounded-xl px-5 py-4 mb-6 text-center border border-slate-100">
               <p className="text-sm font-semibold leading-relaxed" style={{ color: '#7D1F3B' }}>
                 Certificada en Coaching Basado en Neurociencias por el NeuroLeadership Institute (acreditado por ICF). Más de 20 años liderando operaciones comerciales y equipos en empresas de retail y servicios.
               </p>
             </div>
-            <h2 className="text-2xl md:text-3xl font-semibold leading-tight text-center mb-6" style={{ color: '#1F1F1F' }}>
-              Hola, soy Solange.
-            </h2>
+            <h2 className="text-2xl md:text-3xl font-semibold leading-tight text-center mb-6" style={{ color: '#1F1F1F' }}>Hola, soy Solange.</h2>
             <div className="text-[15px] md:text-base leading-[1.9] space-y-4" style={{ color: '#444' }}>
               <p>Durante más de 20 años lideré operaciones comerciales en una industria de alta exigencia y cambio constante.</p>
               <p>En ese camino empecé a hacerme una pregunta que todavía me acompaña:</p>
@@ -355,23 +340,17 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       {/* ── PRECIO ── */}
       <section className="py-16 bg-white border-y border-slate-100">
-        <div className="container mx-auto px-6 max-w-2xl text-center">
+        <div className="container mx-auto px-6 max-w-xl text-center">
           <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-3">Primera edición</p>
-          <h2 className="text-2xl md:text-3xl font-black mb-2" style={{ color: '#1F1F1F' }}>
-            Despierta · Inicio 3 de agosto
-          </h2>
-          <p className="text-5xl md:text-6xl font-black text-[#7D1F3B] mb-3">
-            $250.000
-          </p>
+          <h2 className="text-2xl md:text-3xl font-black mb-2" style={{ color: '#1F1F1F' }}>Despierta · Inicio 3 de agosto</h2>
+          <p className="text-5xl md:text-6xl font-black text-[#7D1F3B] mb-1">$250.000</p>
           <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#999' }}>CLP</p>
           <p className="text-sm md:text-base leading-relaxed max-w-md mx-auto mb-8" style={{ color: '#666' }}>
             Este es el precio de lanzamiento de la primera edición. Una vez cerrado el grupo, el valor aumentará para futuras versiones del programa.
           </p>
           <div className="flex flex-col items-center gap-3">
             <CTAButton label="Quiero reservar mi lugar" size="lg" />
-            <p className="text-sm" style={{ color: '#888' }}>
-              $250.000 CLP · Inicio 3 de agosto · Cupos limitados · Garantía 7 días
-            </p>
+            <p className="text-sm" style={{ color: '#888' }}>$250.000 CLP · Inicio 3 de agosto · Cupos limitados · Garantía 7 días</p>
           </div>
         </div>
       </section>
@@ -379,14 +358,12 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       {/* ── PREGUNTAS FRECUENTES ── */}
       <section className="py-16 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-3xl">
-          <h2 className="text-2xl md:text-3xl font-black text-center mb-10" style={{ color: '#1F1F1F' }}>
-            Si estás pensando esto…
-          </h2>
+          <h2 className="text-2xl md:text-3xl font-black text-center mb-10" style={{ color: '#1F1F1F' }}>Si estás pensando esto…</h2>
           <div className="space-y-4">
             {[
               {
                 q: '"No tengo tiempo para esto."',
-                a: "Despierta no requiere reorganizar tu rutina. La observación ocurre en tu día a día, en los mismos momentos que ya estás viviendo. Lo único que cambia es la atención que les prestas.",
+                a: "Despierta requiere 1 hora a la semana en la sesión grupal en vivo, más 2 horas de observación y reflexión a tu propio ritmo. En total, menos de 3 horas semanales — en momentos que ya estás viviendo.",
               },
               {
                 q: '"Ya intenté cambiar cosas y siempre vuelvo al mismo lugar."',
@@ -395,10 +372,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               {
                 q: '"¿Esto es terapia o coaching?"',
                 a: "No. Es una experiencia de observación guiada basada en principios de neurociencia. No trabajamos el pasado ni buscamos resolver problemas específicos. Trabajamos la capacidad de observar tu experiencia cotidiana con mayor claridad.",
-              },
-              {
-                q: '"¿Vale $250.000?"',
-                a: "La mayoría de los cursos entregan información. Despierta está diseñado para ayudarte a reconocer comportamientos que hoy pasan desapercibidos y construir una comprensión más clara de cómo estás funcionando. Porque hay cosas que nadie puede ver por ti.",
               },
               {
                 q: '"¿Qué pasa si no puedo asistir a una sesión en vivo?"',
@@ -420,7 +393,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
 
       {/* ── GARANTÍA ── */}
       <section className="py-12 bg-[#F5F4F3] border-y border-slate-100">
-        <div className="container mx-auto px-6 max-w-2xl text-center">
+        <div className="container mx-auto px-6 max-w-xl text-center">
           <div className="flex justify-center mb-4">
             <ShieldCheck className="w-10 h-10 text-[#7D1F3B]" />
           </div>
@@ -445,18 +418,11 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </p>
           <div className="flex flex-col items-center gap-3 mb-6">
             <CTAButton label="Quiero reservar mi lugar" size="lg" />
-            <p className="text-sm" style={{ color: '#888' }}>
-              $250.000 CLP · Inicio 3 de agosto · Cupos limitados · Garantía 7 días
-            </p>
+            <p className="text-sm" style={{ color: '#888' }}>$250.000 CLP · Inicio 3 de agosto · Cupos limitados · Garantía 7 días</p>
           </div>
           <div className="mt-6">
             <p className="text-sm mb-1" style={{ color: '#aaa' }}>¿Tienes dudas antes de empezar?</p>
-            <a
-              href="https://wa.me/56990991901"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#7D1F3B] font-bold text-sm hover:underline"
-            >
+            <a href="https://wa.me/56990991901" target="_blank" rel="noopener noreferrer" className="text-[#7D1F3B] font-bold text-sm hover:underline">
               Conversemos por WhatsApp →
             </a>
           </div>
