@@ -36,7 +36,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       {/* ── BARRA URGENCIA ── */}
       <div className="bg-[#7D1F3B] text-white text-center py-2.5 px-4">
         <p className="text-xs md:text-sm font-semibold tracking-wide">
-          ✦ Primera edición · Precio de lanzamiento $150.000 CLP · Cupos limitados
+          ✦ Primera edición · Precio de lanzamiento $197.000 CLP · Cupos limitados
         </p>
       </div>
 
@@ -93,7 +93,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             <CTAButton label="Quiero reservar mi lugar" size="lg" />
             <p className="text-sm text-slate-500">
-              $150.000 CLP · Inicio 3 de agosto · Cupos limitados · Garantía 7 días
+              $197.000 CLP · Inicio 3 de agosto · Cupos limitados · Garantía 7 días
             </p>
           </motion.div>
 
@@ -330,8 +330,11 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-2">
             Despierta · Inicio 3 de agosto
           </h2>
-          <p className="text-4xl md:text-5xl font-black text-[#7D1F3B] mb-4">
-            $150.000 CLP
+          <p className="text-4xl md:text-5xl font-black text-[#7D1F3B] mb-1">
+            $197.000 CLP
+          </p>
+          <p className="text-slate-400 text-sm line-through mb-4">
+            Precio normal $297.000 CLP
           </p>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-lg mx-auto mb-8">
             Este es el precio de lanzamiento de la primera edición. Una vez cerrado el grupo, el precio sube para la siguiente edición.
@@ -339,7 +342,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <div className="flex flex-col items-center gap-3">
             <CTAButton label="Quiero reservar mi lugar" size="lg" />
             <p className="text-sm text-slate-500">
-              $150.000 CLP · Inicio 3 de agosto · Cupos limitados · Garantía 7 días
+              $197.000 CLP · Inicio 3 de agosto · Cupos limitados · Garantía 7 días
             </p>
           </div>
         </div>
@@ -366,7 +369,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                 a: "No. Es una experiencia de observación guiada basada en principios de neurociencia. No trabajamos el pasado ni buscamos resolver problemas específicos. Trabajamos la capacidad de observar tu experiencia cotidiana con mayor claridad.",
               },
               {
-                q: '"¿Vale $150.000?"',
+                q: '"¿Vale $197.000?"',
                 a: "La mayoría de los cursos entregan información. Despierta está diseñado para ayudarte a reconocer comportamientos que hoy pasan desapercibidos y construir una comprensión más clara de cómo estás funcionando. Porque hay cosas que nadie puede observar por ti.",
               },
               {
@@ -421,7 +424,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <div className="flex flex-col items-center gap-3 mb-6">
             <CTAButton label="Quiero reservar mi lugar" size="lg" />
             <p className="text-sm text-slate-500">
-              $150.000 CLP · Inicio 3 de agosto · Cupos limitados · Garantía 7 días
+              $197.000 CLP · Inicio 3 de agosto · Cupos limitados · Garantía 7 días
             </p>
           </div>
           <div className="mt-6">
