@@ -238,8 +238,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </div>
 
           {/* LO QUE INCLUYE */}
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 text-left">
-            <p className="text-[#e8a0b0] text-xs font-black uppercase tracking-widest mb-6">
+          <div className="bg-white rounded-2xl p-6 md:p-8 text-left">
+            <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-6">
               Lo que incluye Despierta
             </p>
             <div className="space-y-5">
@@ -272,7 +272,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                 <div key={i} className="flex items-start gap-3">
                   <span className="text-[#e8a0b0] font-black mt-0.5 shrink-0">✦</span>
                   <div>
-                    <p className="text-white font-black text-sm md:text-base mb-1">{item.title}</p>
+                    <p className="text-slate-900 font-black text-sm md:text-base mb-1">{item.title}</p>
                     <p className="text-slate-400 text-sm leading-relaxed">{item.benefit}</p>
                   </div>
                 </div>
