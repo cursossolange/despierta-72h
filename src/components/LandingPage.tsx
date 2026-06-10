@@ -34,7 +34,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       {/* ── BARRA ── */}
       <div className="bg-[#7D1F3B] text-white text-center py-2.5 px-4">
         <p className="text-xs md:text-sm font-semibold tracking-wide">
-          ✦ Primera edición · Inicio 3 de agosto · Cupos limitados
+          ✦ Primera edición · Inicio 4 de agosto · Cupos limitados
         </p>
       </div>
 
@@ -99,8 +99,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             <Calendar className="w-5 h-5 shrink-0" />
             <div className="text-left">
-              <p className="font-black text-base md:text-lg leading-none">Inicio: 3 de agosto</p>
+              <p className="font-black text-base md:text-lg leading-none">Inicio: 4 de agosto</p>
               <p className="text-xs opacity-80 mt-0.5">Cupos limitados · Primera edición</p>
+            <p className="text-xs opacity-70 mt-0.5">Sesiones grupales en vivo los martes a las 19:00 hrs (Chile)</p>
             </div>
           </motion.div>
 
@@ -295,18 +296,19 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-8 text-center">Lo que incluye Despierta</p>
           <div className="space-y-3">
             {[
-              { title: "3 sesiones grupales en vivo", benefit: "Para acompañarte paso a paso durante todo el proceso." },
-              { title: "Guías de observación y reflexión", benefit: "Para ayudarte a saber exactamente qué observar cada semana." },
-              { title: "Comunidad privada de acompañamiento", benefit: "Para compartir el proceso con otras mujeres que están recorriendo el mismo camino." },
-              { title: "Grabaciones de todas las sesiones", benefit: "Para avanzar a tu ritmo y revisar el contenido cuando lo necesites." },
-              { title: "Mapa de Automatismos e Impactos", benefit: "Para visualizar con claridad aquello que hoy está influyendo en tu vida cotidiana." },
-              { title: "Identificación de tus 3 comportamientos automáticos prioritarios", benefit: "Para terminar el proceso sabiendo exactamente dónde vale la pena enfocar tu energía primero." },
+              { title: "3 sesiones grupales en vivo", benefit: "Para acompañarte paso a paso durante todo el proceso.", extra: "Martes 4, 11 y 18 de agosto · 19:00 hrs (Chile) — Si no puedes asistir, todas las sesiones quedarán grabadas." },
+              { title: "Guías de observación y reflexión", benefit: "Para ayudarte a saber exactamente qué observar cada semana.", extra: "" },
+              { title: "Comunidad privada de acompañamiento", benefit: "Para compartir el proceso con otras mujeres que están recorriendo el mismo camino.", extra: "" },
+              { title: "Grabaciones de todas las sesiones", benefit: "Para avanzar a tu ritmo y revisar el contenido cuando lo necesites.", extra: "" },
+              { title: "Mapa de Automatismos e Impactos", benefit: "Para visualizar con claridad aquello que hoy está influyendo en tu vida cotidiana.", extra: "" },
+              { title: "Identificación de tus 3 comportamientos automáticos prioritarios", benefit: "Para terminar el proceso sabiendo exactamente dónde vale la pena enfocar tu energía primero.", extra: "" },
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-4 rounded-xl px-4 py-4 border border-slate-100">
                 <span className="text-[#7D1F3B] font-black shrink-0 mt-0.5">✦</span>
                 <div>
                   <p className="font-black text-sm md:text-base" style={{ color: '#1F1F1F' }}>{item.title}</p>
                   <p className="text-sm leading-relaxed mt-0.5" style={{ color: '#777' }}>{item.benefit}</p>
+                  {item.extra && <p className="text-xs leading-relaxed mt-1 text-[#7D1F3B] font-semibold">{item.extra}</p>}
                 </div>
               </div>
             ))}
@@ -342,7 +344,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       <section className="py-16 bg-white border-y border-slate-100">
         <div className="container mx-auto px-6 max-w-xl text-center">
           <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-3">Primera edición</p>
-          <h2 className="text-2xl md:text-3xl font-black mb-2" style={{ color: '#1F1F1F' }}>Despierta · Inicio 3 de agosto</h2>
+          <h2 className="text-2xl md:text-3xl font-black mb-2" style={{ color: '#1F1F1F' }}>Despierta · Inicio 4 de agosto</h2>
           <p className="text-5xl md:text-6xl font-black text-[#7D1F3B] mb-1">$250.000</p>
           <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#999' }}>CLP</p>
           <p className="text-sm md:text-base leading-relaxed max-w-md mx-auto mb-8" style={{ color: '#666' }}>
@@ -350,7 +352,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </p>
           <div className="flex flex-col items-center gap-3">
             <CTAButton label="Quiero reservar mi lugar" size="lg" />
-            <p className="text-sm" style={{ color: '#888' }}>$250.000 CLP · Inicio 3 de agosto · Cupos limitados · Garantía 7 días</p>
+            <p className="text-sm" style={{ color: '#888' }}>$250.000 CLP · Inicio 4 de agosto · Cupos limitados · Garantía 7 días</p>
           </div>
         </div>
       </section>
@@ -418,7 +420,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </p>
           <div className="flex flex-col items-center gap-3 mb-6">
             <CTAButton label="Quiero reservar mi lugar" size="lg" />
-            <p className="text-sm" style={{ color: '#888' }}>$250.000 CLP · Inicio 3 de agosto · Cupos limitados · Garantía 7 días</p>
+            <p className="text-sm" style={{ color: '#888' }}>$250.000 CLP · Inicio 4 de agosto · Cupos limitados · Garantía 7 días</p>
           </div>
           <div className="mt-6">
             <p className="text-sm mb-1" style={{ color: '#aaa' }}>¿Tienes dudas antes de empezar?</p>
