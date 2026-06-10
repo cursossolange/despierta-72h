@@ -71,7 +71,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-8 max-w-2xl mx-auto"
           >
-            A lo largo de 3 semanas harás visibles comportamientos que hoy pasan desapercibidos, para decidir cuáles quieres seguir cultivando y cuáles te gustaría empezar a transformar.
+            Durante 3 semanas harás visibles comportamientos que hoy pasan desapercibidos y construirás claridad sobre cuáles siguen aportando valor a tu vida y cuáles ya no están al servicio de quien eres hoy.
           </motion.p>
 
           <motion.div
@@ -143,20 +143,17 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         </div>
       </section>
 
-      {/* ── PUENTE METODOLÓGICO ── */}
+      {/* ── BASE METODOLÓGICA ── */}
       <section className="py-10 bg-[#7D1F3B]/5 border-y border-[#7D1F3B]/10">
         <div className="container mx-auto px-6 max-w-2xl text-center">
-          <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-4">
-            La base detrás de esto
-          </p>
-          <p className="text-slate-900 text-xl md:text-2xl font-black leading-tight mb-4">
+          <p className="text-slate-900 text-xl md:text-2xl font-black leading-tight mb-6">
             Antes de cambiar algo, necesitas verlo.
           </p>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-xl mx-auto mb-3">
             Nuestro cerebro automatiza gran parte de lo que hacemos cada día para ahorrar energía. Por eso muchos comportamientos dejan de parecernos una elección y se convierten simplemente en "la forma en que hacemos las cosas".
           </p>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-xl mx-auto">
-            Despierta está construido sobre un método de observación consciente que te ayuda a bajar el ruido, dirigir tu atención hacia tu experiencia cotidiana y hacer visibles comportamientos que hoy pasan desapercibidos. Este método incorpora principios respaldados por la neurociencia sobre atención, automatización y conciencia de la propia experiencia.
+            Despierta está construido sobre un Método de Observación Consciente que te ayuda a bajar el ruido, dirigir tu atención hacia tu experiencia cotidiana y hacer visibles comportamientos que hoy pasan desapercibidos. Este método incorpora principios respaldados por la neurociencia sobre atención, automatización y conciencia de la propia experiencia.
           </p>
         </div>
       </section>
@@ -218,20 +215,29 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             ))}
           </div>
 
+          {/* EL RESULTADO */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 text-left mb-6">
-            <p className="text-[#e8a0b0] text-xs font-black uppercase tracking-widest mb-4">
+            <p className="text-[#e8a0b0] text-xs font-black uppercase tracking-widest mb-2">
               El resultado
             </p>
-            <p className="text-white text-base md:text-lg leading-relaxed mb-4">
-              Al finalizar habrás construido tu propio <strong>Mapa de Comportamientos Automáticos</strong>, identificando con mayor claridad:
+            <p className="text-white font-black text-lg md:text-xl mb-1">
+              Lo que te llevarás al finalizar
+            </p>
+            <p className="text-[#e8a0b0] font-black text-base mb-4">
+              Tu Mapa de Comportamientos Automáticos
+            </p>
+            <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-4">
+              Una representación clara de los comportamientos que hoy están influyendo en tu vida cotidiana. Con mayor claridad sobre:
             </p>
             <div className="space-y-2 text-slate-300 text-sm md:text-base">
-              <p>✦ Los comportamientos que hoy están presentes en tu vida cotidiana.</p>
-              <p>✦ Aquellos que quieres seguir fortaleciendo porque siguen aportando valor a tu vida.</p>
-              <p>✦ Aquellos que te gustaría comenzar a transformar porque ya no están al servicio de la persona que eres hoy.</p>
+              <p>✦ Qué comportamientos están presentes hoy en tu vida.</p>
+              <p>✦ Cuáles quieres seguir fortaleciendo porque siguen aportando valor.</p>
+              <p>✦ Cuáles te gustaría comenzar a transformar porque ya no están al servicio de quien eres hoy.</p>
+              <p>✦ Dónde existen oportunidades para recuperar mayor margen de elección en tu día a día.</p>
             </div>
           </div>
 
+          {/* LO QUE INCLUYE */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 text-left">
             <p className="text-[#e8a0b0] text-xs font-black uppercase tracking-widest mb-6">
               Lo que incluye Despierta
@@ -256,7 +262,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                 },
                 {
                   title: "Tu Mapa de Comportamientos Automáticos",
-                  benefit: "Para llevarte una visión clara de los comportamientos que hoy están presentes en tu vida, cuáles quieres seguir cultivando y cuáles te gustaría comenzar a transformar.",
+                  benefit: "Para llevarte una visión clara de los comportamientos que hoy están presentes en tu vida y de aquellos que te gustaría comenzar a transformar.",
                 },
                 {
                   title: "Método de Observación Consciente",
@@ -289,11 +295,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               alt="Solange Henríquez"
               className="w-full rounded-[1.5rem] mb-8"
             />
-            <div className="bg-[#7D1F3B]/5 border border-[#7D1F3B]/15 rounded-xl px-5 py-4 mb-6 text-center">
-              <p className="text-[#7D1F3B] text-sm font-semibold leading-relaxed">
-                Certificada en Coaching Basado en Neurociencias por el NeuroLeadership Institute (acreditado por ICF). Más de 20 años liderando operaciones comerciales y equipos en empresas de retail y servicios.
-              </p>
-            </div>
             <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 leading-tight text-center mb-6">
               Hola, soy Solange Henríquez.
             </h2>
@@ -302,19 +303,21 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                 Durante más de 20 años lideré operaciones comerciales en una industria de alta exigencia y cambio constante.
               </p>
               <p>
-                En ese camino empecé a interesarme por una pregunta que todavía me acompaña: ¿Cuánto de lo que hacemos cada día es realmente una elección y cuánto es simplemente algo que aprendimos a hacer hace años?
+                En ese camino empecé a hacerme una pregunta que todavía me acompaña: ¿Cuánto de lo que hacemos cada día es realmente una elección y cuánto es simplemente algo que aprendimos a hacer hace años?
               </p>
               <p>
                 Esa inquietud me llevó a formarme en Coaching Basado en Neurociencias y a profundizar en cómo nuestro cerebro automatiza gran parte de nuestros comportamientos.
               </p>
               <p>
-                Con el tiempo descubrí que muchas veces intentamos cambiar aquello que ni siquiera hemos aprendido a observar.
+                Con el tiempo descubrí algo simple: muchas veces intentamos cambiar aquello que todavía no hemos aprendido a observar.
               </p>
               <p className="font-semibold text-slate-900">
-                Por eso creé Despierta. No como un espacio para decirte qué hacer. Sino como una experiencia guiada para ayudarte a mirar con más claridad aquello que hoy puede estar pasando desapercibido.
+                Por eso creé Despierta. No para decirte qué hacer. Sino para ayudarte a observar con mayor claridad aquello que hoy puede estar pasando desapercibido.
               </p>
-              <p>
-                Porque antes de decidir qué quieres transformar, necesitas ver qué está ocurriendo.
+            </div>
+            <div className="bg-[#7D1F3B]/5 border border-[#7D1F3B]/15 rounded-xl px-5 py-4 mt-6 text-center">
+              <p className="text-[#7D1F3B] text-sm font-semibold leading-relaxed">
+                Certificada en Coaching Basado en Neurociencias por NeuroLeadership Institute (acreditado por ICF). Más de 20 años liderando operaciones comerciales y equipos en empresas de retail y servicios.
               </p>
             </div>
           </div>
@@ -410,10 +413,10 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-2xl text-center">
           <h2 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight mb-4">
-            No se trata de cambiar quién eres.
+            No se trata de convertirte<br />en alguien diferente.
           </h2>
           <p className="text-xl md:text-2xl text-[#7D1F3B] font-bold mb-6">
-            Se trata de ver con más claridad qué quieres seguir llevando contigo.
+            Se trata de reconocer qué sigue estando al servicio de la vida que quieres construir.
           </p>
           <p className="text-slate-500 text-sm md:text-base mb-8 max-w-md mx-auto leading-relaxed">
             Despierta es una experiencia de observación guiada para ayudarte a reconocer qué comportamientos siguen aportando valor a tu vida y cuáles te gustaría comenzar a transformar.
