@@ -135,7 +135,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             <div className="relative aspect-[16/9]">
               <img
-                src="/banner-despierta.png"
+                src="/banner limpio despierta.png"
                 alt="Despierta"
                 className="w-full h-full object-cover"
               />
