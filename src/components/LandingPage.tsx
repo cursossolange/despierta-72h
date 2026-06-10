@@ -46,7 +46,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="text-[#7D1F3B] tracking-[0.3em] text-4xl md:text-6xl font-black uppercase mb-6"
+            className="text-[#7D1F3B] tracking-[0.4em] text-2xl md:text-3xl font-black uppercase mb-6"
           >
             Despierta
           </motion.p>
@@ -77,7 +77,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             className="text-lg md:text-xl font-medium leading-relaxed mb-6 max-w-2xl mx-auto"
             style={{ color: '#444' }}
           >
-            ¿Y si algunas de las cosas que haces cada día ya no fueran tu elección, sino una costumbre?
+            ¿Y si algunas de las cosas que haces cada día ya no fueran una elección, sino una costumbre?
           </motion.p>
 
           <motion.p
@@ -176,7 +176,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               Identificarás los 3 comportamientos que hoy tienen el mayor costo para tu bienestar, tu energía o la vida que quieres construir.
             </p>
             <p className="text-sm md:text-base mt-3 max-w-lg mx-auto" style={{ color: '#777' }}>
-              No porque todo tenga que cambiar. Sino porque aprenderás a reconocer dónde vale la pena empezar.
+              Porque no todo necesita cambiar. Aprenderás a reconocer dónde vale la pena empezar.
             </p>
           </div>
 
@@ -204,7 +204,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               </div>
             </div>
             <p className="text-sm md:text-base leading-relaxed mb-4" style={{ color: '#555' }}>
-              Una herramienta personal que te permitirá visualizar con claridad:
+              Una herramienta personal que transformará observaciones dispersas en una visión clara de lo que hoy está influyendo en tu vida.
             </p>
             <div className="space-y-2">
               {[
@@ -398,7 +398,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               },
               {
                 q: '"¿Vale $250.000?"',
-                a: "La mayoría de los cursos entregan información. Despierta está diseñado para ayudarte a reconocer comportamientos que hoy pasan desapercibidos y construir una comprensión más clara de cómo estás funcionando. Porque hay cosas que nadie puede observar por ti.",
+                a: "La mayoría de los cursos entregan información. Despierta está diseñado para ayudarte a reconocer comportamientos que hoy pasan desapercibidos y construir una comprensión más clara de cómo estás funcionando. Porque hay cosas que nadie puede ver por ti.",
               },
               {
                 q: '"¿Qué pasa si no puedo asistir a una sesión en vivo?"',
@@ -438,7 +438,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             No se trata de convertirte<br />en alguien diferente.
           </h2>
           <p className="text-xl md:text-2xl font-bold mb-6 text-[#7D1F3B]">
-            Se trata de reconocer qué sigue estando al servicio de la vida que quieres construir.
+            Se trata de reconocer qué quieres seguir llevando contigo y qué ya no.
           </p>
           <p className="text-sm md:text-base mb-8 max-w-md mx-auto leading-relaxed" style={{ color: '#666' }}>
             Despierta es una experiencia de observación guiada para ayudarte a reconocer qué comportamientos siguen aportando valor a tu vida y cuáles te gustaría comenzar a transformar.
