@@ -46,7 +46,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="text-[#7D1F3B] tracking-[0.25em] text-xs md:text-sm font-black uppercase mb-6"
+            className="text-[#7D1F3B] tracking-[0.4em] text-2xl md:text-3xl font-black uppercase mb-6"
           >
             Despierta
           </motion.p>
