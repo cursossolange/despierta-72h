@@ -124,7 +124,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             <CTAButton label="Quiero reservar mi lugar" size="lg" />
             <p className="text-sm" style={{ color: '#888' }}>
-              $250.000 CLP · Cupos limitados · Garantía 7 días
+              $180.000 CLP · Cupos limitados · Garantía 7 días
             </p>
           </motion.div>
 
@@ -136,7 +136,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             <div className="relative aspect-[16/9]">
               <img
-                src="/banner limpio despierta.png"
+               src="/banner limpio despierta (2).png"
                 alt="Despierta"
                 className="w-full h-full object-cover"
               />
@@ -169,7 +169,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               "Te ocupas de todo y rara vez te preguntas si realmente te corresponde hacerlo.",
               "Postergas lo que necesitas porque siempre aparece algo más urgente.",
               "Reaccionas de maneras que conoces demasiado bien, aunque después te gustaría haber actuado distinto.",
-              "Te has propuesto cambiar algo más de una vez, pero terminas volviendo a lo mismo.",
+              
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3 rounded-xl px-4 py-3 border border-[#F0E8EA] bg-[#FDF5F6]">
                 <span className="text-[#7D1F3B] font-black mt-0.5 shrink-0">✦</span>
@@ -283,7 +283,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             <div className="text-left">
               <p className="font-black text-sm md:text-base mb-1" style={{ color: '#1F1F1F' }}>¿Cuánto tiempo necesitas dedicarle?</p>
               <p className="text-sm leading-relaxed" style={{ color: '#666' }}>
-                <strong>1 hora a la semana</strong> en la sesión grupal en vivo + <strong>2 horas</strong> de observación y reflexión a tu ritmo.
+                <strong>Cada semana necesitarás 90 minutos </strong> en la sesión grupal en vivo + <strong>2 horas</strong> de observación y reflexión a tu ritmo.
               </p>
             </div>
           </div>
@@ -345,14 +345,14 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         <div className="container mx-auto px-6 max-w-xl text-center">
           <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-3">Primera edición</p>
           <h2 className="text-2xl md:text-3xl font-black mb-2" style={{ color: '#1F1F1F' }}>Despierta · Inicio 4 de agosto</h2>
-          <p className="text-5xl md:text-6xl font-black text-[#7D1F3B] mb-1">$250.000</p>
+          <p className="text-5xl md:text-6xl font-black text-[#7D1F3B] mb-1">$180.000</p>
           <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#999' }}>CLP</p>
           <p className="text-sm md:text-base leading-relaxed max-w-md mx-auto mb-8" style={{ color: '#666' }}>
             Este es el precio de lanzamiento de la primera edición. Una vez cerrado el grupo, el valor aumentará para futuras versiones del programa.
           </p>
           <div className="flex flex-col items-center gap-3">
             <CTAButton label="Quiero reservar mi lugar" size="lg" />
-            <p className="text-sm" style={{ color: '#888' }}>$250.000 CLP · Inicio 4 de agosto · Cupos limitados · Garantía 7 días</p>
+            <p className="text-sm" style={{ color: '#888' }}>$180.000 CLP · Inicio 4 de agosto · Cupos limitados · Garantía 7 días</p>
           </div>
         </div>
       </section>
@@ -420,7 +420,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </p>
           <div className="flex flex-col items-center gap-3 mb-6">
             <CTAButton label="Quiero reservar mi lugar" size="lg" />
-            <p className="text-sm" style={{ color: '#888' }}>$250.000 CLP · Inicio 4 de agosto · Cupos limitados · Garantía 7 días</p>
+            <p className="text-sm" style={{ color: '#888' }}>$180.000 CLP · Inicio 4 de agosto · Cupos limitados · Garantía 7 días</p>
           </div>
           <div className="mt-6">
             <p className="text-sm mb-1" style={{ color: '#aaa' }}>¿Tienes dudas antes de empezar?</p>
