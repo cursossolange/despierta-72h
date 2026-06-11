@@ -87,7 +87,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             className="text-base md:text-lg leading-relaxed mb-6 max-w-2xl mx-auto"
             style={{ color: '#555' }}
           >
-            Identificarás los 3 comportamientos automáticos que hoy tienen el mayor costo para tu bienestar, tu energía y la vida que quieres construir.
+            Identificarás los 3 comportamientos automáticos que hoy están influyendo más de lo que imaginas en tu bienestar, tu energía y la vida que quieres construir
           </motion.p>
 
           {/* URGENCIA */}
@@ -128,17 +128,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             </p>
           </motion.div>
 
-        <motion.div
-  initial={{ opacity: 0, scale: 0.97 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 1.2, delay: 0.3 }}
-  className="overflow-hidden rounded-[24px] border border-[#E8D5DA] bg-[#F7F2F0] py-10 px-8 mb-12"
->
-  <p className="text-[#7D1F3B] tracking-[0.25em] text-sm font-black uppercase mb-4 text-center">Despierta</p>
-  <div className="w-16 h-[2px] bg-[#7D1F3B] mx-auto mb-4" />
-  <p className="text-base md:text-lg text-center leading-relaxed" style={{ color: '#444' }}>Hay comportamientos que dejamos de cuestionar hace tiempo.</p>
-  <p className="text-base md:text-lg text-center font-semibold text-[#7D1F3B]">Pero no de sentir sus consecuencias.</p>
-</motion.div>
         </div>
       </header>
 
@@ -182,7 +171,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <div className="text-center mb-10">
             <p className="text-[#7D1F3B] text-sm font-black uppercase tracking-widest mb-3">El resultado</p>
             <h2 className="text-3xl md:text-5xl font-black leading-tight mb-4" style={{ color: '#1F1F1F' }}>
-              Tus 3 comportamientos automáticos<br className="hidden md:block" /> prioritarios a transformar
+              Tus 3 comportamientos automáticos<br className="hidden md:block" /> con mayor impacto hoy.
             </h2>
             <p className="text-base md:text-lg leading-relaxed max-w-xl mx-auto mb-2" style={{ color: '#555' }}>
               Identificarás los 3 comportamientos que hoy tienen el mayor costo para tu bienestar, tu energía o la vida que quieres construir.
@@ -261,7 +250,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
                 num: "03",
                 semana: "Semana 3",
                 title: "Elegir",
-                desc: "Reconocerás qué comportamientos quieres seguir manteniendo y cuáles te gustaría comenzar a transformar.",
+                desc: "Reconocerás qué comportamientos quieres seguir cultivando y cuáles ya no están al servicio de la vida que quieres construir.",
               },
             ].map((card, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm">
@@ -289,7 +278,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       {/* ── LO QUE INCLUYE ── */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-3xl">
-          <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-8 text-center">Lo que incluye Despierta</p>
+          <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-8 text-center"> Tui inscripción incluye</p>
           <div className="space-y-3">
             {[
               { title: "3 sesiones grupales en vivo", benefit: "Para acompañarte paso a paso durante todo el proceso.", extra: "Martes 4, 11 y 18 de agosto · 19:00 hrs (Chile) — Si no puedes asistir, todas las sesiones quedarán grabadas." },
