@@ -128,21 +128,17 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             </p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.97 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2, delay: 0.3 }}
-            className="overflow-hidden rounded-[24px] shadow-xl border border-slate-100"
-          >
-            <div className="relative aspect-[16/9]">
-              <img
-               src="/banner limpio despierta (2).png"
-                alt="Despierta"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </motion.div>
-
+        <motion.div
+  initial={{ opacity: 0, scale: 0.97 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1.2, delay: 0.3 }}
+  className="overflow-hidden rounded-[24px] border border-[#E8D5DA] bg-[#F7F2F0] py-10 px-8"
+>
+  <p className="text-[#7D1F3B] tracking-[0.25em] text-sm font-black uppercase mb-4 text-center">Despierta</p>
+  <div className="w-16 h-[2px] bg-[#7D1F3B] mx-auto mb-4" />
+  <p className="text-base md:text-lg text-center leading-relaxed" style={{ color: '#444' }}>Hay comportamientos que dejamos de cuestionar hace tiempo.</p>
+  <p className="text-base md:text-lg text-center font-semibold text-[#7D1F3B]">Pero no de sentir sus consecuencias.</p>
+</motion.div>
         </div>
       </header>
 
