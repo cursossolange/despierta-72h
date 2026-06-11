@@ -132,7 +132,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
   initial={{ opacity: 0, scale: 0.97 }}
   animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 1.2, delay: 0.3 }}
-  className="overflow-hidden rounded-[24px] border border-[#E8D5DA] bg-[#F7F2F0] py-10 px-8"
+  className="overflow-hidden rounded-[24px] border border-[#E8D5DA] bg-[#F7F2F0] py-10 px-8 mb-12"
 >
   <p className="text-[#7D1F3B] tracking-[0.25em] text-sm font-black uppercase mb-4 text-center">Despierta</p>
   <div className="w-16 h-[2px] bg-[#7D1F3B] mx-auto mb-4" />
