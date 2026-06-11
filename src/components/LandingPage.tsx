@@ -150,7 +150,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       <section className="py-14 bg-[#7D1F3B] text-white">
         <div className="container mx-auto px-6 max-w-3xl text-center">
           <p className="text-lg md:text-2xl font-black leading-relaxed mb-3">
-            Cada semana que pasa sin verlo,<br className="hidden md:block" /> el patrón se vuelve más difícil de interrumpir.
+            Cada semana que pasa sin verlo,<br className="hidden md:block" /> el comportamiento se vuelve más difícil de interrumpir.
           </p>
           <p className="text-sm md:text-base opacity-80 max-w-xl mx-auto">
             Tu cerebro automatiza lo que repite. No es falta de voluntad. Es el mecanismo. Y cuanto más tiempo pasa, más profundo queda.
@@ -180,7 +180,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         </div>
       </section>
 
-      {/* ── EL GRAN RESULTADO ── */}
+      {/* ── EL RESULTADO ── */}
       <section className="py-16 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-10">
