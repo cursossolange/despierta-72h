@@ -34,7 +34,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       {/* ── BARRA ── */}
       <div className="bg-[#7D1F3B] text-white text-center py-2.5 px-4">
         <p className="text-xs md:text-sm font-semibold tracking-wide">
-          ✦ Primera edición · Inicio 4 de agosto · Cupos limitados
+          ✦ Inicio 4 de agosto · Cupos limitados
         </p>
       </div>
 
@@ -100,7 +100,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             <Calendar className="w-5 h-5 shrink-0" />
             <div className="text-left">
               <p className="font-black text-base md:text-lg leading-none">Inicio: 4 de agosto</p>
-              <p className="text-xs opacity-80 mt-0.5">Cupos limitados · Primera edición</p>
+              <p className="text-xs opacity-80 mt-0.5">Cupos limitados </p>
             <p className="text-xs opacity-70 mt-0.5">Sesiones grupales en vivo los martes a las 19:00 hrs (Chile)</p>
             </div>
           </motion.div>
@@ -328,12 +328,12 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       {/* ── PRECIO ── */}
       <section className="py-16 bg-white border-y border-slate-100">
         <div className="container mx-auto px-6 max-w-xl text-center">
-          <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-3">Primera edición</p>
+          <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-3">
           <h2 className="text-2xl md:text-3xl font-black mb-2" style={{ color: '#1F1F1F' }}>Despierta · Inicio 4 de agosto</h2>
           <p className="text-5xl md:text-6xl font-black text-[#7D1F3B] mb-1">$180.000</p>
           <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#999' }}>CLP</p>
           <p className="text-sm md:text-base leading-relaxed max-w-md mx-auto mb-8" style={{ color: '#666' }}>
-            Este es el precio de lanzamiento de la primera edición. Una vez cerrado el grupo, el valor aumentará para futuras versiones del programa.
+            Este es el precio de lanzamiento. El valor aumentará para futuras versiones del programa.
           </p>
           <div className="flex flex-col items-center gap-3">
             <CTAButton label="Quiero reservar mi lugar" size="lg" />
