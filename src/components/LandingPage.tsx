@@ -174,7 +174,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         </div>
       </header>
       {/* ── COSTO DE INACCIÓN ── */}
-      <section className="py-14 bg-[#7D1F3B] text-white">
+      <section className="py-12 bg-[#7D1F3B] text-white">
         <div className="container mx-auto px-6 max-w-3xl text-center">
           <p className="text-lg md:text-2xl font-black leading-relaxed mb-3">
             Cada semana que pasa sin verlo,<br className="hidden md:block" /> el comportamiento se vuelve más difícil de interrumpir.
@@ -185,7 +185,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         </div>
       </section>
       {/* ── AGITACIÓN ── */}
-      <section className="py-16 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-6 max-w-3xl text-center">
           <h2 className="text-2xl md:text-3xl font-black leading-tight mb-10" style={{ color: '#1F1F1F' }}>
             Hay comportamientos que dejamos de cuestionar hace tiempo,<br className="hidden md:block" /> pero no de sentir sus consecuencias.
@@ -205,7 +205,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         </div>
       </section>
       {/* ── EL RESULTADO ── */}
-      <section className="py-16 bg-[#F7F7F7]">
+      <section className="py-12 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-10">
             <p className="font-black text-xl md:text-2xl mb-3" style={{ color: '#1F1F1F' }}>
@@ -254,7 +254,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         </div>
       </section>
       {/* ── LAS 3 SEMANAS ── */}
-      <section className="py-16 bg-[#F7F7F7]">
+      <section className="py-12 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-4xl text-center">
           <h2 className="text-2xl md:text-4xl font-black leading-tight mb-4" style={{ color: '#1F1F1F' }}>
             Despierta no es un curso.<br />Es una experiencia de observación guiada.
@@ -304,7 +304,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         </div>
       </section>
       {/* ── LO QUE INCLUYE ── */}
-      <section className="py-16 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-6 max-w-3xl">
           <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-8 text-center"> Tu inscripción incluye</p>
           <div className="space-y-3">
@@ -329,7 +329,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         </div>
       </section>
       {/* ── QUIÉN SOY ── */}
-      <section className="py-16 bg-[#F7F7F7]">
+      <section className="py-12 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-3xl">
           <div className="bg-white rounded-[2rem] border border-slate-100 p-8 md:p-12 shadow-sm">
             <p className="text-xs font-black text-[#7D1F3B] uppercase tracking-widest mb-6 text-center">Quién está detrás de esto</p>
@@ -352,7 +352,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         </div>
       </section>
       {/* ── TESTIMONIOS ── */}
-      <section className="py-16 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-6 max-w-3xl">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-black leading-tight mb-4" style={{ color: '#1F1F1F' }}>
@@ -384,7 +384,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         </div>
       </section>
       {/* ── PRECIO ── */}
-      <section className="py-16 bg-white border-y border-slate-100">
+      <section className="py-12 bg-white border-y border-slate-100">
         <div className="container mx-auto px-6 max-w-xl text-center">
           <h2 className="text-2xl md:text-3xl font-black mb-2" style={{ color: '#1F1F1F' }}>Despierta · Inicio 4 de agosto</h2>
           <p className="text-5xl md:text-6xl font-black text-[#7D1F3B] mb-1">$180.000</p>
@@ -399,7 +399,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
         </div>
       </section>
       {/* ── PREGUNTAS FRECUENTES ── */}
-      <section className="py-16 bg-[#F7F7F7]">
+      <section className="py-12 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-3xl">
           <h2 className="text-2xl md:text-3xl font-black text-center mb-10" style={{ color: '#1F1F1F' }}>Si estás pensando esto…</h2>
           <div className="space-y-4">
