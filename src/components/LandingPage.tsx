@@ -152,6 +152,12 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       <section className="py-16 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-10">
+            <p className="font-black text-xl md:text-2xl mb-3" style={{ color: '#1F1F1F' }}>
+              Antes de cambiar algo, necesitas verlo.
+            </p>
+            <p className="text-sm md:text-base leading-relaxed max-w-xl mx-auto mb-8" style={{ color: '#666' }}>
+              Nuestro cerebro automatiza lo que repetimos. Por eso muchos comportamientos dejan de parecernos una elección. Despierta te ayuda a hacerlos visibles a través de un <strong>Método de Observación Consciente</strong> basado en principios de neurociencia sobre atención, automatización y conciencia de la propia experiencia.
+            </p>
             <p className="text-[#7D1F3B] text-sm font-black uppercase tracking-widest mb-3">El resultado</p>
             <h2 className="text-3xl md:text-5xl font-black leading-tight mb-4" style={{ color: '#1F1F1F' }}>
               Tus 3 comportamientos automáticos<br className="hidden md:block" /> con mayor impacto hoy.
@@ -189,17 +195,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-      {/* ── BASE METODOLÓGICA ── */}
-      <section className="py-12 bg-[#F5F0EE] border-y border-[#E8D5DA]">
-        <div className="container mx-auto px-6 max-w-3xl text-center">
-          <p className="font-black text-xl md:text-2xl mb-4" style={{ color: '#1F1F1F' }}>
-            Antes de cambiar algo, necesitas verlo.
-          </p>
-          <p className="text-sm md:text-base leading-relaxed max-w-xl mx-auto" style={{ color: '#666' }}>
-            Nuestro cerebro automatiza lo que repetimos. Por eso muchos comportamientos dejan de parecernos una elección. Despierta te ayuda a hacerlos visibles a través de un <strong>Método de Observación Consciente</strong> basado en principios de neurociencia sobre atención, automatización y conciencia de la propia experiencia.
-          </p>
         </div>
       </section>
       {/* ── LAS 3 SEMANAS ── */}
