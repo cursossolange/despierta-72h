@@ -1,5 +1,51 @@
 import { motion } from "motion/react";
 import { ArrowRight, ShieldCheck, Calendar, Clock } from "lucide-react";
+import { useState, useEffect } from "react";
+
+const useCountdown = (targetDate: string) => {
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0 });
+
+  useEffect(() => {
+    const calculate = () => {
+      const target = new Date(targetDate).getTime();
+      const now = new Date().getTime();
+      const diff = target - now;
+      if (diff <= 0) {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0 });
+        return;
+      }
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      setTimeLeft({ days, hours, minutes });
+    };
+    calculate();
+    const interval = setInterval(calculate, 60000);
+    return () => clearInterval(interval);
+  }, [targetDate]);
+
+  return timeLeft;
+};
+
+const CountdownTimer = () => {
+  const { days, hours, minutes } = useCountdown("2026-08-04T19:00:00-04:00");
+
+  return (
+    <div className="flex items-center justify-center gap-3 md:gap-5 mb-6">
+      {[
+        { value: days, label: "días" },
+        { value: hours, label: "horas" },
+        { value: minutes, label: "min" },
+      ].map((item, i) => (
+        <div key={i} className="flex flex-col items-center bg-white border-2 border-[#7D1F3B]/15 rounded-2xl px-4 md:px-5 py-2.5 md:py-3 min-w-[64px] md:min-w-[76px]">
+          <span className="text-2xl md:text-3xl font-black text-[#7D1F3B] leading-none">{item.value}</span>
+          <span className="text-[10px] md:text-xs uppercase tracking-widest mt-1" style={{ color: '#999' }}>{item.label}</span>
+        </div>
+      ))}
+    </div>
+  );
+};
+
 const CTAButton = ({
   label = "Quiero reservar mi lugar",
   size = "lg",
@@ -79,6 +125,17 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             Una pausa guiada de 3 semanas para volver a observarte con claridad y empezar a elegir distinto.
           </motion.p>
+          {/* COUNTDOWN */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.42 }}
+          >
+            <p className="text-[10px] md:text-xs font-black uppercase tracking-widest mb-3" style={{ color: '#999' }}>
+              Comienza en
+            </p>
+            <CountdownTimer />
+          </motion.div>
           {/* URGENCIA */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -138,7 +195,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               "Te ocupas de todo y rara vez te preguntas si realmente te corresponde hacerlo.",
               "Postergas lo que necesitas porque siempre aparece algo más urgente.",
               "Reaccionas de maneras que conoces demasiado bien, aunque después te gustaría haber actuado distinto.",
-              
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3 rounded-xl px-4 py-3 border border-[#F0E8EA] bg-[#FDF5F6]">
                 <span className="text-[#7D1F3B] font-black mt-0.5 shrink-0">✦</span>
@@ -354,7 +410,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               },
               {
                 q: '"Ya intenté cambiar cosas y siempre vuelvo al mismo lugar."',
-                a: "Quizás porque la mayoría de los intentos de cambio comienzan demasiado tarde. Antes de transformar algo, necesitamos verlo con claridad. Despierta no te pide que cambies nada todavía. Te invita a observar.",
+                a: "Quizás porque la mayoría de los intentos de cambio comienzan sin haber observado primero qué los sostiene. Despierta no te pide que cambies nada de inmediato — te ayuda a ver con claridad antes de elegir qué transformar. Y eso, en sí mismo, ya es un cambio.",
               },
               {
                 q: '"¿Esto es terapia o coaching?"',
