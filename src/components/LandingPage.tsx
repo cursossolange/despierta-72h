@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import { ArrowRight, ShieldCheck, Calendar, Clock } from "lucide-react";
-
 const CTAButton = ({
   label = "Quiero reservar mi lugar",
   size = "lg",
@@ -22,26 +21,21 @@ const CTAButton = ({
     <ArrowRight className="w-4 h-4 md:w-5 md:h-5 shrink-0" />
   </a>
 );
-
 interface LandingPageProps {
   onPurchase: () => void;
 }
-
 export default function LandingPage({ onPurchase }: LandingPageProps) {
   return (
     <div className="min-h-screen bg-white font-sans leading-normal" style={{ color: '#1F1F1F' }}>
-
       {/* ── BARRA ── */}
       <div className="bg-[#7D1F3B] text-white text-center py-2.5 px-4">
         <p className="text-xs md:text-sm font-semibold tracking-wide">
           ✦ Inicio 4 de agosto · Cupos limitados
         </p>
       </div>
-
       {/* ── HERO ── */}
       <header className="bg-white pt-12 pb-0">
         <div className="container mx-auto px-6 max-w-4xl text-center">
-
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -50,7 +44,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             Despierta
           </motion.p>
-
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
@@ -60,7 +53,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             Llevas años resolviendo todo.
           </motion.h1>
-
           <motion.h2
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
@@ -69,7 +61,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             Y estás cansada.
           </motion.h2>
-
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -79,7 +70,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             ¿Y si algunas de las cosas que haces cada día ya no fueran una elección, sino una costumbre?
           </motion.p>
-
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -89,7 +79,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             Identificarás los 3 comportamientos automáticos que hoy están influyendo más de lo que imaginas en tu bienestar, tu energía y la vida que quieres construir
           </motion.p>
-
           {/* URGENCIA */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -104,7 +93,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             <p className="text-xs opacity-70 mt-0.5">Sesiones grupales en vivo los martes a las 19:00 hrs (Chile)</p>
             </div>
           </motion.div>
-
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -115,7 +103,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               Sin reorganizar tu rutina. A tu ritmo. Con acompañamiento real.
             </p>
           </motion.div>
-
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -127,10 +114,8 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               $180.000 CLP · Cupos limitados · Garantía 7 días
             </p>
           </motion.div>
-
         </div>
       </header>
-
       {/* ── COSTO DE INACCIÓN ── */}
       <section className="py-14 bg-[#7D1F3B] text-white">
         <div className="container mx-auto px-6 max-w-3xl text-center">
@@ -142,7 +127,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </p>
         </div>
       </section>
-
       {/* ── AGITACIÓN ── */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-3xl text-center">
@@ -164,7 +148,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </div>
         </div>
       </section>
-
       {/* ── EL RESULTADO ── */}
       <section className="py-16 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-4xl">
@@ -180,7 +163,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               Porque no todo necesita cambiar. Aprenderás a reconocer dónde vale la pena empezar.
             </p>
           </div>
-
           {/* MAPA */}
           <div className="bg-white rounded-2xl p-6 md:p-8 border-2 border-[#7D1F3B]/20 shadow-sm max-w-2xl mx-auto">
             <div className="flex items-start gap-3 mb-4">
@@ -209,7 +191,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </div>
         </div>
       </section>
-
       {/* ── BASE METODOLÓGICA ── */}
       <section className="py-12 bg-[#F5F0EE] border-y border-[#E8D5DA]">
         <div className="container mx-auto px-6 max-w-3xl text-center">
@@ -221,7 +202,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </p>
         </div>
       </section>
-
       {/* ── LAS 3 SEMANAS ── */}
       <section className="py-16 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-4xl text-center">
@@ -231,7 +211,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <p className="text-base md:text-lg leading-relaxed mb-10 max-w-2xl mx-auto" style={{ color: '#555' }}>
             Durante 3 semanas observarás tu experiencia cotidiana con un foco distinto cada semana, acompañada durante todo el proceso.
           </p>
-
           <div className="grid md:grid-cols-3 gap-4 text-left mb-8">
             {[
               {
@@ -261,7 +240,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               </div>
             ))}
           </div>
-
           {/* TIEMPO REQUERIDO */}
           <div className="bg-white rounded-2xl p-5 border border-[#E8D5DA] flex flex-col md:flex-row items-center justify-center gap-6 max-w-2xl mx-auto">
             <Clock className="w-8 h-8 text-[#7D1F3B] shrink-0" />
@@ -274,11 +252,10 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </div>
         </div>
       </section>
-
       {/* ── LO QUE INCLUYE ── */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-3xl">
-          <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-8 text-center"> Tui inscripción incluye</p>
+          <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-8 text-center"> Tu inscripción incluye</p>
           <div className="space-y-3">
             {[
               { title: "3 sesiones grupales en vivo", benefit: "Para acompañarte paso a paso durante todo el proceso.", extra: "Martes 4, 11 y 18 de agosto · 19:00 hrs (Chile) — Si no puedes asistir, todas las sesiones quedarán grabadas." },
@@ -300,7 +277,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </div>
         </div>
       </section>
-
       {/* ── QUIÉN SOY ── */}
       <section className="py-16 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-3xl">
@@ -324,11 +300,41 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </div>
         </div>
       </section>
-
+      {/* ── TESTIMONIOS ── */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6 max-w-3xl">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-black leading-tight mb-4" style={{ color: '#1F1F1F' }}>
+              Lo que descubrieron otras mujeres al participar en Despierta
+            </h2>
+            <p className="text-sm md:text-base leading-relaxed max-w-xl mx-auto" style={{ color: '#666' }}>
+              Pequeños descubrimientos que aparecieron al detenerse, observar y mirar con más atención su experiencia cotidiana.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-4">
+            {[
+              { quote: "Me di cuenta de que estaba mucho más en automático de lo que imaginaba.", name: "Paola L.", age: "53 años" },
+              { quote: "Lo que más me sorprendió fue notar cosas que hacía todos los días y nunca había visto.", name: "María M.", age: "48 años" },
+              { quote: "Pensé que sería una reflexión más. Terminé observándome de una forma completamente distinta.", name: "Gabriela A.", age: "43 años" },
+            ].map((t, i) => (
+              <div key={i} className="bg-[#FDF5F6] rounded-2xl p-6 border border-[#F0E8EA] flex flex-col justify-between">
+                <p className="text-sm md:text-base leading-relaxed mb-4 italic" style={{ color: '#444' }}>
+                  "{t.quote}"
+                </p>
+                <p className="text-xs font-black uppercase tracking-widest text-[#7D1F3B]">
+                  {t.name} · {t.age}
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-center mt-6" style={{ color: '#999' }}>
+            Testimonios de participantes de versiones anteriores de Despierta.
+          </p>
+        </div>
+      </section>
       {/* ── PRECIO ── */}
       <section className="py-16 bg-white border-y border-slate-100">
         <div className="container mx-auto px-6 max-w-xl text-center">
-          <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-3">
           <h2 className="text-2xl md:text-3xl font-black mb-2" style={{ color: '#1F1F1F' }}>Despierta · Inicio 4 de agosto</h2>
           <p className="text-5xl md:text-6xl font-black text-[#7D1F3B] mb-1">$180.000</p>
           <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#999' }}>CLP</p>
@@ -341,7 +347,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </div>
         </div>
       </section>
-
       {/* ── PREGUNTAS FRECUENTES ── */}
       <section className="py-16 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-3xl">
@@ -377,7 +382,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </div>
         </div>
       </section>
-
       {/* ── GARANTÍA ── */}
       <section className="py-12 bg-[#F5F4F3] border-y border-slate-100">
         <div className="container mx-auto px-6 max-w-xl text-center">
@@ -390,7 +394,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </p>
         </div>
       </section>
-
       {/* ── CTA FINAL ── */}
       <section className="py-20 bg-[#F7F7F7]">
         <div className="container mx-auto px-6 max-w-3xl text-center">
@@ -415,7 +418,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </div>
         </div>
       </section>
-
       {/* ── FOOTER ── */}
       <footer className="py-6 border-t border-slate-100 text-center bg-white">
         <div className="container mx-auto px-6">
@@ -423,7 +425,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <p className="text-[10px] font-medium tracking-widest uppercase" style={{ color: '#bbb' }}>© 2026</p>
         </div>
       </footer>
-
     </div>
   );
 }
