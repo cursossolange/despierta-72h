@@ -77,7 +77,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
             className="text-base md:text-lg leading-relaxed mb-6 max-w-2xl mx-auto"
             style={{ color: '#555' }}
           >
-            Identificarás los 3 comportamientos automáticos que hoy están influyendo más de lo que imaginas en tu bienestar, tu energía y la vida que quieres construir
+            Una pausa guiada de 3 semanas para volver a observarte con claridad y empezar a elegir distinto.
           </motion.p>
           {/* URGENCIA */}
           <motion.div
@@ -258,7 +258,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
               { title: "Comunidad privada de acompañamiento", benefit: "Para compartir el proceso con otras mujeres que están recorriendo el mismo camino.", extra: "" },
               { title: "Grabaciones de todas las sesiones", benefit: "Para avanzar a tu ritmo y revisar el contenido cuando lo necesites.", extra: "" },
               { title: "Mapa de Automatismos e Impactos", benefit: "Para visualizar con claridad aquello que hoy está influyendo en tu vida cotidiana.", extra: "" },
-              { title: "Identificación de tus 3 comportamientos automáticos prioritarios", benefit: "Para terminar el proceso sabiendo exactamente dónde vale la pena enfocar tu energía primero.", extra: "" },
+              { title: "Una mirada clara sobre dónde enfocar tu energía primero", benefit: "Para terminar el proceso sabiendo exactamente qué priorizar y qué dejar ir.", extra: "" },
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-4 rounded-xl px-4 py-4 border border-slate-100">
                 <span className="text-[#7D1F3B] font-black shrink-0 mt-0.5">✦</span>
