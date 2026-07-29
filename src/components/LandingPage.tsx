@@ -2,50 +2,6 @@ import { motion } from "motion/react";
 import { ArrowRight, ShieldCheck, Calendar, Clock } from "lucide-react";
 import { useState, useEffect } from "react";
 
-const useCountdown = (targetDate: string) => {
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0 });
-
-  useEffect(() => {
-    const calculate = () => {
-      const target = new Date(targetDate).getTime();
-      const now = new Date().getTime();
-      const diff = target - now;
-      if (diff <= 0) {
-        setTimeLeft({ days: 0, hours: 0, minutes: 0 });
-        return;
-      }
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      setTimeLeft({ days, hours, minutes });
-    };
-    calculate();
-    const interval = setInterval(calculate, 60000);
-    return () => clearInterval(interval);
-  }, [targetDate]);
-
-  return timeLeft;
-};
-
-const CountdownTimer = () => {
-  const { days, hours, minutes } = useCountdown("2026-08-04T19:00:00-04:00");
-
-  return (
-    <div className="flex items-center justify-center gap-3 md:gap-5 mb-6">
-      {[
-        { value: days, label: "días" },
-        { value: hours, label: "horas" },
-        { value: minutes, label: "min" },
-      ].map((item, i) => (
-        <div key={i} className="flex flex-col items-center bg-white border-2 border-[#7D1F3B]/15 rounded-2xl px-4 md:px-5 py-2.5 md:py-3 min-w-[64px] md:min-w-[76px]">
-          <span className="text-2xl md:text-3xl font-black text-[#7D1F3B] leading-none">{item.value}</span>
-          <span className="text-[10px] md:text-xs uppercase tracking-widest mt-1" style={{ color: '#999' }}>{item.label}</span>
-        </div>
-      ))}
-    </div>
-  );
-};
-
 const CTAButton = ({
   label = "Quiero reservar mi lugar",
   size = "lg",
@@ -76,7 +32,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       {/* ── BARRA ── */}
       <div className="bg-[#7D1F3B] text-white text-center py-2.5 px-4">
         <p className="text-xs md:text-sm font-semibold tracking-wide">
-          ✦ Inicio 4 de agosto · Cupos limitados
+          ✦ Próxima cohorte: Octubre · Cupos limitados
         </p>
       </div>
       {/* ── HERO ── */}
@@ -125,17 +81,6 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             Una pausa guiada de 3 semanas para volver a observarte con claridad y empezar a elegir distinto.
           </motion.p>
-          {/* COUNTDOWN */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.42 }}
-          >
-            <p className="text-[10px] md:text-xs font-black uppercase tracking-widest mb-3" style={{ color: '#999' }}>
-              Comienza en
-            </p>
-            <CountdownTimer />
-          </motion.div>
           {/* URGENCIA */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -145,9 +90,9 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           >
             <Calendar className="w-5 h-5 shrink-0" />
             <div className="text-left">
-              <p className="font-black text-base md:text-lg leading-none">Inicio: 4 de agosto</p>
+              <p className="font-black text-base md:text-lg leading-none">Próxima cohorte: Octubre</p>
               <p className="text-xs opacity-80 mt-0.5">Cupos limitados </p>
-            <p className="text-xs opacity-70 mt-0.5">Sesiones grupales en vivo los martes a las 19:00 hrs (Chile)</p>
+            <p className="text-xs opacity-70 mt-0.5">Sesiones grupales en vivo, martes a las 19:00 hrs (Chile) — fechas exactas se confirman al inscribirte</p>
             </div>
           </motion.div>
           <motion.div
@@ -309,7 +254,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           <p className="text-[#7D1F3B] text-xs font-black uppercase tracking-widest mb-8 text-center"> Tu inscripción incluye</p>
           <div className="space-y-3">
             {[
-              { title: "3 sesiones grupales en vivo", benefit: "Para acompañarte paso a paso durante todo el proceso.", extra: "Martes 4, 11 y 18 de agosto · 19:00 hrs (Chile) — Si no puedes asistir, todas las sesiones quedarán grabadas." },
+              { title: "3 sesiones grupales en vivo", benefit: "Para acompañarte paso a paso durante todo el proceso.", extra: "Fechas exactas de la cohorte de octubre se confirman al inscribirte — martes a las 19:00 hrs (Chile). Si no puedes asistir, todas las sesiones quedarán grabadas." },
               { title: "Guías de observación y reflexión", benefit: "Para ayudarte a saber exactamente qué observar cada semana.", extra: "" },
               { title: "Comunidad privada de acompañamiento", benefit: "Para compartir el proceso con otras mujeres que están recorriendo el mismo camino.", extra: "" },
               { title: "Grabaciones de todas las sesiones", benefit: "Para avanzar a tu ritmo y revisar el contenido cuando lo necesites.", extra: "" },
@@ -386,7 +331,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
       {/* ── PRECIO ── */}
       <section className="py-12 bg-white border-y border-slate-100">
         <div className="container mx-auto px-6 max-w-xl text-center">
-          <h2 className="text-2xl md:text-3xl font-black mb-2" style={{ color: '#1F1F1F' }}>Despierta · Inicio 4 de agosto</h2>
+          <h2 className="text-2xl md:text-3xl font-black mb-2" style={{ color: '#1F1F1F' }}>Despierta · Próxima cohorte: Octubre</h2>
           <p className="text-5xl md:text-6xl font-black text-[#7D1F3B] mb-1">$180.000</p>
           <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#999' }}>CLP</p>
           <p className="text-sm md:text-base leading-relaxed max-w-md mx-auto mb-8" style={{ color: '#666' }}>
@@ -394,7 +339,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </p>
           <div className="flex flex-col items-center gap-3">
             <CTAButton label="Quiero reservar mi lugar" size="lg" />
-            <p className="text-sm" style={{ color: '#888' }}>$180.000 CLP · Inicio 4 de agosto · Cupos limitados · Garantía 7 días</p>
+            <p className="text-sm" style={{ color: '#888' }}>$180.000 CLP · Próxima cohorte: Octubre · Cupos limitados · Garantía 7 días</p>
           </div>
         </div>
       </section>
@@ -459,7 +404,7 @@ export default function LandingPage({ onPurchase }: LandingPageProps) {
           </p>
           <div className="flex flex-col items-center gap-3 mb-6">
             <CTAButton label="Quiero reservar mi lugar" size="lg" />
-            <p className="text-sm" style={{ color: '#888' }}>$180.000 CLP · Inicio 4 de agosto · Cupos limitados · Garantía 7 días</p>
+            <p className="text-sm" style={{ color: '#888' }}>$180.000 CLP · Próxima cohorte: Octubre · Cupos limitados · Garantía 7 días</p>
           </div>
           <div className="mt-6">
             <p className="text-sm mb-1" style={{ color: '#aaa' }}>¿Tienes dudas antes de empezar?</p>
